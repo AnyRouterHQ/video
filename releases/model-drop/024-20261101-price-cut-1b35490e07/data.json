@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-11-01T14:17:00.652Z",
+  "mode": "diff",
+  "kind": "price-cut",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 342,
+    "listed": 333,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 76,
+    "providerBackends": 76,
+    "free": 72
+  },
+  "pool": {
+    "keys": 295,
+    "donors": 185,
+    "requests": 85255
+  },
+  "added": [],
+  "changed": [
+    {
+      "id": "meituan/longcat-2.0",
+      "from": "0.3/1.2@1049000",
+      "to": "0.3/1.2@1048576",
+      "kind": "context"
+    },
+    {
+      "id": "qwen/qwen3.8-27b",
+      "from": "0.1/0.4@1048575",
+      "to": "0.045/0.32@1048575",
+      "kind": "price-cut"
+    },
+    {
+      "id": "qwen/qwen3.8-max",
+      "from": "0.825/2.4755@1000000",
+      "to": "0.825/2.4755@1048576",
+      "kind": "context"
+    },
+    {
+      "id": "qwen/qwen-max-latest",
+      "from": "0.825/2.4755@1000000",
+      "to": "0.825/2.4755@1048576",
+      "kind": "context"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "meituan/longcat-2.0",
+    "name": "LongCat-2.0",
+    "provider": "meituan",
+    "logo": null,
+    "context": 1048576,
+    "inPrice": 0.3,
+    "outPrice": 1.2,
+    "free": false,
+    "created": 1780272000,
+    "category": "text",
+    "excerpt": "LongCat-2.0 is a sparse mixture-of-experts language model from Meituan, with 48B active parameters out of 1.6T total."
+  },
+  "notable": true,
+  "label": "price-cut",
+  "parts": [
+    "~meituan/longcat-2.0 0.3/1.2@1049000->0.3/1.2@1048576",
+    "~qwen/qwen3.8-27b 0.1/0.4@1048575->0.045/0.32@1048575",
+    "~qwen/qwen3.8-max 0.825/2.4755@1000000->0.825/2.4755@1048576",
+    "~qwen/qwen-max-latest 0.825/2.4755@1000000->0.825/2.4755@1048576"
+  ]
+}

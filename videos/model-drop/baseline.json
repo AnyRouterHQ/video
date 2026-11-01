@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-10-31T13:39:34.680Z",
+  "acceptedAt": "2026-11-01T14:17:00.653Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -922,7 +922,7 @@
       "id": "meituan/longcat-2.0",
       "inPrice": 0.3,
       "outPrice": 1.2,
-      "context": 1049000
+      "context": 1048576
     },
     {
       "id": "meituan/longcat-2.5-preview",
@@ -1742,8 +1742,8 @@
     },
     {
       "id": "qwen/qwen3.8-27b",
-      "inPrice": 0.1,
-      "outPrice": 0.4,
+      "inPrice": 0.045,
+      "outPrice": 0.32,
       "context": 1048575
     },
     {
@@ -1762,7 +1762,7 @@
       "id": "qwen/qwen3.8-max",
       "inPrice": 0.825,
       "outPrice": 2.4755,
-      "context": 1000000
+      "context": 1048576
     },
     {
       "id": "qwen/qwen3.8-omni-flash",
@@ -2296,7 +2296,7 @@
       "id": "qwen/qwen-max-latest",
       "inPrice": 0.825,
       "outPrice": 2.4755,
-      "context": 1000000
+      "context": 1048576
     },
     {
       "id": "qwen/qwen-plus-latest",

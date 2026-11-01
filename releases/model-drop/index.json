@@ -493,6 +493,28 @@
         "github": "https://github.com/anyrouter-dev/video/releases/tag/untagged-d64f4638aba8322c364f",
         "draft": true
       }
+    },
+    {
+      "id": "024-20261101-price-cut-1b35490e07",
+      "hash": "1b35490e07",
+      "kind": "model-drop",
+      "label": "price-cut",
+      "title": "Price drop: qwen3.8-27b down 55%",
+      "seconds": 20,
+      "renderedAt": "2026-11-01T14:18:28.304Z",
+      "commit": "3799148",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-024-20261101-price-cut-1b35490e07.mp4",
+          "cover": "renders/model-drop-024-20261101-price-cut-1b35490e07.png"
+        }
+      },
+      "source": "renders/model-drop-024-20261101-price-cut-1b35490e07-source.tar.gz",
+      "createdAt": "2026-11-01T14:18:28.313Z",
+      "published": {
+        "github": "https://github.com/anyrouter-dev/video/releases/tag/untagged-225d94adc1ed00df9e7e",
+        "draft": true
+      }
     }
   ]
 }
