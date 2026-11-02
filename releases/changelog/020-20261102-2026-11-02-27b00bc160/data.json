@@ -1,0 +1,37 @@
+{
+  "notable": true,
+  "label": "2026-11-02",
+  "parts": [
+    "2026-11-02-aion-3-0-mini",
+    "2026-11-02-aion-3-5",
+    "2026-11-02-hy-mt2-1-8b"
+  ],
+  "date": "2026-11-02",
+  "entries": [
+    {
+      "slug": "2026-11-02-aion-3-0-mini",
+      "date": "2026-11-02",
+      "title": "Aion 3.0 Mini",
+      "summary": "Aion 3.0 Mini, Aion Labs' compact multi-model reasoning model built on the DeepSeek family, joins the catalog on five BYOK routes with a 131K-token context.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-02-aion-3-0-mini",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-02-aion-3-5",
+      "date": "2026-11-02",
+      "title": "Aion 3.5",
+      "summary": "Aion 3.5, Aion Labs' multi-model reasoning model for fiction writing, joins the catalog on five BYOK routes with a 262K-token context.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-02-aion-3-5",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-02-hy-mt2-1-8b",
+      "date": "2026-11-02",
+      "title": "Hy-MT2 1.8B",
+      "summary": "Hy-MT2 1.8B, the smallest model in Tencent's open-weight Hy-MT2 translation family, joins the catalog on two BYOK routes.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-02-hy-mt2-1-8b",
+      "type": "added"
+    }
+  ],
+  "total": 3
+}

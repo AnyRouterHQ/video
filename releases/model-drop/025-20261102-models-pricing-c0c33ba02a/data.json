@@ -1,0 +1,147 @@
+{
+  "generatedAt": "2026-11-02T17:05:44.111Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 346,
+    "listed": 337,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 76,
+    "providerBackends": 76,
+    "free": 70
+  },
+  "pool": {
+    "keys": 302,
+    "donors": 189,
+    "requests": 99812
+  },
+  "added": [
+    {
+      "id": "aion-labs/aion-3.5",
+      "name": "Aion 3.5",
+      "provider": "aion-labs",
+      "logo": null,
+      "context": 262144,
+      "inPrice": 3,
+      "outPrice": 6,
+      "free": false,
+      "created": 1790121600,
+      "category": "text",
+      "excerpt": "Aion 3.5 is a reasoning model from Aion Labs built on the GLM family of models."
+    },
+    {
+      "id": "tencent/hy-mt2-1.8b",
+      "name": "Hy-MT2 1.8B",
+      "provider": "tencent",
+      "logo": "tencent-color.svg",
+      "context": 8192,
+      "inPrice": 0.044,
+      "outPrice": 0.177,
+      "free": false,
+      "created": 1779321600,
+      "category": "text",
+      "excerpt": "Hy-MT2 1.8B is the smallest model in Tencent's Hy-MT2 translation family."
+    },
+    {
+      "id": "aion-labs/aion-3.0-mini",
+      "name": "Aion 3.0 Mini",
+      "provider": "aion-labs",
+      "logo": null,
+      "context": 131072,
+      "inPrice": 0.7,
+      "outPrice": 1.4,
+      "free": false,
+      "created": 1778716800,
+      "category": "text",
+      "excerpt": "Aion 3.0 Mini is a reasoning model from Aion Labs built on the DeepSeek family of models."
+    },
+    {
+      "id": "moondream/moondream3.1-9b-a2b",
+      "name": "Moondream 3.1 9B A2B",
+      "provider": "moondream",
+      "logo": "moondream-color.svg",
+      "context": 32768,
+      "inPrice": 0.3,
+      "outPrice": 2.5,
+      "free": false,
+      "created": 1773100800,
+      "category": "multimodal",
+      "excerpt": "Moondream 3.1 is a fast, efficient 9B mixture-of-experts vision language model (2B active parameters) delivering frontier-level visual reasoning for object detection, pointing, OCR, and structured output."
+    }
+  ],
+  "changed": [
+    {
+      "id": "minimax/m2",
+      "from": "0.255/1@205000",
+      "to": "0.255/1@1000000",
+      "kind": "context"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "from": "0/0@1000000",
+      "to": "0/0@1048576",
+      "kind": "context"
+    },
+    {
+      "id": "poolside/laguna-s-2.1",
+      "from": "0/0@1048576",
+      "to": "0.09/0.18@1048576",
+      "kind": "price-rise"
+    },
+    {
+      "id": "poolside/laguna-xs-2.1",
+      "from": "0/0@262144",
+      "to": "0.1/0.2@262144",
+      "kind": "price-rise"
+    },
+    {
+      "id": "qwen/qwen3-vl-plus",
+      "from": "0.1/0.8@256000",
+      "to": "0.1/0.8@262144",
+      "kind": "context"
+    },
+    {
+      "id": "qwen/qwen3.8-flash",
+      "from": "0.0565/0.191@1000000",
+      "to": "0.0565/0.191@1048576",
+      "kind": "context"
+    },
+    {
+      "id": "qwen/qwen-flash-latest",
+      "from": "0.0565/0.191@1000000",
+      "to": "0.0565/0.191@1048576",
+      "kind": "context"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "aion-labs/aion-3.5",
+    "name": "Aion 3.5",
+    "provider": "aion-labs",
+    "logo": null,
+    "context": 262144,
+    "inPrice": 3,
+    "outPrice": 6,
+    "free": false,
+    "created": 1790121600,
+    "category": "text",
+    "excerpt": "Aion 3.5 is a reasoning model from Aion Labs built on the GLM family of models."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+aion-labs/aion-3.5@3/6@262144",
+    "+tencent/hy-mt2-1.8b@0.044/0.177@8192",
+    "+aion-labs/aion-3.0-mini@0.7/1.4@131072",
+    "+moondream/moondream3.1-9b-a2b@0.3/2.5@32768",
+    "~minimax/m2 0.255/1@205000->0.255/1@1000000",
+    "~nvidia/nemotron-3.5-lightning-30b-a3b 0/0@1000000->0/0@1048576",
+    "~poolside/laguna-s-2.1 0/0@1048576->0.09/0.18@1048576",
+    "~poolside/laguna-xs-2.1 0/0@262144->0.1/0.2@262144",
+    "~qwen/qwen3-vl-plus 0.1/0.8@256000->0.1/0.8@262144",
+    "~qwen/qwen3.8-flash 0.0565/0.191@1000000->0.0565/0.191@1048576",
+    "~qwen/qwen-flash-latest 0.0565/0.191@1000000->0.0565/0.191@1048576"
+  ]
+}

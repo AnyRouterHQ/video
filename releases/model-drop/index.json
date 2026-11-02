@@ -515,6 +515,28 @@
         "github": "https://github.com/anyrouter-dev/video/releases/tag/untagged-225d94adc1ed00df9e7e",
         "draft": true
       }
+    },
+    {
+      "id": "025-20261102-models-pricing-c0c33ba02a",
+      "hash": "c0c33ba02a",
+      "kind": "model-drop",
+      "label": "models+pricing",
+      "title": "4 new models: aion-3.5, hy-mt2-1.8b, aion-3.0-mini +1 more",
+      "seconds": 20,
+      "renderedAt": "2026-11-02T17:11:06.214Z",
+      "commit": "b7f220c",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-025-20261102-models-pricing-c0c33ba02a.mp4",
+          "cover": "renders/model-drop-025-20261102-models-pricing-c0c33ba02a.png"
+        }
+      },
+      "source": "renders/model-drop-025-20261102-models-pricing-c0c33ba02a-source.tar.gz",
+      "createdAt": "2026-11-02T17:11:06.223Z",
+      "published": {
+        "github": "https://github.com/anyrouter-dev/video/releases/tag/untagged-9d64df56fb5263c953fb",
+        "draft": true
+      }
     }
   ]
 }

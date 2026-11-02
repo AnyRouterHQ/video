@@ -1,0 +1,26 @@
+{
+  "id": "020-20261102-2026-11-02-27b00bc160",
+  "hash": "27b00bc160",
+  "kind": "changelog",
+  "label": "2026-11-02",
+  "title": "3 changelog updates: Aion 3.0 Mini, Aion 3.5 +1 more",
+  "seconds": 28,
+  "renderedAt": "2026-11-02T17:09:35.532Z",
+  "commit": "b7f220c",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-020-20261102-2026-11-02-27b00bc160.mp4",
+      "cover": "renders/changelog-020-20261102-2026-11-02-27b00bc160.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-020-20261102-2026-11-02-27b00bc160-portrait.mp4",
+      "cover": "renders/changelog-020-20261102-2026-11-02-27b00bc160-portrait.png"
+    }
+  },
+  "source": "renders/changelog-020-20261102-2026-11-02-27b00bc160-source.tar.gz",
+  "createdAt": "2026-11-02T17:09:35.541Z",
+  "published": {
+    "github": "https://github.com/anyrouter-dev/video/releases/tag/untagged-5e6d434fedb26a0ff7d9",
+    "draft": true
+  }
+}
