@@ -1,0 +1,26 @@
+{
+  "id": "021-20261103-2026-11-03-80bb386de1",
+  "hash": "80bb386de1",
+  "kind": "changelog",
+  "label": "2026-11-03",
+  "title": "2 changelog updates: Granite 4.2 30B, Llamport: four OpenAI GPT models at 10% of the OpenAI price",
+  "seconds": 21,
+  "renderedAt": "2026-11-03T15:13:25.898Z",
+  "commit": "2055792",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-021-20261103-2026-11-03-80bb386de1.mp4",
+      "cover": "renders/changelog-021-20261103-2026-11-03-80bb386de1.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-021-20261103-2026-11-03-80bb386de1-portrait.mp4",
+      "cover": "renders/changelog-021-20261103-2026-11-03-80bb386de1-portrait.png"
+    }
+  },
+  "source": "renders/changelog-021-20261103-2026-11-03-80bb386de1-source.tar.gz",
+  "createdAt": "2026-11-03T15:13:25.907Z",
+  "published": {
+    "github": "https://github.com/anyrouter-dev/video/releases/tag/untagged-c2b1c5406dea10756b78",
+    "draft": true
+  }
+}

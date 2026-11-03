@@ -1,0 +1,28 @@
+{
+  "notable": true,
+  "label": "2026-11-03",
+  "parts": [
+    "2026-11-03-granite-4-2-30b",
+    "2026-11-03-llamport"
+  ],
+  "date": "2026-11-03",
+  "entries": [
+    {
+      "slug": "2026-11-03-granite-4-2-30b",
+      "date": "2026-11-03",
+      "title": "Granite 4.2 30B",
+      "summary": "Granite 4.2 30B, the flagship dense reasoning model in IBM's open-weight Granite 4.2 family, joins the catalog on one BYOK route.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-03-granite-4-2-30b",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-03-llamport",
+      "date": "2026-11-03",
+      "title": "Llamport: four OpenAI GPT models at 10% of the OpenAI price",
+      "summary": "Llamport is a new upstream on AnyRouter. It serves four OpenAI GPT models at 10% of the OpenAI API list price, on the AnyRouter platform key or with your own Llamport key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-03-llamport",
+      "type": "added"
+    }
+  ],
+  "total": 2
+}

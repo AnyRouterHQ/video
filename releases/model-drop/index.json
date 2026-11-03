@@ -537,6 +537,28 @@
         "github": "https://github.com/anyrouter-dev/video/releases/tag/untagged-9d64df56fb5263c953fb",
         "draft": true
       }
+    },
+    {
+      "id": "026-20261103-models-pricing-b02d1876d8",
+      "hash": "b02d1876d8",
+      "kind": "model-drop",
+      "label": "models+pricing",
+      "title": "4 new models: longcat-2.5, glm-5.3-flashx-legal, pareto-26.9 +1 more",
+      "seconds": 20,
+      "renderedAt": "2026-11-03T15:15:00.091Z",
+      "commit": "2055792",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-026-20261103-models-pricing-b02d1876d8.mp4",
+          "cover": "renders/model-drop-026-20261103-models-pricing-b02d1876d8.png"
+        }
+      },
+      "source": "renders/model-drop-026-20261103-models-pricing-b02d1876d8-source.tar.gz",
+      "createdAt": "2026-11-03T15:15:00.101Z",
+      "published": {
+        "github": "https://github.com/anyrouter-dev/video/releases/tag/untagged-d290cc81217d8e7f65f0",
+        "draft": true
+      }
     }
   ]
 }
