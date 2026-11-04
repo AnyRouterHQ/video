@@ -1,0 +1,108 @@
+{
+  "generatedAt": "2026-11-04T15:27:33.746Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 351,
+    "listed": 342,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 76,
+    "providerBackends": 76,
+    "free": 70
+  },
+  "pool": null,
+  "added": [
+    {
+      "id": "tencent/hy4",
+      "name": "Hy4",
+      "provider": "tencent",
+      "logo": "tencent-color.svg",
+      "context": 1048576,
+      "inPrice": 0.417,
+      "outPrice": 1.2505,
+      "free": false,
+      "created": 1793750400,
+      "category": "text",
+      "excerpt": "Hy4 is the official release of Tencent Hunyuan's 1M-token-context model for agents, coding, and long-horizon productivity work, with gains over Hy4 Preview in agentic tasks."
+    },
+    {
+      "id": "stealth/crouton-alpha",
+      "name": "Crouton Alpha",
+      "provider": "stealth",
+      "logo": "stealth.svg",
+      "context": 1048576,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1793664000,
+      "category": "text",
+      "excerpt": "Crouton Alpha is a lightweight reasoning model for scalable coding, agentic, and multimodal workflows."
+    }
+  ],
+  "changed": [
+    {
+      "id": "moonshotai/kimi-k3",
+      "from": "3/15@1050000",
+      "to": "0.192/16@1050000",
+      "kind": "price-cut"
+    },
+    {
+      "id": "ornith/ornith-1.5-122b",
+      "from": "0/0@262144",
+      "to": "0.16/0.64@262144",
+      "kind": "price-rise"
+    },
+    {
+      "id": "poolside/laguna-s-2.1",
+      "from": "0.09/0.18@1048576",
+      "to": "0.09/0.18@1000000",
+      "kind": "context"
+    },
+    {
+      "id": "qwen/qwen3.8-max",
+      "from": "0.825/2.4755@1048576",
+      "to": "0.7143/2.1429@1048576",
+      "kind": "price-cut"
+    },
+    {
+      "id": "qwen/qwen-max-latest",
+      "from": "0.825/2.4755@1048576",
+      "to": "0.7143/2.1429@1048576",
+      "kind": "price-cut"
+    },
+    {
+      "id": "moonshotai/kimi-latest",
+      "from": "3/15@1050000",
+      "to": "0.192/16@1050000",
+      "kind": "price-cut"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "tencent/hy4",
+    "name": "Hy4",
+    "provider": "tencent",
+    "logo": "tencent-color.svg",
+    "context": 1048576,
+    "inPrice": 0.417,
+    "outPrice": 1.2505,
+    "free": false,
+    "created": 1793750400,
+    "category": "text",
+    "excerpt": "Hy4 is the official release of Tencent Hunyuan's 1M-token-context model for agents, coding, and long-horizon productivity work, with gains over Hy4 Preview in agentic tasks."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+tencent/hy4@0.417/1.2505@1048576",
+    "+stealth/crouton-alpha@0/0@1048576",
+    "~moonshotai/kimi-k3 3/15@1050000->0.192/16@1050000",
+    "~ornith/ornith-1.5-122b 0/0@262144->0.16/0.64@262144",
+    "~poolside/laguna-s-2.1 0.09/0.18@1048576->0.09/0.18@1000000",
+    "~qwen/qwen3.8-max 0.825/2.4755@1048576->0.7143/2.1429@1048576",
+    "~qwen/qwen-max-latest 0.825/2.4755@1048576->0.7143/2.1429@1048576",
+    "~moonshotai/kimi-latest 3/15@1050000->0.192/16@1050000"
+  ]
+}

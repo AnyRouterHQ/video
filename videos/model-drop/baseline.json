@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-03T15:10:13.259Z",
+  "acceptedAt": "2026-11-04T15:27:33.747Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -261,6 +261,7 @@
     "scira/amos-1-mini",
     "scira/amos-1-small",
     "sentence-transformers/all-minilm-l6-v2",
+    "stealth/crouton-alpha",
     "stealth/glyph-cluster",
     "stepfun/step-5-preview",
     "stepfun-ai/step-3.5-flash",
@@ -271,6 +272,7 @@
     "tencent/hy-mt2-1.8b",
     "tencent/hy-mt2-30b-a3b",
     "tencent/hy4-preview",
+    "tencent/hy4",
     "thenlper/gte-base",
     "thinkingmachines/inkling-small",
     "thinkingmachines/inkling",
@@ -1155,8 +1157,8 @@
     },
     {
       "id": "moonshotai/kimi-k3",
-      "inPrice": 3,
-      "outPrice": 15,
+      "inPrice": 0.192,
+      "outPrice": 16,
       "context": 1050000
     },
     {
@@ -1563,8 +1565,8 @@
     },
     {
       "id": "ornith/ornith-1.5-122b",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 0.16,
+      "outPrice": 0.64,
       "context": 262144
     },
     {
@@ -1607,7 +1609,7 @@
       "id": "poolside/laguna-s-2.1",
       "inPrice": 0.09,
       "outPrice": 0.18,
-      "context": 1048576
+      "context": 1000000
     },
     {
       "id": "poolside/laguna-xs-2.1",
@@ -1791,8 +1793,8 @@
     },
     {
       "id": "qwen/qwen3.8-max",
-      "inPrice": 0.825,
-      "outPrice": 2.4755,
+      "inPrice": 0.7143,
+      "outPrice": 2.1429,
       "context": 1048576
     },
     {
@@ -1904,6 +1906,12 @@
       "context": 512
     },
     {
+      "id": "stealth/crouton-alpha",
+      "inPrice": 0,
+      "outPrice": 0,
+      "context": 1048576
+    },
+    {
       "id": "stealth/glyph-cluster",
       "inPrice": 0,
       "outPrice": 0,
@@ -1961,6 +1969,12 @@
       "id": "tencent/hy4-preview",
       "inPrice": 0.417,
       "outPrice": 1.25,
+      "context": 1048576
+    },
+    {
+      "id": "tencent/hy4",
+      "inPrice": 0.417,
+      "outPrice": 1.2505,
       "context": 1048576
     },
     {
@@ -2343,8 +2357,8 @@
     },
     {
       "id": "qwen/qwen-max-latest",
-      "inPrice": 0.825,
-      "outPrice": 2.4755,
+      "inPrice": 0.7143,
+      "outPrice": 2.1429,
       "context": 1048576
     },
     {
@@ -2373,8 +2387,8 @@
     },
     {
       "id": "moonshotai/kimi-latest",
-      "inPrice": 3,
-      "outPrice": 15,
+      "inPrice": 0.192,
+      "outPrice": 16,
       "context": 1050000
     },
     {

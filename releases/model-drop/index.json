@@ -559,6 +559,28 @@
         "github": "https://github.com/anyrouter-dev/video/releases/tag/untagged-d290cc81217d8e7f65f0",
         "draft": true
       }
+    },
+    {
+      "id": "027-20261104-models-pricing-951738b17b",
+      "hash": "951738b17b",
+      "kind": "model-drop",
+      "label": "models+pricing",
+      "title": "2 new models: hy4, crouton-alpha",
+      "seconds": 20,
+      "renderedAt": "2026-11-04T15:28:47.225Z",
+      "commit": "c7c75fd",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-027-20261104-models-pricing-951738b17b.mp4",
+          "cover": "renders/model-drop-027-20261104-models-pricing-951738b17b.png"
+        }
+      },
+      "source": "renders/model-drop-027-20261104-models-pricing-951738b17b-source.tar.gz",
+      "createdAt": "2026-11-04T15:28:47.232Z",
+      "published": {
+        "github": "https://github.com/anyrouter-dev/video/releases/tag/untagged-01566b078deb19513c77",
+        "draft": true
+      }
     }
   ]
 }
