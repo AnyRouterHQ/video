@@ -23,4 +23,4 @@ Sources: customer docs `src/content/docs/api-reference/artifacts.md` (main @ 2fa
 | Poll / form capability | NOT in docs. Never claimed. | none |
 | Download buttons need a content domain not yet enabled | Do not show | docs |
 
-Never show: private artifacts tzc4LLhaoORq1PKe, lsXBuLGOHxoEb4kP, tEdLNQdn1ZhAB5JR, DLjVt3jFKJDUrkTr, or any other row of the owner's list. Demo pages use made-up data only.
+Never show: any private artifact or any row of the owner's list. Demo pages use made-up data only.

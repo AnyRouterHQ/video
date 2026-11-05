@@ -57,7 +57,7 @@ releases/<kind>/   the ledger, and the facts each film was cut from (committed)
 | `openrouter-unblock` | the narrated OpenRouter rate-limit tutorial, same series look and tools | its own files | on demand |
 | `use-case` | one short silent film per use case, embedded on its anyrouter.dev/use-cases page. Each use case is its own release | `/use-cases.json` | on demand |
 | `artifacts-launch-day1` | the Artifacts launch-day film (38 s), HyperFrames page from `build.py`; screenshots of public pages with sample data | its own files; `python3 build.py 16x9\|9x16 > index.html`, then render | on demand, not a CLI kind |
-| `relay-intro` | narrated `anyr relay` intro, HyperFrames page from `build.py`; `facts.md` is its claim ledger | its own files; needs the narration timing JSON and `narration.wav` (both kept out of git, see its `.gitignore`) | on demand, not a CLI kind |
+| `relay-intro` | narrated `anyr relay` intro, HyperFrames page from `build.py`; `facts.md` is its claim ledger | its own files; needs `narration.wav` (kept out of git, see its `.gitignore`) and the segment and word timing JSON, which is missing from the source folder | on demand, not a CLI kind |
 | `artifacts-intro` | AnyRouter Artifacts: the narrated intro film and the 7-episode series (`series.md`), Remotion project in `remotion/` | `facts.md` (the shipped `anyr` CLI and the Artifacts API docs) | on demand, not a CLI kind |
 
 A **generated** kind has a `film()` and is built into `.build/<kind>/film/`.
