@@ -1,0 +1,425 @@
+{
+ "main": {
+  "bpm": 124,
+  "tail": 2.4,
+  "gap": 0.28,
+  "lines": [
+   {
+    "id": "open",
+    "say": "Three months since launch. Let's run the numbers.",
+    "w": [
+     0.5,
+     0.5
+    ],
+    "scenes": [
+     {
+      "t": "title",
+      "chap": "light",
+      "kicker": "since launch \u00b7 Aug 5 to Nov 4, 2026",
+      "text": "3 months.",
+      "sub": "of AnyRouter"
+     },
+     {
+      "t": "words",
+      "chap": "light",
+      "text": "Let's run the numbers.",
+      "em": "numbers."
+     }
+    ]
+   },
+   {
+    "id": "users",
+    "say": "In three months, we went from under two thousand users to over fifteen thousand.",
+    "scenes": [
+     {
+      "t": "growth",
+      "chap": "light",
+      "phase": "total",
+      "total": [
+       1695,
+       1807,
+       2057,
+       2213,
+       2405,
+       2575,
+       2737,
+       2796,
+       2854,
+       2909,
+       2973,
+       3067,
+       12374,
+       15034
+      ],
+      "n": 15034,
+      "yMax": 16000,
+      "grid": [
+       0,
+       5000,
+       10000,
+       15000
+      ],
+      "label": "users",
+      "chip": "up from 1,695 on Aug 4",
+      "chartNote": "users, cumulative by week"
+     }
+    ]
+   },
+   {
+    "id": "activity",
+    "say": "Nearly six thousand were active in the last thirty days. Over two thousand on the busiest day.",
+    "scenes": [
+     {
+      "t": "growth",
+      "chap": "light",
+      "phase": "total",
+      "total": [
+       22,
+       19,
+       17,
+       21,
+       17,
+       14,
+       13,
+       22,
+       22,
+       18,
+       23,
+       28,
+       26,
+       30,
+       24,
+       57,
+       81,
+       91,
+       319,
+       972,
+       2288,
+       1737,
+       1460,
+       1073,
+       184,
+       416,
+       712,
+       432,
+       367,
+       322
+      ],
+      "n": 5966,
+      "yMax": 2500,
+      "grid": [
+       0,
+       1000,
+       2000
+      ],
+      "ticks": [
+       [
+        0,
+        "Oct 6"
+       ],
+       [
+        14,
+        "Oct 20"
+       ],
+       [
+        29,
+        "Nov 4"
+       ]
+      ],
+      "peak": [
+       20,
+       "2,288 on Oct 26"
+      ],
+      "label": "active users, last 30 days",
+      "chip": "over 2,000 on the busiest day",
+      "chartNote": "daily active users"
+     }
+    ]
+   },
+   {
+    "id": "key",
+    "say": "One API key. Every model. Routed for you.",
+    "scenes": [
+     {
+      "t": "fan",
+      "chap": "light",
+      "key": "sk-ar-v1-\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022",
+      "models": [
+       [
+        "anthropic/claude-opus-5",
+        "anthropic"
+       ],
+       [
+        "openai/gpt-6.1-sol",
+        "openai"
+       ],
+       [
+        "google/gemma-4-31b",
+        "google"
+       ],
+       [
+        "deepseek/deepseek-v4-pro",
+        "deepseek"
+       ],
+       [
+        "x-ai/grok-4.7",
+        "xai"
+       ],
+       [
+        "moonshotai/kimi-k3",
+        "moonshotai"
+       ],
+       [
+        "z-ai/glm-5.3",
+        "z-ai"
+       ],
+       [
+        "mistralai/mistral-large-4",
+        "mistral"
+       ],
+       [
+        "qwen/qwen-plus",
+        "qwen"
+       ],
+       [
+        "minimax/m3",
+        "minimax"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "models",
+    "say": "Three hundred and twenty-three models. Live right now.",
+    "scenes": [
+     {
+      "t": "stat",
+      "chap": "light",
+      "n": 323,
+      "label": "models live today",
+      "marquee": true
+     }
+    ]
+   },
+   {
+    "id": "added",
+    "say": "Two hundred and twenty of them, added in three months. That's more than two a day.",
+    "scenes": [
+     {
+      "t": "growth",
+      "chap": "light",
+      "phase": "total",
+      "total": [
+       0,
+       2,
+       19,
+       27,
+       34,
+       40,
+       48,
+       55,
+       82,
+       103,
+       142,
+       161,
+       187,
+       220
+      ],
+      "pipe": [
+       0,
+       0,
+       5,
+       8,
+       13,
+       17,
+       19,
+       22,
+       30,
+       37,
+       40,
+       46,
+       50,
+       56
+      ],
+      "label": "models added in 3 months",
+      "chip": "more than 2 a day",
+      "chartNote": "models added, cumulative by week"
+     }
+    ]
+   },
+   {
+    "id": "pipeline",
+    "say": "At least fifty-six of them were found by the catalog pipeline on its own.",
+    "scenes": [
+     {
+      "t": "growth",
+      "chap": "light",
+      "phase": "pipe",
+      "total": [
+       0,
+       2,
+       19,
+       27,
+       34,
+       40,
+       48,
+       55,
+       82,
+       103,
+       142,
+       161,
+       187,
+       220
+      ],
+      "pipe": [
+       0,
+       0,
+       5,
+       8,
+       13,
+       17,
+       19,
+       22,
+       30,
+       37,
+       40,
+       46,
+       50,
+       56
+      ],
+      "label": "found by the catalog pipeline",
+      "chip": "traced to monitor tickets and catalog jobs"
+     }
+    ]
+   },
+   {
+    "id": "traffic",
+    "say": "One point three million requests. Sixty-five billion tokens. In thirty days.",
+    "scenes": [
+     {
+      "t": "duo",
+      "chap": "light",
+      "a": {
+       "v": "1.3M",
+       "l": "requests"
+      },
+      "b": {
+       "v": "65B",
+       "l": "tokens"
+      },
+      "foot": "last 30 days, Oct 6 to Nov 4"
+     }
+    ]
+   },
+   {
+    "id": "route",
+    "say": "And when an upstream fails, AnyRouter routes around it. Your app never notices.",
+    "scenes": [
+     {
+      "t": "route",
+      "chap": "light"
+     }
+    ]
+   },
+   {
+    "id": "who",
+    "say": "So who builds all of this? Agents.",
+    "w": [
+     0.55,
+     0.45
+    ],
+    "scenes": [
+     {
+      "t": "words",
+      "chap": "dark",
+      "text": "Who builds all of this?",
+      "em": "this?"
+     },
+     {
+      "t": "wall",
+      "chap": "dark",
+      "word": "Agents"
+     }
+    ]
+   },
+   {
+    "id": "commits",
+    "say": "Four thousand five hundred and six commits. Three thousand four hundred and thirty-five pull requests merged.",
+    "scenes": [
+     {
+      "t": "duo",
+      "chap": "dark",
+      "roll": true,
+      "a": {
+       "n": 4506,
+       "l": "commits to main"
+      },
+      "b": {
+       "n": 3435,
+       "l": "pull requests merged"
+      },
+      "foot": "Aug 5 to Nov 4"
+     }
+    ]
+   },
+   {
+    "id": "ai",
+    "say": "More than two thousand of those commits were co-written by A.I. agents.",
+    "scenes": [
+     {
+      "t": "stat",
+      "chap": "dark",
+      "n": 2278,
+      "label": "commits co-written by AI agents",
+      "chip": "counted from co-author trailers"
+     }
+    ]
+   },
+   {
+    "id": "deploys",
+    "say": "Seven hundred and fifty-three deploys in three months. Up to fifty-nine in a single day.",
+    "scenes": [
+     {
+      "t": "stat",
+      "chap": "dark",
+      "n": 753,
+      "label": "deploys in 3 months",
+      "chip": "59 on Oct 31 alone",
+      "align": "right",
+      "bars": true
+     }
+    ]
+   },
+   {
+    "id": "cta",
+    "say": "And we're just getting started. AnyRouter dot dev.",
+    "scenes": [
+     {
+      "t": "cta",
+      "chap": "ember"
+     }
+    ]
+   }
+  ]
+ },
+ "short": {
+  "bpm": 124,
+  "tail": 2.2,
+  "gap": 0.22,
+  "use": [
+   "open",
+   "users",
+   "activity",
+   "models",
+   "added",
+   "pipeline",
+   "traffic",
+   "who",
+   "commits",
+   "ai",
+   "deploys",
+   "cta"
+  ]
+ }
+}

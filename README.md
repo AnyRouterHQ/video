@@ -27,6 +27,7 @@ Output lands in `renders/`.
 | `artifacts-launch-day1` | the Artifacts launch-day film (38 s), HyperFrames page from `build.py`; screenshots of public pages with sample data | its own files; `python3 build.py 16x9\|9x16 > index.html`, then render | on demand, not a CLI kind |
 | `relay-intro` | narrated `anyr relay` intro, HyperFrames page from `build.py`; `facts.md` is its claim ledger | its own files; needs `narration.wav` (kept out of git, see its `.gitignore`) and the segment and word timing JSON, which is missing from the source folder | on demand, not a CLI kind |
 | `artifacts-intro` | AnyRouter Artifacts: the narrated intro film and the 7-episode series (`series.md`), Remotion project in `remotion/` | `facts.md` (the shipped `anyr` CLI and the Artifacts API docs) | on demand, not a CLI kind |
+| `launch-recap-2026-11` | the launch recap (AnyRouter turns 3 months), Remotion project in `remotion/`, ElevenLabs voice-over; renders with `render_d5.sh` | its claim ledger `facts.md` and the raw reads in `facts-data/` stay local (private product repo and D1 numbers) | on demand, not a CLI kind |
 
 Every kind is a folder under `videos/` with a `kind.mjs`. Adding a fifth means
 adding a folder — nothing in the engine changes. The contract is the header of

@@ -1,0 +1,16 @@
+# sources only; renders go to the main clone's renders/launch-recap-2026-11/
+node_modules/
+out/
+review/
+*.mp4
+*.mov
+*.wav
+*.mp3
+audio/vo-cache/
+# unused ElevenLabs music trial: licence not confirmed by the owner (credits.md)
+audio/music/
+__pycache__/
+# raw reads from the private product repo and D1 (commit bodies, PR lists, per-day users); not for a public repo.
+# The claim ledger facts.md cites them, so it stays local too: renders/launch-recap-2026-11/facts/
+facts-data/
+facts.md

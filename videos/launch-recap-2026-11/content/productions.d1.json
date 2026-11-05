@@ -1,0 +1,337 @@
+{
+ "main": {
+  "bpm": 124,
+  "tail": 2.4,
+  "gap": 0.28,
+  "lines": [
+   {
+    "id": "open",
+    "say": "The last four months of AnyRouter. Let's run the numbers.",
+    "w": [
+     0.5,
+     0.5
+    ],
+    "scenes": [
+     {
+      "t": "title",
+      "chap": "light",
+      "kicker": "July to November 2026",
+      "text": "4 months.",
+      "sub": "of AnyRouter"
+     },
+     {
+      "t": "words",
+      "chap": "light",
+      "text": "Let's run the numbers.",
+      "em": "numbers."
+     }
+    ]
+   },
+   {
+    "id": "key",
+    "say": "One API key. Every model. Routed for you.",
+    "scenes": [
+     {
+      "t": "fan",
+      "chap": "light",
+      "key": "sk-ar-v1-\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022",
+      "models": [
+       [
+        "anthropic/claude-opus-5",
+        "anthropic"
+       ],
+       [
+        "openai/gpt-6.1-sol",
+        "openai"
+       ],
+       [
+        "google/gemma-4-31b",
+        "google"
+       ],
+       [
+        "deepseek/deepseek-v4-pro",
+        "deepseek"
+       ],
+       [
+        "x-ai/grok-4.7",
+        "xai"
+       ],
+       [
+        "moonshotai/kimi-k3",
+        "moonshotai"
+       ],
+       [
+        "z-ai/glm-5.3",
+        "z-ai"
+       ],
+       [
+        "mistralai/mistral-large-4",
+        "mistral"
+       ],
+       [
+        "qwen/qwen-plus",
+        "qwen"
+       ],
+       [
+        "minimax/m3",
+        "minimax"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "models",
+    "say": "Three hundred and twenty-three models. Live right now.",
+    "scenes": [
+     {
+      "t": "stat",
+      "chap": "light",
+      "n": 323,
+      "label": "models live today",
+      "marquee": true
+     }
+    ]
+   },
+   {
+    "id": "added",
+    "say": "Two hundred and seventy-two of them, added in four months. That's more than two a day.",
+    "scenes": [
+     {
+      "t": "stat",
+      "chap": "light",
+      "n": 272,
+      "label": "models added in 4 months",
+      "chip": "more than 2 a day",
+      "align": "right"
+     }
+    ]
+   },
+   {
+    "id": "users",
+    "say": "Over fifteen thousand accounts.",
+    "scenes": [
+     {
+      "t": "stat",
+      "chap": "light",
+      "n": 15015,
+      "label": "accounts",
+      "chart": [
+       40,
+       118,
+       871,
+       908,
+       876,
+       486,
+       11356
+      ],
+      "chartLabels": [
+       "Apr",
+       "May",
+       "Jun",
+       "Jul",
+       "Aug",
+       "Sep",
+       "Oct"
+      ],
+      "chartNote": "signups per month"
+     }
+    ]
+   },
+   {
+    "id": "mau",
+    "say": "Nearly six thousand active in the last thirty days. Three hundred sixty-seven on a single day.",
+    "w": [
+     0.55,
+     0.45
+    ],
+    "scenes": [
+     {
+      "t": "stat",
+      "chap": "light",
+      "n": 5878,
+      "label": "active users, last 30 days",
+      "align": "right"
+     },
+     {
+      "t": "stat",
+      "chap": "light",
+      "n": 367,
+      "label": "active on Nov 3 alone",
+      "small": true
+     }
+    ]
+   },
+   {
+    "id": "traffic",
+    "say": "One point two million requests. Sixty billion tokens. In thirty days.",
+    "scenes": [
+     {
+      "t": "duo",
+      "chap": "light",
+      "a": {
+       "v": "1.2M",
+       "l": "requests"
+      },
+      "b": {
+       "v": "60B",
+       "l": "tokens"
+      },
+      "foot": "last 30 days, Oct 5 to Nov 3"
+     }
+    ]
+   },
+   {
+    "id": "route",
+    "say": "And when an upstream fails, AnyRouter routes around it. Your app never notices.",
+    "scenes": [
+     {
+      "t": "route",
+      "chap": "light"
+     }
+    ]
+   },
+   {
+    "id": "who",
+    "say": "So who builds all of this? Agents.",
+    "w": [
+     0.55,
+     0.45
+    ],
+    "scenes": [
+     {
+      "t": "words",
+      "chap": "dark",
+      "text": "Who builds all of this?",
+      "em": "this?"
+     },
+     {
+      "t": "wall",
+      "chap": "dark",
+      "word": "Agents"
+     }
+    ]
+   },
+   {
+    "id": "commits",
+    "say": "Five thousand seven hundred and ninety commits. Three thousand six hundred and four pull requests merged.",
+    "scenes": [
+     {
+      "t": "duo",
+      "chap": "dark",
+      "roll": true,
+      "a": {
+       "n": 5790,
+       "l": "commits to main"
+      },
+      "b": {
+       "n": 3604,
+       "l": "pull requests merged"
+      },
+      "foot": "Jul 5 to Nov 4"
+     }
+    ]
+   },
+   {
+    "id": "ai",
+    "say": "More than two thousand of those commits were co-written by A.I. agents.",
+    "scenes": [
+     {
+      "t": "stat",
+      "chap": "dark",
+      "n": 2244,
+      "label": "commits co-written by AI agents",
+      "chip": "counted from co-author trailers"
+     }
+    ]
+   },
+   {
+    "id": "fleet",
+    "say": "Eighteen scheduled agent jobs watch production, hunt for new models, and heal the catalog.",
+    "scenes": [
+     {
+      "t": "fleet",
+      "chap": "dark",
+      "jobs": [
+       "github-issues",
+       "model-hunt",
+       "prod-health",
+       "goal-watchdog",
+       "catalog-heal",
+       "model-info-steward",
+       "error-rootcause",
+       "self-heal",
+       "posthog-insights",
+       "kb-garden",
+       "self-improve",
+       "morning-summary",
+       "summary-video",
+       "daily-news-reel",
+       "model-db-sync",
+       "benchmark-sync",
+       "cta-ctr",
+       "health-sweep"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "tickets",
+    "say": "Monitors filed over a thousand tickets on their own. Nearly all of them are already closed.",
+    "scenes": [
+     {
+      "t": "pile",
+      "chap": "dark",
+      "n": 1017,
+      "label": "tickets filed by monitors",
+      "closed": 1004
+     }
+    ]
+   },
+   {
+    "id": "deploys",
+    "say": "Seven hundred and thirty-five deploys since August. Up to fifty-nine in a single day.",
+    "scenes": [
+     {
+      "t": "stat",
+      "chap": "dark",
+      "n": 735,
+      "label": "deploys since Aug 5",
+      "chip": "59 on Oct 31 alone",
+      "align": "right",
+      "bars": true
+     }
+    ]
+   },
+   {
+    "id": "cta",
+    "say": "And we're just getting started. AnyRouter dot dev.",
+    "scenes": [
+     {
+      "t": "cta",
+      "chap": "ember"
+     }
+    ]
+   }
+  ]
+ },
+ "short": {
+  "bpm": 124,
+  "tail": 2.2,
+  "gap": 0.22,
+  "use": [
+   "open",
+   "models",
+   "users",
+   "mau",
+   "traffic",
+   "route",
+   "who",
+   "commits",
+   "ai",
+   "tickets",
+   "deploys",
+   "cta"
+  ]
+ }
+}
