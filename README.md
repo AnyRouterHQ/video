@@ -24,6 +24,7 @@ Output lands in `renders/`.
 | `model-drop` | models added to the catalog, and price moves | [`/api/v1/models`](https://anyrouter.dev/api/v1/models?all=1), diffed against a baseline | nightly |
 | `changelog` | one day of changelog entries | the *Model releases* section of [`/llms.txt`](https://anyrouter.dev/llms.txt) | nightly |
 | `use-case` | one short silent film per use case, for its page on anyrouter.dev/use-cases. Each use case is its own release | [`/use-cases.json`](https://anyrouter.dev/use-cases.json) | on demand |
+| `artifacts-launch-day1` | the Artifacts launch-day film (38 s), HyperFrames page from `build.py`; screenshots of public pages with sample data | its own files; `python3 build.py 16x9\|9x16 > index.html`, then render | on demand, not a CLI kind |
 
 Every kind is a folder under `videos/` with a `kind.mjs`. Adding a fifth means
 adding a folder — nothing in the engine changes. The contract is the header of

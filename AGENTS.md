@@ -56,6 +56,7 @@ releases/<kind>/   the ledger, and the facts each film was cut from (committed)
 | `explainer` | the narrated newcomer explainer, built with the HyperFrames product-launch workflow; tools in `shared/authoring/` | its own files | on demand |
 | `openrouter-unblock` | the narrated OpenRouter rate-limit tutorial, same series look and tools | its own files | on demand |
 | `use-case` | one short silent film per use case, embedded on its anyrouter.dev/use-cases page. Each use case is its own release | `/use-cases.json` | on demand |
+| `artifacts-launch-day1` | the Artifacts launch-day film (38 s), HyperFrames page from `build.py`; screenshots of public pages with sample data | its own files; `python3 build.py 16x9\|9x16 > index.html`, then render | on demand, not a CLI kind |
 
 A **generated** kind has a `film()` and is built into `.build/<kind>/film/`.
 An **authored** kind has none: `videos/<kind>/index.html` is rendered as it is,
