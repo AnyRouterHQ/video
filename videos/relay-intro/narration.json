@@ -1,0 +1,17 @@
+[
+ {"scene":"hook","show":"Your Mac already runs good models.","say":"Your Mac already runs good models."},
+ {"scene":"problem","show":"But they're stuck on one machine, behind a different API.","say":"But they're stuck on one machine, behind a different A P I."},
+ {"scene":"problem","show":"Your apps can't reach them.","say":"Your apps can't reach them."},
+ {"scene":"command","show":"AnyRouter fixes that with one command:","say":"Any Router fixes that with one command."},
+ {"scene":"command","show":"anyr relay start","say":"any are relay start."},
+ {"scene":"flow","show":"Your app calls AnyRouter with the key you already use.","say":"Your app calls Any Router with the key you already use."},
+ {"scene":"flow","show":"The edge reaches your Mac through a secure tunnel your Mac opened itself, so no ports are open.","say":"The edge reaches your Mac through a secure tunnel your Mac opened itself, so no ports are open."},
+ {"scene":"flow","show":"Apple's Foundation Model, Perplexity's Decider, Ollama or LM Studio answers, and the reply streams back.","say":"Apple's Foundation Model, Perplexity's Decider, Oh llama, or L M Studio answers, and the reply streams back."},
+ {"scene":"only","show":"And it's only you.","say":"And it's only you."},
+ {"scene":"only","show":"Your Mac answers your requests, nobody else's.","say":"Your Mac answers your requests. Nobody else's."},
+ {"scene":"compare","show":"In the playground, put the Decider on your Mac next to a hosted decision model like Jev.","say":"In the playground, put the Decider on your Mac next to a hosted decision model, like Jev."},
+ {"scene":"compare","show":"See both answers, and their timing, side by side.","say":"See both answers, and their timing, side by side."},
+ {"scene":"cta","show":"Update, then start:","say":"Update, then start."},
+ {"scene":"cta","show":"anyr upgrade && anyr relay start","say":"any are upgrade, then any are relay start."},
+ {"scene":"cta","show":"anyrouter.dev","say":"Any Router dot dev."}
+]

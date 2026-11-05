@@ -1,0 +1,5 @@
+output/
+index.html
+*.mp4
+# narration.wav (2.4 MB): the voice-over has no licence record here; it stays in renders/relay-intro/.
+assets/narration.wav
