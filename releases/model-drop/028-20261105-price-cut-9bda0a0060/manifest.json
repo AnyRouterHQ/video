@@ -1,0 +1,22 @@
+{
+  "id": "028-20261105-price-cut-9bda0a0060",
+  "hash": "9bda0a0060",
+  "kind": "model-drop",
+  "label": "price-cut",
+  "title": "Price drop: deepseek-v3.2-exp down 5%",
+  "seconds": 20,
+  "renderedAt": "2026-11-05T15:30:15.818Z",
+  "commit": "ecdc102",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-028-20261105-price-cut-9bda0a0060.mp4",
+      "cover": "renders/model-drop-028-20261105-price-cut-9bda0a0060.png"
+    }
+  },
+  "source": "renders/model-drop-028-20261105-price-cut-9bda0a0060-source.tar.gz",
+  "createdAt": "2026-11-05T15:30:15.824Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-32e47a29d929e60eeee4",
+    "draft": true
+  }
+}
