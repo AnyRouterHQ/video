@@ -24,3 +24,23 @@ Sources: customer docs `src/content/docs/api-reference/artifacts.md` (main @ 2fa
 | Download buttons need a content domain not yet enabled | Do not show | docs |
 
 Never show: any private artifact or any row of the owner's list. Demo pages use made-up data only.
+
+## Film recheck (2026-11-06, `film/`)
+
+CLI `anyrouter-dev/cli` v0.1.37 is still the latest stable release (v0.1.38-beta.* are pre-releases); its `anyr artifact` help text matches the flags above. Docs reread live at https://anyrouter.dev/docs/api-reference/artifacts.md.
+
+| Claim in the film | Source |
+|---|---|
+| "Publish it with one command. You get a link right away." | real run, anyr 0.1.37 (`film/captures/term-publish.typescript`, gitignored): `anyr artifact publish weekly --title "Greenhouse, week 44"` printed `https://anyrouter.dev/a/HS4tCzrfNwHpMG4l` and `published version 1` |
+| "It starts private, so only you can open it." | the same run printed the CLI's private hint; docs visibility table |
+| "Make it unlisted, and anyone with the link can open the page." | real run: `anyr artifact visibility HS4tCzrfNwHpMG4l unlisted`; docs: unlisted = anyone with the URL |
+| document with an outline from your headings | docs "Publish a document" |
+| "A line with three dashes starts a new slide." | docs "Publish slides" |
+| Mermaid "drawn in the reader's browser" | docs "Kinds" |
+| "One React file becomes a live component. The buttons work." | docs "Publish a React component"; capture clicks "+ 1 cup" three times on the live demo |
+| "Tailwind works, and so do Recharts and D3." | docs: Tailwind classes work; `recharts`, `d3` in the import list |
+| "Version two lands at the same link" | real run: `anyr artifact publish weekly --id HS4tCzrfNwHpMG4l --label "fix chart"` printed `published version 2` |
+| private / unlisted / public in the gallery | docs visibility table and "Public gallery" |
+| "no server to set up and nothing to deploy" | docs: the artifact is served at `anyrouter.dev/a/{id}` |
+
+New demo artifact for the film: `HS4tCzrfNwHpMG4l` ("Greenhouse, week 44", the made-up `demos/weekly` page), unlisted, versions 1 and 2. Page captures are signed out (`film/capture.mjs`).

@@ -12,3 +12,5 @@ audio/vo-cache/
 captures/
 remotion/public/c-*.png
 __pycache__/
+film/remotion/public/caps/
+film/audio/vo-cache/

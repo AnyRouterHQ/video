@@ -1,5 +1,26 @@
 # Voice-over scripts (spoken form; pronunciation respellings in brackets are for the TTS only)
 
+## film: AnyRouter Artifacts (2026-11-06, `film/`)
+
+Voice: ElevenLabs Liam (`TX3LPaxmHKxFdv7VOQHJ`, `eleven_multilingual_v2`), the launch recap's voice and settings. One production, rendered at 16:9 and 9:16, so both renditions say the same words. File names, flags and commands appear on screen only; the voice says plain words, so the burned-in captions carry no file syntax. Claims: `facts.md` (CLI v0.1.37, docs api-reference/artifacts, reread 2026-11-06).
+
+1. Your agent built a page. Now you want to share it.  (title)
+2. It might be a report, a plan, a deck, a diagram or a small tool.  (the five demo pages, dealt like cards)
+3. Publish it with one command. You get a link right away. It starts private, so only you can open it.  (real terminal: `anyr artifact publish weekly`, its real output (URL, version 1, the private hint))
+4. Make it unlisted, and anyone with the link can open the page.  (real terminal: `anyr artifact visibility <id> unlisted`, then the page)
+5. Write markdown, and it can become a document, with an outline built from your headings.  (`.doc.md` capture, scrolled)
+6. Or a slide deck. A line with three dashes starts a new slide.  (`.slides.md` captures, slides 1 to 3)
+7. A Mermaid file becomes a diagram, drawn in the reader's browser.  (`.mmd` capture)
+8. One React file becomes a live component. The buttons work.  (`.tsx` capture, three clicks on "+ 1 cup")
+9. Tailwind works, and so do Recharts and D3.  (words)
+10. Change something and publish again to the same artifact. Version two lands at the same link, so everyone who has it sees the new version.  (real terminal: `--id`, "published version 2")
+11. Keep it private, share it unlisted, or make it public in the gallery.  (three visibility cards)
+12. There is no server to set up and nothing to deploy.  (words)
+13. AnyRouter Artifacts. Start at AnyRouter dot dev.  (end card)
+
+
+## Hero and the 7 episodes (2026-11-02, `remotion/`)
+
 Voice: Kokoro af_heart at speed 1.1, local. Hero: 87 words, about 180 wpm while speaking (29 s of speech), 147 wpm averaged over the 35.6 s film including pauses and the end card. Timings below come from `remotion/public/<id>.timeline.json`.
 
 
