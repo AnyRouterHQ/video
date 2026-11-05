@@ -1,0 +1,119 @@
+{
+ "id": "ep1",
+ "fps": 30,
+ "bpm": 128,
+ "total": 26.25,
+ "voEnd": 20.649541666666668,
+ "lines": [
+  {
+   "say": "One command. One link.",
+   "start": 0.234375,
+   "dur": 1.5786666666666667,
+   "scenes": [
+    {
+     "t": "slam",
+     "text": "One link.",
+     "start": 0.234375,
+     "end": 2.578125
+    }
+   ],
+   "w": null,
+   "wav": "1579177e2dc580c0.wav",
+   "end": 2.578125
+  },
+  {
+   "say": "Your agent made a page. Run anyr artifact publish on it.",
+   "start": 2.578125,
+   "dur": 3.541333333333333,
+   "scenes": [
+    {
+     "t": "term",
+     "cmd": "anyr artifact publish report.html",
+     "out": [
+      "https://anyrouter.dev/a/jGceYxza4GnHozIx",
+      "\u2713 published version 1"
+     ],
+     "start": 2.578125,
+     "end": 6.796875
+    }
+   ],
+   "w": null,
+   "wav": "0faf4d0d57e60f59.wav",
+   "end": 6.796875
+  },
+  {
+   "say": "You get a URL that opens in any browser.",
+   "start": 6.796875,
+   "dur": 2.56,
+   "scenes": [
+    {
+     "t": "shot",
+     "key": "report",
+     "label": "Report",
+     "ext": ".html",
+     "start": 6.796875,
+     "end": 10.078125
+    }
+   ],
+   "w": null,
+   "wav": "4622c40c045b3061.wav",
+   "end": 10.078125
+  },
+  {
+   "say": "Reports, docs, slides, diagrams. It all takes the same command.",
+   "start": 10.078125,
+   "dur": 4.032,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "Same command for everything.",
+     "em": "everything.",
+     "start": 10.078125,
+     "end": 14.765625
+    }
+   ],
+   "w": null,
+   "wav": "a43ea09839ca43a3.wav",
+   "end": 14.765625
+  },
+  {
+   "say": "No hosting to set up. No deploy to run.",
+   "start": 14.765625,
+   "dur": 2.5813333333333333,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "No hosting.",
+     "em": "",
+     "start": 14.765625,
+     "end": 16.40625
+    },
+    {
+     "t": "type",
+     "text": "No deploy.",
+     "em": "",
+     "start": 16.40625,
+     "end": 18.046875
+    }
+   ],
+   "w": null,
+   "wav": "04feaff670220660.wav",
+   "end": 18.046875
+  },
+  {
+   "say": "Any Router Artifacts. Any router dot dev.",
+   "start": 18.046875,
+   "dur": 2.6026666666666665,
+   "scenes": [
+    {
+     "t": "cta",
+     "start": 18.046875,
+     "end": 26.25
+    }
+   ],
+   "w": null,
+   "wav": "cbbf4ed25b8f842f.wav",
+   "end": 26.25
+  }
+ ]
+}

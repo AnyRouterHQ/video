@@ -1,0 +1,14 @@
+# sources only; renders go to the main clone's renders/artifacts-intro/
+node_modules/
+out/
+output/
+*.mp4
+*.mov
+*.wav
+*.mp3
+audio/vo/
+audio/vo-cache/
+# page captures (made-up data, from the demo artifacts in series.md); the copy lives in renders/artifacts-intro/captures/
+captures/
+remotion/public/c-*.png
+__pycache__/

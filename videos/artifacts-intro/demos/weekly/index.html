@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Greenhouse, week 44</title>
+<style>
+:root{--ink:#18181b;--muted:#71717a;--line:#e4e4e7;--soft:#f4f4f5;--acc:#c2410c}
+*{box-sizing:border-box;margin:0}
+body{font:16px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;padding:40px 24px}
+main{max-width:960px;margin:0 auto}
+.eyebrow{font-size:13px;color:var(--muted)}
+h1{font-size:40px;line-height:1.1;font-weight:500;letter-spacing:-.025em;margin:6px 0 8px}
+.lede{color:var(--muted);max-width:560px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:28px 0}
+.stat{background:var(--soft);border-radius:14px;padding:16px 18px}
+.stat b{display:block;font-size:28px;font-weight:500;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+.card{border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h2{font-size:16px;font-weight:600;margin-bottom:4px}
+.card p{font-size:13px;color:var(--muted);margin-bottom:12px}
+svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:16px;font-size:13px;color:var(--muted);margin-top:10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+footer{margin-top:24px;font-size:12px;color:var(--muted)}
+</style></head><body><main>
+<div class="eyebrow">Sample data · weekly report</div>
+<h1>Greenhouse, week 44</h1>
+<p class="lede">Temperature and soil moisture from four sensors, Monday to Sunday.</p>
+<div class="stats">
+ <div class="stat"><b>21.4°C</b><span>Average temperature</span></div>
+ <div class="stat"><b>38%</b><span>Average soil moisture</span></div>
+ <div class="stat"><b>4</b><span>Watering runs</span></div>
+ <div class="stat"><b>4 / 4</b><span>Sensors online</span></div>
+</div>
+<div class="card">
+ <h2>Temperature by day</h2><p>Daily average, °C</p>
+ <svg viewBox="0 0 700 240" role="img" aria-label="Temperature by day">
+  <g stroke="#e4e4e7"><line x1="40" y1="30" x2="690" y2="30"/><line x1="40" y1="90" x2="690" y2="90"/><line x1="40" y1="150" x2="690" y2="150"/><line x1="40" y1="210" x2="690" y2="210"/></g>
+  <g font-size="12" fill="#71717a"><text x="8" y="34">24</text><text x="8" y="94">22</text><text x="8" y="154">20</text><text x="8" y="214">18</text></g>
+  <g fill="#18181b">
+   <rect x="62" y="120" width="56" height="90" rx="6"/><rect x="154" y="105" width="56" height="105" rx="6"/><rect x="246" y="90" width="56" height="120" rx="6"/><rect x="338" y="60" width="56" height="150" rx="6"/><rect x="430" y="98" width="56" height="112" rx="6"/><rect x="522" y="128" width="56" height="82" rx="6"/><rect x="614" y="112" width="56" height="98" rx="6"/>
+  </g>
+  <g font-size="12" fill="#71717a" text-anchor="middle"><text x="90" y="232">Mon</text><text x="182" y="232">Tue</text><text x="274" y="232">Wed</text><text x="366" y="232">Thu</text><text x="458" y="232">Fri</text><text x="550" y="232">Sat</text><text x="642" y="232">Sun</text></g>
+ </svg>
+ <div class="legend"><span><i style="background:#18181b"></i>Daily average</span></div>
+</div>
+<footer>Made by an agent from four CSV files. Sample data for a demo.</footer>
+</main></body></html>

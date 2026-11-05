@@ -1,0 +1,219 @@
+{
+ "id": "hero",
+ "fps": 30,
+ "bpm": 128,
+ "total": 35.625,
+ "voEnd": 33.968875,
+ "lines": [
+  {
+   "say": "Your agent just made something great. Now what?",
+   "start": 0.234375,
+   "dur": 2.517333333333333,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "Your agent made something great.",
+     "em": "great.",
+     "start": 0.234375,
+     "end": 2.34375
+    },
+    {
+     "t": "type",
+     "text": "Now what?",
+     "em": "what?",
+     "start": 2.34375,
+     "end": 3.28125
+    }
+   ],
+   "w": [
+    0.62,
+    0.38
+   ],
+   "wav": "6c031720037e5afe.wav",
+   "end": 3.28125
+  },
+  {
+   "say": "Screenshot it? Zip it? Paste it in chat?",
+   "start": 3.28125,
+   "dur": 2.3466666666666667,
+   "scenes": [
+    {
+     "t": "strike",
+     "items": [
+      "Screenshot it?",
+      "Zip it?",
+      "Paste it in chat?"
+     ],
+     "start": 3.28125,
+     "end": 6.09375
+    }
+   ],
+   "w": null,
+   "wav": "1a98433a578c5b89.wav",
+   "end": 6.09375
+  },
+  {
+   "say": "Publish it. One command.",
+   "start": 6.09375,
+   "dur": 1.5146666666666666,
+   "scenes": [
+    {
+     "t": "slam",
+     "text": "Publish it.",
+     "start": 6.09375,
+     "end": 8.203125
+    }
+   ],
+   "w": null,
+   "wav": "fbf4cb985b766cd5.wav",
+   "end": 8.203125
+  },
+  {
+   "say": "Any are artifact publish. And out comes a link.",
+   "start": 8.203125,
+   "dur": 2.7093333333333334,
+   "scenes": [
+    {
+     "t": "term",
+     "cmd": "anyr artifact publish dashboard.html",
+     "out": [
+      "https://anyrouter.dev/a/D0ejLCsKtXvtIXc5",
+      "\u2713 published version 1"
+     ],
+     "start": 8.203125,
+     "end": 11.484375
+    }
+   ],
+   "w": null,
+   "wav": "ea878f43696131bd.wav",
+   "end": 11.484375
+  },
+  {
+   "say": "A report. A document. A slide deck. A diagram. Even a live React component.",
+   "start": 11.484375,
+   "dur": 5.205333333333333,
+   "scenes": [
+    {
+     "t": "shot",
+     "key": "dash",
+     "label": "Dashboard",
+     "ext": ".html",
+     "start": 11.484375,
+     "end": 12.65625
+    },
+    {
+     "t": "shot",
+     "key": "doc",
+     "label": "Document",
+     "ext": ".doc.md",
+     "start": 12.65625,
+     "end": 13.828125
+    },
+    {
+     "t": "shot",
+     "key": "slides",
+     "label": "Slides",
+     "ext": ".slides.md",
+     "start": 13.828125,
+     "end": 15.0
+    },
+    {
+     "t": "shot",
+     "key": "flow",
+     "label": "Diagram",
+     "ext": ".mmd",
+     "start": 15.0,
+     "end": 16.171875
+    },
+    {
+     "t": "shot",
+     "key": "react",
+     "label": "React",
+     "ext": ".tsx",
+     "start": 16.171875,
+     "end": 17.34375
+    }
+   ],
+   "w": null,
+   "wav": "fdcc0be88e8d8b08.wav",
+   "end": 17.34375
+  },
+  {
+   "say": "Every artifact gets a stable U R L, and every new version lands at the same link.",
+   "start": 17.34375,
+   "dur": 4.757333333333333,
+   "scenes": [
+    {
+     "t": "stack",
+     "labels": [
+      "v4",
+      "v3",
+      "v2",
+      "v1"
+     ],
+     "url": "anyrouter.dev/a/D0ejLCsKtXvtIXc5",
+     "start": 17.34375,
+     "end": 22.734375
+    }
+   ],
+   "w": null,
+   "wav": "e64817a064e47507.wav",
+   "end": 22.734375
+  },
+  {
+   "say": "Private by default. Unlisted when you share. Public when you're proud.",
+   "start": 22.734375,
+   "dur": 3.6906666666666665,
+   "scenes": [
+    {
+     "t": "vis",
+     "cycle": true,
+     "start": 22.734375,
+     "end": 26.953125
+    }
+   ],
+   "w": null,
+   "wav": "d5ed5f087c2851f8.wav",
+   "end": 26.953125
+  },
+  {
+   "say": "No hosting. No deploy.",
+   "start": 26.953125,
+   "dur": 1.6853333333333333,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "No hosting.",
+     "em": "",
+     "start": 26.953125,
+     "end": 28.125
+    },
+    {
+     "t": "type",
+     "text": "No deploy.",
+     "em": "",
+     "start": 28.125,
+     "end": 29.296875
+    }
+   ],
+   "w": null,
+   "wav": "010bf3eb42cb4dbf.wav",
+   "end": 29.296875
+  },
+  {
+   "say": "Any Router Artifacts. Publish anything your agent makes. Any router dot dev.",
+   "start": 29.296875,
+   "dur": 4.672,
+   "scenes": [
+    {
+     "t": "cta",
+     "start": 29.296875,
+     "end": 35.625
+    }
+   ],
+   "w": null,
+   "wav": "2d0577ea79c839a5.wav",
+   "end": 35.625
+  }
+ ]
+}

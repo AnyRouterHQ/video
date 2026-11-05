@@ -1,0 +1,113 @@
+{
+ "id": "ep5",
+ "fps": 30,
+ "bpm": 128,
+ "total": 24.375,
+ "voEnd": 18.305791666666668,
+ "lines": [
+  {
+   "say": "Not just pages. Live components.",
+   "start": 0.234375,
+   "dur": 2.1973333333333334,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "Not just pages. Live components.",
+     "em": "Live",
+     "start": 0.234375,
+     "end": 3.28125
+    }
+   ],
+   "w": null,
+   "wav": "4b9a3151ec8b18dc.wav",
+   "end": 3.28125
+  },
+  {
+   "say": "One React file with a default export.",
+   "start": 3.28125,
+   "dur": 2.304,
+   "scenes": [
+    {
+     "t": "term",
+     "cmd": "anyr artifact publish Tracker.tsx",
+     "out": [
+      "https://anyrouter.dev/a/xoAsDaiSHDszjpdo",
+      "\u2713 published version 1"
+     ],
+     "start": 3.28125,
+     "end": 6.328125
+    }
+   ],
+   "w": null,
+   "wav": "9ea23030a99239e0.wav",
+   "end": 6.328125
+  },
+  {
+   "say": "Tailwind works. So do recharts, lucide and d three.",
+   "start": 6.328125,
+   "dur": 3.2853333333333334,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "Tailwind. Recharts. Lucide. D3.",
+     "em": "",
+     "start": 6.328125,
+     "end": 10.3125
+    }
+   ],
+   "w": null,
+   "wav": "50c776437783c6cc.wav",
+   "end": 10.3125
+  },
+  {
+   "say": "Publish it, and the buttons really click.",
+   "start": 10.3125,
+   "dur": 1.984,
+   "scenes": [
+    {
+     "t": "shot",
+     "key": "react",
+     "label": "React",
+     "ext": ".tsx",
+     "start": 10.3125,
+     "end": 13.125
+    }
+   ],
+   "w": null,
+   "wav": "d9a311b1b1b552df.wav",
+   "end": 13.125
+  },
+  {
+   "say": "Charts, buttons, whole little tools.",
+   "start": 13.125,
+   "dur": 1.8133333333333332,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "Charts. Buttons. Little tools.",
+     "em": "",
+     "start": 13.125,
+     "end": 15.703125
+    }
+   ],
+   "w": null,
+   "wav": "6c4a96cb27615064.wav",
+   "end": 15.703125
+  },
+  {
+   "say": "Any Router Artifacts. Any router dot dev.",
+   "start": 15.703125,
+   "dur": 2.6026666666666665,
+   "scenes": [
+    {
+     "t": "cta",
+     "start": 15.703125,
+     "end": 24.375
+    }
+   ],
+   "w": null,
+   "wav": "cbbf4ed25b8f842f.wav",
+   "end": 24.375
+  }
+ ]
+}

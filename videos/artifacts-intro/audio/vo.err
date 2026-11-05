@@ -1,0 +1,2 @@
+heavy.sh: waiting for the heavy lock held by PID 2505805 for 6s: env NODE_OPTIONS=--max-old-space-size=2048 pnpm install --frozen-lockfile --prefer-offline --config.package-import-method=hardlink --config.confirmModulesPurge=false --offline
+heavy.sh: waiting for the heavy lock (holder record is stale: pid 2497844 is gone, so a light run holds it)

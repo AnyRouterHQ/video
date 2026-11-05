@@ -1,0 +1,116 @@
+{
+ "id": "ep6",
+ "fps": 30,
+ "bpm": 128,
+ "total": 22.5,
+ "voEnd": 17.133916666666668,
+ "lines": [
+  {
+   "say": "Changed something? Same link.",
+   "start": 0.234375,
+   "dur": 1.6426666666666667,
+   "scenes": [
+    {
+     "t": "slam",
+     "text": "Same link.",
+     "start": 0.234375,
+     "end": 2.578125
+    }
+   ],
+   "w": null,
+   "wav": "ecb337f2eb5bb57b.wav",
+   "end": 2.578125
+  },
+  {
+   "say": "Publish again with the id.",
+   "start": 2.578125,
+   "dur": 1.5146666666666666,
+   "scenes": [
+    {
+     "t": "term",
+     "cmd": "anyr artifact publish report.html --id jGceYxza4GnHozIx",
+     "out": [
+      "https://anyrouter.dev/a/jGceYxza4GnHozIx",
+      "\u2713 published version 2"
+     ],
+     "start": 2.578125,
+     "end": 4.921875
+    }
+   ],
+   "w": null,
+   "wav": "5cfd4d2c08bd19f8.wav",
+   "end": 4.921875
+  },
+  {
+   "say": "A new numbered version lands at the same U R L.",
+   "start": 4.921875,
+   "dur": 2.688,
+   "scenes": [
+    {
+     "t": "stack",
+     "labels": [
+      "v4",
+      "v3",
+      "v2",
+      "v1"
+     ],
+     "url": "anyrouter.dev/a/jGceYxza4GnHozIx",
+     "start": 4.921875,
+     "end": 8.4375
+    }
+   ],
+   "w": null,
+   "wav": "ab83ab5d8aeebc5a.wav",
+   "end": 8.4375
+  },
+  {
+   "say": "Whoever opens the link sees the latest.",
+   "start": 8.4375,
+   "dur": 2.048,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "Same link. Latest version.",
+     "em": "Latest",
+     "start": 8.4375,
+     "end": 11.25
+    }
+   ],
+   "w": null,
+   "wav": "754a82498369cfae.wav",
+   "end": 11.25
+  },
+  {
+   "say": "Every version is kept, numbered one, two, three.",
+   "start": 11.25,
+   "dur": 2.453333333333333,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "v1. v2. v3.",
+     "em": "",
+     "start": 11.25,
+     "end": 14.53125
+    }
+   ],
+   "w": null,
+   "wav": "249aadd7f0e98bb6.wav",
+   "end": 14.53125
+  },
+  {
+   "say": "Any Router Artifacts. Any router dot dev.",
+   "start": 14.53125,
+   "dur": 2.6026666666666665,
+   "scenes": [
+    {
+     "t": "cta",
+     "start": 14.53125,
+     "end": 22.5
+    }
+   ],
+   "w": null,
+   "wav": "cbbf4ed25b8f842f.wav",
+   "end": 22.5
+  }
+ ]
+}

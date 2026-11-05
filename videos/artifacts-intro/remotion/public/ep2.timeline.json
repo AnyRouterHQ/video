@@ -1,0 +1,113 @@
+{
+ "id": "ep2",
+ "fps": 30,
+ "bpm": 128,
+ "total": 24.375,
+ "voEnd": 19.243291666666668,
+ "lines": [
+  {
+   "say": "Markdown is fine. A document is better.",
+   "start": 0.234375,
+   "dur": 2.432,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "A document, not a text file.",
+     "em": "document,",
+     "start": 0.234375,
+     "end": 3.515625
+    }
+   ],
+   "w": null,
+   "wav": "71c74964919d2c25.wav",
+   "end": 3.515625
+  },
+  {
+   "say": "Name it dot doc dot md, and publish.",
+   "start": 3.515625,
+   "dur": 2.496,
+   "scenes": [
+    {
+     "t": "term",
+     "cmd": "anyr artifact publish plan.doc.md",
+     "out": [
+      "https://anyrouter.dev/a/he4TQFDkS45HTbxz",
+      "\u2713 published version 1"
+     ],
+     "start": 3.515625,
+     "end": 6.796875
+    }
+   ],
+   "w": null,
+   "wav": "87266058c5a6bb69.wav",
+   "end": 6.796875
+  },
+  {
+   "say": "Readers get a title, a byline and an outline beside the text.",
+   "start": 6.796875,
+   "dur": 3.6053333333333333,
+   "scenes": [
+    {
+     "t": "shot",
+     "key": "doc",
+     "label": "Document",
+     "ext": ".doc.md",
+     "start": 6.796875,
+     "end": 11.25
+    }
+   ],
+   "w": null,
+   "wav": "e927fc7bfc4f9ac7.wav",
+   "end": 11.25
+  },
+  {
+   "say": "Your headings become the outline.",
+   "start": 11.25,
+   "dur": 1.6853333333333333,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "Headings become the outline.",
+     "em": "outline.",
+     "start": 11.25,
+     "end": 13.59375
+    }
+   ],
+   "w": null,
+   "wav": "b5763c371d287aaf.wav",
+   "end": 13.59375
+  },
+  {
+   "say": "Perfect for plans, specs and reports.",
+   "start": 13.59375,
+   "dur": 2.2186666666666666,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "Plans. Specs. Reports.",
+     "em": "",
+     "start": 13.59375,
+     "end": 16.640625
+    }
+   ],
+   "w": null,
+   "wav": "3aaea39e9eba1afd.wav",
+   "end": 16.640625
+  },
+  {
+   "say": "Any Router Artifacts. Any router dot dev.",
+   "start": 16.640625,
+   "dur": 2.6026666666666665,
+   "scenes": [
+    {
+     "t": "cta",
+     "start": 16.640625,
+     "end": 24.375
+    }
+   ],
+   "w": null,
+   "wav": "cbbf4ed25b8f842f.wav",
+   "end": 24.375
+  }
+ ]
+}

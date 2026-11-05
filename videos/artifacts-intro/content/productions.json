@@ -1,0 +1,610 @@
+{
+ "hero": {
+  "bpm": 128,
+  "tail": 1.6,
+  "lines": [
+   {
+    "say": "Your agent just made something great. Now what?",
+    "w": [
+     0.62,
+     0.38
+    ],
+    "scenes": [
+     {
+      "t": "type",
+      "text": "Your agent made something great.",
+      "em": "great."
+     },
+     {
+      "t": "type",
+      "text": "Now what?",
+      "em": "what?"
+     }
+    ]
+   },
+   {
+    "say": "Screenshot it? Zip it? Paste it in chat?",
+    "scenes": [
+     {
+      "t": "strike",
+      "items": [
+       "Screenshot it?",
+       "Zip it?",
+       "Paste it in chat?"
+      ]
+     }
+    ]
+   },
+   {
+    "say": "Publish it. One command.",
+    "scenes": [
+     {
+      "t": "slam",
+      "text": "Publish it."
+     }
+    ]
+   },
+   {
+    "say": "Any are artifact publish. And out comes a link.",
+    "scenes": [
+     {
+      "t": "term",
+      "cmd": "anyr artifact publish dashboard.html",
+      "out": [
+       "https://anyrouter.dev/a/D0ejLCsKtXvtIXc5",
+       "✓ published version 1"
+      ]
+     }
+    ]
+   },
+   {
+    "say": "A report. A document. A slide deck. A diagram. Even a live React component.",
+    "scenes": [
+     {
+      "t": "shot",
+      "key": "dash",
+      "label": "Dashboard",
+      "ext": ".html"
+     },
+     {
+      "t": "shot",
+      "key": "doc",
+      "label": "Document",
+      "ext": ".doc.md"
+     },
+     {
+      "t": "shot",
+      "key": "slides",
+      "label": "Slides",
+      "ext": ".slides.md"
+     },
+     {
+      "t": "shot",
+      "key": "flow",
+      "label": "Diagram",
+      "ext": ".mmd"
+     },
+     {
+      "t": "shot",
+      "key": "react",
+      "label": "React",
+      "ext": ".tsx"
+     }
+    ]
+   },
+   {
+    "say": "Every artifact gets a stable U R L, and every new version lands at the same link.",
+    "scenes": [
+     {
+      "t": "stack",
+      "labels": [
+       "v4",
+       "v3",
+       "v2",
+       "v1"
+      ],
+      "url": "anyrouter.dev/a/D0ejLCsKtXvtIXc5"
+     }
+    ]
+   },
+   {
+    "say": "Private by default. Unlisted when you share. Public when you're proud.",
+    "scenes": [
+     {
+      "t": "vis",
+      "cycle": true
+     }
+    ]
+   },
+   {
+    "say": "No hosting. No deploy.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "No hosting.",
+      "em": ""
+     },
+     {
+      "t": "type",
+      "text": "No deploy.",
+      "em": ""
+     }
+    ]
+   },
+   {
+    "say": "Any Router Artifacts. Publish anything your agent makes. Any router dot dev.",
+    "scenes": [
+     {
+      "t": "cta"
+     }
+    ]
+   }
+  ]
+ },
+ "ep1": {
+  "bpm": 128,
+  "tail": 4.2,
+  "lines": [
+   {
+    "say": "One command. One link.",
+    "scenes": [
+     {
+      "t": "slam",
+      "text": "One link."
+     }
+    ]
+   },
+   {
+    "say": "Your agent made a page. Run anyr artifact publish on it.",
+    "scenes": [
+     {
+      "t": "term",
+      "cmd": "anyr artifact publish report.html",
+      "out": [
+       "https://anyrouter.dev/a/jGceYxza4GnHozIx",
+       "✓ published version 1"
+      ]
+     }
+    ]
+   },
+   {
+    "say": "You get a URL that opens in any browser.",
+    "scenes": [
+     {
+      "t": "shot",
+      "key": "report",
+      "label": "Report",
+      "ext": ".html"
+     }
+    ]
+   },
+   {
+    "say": "Reports, docs, slides, diagrams. It all takes the same command.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "Same command for everything.",
+      "em": "everything."
+     }
+    ]
+   },
+   {
+    "say": "No hosting to set up. No deploy to run.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "No hosting.",
+      "em": ""
+     },
+     {
+      "t": "type",
+      "text": "No deploy.",
+      "em": ""
+     }
+    ]
+   },
+   {
+    "say": "Any Router Artifacts. Any router dot dev.",
+    "scenes": [
+     {
+      "t": "cta"
+     }
+    ]
+   }
+  ],
+  "gap": 0.65
+ },
+ "ep2": {
+  "bpm": 128,
+  "tail": 4.2,
+  "lines": [
+   {
+    "say": "Markdown is fine. A document is better.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "A document, not a text file.",
+      "em": "document,"
+     }
+    ]
+   },
+   {
+    "say": "Name it dot doc dot md, and publish.",
+    "scenes": [
+     {
+      "t": "term",
+      "cmd": "anyr artifact publish plan.doc.md",
+      "out": [
+       "https://anyrouter.dev/a/he4TQFDkS45HTbxz",
+       "✓ published version 1"
+      ]
+     }
+    ]
+   },
+   {
+    "say": "Readers get a title, a byline and an outline beside the text.",
+    "scenes": [
+     {
+      "t": "shot",
+      "key": "doc",
+      "label": "Document",
+      "ext": ".doc.md"
+     }
+    ]
+   },
+   {
+    "say": "Your headings become the outline.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "Headings become the outline.",
+      "em": "outline."
+     }
+    ]
+   },
+   {
+    "say": "Perfect for plans, specs and reports.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "Plans. Specs. Reports.",
+      "em": ""
+     }
+    ]
+   },
+   {
+    "say": "Any Router Artifacts. Any router dot dev.",
+    "scenes": [
+     {
+      "t": "cta"
+     }
+    ]
+   }
+  ],
+  "gap": 0.65
+ },
+ "ep3": {
+  "bpm": 128,
+  "tail": 4.2,
+  "lines": [
+   {
+    "say": "Need slides? Write markdown.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "Slides from a markdown file.",
+      "em": "markdown"
+     }
+    ]
+   },
+   {
+    "say": "A line with three dashes starts a new slide.",
+    "scenes": [
+     {
+      "t": "slam",
+      "text": "---"
+     }
+    ]
+   },
+   {
+    "say": "Publish the file. Readers get a sixteen by nine deck.",
+    "scenes": [
+     {
+      "t": "term",
+      "cmd": "anyr artifact publish kickoff.slides.md",
+      "out": [
+       "https://anyrouter.dev/a/DHtj9neEceOHkRLW",
+       "✓ published version 1"
+      ]
+     }
+    ]
+   },
+   {
+    "say": "Arrow keys to move. O for the overview. F for full screen.",
+    "scenes": [
+     {
+      "t": "shot",
+      "key": "slides",
+      "label": "Slides",
+      "ext": ".slides.md"
+     },
+     {
+      "t": "shot",
+      "key": "slides2",
+      "label": "Slides",
+      "ext": ".slides.md"
+     },
+     {
+      "t": "shot",
+      "key": "slides3",
+      "label": "Slides",
+      "ext": ".slides.md"
+     }
+    ]
+   },
+   {
+    "say": "Any Router Artifacts. Any router dot dev.",
+    "scenes": [
+     {
+      "t": "cta"
+     }
+    ]
+   }
+  ],
+  "gap": 0.65
+ },
+ "ep4": {
+  "bpm": 128,
+  "tail": 4.2,
+  "lines": [
+   {
+    "say": "Describe a flow in plain text.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "A diagram, from plain text.",
+      "em": "plain text."
+     }
+    ]
+   },
+   {
+    "say": "Save it as dot m m d. Then publish.",
+    "scenes": [
+     {
+      "t": "term",
+      "cmd": "anyr artifact publish flow.mmd",
+      "out": [
+       "https://anyrouter.dev/a/2wt9uR3bJ70yJLe6",
+       "✓ published version 1"
+      ]
+     }
+    ]
+   },
+   {
+    "say": "It is drawn right in the reader's browser.",
+    "scenes": [
+     {
+      "t": "shot",
+      "key": "flow",
+      "label": "Diagram",
+      "ext": ".mmd"
+     }
+    ]
+   },
+   {
+    "say": "Boxes, arrows and decisions. Your agent can write one in seconds.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "Boxes. Arrows. Decisions.",
+      "em": ""
+     }
+    ]
+   },
+   {
+    "say": "Any Router Artifacts. Any router dot dev.",
+    "scenes": [
+     {
+      "t": "cta"
+     }
+    ]
+   }
+  ],
+  "gap": 0.65
+ },
+ "ep5": {
+  "bpm": 128,
+  "tail": 4.2,
+  "lines": [
+   {
+    "say": "Not just pages. Live components.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "Not just pages. Live components.",
+      "em": "Live"
+     }
+    ]
+   },
+   {
+    "say": "One React file with a default export.",
+    "scenes": [
+     {
+      "t": "term",
+      "cmd": "anyr artifact publish Tracker.tsx",
+      "out": [
+       "https://anyrouter.dev/a/xoAsDaiSHDszjpdo",
+       "✓ published version 1"
+      ]
+     }
+    ]
+   },
+   {
+    "say": "Tailwind works. So do recharts, lucide and d three.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "Tailwind. Recharts. Lucide. D3.",
+      "em": ""
+     }
+    ]
+   },
+   {
+    "say": "Publish it, and the buttons really click.",
+    "scenes": [
+     {
+      "t": "shot",
+      "key": "react",
+      "label": "React",
+      "ext": ".tsx"
+     }
+    ]
+   },
+   {
+    "say": "Charts, buttons, whole little tools.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "Charts. Buttons. Little tools.",
+      "em": ""
+     }
+    ]
+   },
+   {
+    "say": "Any Router Artifacts. Any router dot dev.",
+    "scenes": [
+     {
+      "t": "cta"
+     }
+    ]
+   }
+  ],
+  "gap": 0.65
+ },
+ "ep6": {
+  "bpm": 128,
+  "tail": 4.2,
+  "lines": [
+   {
+    "say": "Changed something? Same link.",
+    "scenes": [
+     {
+      "t": "slam",
+      "text": "Same link."
+     }
+    ]
+   },
+   {
+    "say": "Publish again with the id.",
+    "scenes": [
+     {
+      "t": "term",
+      "cmd": "anyr artifact publish report.html --id jGceYxza4GnHozIx",
+      "out": [
+       "https://anyrouter.dev/a/jGceYxza4GnHozIx",
+       "✓ published version 2"
+      ]
+     }
+    ]
+   },
+   {
+    "say": "A new numbered version lands at the same U R L.",
+    "scenes": [
+     {
+      "t": "stack",
+      "labels": [
+       "v4",
+       "v3",
+       "v2",
+       "v1"
+      ],
+      "url": "anyrouter.dev/a/jGceYxza4GnHozIx"
+     }
+    ]
+   },
+   {
+    "say": "Whoever opens the link sees the latest.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "Same link. Latest version.",
+      "em": "Latest"
+     }
+    ]
+   },
+   {
+    "say": "Every version is kept, numbered one, two, three.",
+    "scenes": [
+     {
+      "t": "type",
+      "text": "v1. v2. v3.",
+      "em": ""
+     }
+    ]
+   },
+   {
+    "say": "Any Router Artifacts. Any router dot dev.",
+    "scenes": [
+     {
+      "t": "cta"
+     }
+    ]
+   }
+  ],
+  "gap": 0.65
+ },
+ "ep7": {
+  "bpm": 128,
+  "tail": 4.2,
+  "lines": [
+   {
+    "say": "Everything starts private.",
+    "scenes": [
+     {
+      "t": "vis",
+      "at": 0
+     }
+    ]
+   },
+   {
+    "say": "Only you can open it. To share it, set it to unlisted.",
+    "scenes": [
+     {
+      "t": "term",
+      "cmd": "anyr artifact visibility he4TQFDkS45HTbxz unlisted",
+      "out": [
+       "✓ he4TQFDkS45HTbxz is now unlisted"
+      ]
+     }
+    ]
+   },
+   {
+    "say": "Anyone with the link can read it. Search engines can't.",
+    "scenes": [
+     {
+      "t": "vis",
+      "at": 1
+     }
+    ]
+   },
+   {
+    "say": "Make it public, and it joins the gallery.",
+    "scenes": [
+     {
+      "t": "vis",
+      "at": 2
+     }
+    ]
+   },
+   {
+    "say": "Any Router Artifacts. Any router dot dev.",
+    "scenes": [
+     {
+      "t": "cta"
+     }
+    ]
+   }
+  ],
+  "gap": 0.65
+ }
+}

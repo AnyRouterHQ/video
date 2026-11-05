@@ -1,0 +1,35 @@
+{
+ "version": 1,
+ "title": "How an artifact is published",
+ "width": 1280,
+ "height": 720,
+ "fps": 30,
+ "duration_s": 9,
+ "background": "#ffffff",
+ "clips": [
+  {
+   "id": "s1",
+   "src": "s1.svg",
+   "start_s": 0,
+   "duration_s": 3,
+   "enter": "fade",
+   "exit": "slide-left"
+  },
+  {
+   "id": "s2",
+   "src": "s2.svg",
+   "start_s": 3,
+   "duration_s": 3,
+   "enter": "slide-up",
+   "exit": "slide-left"
+  },
+  {
+   "id": "s3",
+   "src": "s3.svg",
+   "start_s": 6,
+   "duration_s": 3,
+   "enter": "scale",
+   "exit": "fade"
+  }
+ ]
+}

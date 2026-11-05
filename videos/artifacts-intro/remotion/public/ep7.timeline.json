@@ -1,0 +1,91 @@
+{
+ "id": "ep7",
+ "fps": 30,
+ "bpm": 128,
+ "total": 20.625,
+ "voEnd": 15.493291666666666,
+ "lines": [
+  {
+   "say": "Everything starts private.",
+   "start": 0.234375,
+   "dur": 1.4293333333333333,
+   "scenes": [
+    {
+     "t": "vis",
+     "at": 0,
+     "start": 0.234375,
+     "end": 2.34375
+    }
+   ],
+   "w": null,
+   "wav": "1675a9afd3770e6e.wav",
+   "end": 2.34375
+  },
+  {
+   "say": "Only you can open it. To share it, set it to unlisted.",
+   "start": 2.34375,
+   "dur": 2.944,
+   "scenes": [
+    {
+     "t": "term",
+     "cmd": "anyr artifact visibility he4TQFDkS45HTbxz unlisted",
+     "out": [
+      "\u2713 he4TQFDkS45HTbxz is now unlisted"
+     ],
+     "start": 2.34375,
+     "end": 6.09375
+    }
+   ],
+   "w": null,
+   "wav": "e27cefcb389ba413.wav",
+   "end": 6.09375
+  },
+  {
+   "say": "Anyone with the link can read it. Search engines can't.",
+   "start": 6.09375,
+   "dur": 2.944,
+   "scenes": [
+    {
+     "t": "vis",
+     "at": 1,
+     "start": 6.09375,
+     "end": 9.84375
+    }
+   ],
+   "w": null,
+   "wav": "06dc6c2f33b0cfed.wav",
+   "end": 9.84375
+  },
+  {
+   "say": "Make it public, and it joins the gallery.",
+   "start": 9.84375,
+   "dur": 2.1973333333333334,
+   "scenes": [
+    {
+     "t": "vis",
+     "at": 2,
+     "start": 9.84375,
+     "end": 12.890625
+    }
+   ],
+   "w": null,
+   "wav": "d21669c5e467839e.wav",
+   "end": 12.890625
+  },
+  {
+   "say": "Any Router Artifacts. Any router dot dev.",
+   "start": 12.890625,
+   "dur": 2.6026666666666665,
+   "scenes": [
+    {
+     "t": "cta",
+     "start": 12.890625,
+     "end": 20.625
+    }
+   ],
+   "w": null,
+   "wav": "cbbf4ed25b8f842f.wav",
+   "end": 20.625
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "id": "ep3",
+ "fps": 30,
+ "bpm": 128,
+ "total": 22.5,
+ "voEnd": 16.665166666666668,
+ "lines": [
+  {
+   "say": "Need slides? Write markdown.",
+   "start": 0.234375,
+   "dur": 1.792,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "Slides from a markdown file.",
+     "em": "markdown",
+     "start": 0.234375,
+     "end": 2.8125
+    }
+   ],
+   "w": null,
+   "wav": "61a1969ed0f5c1eb.wav",
+   "end": 2.8125
+  },
+  {
+   "say": "A line with three dashes starts a new slide.",
+   "start": 2.8125,
+   "dur": 2.4106666666666667,
+   "scenes": [
+    {
+     "t": "slam",
+     "text": "---",
+     "start": 2.8125,
+     "end": 6.09375
+    }
+   ],
+   "w": null,
+   "wav": "5477f980512e9af7.wav",
+   "end": 6.09375
+  },
+  {
+   "say": "Publish the file. Readers get a sixteen by nine deck.",
+   "start": 6.09375,
+   "dur": 3.050666666666667,
+   "scenes": [
+    {
+     "t": "term",
+     "cmd": "anyr artifact publish kickoff.slides.md",
+     "out": [
+      "https://anyrouter.dev/a/DHtj9neEceOHkRLW",
+      "\u2713 published version 1"
+     ],
+     "start": 6.09375,
+     "end": 9.84375
+    }
+   ],
+   "w": null,
+   "wav": "a42988d298842aa5.wav",
+   "end": 9.84375
+  },
+  {
+   "say": "Arrow keys to move. O for the overview. F for full screen.",
+   "start": 9.84375,
+   "dur": 3.456,
+   "scenes": [
+    {
+     "t": "shot",
+     "key": "slides",
+     "label": "Slides",
+     "ext": ".slides.md",
+     "start": 9.84375,
+     "end": 11.25
+    },
+    {
+     "t": "shot",
+     "key": "slides2",
+     "label": "Slides",
+     "ext": ".slides.md",
+     "start": 11.25,
+     "end": 12.65625
+    },
+    {
+     "t": "shot",
+     "key": "slides3",
+     "label": "Slides",
+     "ext": ".slides.md",
+     "start": 12.65625,
+     "end": 14.0625
+    }
+   ],
+   "w": null,
+   "wav": "007f43103e16cdf7.wav",
+   "end": 14.0625
+  },
+  {
+   "say": "Any Router Artifacts. Any router dot dev.",
+   "start": 14.0625,
+   "dur": 2.6026666666666665,
+   "scenes": [
+    {
+     "t": "cta",
+     "start": 14.0625,
+     "end": 22.5
+    }
+   ],
+   "w": null,
+   "wav": "cbbf4ed25b8f842f.wav",
+   "end": 22.5
+  }
+ ]
+}

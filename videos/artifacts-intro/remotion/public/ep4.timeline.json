@@ -1,0 +1,96 @@
+{
+ "id": "ep4",
+ "fps": 30,
+ "bpm": 128,
+ "total": 20.625,
+ "voEnd": 16.196416666666668,
+ "lines": [
+  {
+   "say": "Describe a flow in plain text.",
+   "start": 0.234375,
+   "dur": 1.7066666666666668,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "A diagram, from plain text.",
+     "em": "plain text.",
+     "start": 0.234375,
+     "end": 2.8125
+    }
+   ],
+   "w": null,
+   "wav": "9d9fd238822a7b10.wav",
+   "end": 2.8125
+  },
+  {
+   "say": "Save it as dot m m d. Then publish.",
+   "start": 2.8125,
+   "dur": 2.5813333333333333,
+   "scenes": [
+    {
+     "t": "term",
+     "cmd": "anyr artifact publish flow.mmd",
+     "out": [
+      "https://anyrouter.dev/a/2wt9uR3bJ70yJLe6",
+      "\u2713 published version 1"
+     ],
+     "start": 2.8125,
+     "end": 6.09375
+    }
+   ],
+   "w": null,
+   "wav": "531ffdc94f0fa3b5.wav",
+   "end": 6.09375
+  },
+  {
+   "say": "It is drawn right in the reader's browser.",
+   "start": 6.09375,
+   "dur": 2.0693333333333332,
+   "scenes": [
+    {
+     "t": "shot",
+     "key": "flow",
+     "label": "Diagram",
+     "ext": ".mmd",
+     "start": 6.09375,
+     "end": 8.90625
+    }
+   ],
+   "w": null,
+   "wav": "3cd3927cbca64d74.wav",
+   "end": 8.90625
+  },
+  {
+   "say": "Boxes, arrows and decisions. Your agent can write one in seconds.",
+   "start": 8.90625,
+   "dur": 3.904,
+   "scenes": [
+    {
+     "t": "type",
+     "text": "Boxes. Arrows. Decisions.",
+     "em": "",
+     "start": 8.90625,
+     "end": 13.59375
+    }
+   ],
+   "w": null,
+   "wav": "a1bdef7d88d72b74.wav",
+   "end": 13.59375
+  },
+  {
+   "say": "Any Router Artifacts. Any router dot dev.",
+   "start": 13.59375,
+   "dur": 2.6026666666666665,
+   "scenes": [
+    {
+     "t": "cta",
+     "start": 13.59375,
+     "end": 20.625
+    }
+   ],
+   "w": null,
+   "wav": "cbbf4ed25b8f842f.wav",
+   "end": 20.625
+  }
+ ]
+}
