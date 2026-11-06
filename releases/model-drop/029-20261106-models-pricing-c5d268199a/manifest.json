@@ -1,0 +1,22 @@
+{
+  "id": "029-20261106-models-pricing-c5d268199a",
+  "hash": "c5d268199a",
+  "kind": "model-drop",
+  "label": "models+pricing",
+  "title": "55 new models: glide-27b, gpt-6-cyber, embed-5-fast +52 more",
+  "seconds": 20,
+  "renderedAt": "2026-11-06T15:09:02.641Z",
+  "commit": "1c4ef26",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-029-20261106-models-pricing-c5d268199a.mp4",
+      "cover": "renders/model-drop-029-20261106-models-pricing-c5d268199a.png"
+    }
+  },
+  "source": "renders/model-drop-029-20261106-models-pricing-c5d268199a-source.tar.gz",
+  "createdAt": "2026-11-06T15:09:02.646Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-a76d4afedafff08e0e0c",
+    "draft": true
+  }
+}

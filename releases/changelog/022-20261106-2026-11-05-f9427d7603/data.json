@@ -1,0 +1,28 @@
+{
+  "notable": true,
+  "label": "2026-11-05",
+  "parts": [
+    "2026-11-05-fastino-glide-27b",
+    "2026-11-05-disabled"
+  ],
+  "date": "2026-11-05",
+  "entries": [
+    {
+      "slug": "2026-11-05-fastino-glide-27b",
+      "date": "2026-11-05",
+      "title": "Fastino GLiDE 27B",
+      "summary": "Fastino's largest GLiDE decision model joins the Decisions family, BYOK through Fastino's own API.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-05-fastino-glide-27b",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-05-disabled",
+      "date": "2026-11-05",
+      "title": "Llama 3.2 11B Vision Instruct disabled",
+      "summary": "No live route: NVIDIA removed the wire from its catalogue (prod nvidia-byok/nvidia-pool 404 on every request) and the Cloudflare backend is disabled platform-wide (#3121).",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-05-disabled",
+      "type": "disabled"
+    }
+  ],
+  "total": 2
+}

@@ -1,15 +1,21 @@
 {
-  "acceptedAt": "2026-11-05T15:28:50.737Z",
+  "acceptedAt": "2026-11-06T15:04:28.505Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
     "agnes-ai/agnes-2.5-pro-alpha",
     "agnes-ai/agnes-2.5-pro",
     "agnes-ai/agnes-3.0-flash",
+    "aion-labs/aion-2.0",
     "aion-labs/aion-3.0-mini",
+    "aion-labs/aion-3.0",
     "aion-labs/aion-3.5-mini",
     "aion-labs/aion-3.5",
+    "aion-labs/aion-rp-llama-3.1-8b",
     "aiteamvn/vietnamese-embedding",
+    "amazon/nova-2-lite-v1",
+    "amazon/nova-lite-v1",
+    "amazon/nova-pro-v1",
     "antdigital/lingdt-3.0-flash",
     "anthropic/claude-fable-5-1",
     "anthropic/claude-fable-5",
@@ -37,19 +43,26 @@
     "baai/bge-m3",
     "baai/bge-multilingual-gemma2",
     "bytedance-seed/doubao-seed-2-1-pro-260628",
+    "bytedance-seed/seed-1.6",
     "bytedance-seed/seed-2-1-turbo",
     "bytedance-seed/seed-2.0-code",
     "chinhnc/quyet-1.0-large",
     "cloudflare/clef",
     "cohere/command-a-plus",
     "cohere/command-a",
+    "cohere/command-r-plus-08-2024",
+    "cohere/embed-5-fast",
+    "cohere/embed-5-pro",
     "cohere/north-mini-code",
     "cohere/rerank-multilingual-v3.0",
     "cohere/rerank-v3.5",
     "cohere/rerank-v4.0-fast",
     "cohere/rerank-v4.0-pro",
     "convaiinnovations/laya",
+    "deepseek/deepseek-chat-v3.1",
+    "deepseek/deepseek-chat",
     "deepseek/deepseek-r1",
+    "deepseek/deepseek-v3.1-terminus",
     "deepseek/deepseek-v3.1",
     "deepseek/deepseek-v3.2-exp",
     "deepseek/deepseek-v3",
@@ -59,6 +72,7 @@
     "deepseek/deepseek-v4.1-flash",
     "dots-studio/dots-3-note-preview",
     "elorian/glimpse",
+    "fastino/glide-27b",
     "fastino/gliner2.5-multi-v1",
     "fireworks/ember-1",
     "fireworks/ultramarine-1-flash",
@@ -73,6 +87,7 @@
     "google/gemini-3.6-flash",
     "google/gemini-3.7-flash",
     "google/gemini-3.8-flash",
+    "google/gemini-4-argon",
     "google/gemini-embedding-2",
     "google/gemma-3-4b-it",
     "google/gemma-3n-e2b",
@@ -83,6 +98,7 @@
     "ibm-granite/granite-4.2-30b",
     "ibm-granite/granite-4.2-8b",
     "inception/mercury-2.5",
+    "inception/mercury-2",
     "inception/mercury-3",
     "inception/mercury-decide",
     "inclusionai/ling-3.0-flash-fin",
@@ -105,8 +121,8 @@
     "meituan/longcat-2.5",
     "meta/llama-3.1-70b-instruct",
     "meta/llama-3.1-8b-instruct",
-    "meta/llama-3.2-11b-vision-instruct",
     "meta/llama-3.3-70b-instruct",
+    "meta/llama-4-maverick",
     "meta/llama-4-scout-17b-16e-instruct",
     "meta/muse-glimmer-30b",
     "meta/muse-spark-1.1",
@@ -118,25 +134,40 @@
     "meta/muse-wonder",
     "microsoft/mai-thinking-1",
     "microsoft/microsoft-decision-1",
+    "microsoft/phi-4",
     "minimax/m2.5",
     "minimax/m2.7",
     "minimax/m2",
     "minimax/m3",
+    "minimax/minimax-m1",
     "minimax/minimax-m3.1-flash",
+    "mistralai/codestral-2508",
+    "mistralai/ministral-14b-2512",
+    "mistralai/ministral-3b-2512",
+    "mistralai/ministral-8b-2512",
     "mistralai/mistral-large-3",
     "mistralai/mistral-large-4",
+    "mistralai/mistral-large",
+    "mistralai/mistral-medium-3.1",
     "mistralai/mistral-medium-3.5-128b",
+    "mistralai/mistral-medium-3",
+    "mistralai/mistral-nemo",
+    "mistralai/mistral-saba",
+    "mistralai/mistral-small-24b-instruct-2501",
     "mistralai/mistral-small-3.1-24b-instruct",
     "mistralai/mistral-small-3.2-24b-instruct",
     "mistralai/mistral-small-4",
     "moondream/moondream3-preview",
     "moondream/moondream3.1-9b-a2b",
+    "moonshotai/kimi-k2-thinking",
     "moonshotai/kimi-k2.5",
     "moonshotai/kimi-k2.6",
     "moonshotai/kimi-k2.7-code",
     "moonshotai/kimi-k3.1-pro-highspeed",
     "moonshotai/kimi-k3.1-pro",
     "moonshotai/kimi-k3",
+    "morph/morph-v3-fast",
+    "morph/morph-v3-large",
     "nace-ai/drex-v1.5",
     "nace-ai/drex-v2.0",
     "nex-agi/nex-n2.5-mini",
@@ -161,15 +192,16 @@
     "openai/gpt-4.1",
     "openai/gpt-4o-mini",
     "openai/gpt-4o",
-    "openai/gpt-5-chat-latest",
     "openai/gpt-5-codex",
     "openai/gpt-5-mini",
     "openai/gpt-5-nano",
+    "openai/gpt-5-pro",
     "openai/gpt-5.1-codex-max",
     "openai/gpt-5.1-codex-mini",
     "openai/gpt-5.1-codex",
     "openai/gpt-5.1",
     "openai/gpt-5.2-codex",
+    "openai/gpt-5.2-pro",
     "openai/gpt-5.2",
     "openai/gpt-5.3-codex-spark",
     "openai/gpt-5.3-codex",
@@ -186,6 +218,7 @@
     "openai/gpt-5",
     "openai/gpt-6-astra-pro",
     "openai/gpt-6-astra",
+    "openai/gpt-6-cyber",
     "openai/gpt-6-luna-decisions",
     "openai/gpt-6-luna-pro",
     "openai/gpt-6-luna",
@@ -199,7 +232,11 @@
     "openai/gpt-oss-20b",
     "openai/o1-mini",
     "openai/o1",
+    "openai/o3-pro",
+    "openai/o3",
     "openai/o4-mini",
+    "openai/text-embedding-3-large",
+    "openai/text-embedding-3-small",
     "openrouter/bodybuilder",
     "openrouter/free",
     "openrouter/fusion",
@@ -211,24 +248,37 @@
     "perplexity/pplx-decider-v1.1-27b",
     "perplexity/pplx-embed-v1-0.6b",
     "perplexity/pplx-embed-v1-4b",
+    "perplexity/sonar-pro",
+    "perplexity/sonar",
     "poolside/laguna-s-2.1",
     "poolside/laguna-xs-2.1",
     "prism-ml/ternary-bonsai-2-27b",
     "prism-ml/ternary-bonsai-2-9b",
+    "qwen/qwen-2.5-7b-instruct",
     "qwen/qwen-flash",
     "qwen/qwen-plus",
     "qwen/qwen2.5-72b-instruct",
     "qwen/qwen2.5-coder-32b-instruct",
+    "qwen/qwen2.5-vl-72b-instruct",
     "qwen/qwen2.5-vl-7b-instruct",
     "qwen/qwen3-14b",
+    "qwen/qwen3-235b-a22b-thinking-2507",
     "qwen/qwen3-235b-a22b",
+    "qwen/qwen3-30b-a3b-instruct-2507",
     "qwen/qwen3-8b",
     "qwen/qwen3-coder-480b-a35b-instruct",
     "qwen/qwen3-coder-flash",
+    "qwen/qwen3-coder-next",
+    "qwen/qwen3-coder",
     "qwen/qwen3-embedding-4b",
     "qwen/qwen3-embedding-8b",
+    "qwen/qwen3-next-80b-a3b-instruct",
+    "qwen/qwen3-vl-235b-a22b-instruct",
+    "qwen/qwen3-vl-30b-a3b-instruct",
     "qwen/qwen3-vl-plus",
+    "qwen/qwen3.5-122b-a10b",
     "qwen/qwen3.5-27b",
+    "qwen/qwen3.5-35b-a3b",
     "qwen/qwen3.5-397b-a17b",
     "qwen/qwen3.5-9b",
     "qwen/qwen3.5-flash",
@@ -310,8 +360,10 @@
     "xiaomi/mimo-v2.6-pro-ultraspeed",
     "xiaomi/mimo-v2.6-pro",
     "xingchen-agi/xing4.0-29b-a4b",
+    "z-ai/glm-4.5-air",
     "z-ai/glm-4.5-flash",
     "z-ai/glm-4.5",
+    "z-ai/glm-4.5v",
     "z-ai/glm-4.6",
     "z-ai/glm-4.6v",
     "z-ai/glm-4.7-flash",
@@ -324,6 +376,7 @@
     "z-ai/glm-5.3-prime",
     "z-ai/glm-5.3",
     "z-ai/glm-5",
+    "z-ai/glm-5v-turbo",
     "google/gemini-flash-latest",
     "google/gemini-flash-lite-latest",
     "google/gemini-pro-latest",
@@ -376,9 +429,21 @@
       "context": 512000
     },
     {
+      "id": "aion-labs/aion-2.0",
+      "inPrice": 0.88896,
+      "outPrice": 1.77792,
+      "context": 131072
+    },
+    {
       "id": "aion-labs/aion-3.0-mini",
       "inPrice": 0.7,
       "outPrice": 1.4,
+      "context": 131072
+    },
+    {
+      "id": "aion-labs/aion-3.0",
+      "inPrice": 3.3336,
+      "outPrice": 6.6672,
       "context": 131072
     },
     {
@@ -394,10 +459,34 @@
       "context": 262144
     },
     {
+      "id": "aion-labs/aion-rp-llama-3.1-8b",
+      "inPrice": 0.88896,
+      "outPrice": 1.77792,
+      "context": 32768
+    },
+    {
       "id": "aiteamvn/vietnamese-embedding",
       "inPrice": 0.01,
       "outPrice": 0,
       "context": 8000
+    },
+    {
+      "id": "amazon/nova-2-lite-v1",
+      "inPrice": 0.566712,
+      "outPrice": 4.7226,
+      "context": 1000000
+    },
+    {
+      "id": "amazon/nova-lite-v1",
+      "inPrice": 0.0661164,
+      "outPrice": 0.2644656,
+      "context": 300000
+    },
+    {
+      "id": "amazon/nova-pro-v1",
+      "inPrice": 0.8878488,
+      "outPrice": 3.5513952,
+      "context": 300000
     },
     {
       "id": "antdigital/lingdt-3.0-flash",
@@ -562,6 +651,12 @@
       "context": 262144
     },
     {
+      "id": "bytedance-seed/seed-1.6",
+      "inPrice": 0.36114,
+      "outPrice": 2.88912,
+      "context": 262144
+    },
+    {
       "id": "bytedance-seed/seed-2-1-turbo",
       "inPrice": 0.5,
       "outPrice": 2.5,
@@ -596,6 +691,24 @@
       "inPrice": 2.5,
       "outPrice": 10,
       "context": 262144
+    },
+    {
+      "id": "cohere/command-r-plus-08-2024",
+      "inPrice": 3.1735872,
+      "outPrice": 15.8301552,
+      "context": 128000
+    },
+    {
+      "id": "cohere/embed-5-fast",
+      "inPrice": 0.08,
+      "outPrice": 0,
+      "context": 128000
+    },
+    {
+      "id": "cohere/embed-5-pro",
+      "inPrice": 0.12,
+      "outPrice": 0,
+      "context": 128000
     },
     {
       "id": "cohere/north-mini-code",
@@ -634,9 +747,27 @@
       "context": 8192
     },
     {
+      "id": "deepseek/deepseek-chat-v3.1",
+      "inPrice": 0.22224,
+      "outPrice": 0.77784,
+      "context": 163840
+    },
+    {
+      "id": "deepseek/deepseek-chat",
+      "inPrice": 0.12188,
+      "outPrice": 0.51799,
+      "context": 163840
+    },
+    {
       "id": "deepseek/deepseek-r1",
       "inPrice": 0.5,
       "outPrice": 2.15,
+      "context": 163840
+    },
+    {
+      "id": "deepseek/deepseek-v3.1-terminus",
+      "inPrice": 0.2778,
+      "outPrice": 0.77784,
       "context": 163840
     },
     {
@@ -692,6 +823,12 @@
       "inPrice": 0.6,
       "outPrice": 3,
       "context": 262144
+    },
+    {
+      "id": "fastino/glide-27b",
+      "inPrice": 0.04,
+      "outPrice": 0,
+      "context": 65536
     },
     {
       "id": "fastino/gliner2.5-multi-v1",
@@ -778,6 +915,12 @@
       "context": 1048576
     },
     {
+      "id": "google/gemini-4-argon",
+      "inPrice": 2,
+      "outPrice": 10,
+      "context": 1048576
+    },
+    {
       "id": "google/gemini-embedding-2",
       "inPrice": 0.2,
       "outPrice": 0,
@@ -836,6 +979,12 @@
       "inPrice": 0.04,
       "outPrice": 0.15,
       "context": 260000
+    },
+    {
+      "id": "inception/mercury-2",
+      "inPrice": 0.18057,
+      "outPrice": 0.54171,
+      "context": 128000
     },
     {
       "id": "inception/mercury-3",
@@ -970,16 +1119,16 @@
       "context": 131072
     },
     {
-      "id": "meta/llama-3.2-11b-vision-instruct",
-      "inPrice": 0.049,
-      "outPrice": 0.68,
-      "context": 128000
-    },
-    {
       "id": "meta/llama-3.3-70b-instruct",
       "inPrice": 0.1,
       "outPrice": 0.32,
       "context": 131072
+    },
+    {
+      "id": "meta/llama-4-maverick",
+      "inPrice": 0.17756976,
+      "outPrice": 0.566712,
+      "context": 524288
     },
     {
       "id": "meta/llama-4-scout-17b-16e-instruct",
@@ -1048,6 +1197,12 @@
       "context": 32768
     },
     {
+      "id": "microsoft/phi-4",
+      "inPrice": 0.077784,
+      "outPrice": 0.155568,
+      "context": 16384
+    },
+    {
       "id": "minimax/m2.5",
       "inPrice": 0.15,
       "outPrice": 0.6065,
@@ -1072,10 +1227,40 @@
       "context": 1048576
     },
     {
+      "id": "minimax/minimax-m1",
+      "inPrice": 0.347067556,
+      "outPrice": 2.2,
+      "context": 1000000
+    },
+    {
       "id": "minimax/minimax-m3.1-flash",
       "inPrice": 0,
       "outPrice": 0,
       "context": 1048576
+    },
+    {
+      "id": "mistralai/codestral-2508",
+      "inPrice": 0.33336,
+      "outPrice": 1.00008,
+      "context": 256000
+    },
+    {
+      "id": "mistralai/ministral-14b-2512",
+      "inPrice": 0.22224,
+      "outPrice": 0.22224,
+      "context": 262144
+    },
+    {
+      "id": "mistralai/ministral-3b-2512",
+      "inPrice": 0.11112,
+      "outPrice": 0.11112,
+      "context": 131072
+    },
+    {
+      "id": "mistralai/ministral-8b-2512",
+      "inPrice": 0.16668,
+      "outPrice": 0.16668,
+      "context": 262144
     },
     {
       "id": "mistralai/mistral-large-3",
@@ -1090,10 +1275,46 @@
       "context": 1048576
     },
     {
+      "id": "mistralai/mistral-large",
+      "inPrice": 2.2290672,
+      "outPrice": 6.6683112,
+      "context": 128000
+    },
+    {
+      "id": "mistralai/mistral-medium-3.1",
+      "inPrice": 0.44448,
+      "outPrice": 2.2224,
+      "context": 131072
+    },
+    {
       "id": "mistralai/mistral-medium-3.5-128b",
       "inPrice": 1.5,
       "outPrice": 7.5,
       "context": 262144
+    },
+    {
+      "id": "mistralai/mistral-medium-3",
+      "inPrice": 0.44448,
+      "outPrice": 2.2224,
+      "context": 131072
+    },
+    {
+      "id": "mistralai/mistral-nemo",
+      "inPrice": 0.0322248,
+      "outPrice": 0.033336,
+      "context": 131072
+    },
+    {
+      "id": "mistralai/mistral-saba",
+      "inPrice": 0.22101768,
+      "outPrice": 0.661164,
+      "context": 32768
+    },
+    {
+      "id": "mistralai/mistral-small-24b-instruct-2501",
+      "inPrice": 0.05556,
+      "outPrice": 0.088896,
+      "context": 32768
     },
     {
       "id": "mistralai/mistral-small-3.1-24b-instruct",
@@ -1124,6 +1345,12 @@
       "inPrice": 0.3,
       "outPrice": 1,
       "context": 32768
+    },
+    {
+      "id": "moonshotai/kimi-k2-thinking",
+      "inPrice": 0.3394716,
+      "outPrice": 1.44456,
+      "context": 262144
     },
     {
       "id": "moonshotai/kimi-k2.5",
@@ -1162,6 +1389,18 @@
       "context": 1050000
     },
     {
+      "id": "morph/morph-v3-fast",
+      "inPrice": 0.577824,
+      "outPrice": 0.866736,
+      "context": 262144
+    },
+    {
+      "id": "morph/morph-v3-large",
+      "inPrice": 0.850068,
+      "outPrice": 1.794588,
+      "context": 262144
+    },
+    {
       "id": "nace-ai/drex-v1.5",
       "inPrice": 0.05,
       "outPrice": 0,
@@ -1175,8 +1414,8 @@
     },
     {
       "id": "nex-agi/nex-n2.5-mini",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 0.029702,
+      "outPrice": 0.118807,
       "context": 262144
     },
     {
@@ -1271,9 +1510,9 @@
     },
     {
       "id": "openai/codex-mini-latest",
-      "inPrice": 1.5,
-      "outPrice": 6,
-      "context": 200000
+      "inPrice": 0,
+      "outPrice": 0,
+      "context": null
     },
     {
       "id": "openai/gpt-4.1-mini",
@@ -1306,12 +1545,6 @@
       "context": 1048576
     },
     {
-      "id": "openai/gpt-5-chat-latest",
-      "inPrice": 1.25,
-      "outPrice": 10,
-      "context": 128000
-    },
-    {
       "id": "openai/gpt-5-codex",
       "inPrice": 1.25,
       "outPrice": 10,
@@ -1327,6 +1560,12 @@
       "id": "openai/gpt-5-nano",
       "inPrice": 0.05,
       "outPrice": 0.4,
+      "context": 400000
+    },
+    {
+      "id": "openai/gpt-5-pro",
+      "inPrice": 15,
+      "outPrice": 120,
       "context": 400000
     },
     {
@@ -1357,6 +1596,12 @@
       "id": "openai/gpt-5.2-codex",
       "inPrice": 1.75,
       "outPrice": 14,
+      "context": 400000
+    },
+    {
+      "id": "openai/gpt-5.2-pro",
+      "inPrice": 21,
+      "outPrice": 168,
       "context": 400000
     },
     {
@@ -1403,8 +1648,8 @@
     },
     {
       "id": "openai/gpt-5.5-pro",
-      "inPrice": 2.5,
-      "outPrice": 15,
+      "inPrice": 30,
+      "outPrice": 180,
       "context": 1050000
     },
     {
@@ -1453,6 +1698,12 @@
       "id": "openai/gpt-6-astra",
       "inPrice": 5,
       "outPrice": 25,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6-cyber",
+      "inPrice": 20,
+      "outPrice": 100,
       "context": 1050000
     },
     {
@@ -1534,10 +1785,34 @@
       "context": 200000
     },
     {
+      "id": "openai/o3-pro",
+      "inPrice": 20,
+      "outPrice": 80,
+      "context": 200000
+    },
+    {
+      "id": "openai/o3",
+      "inPrice": 2,
+      "outPrice": 8,
+      "context": 200000
+    },
+    {
       "id": "openai/o4-mini",
       "inPrice": 0.9075,
       "outPrice": 3.63,
       "context": 200000
+    },
+    {
+      "id": "openai/text-embedding-3-large",
+      "inPrice": 0.13,
+      "outPrice": 0,
+      "context": 8192
+    },
+    {
+      "id": "openai/text-embedding-3-small",
+      "inPrice": 0.02,
+      "outPrice": 0,
+      "context": 8192
     },
     {
       "id": "openrouter/bodybuilder",
@@ -1606,6 +1881,18 @@
       "context": 32000
     },
     {
+      "id": "perplexity/sonar-pro",
+      "inPrice": 3.56158149,
+      "outPrice": 17.807907446,
+      "context": 200000
+    },
+    {
+      "id": "perplexity/sonar",
+      "inPrice": 0.4875,
+      "outPrice": 4.875,
+      "context": 127072
+    },
+    {
       "id": "poolside/laguna-s-2.1",
       "inPrice": 0.09,
       "outPrice": 0.18,
@@ -1628,6 +1915,12 @@
       "inPrice": 0.08,
       "outPrice": 0.13,
       "context": 262144
+    },
+    {
+      "id": "qwen/qwen-2.5-7b-instruct",
+      "inPrice": 0.047504224,
+      "outPrice": 0.118760561,
+      "context": 32768
     },
     {
       "id": "qwen/qwen-flash",
@@ -1654,6 +1947,12 @@
       "context": 131072
     },
     {
+      "id": "qwen/qwen2.5-vl-72b-instruct",
+      "inPrice": 0.834581571,
+      "outPrice": 0.834581571,
+      "context": 128000
+    },
+    {
       "id": "qwen/qwen2.5-vl-7b-instruct",
       "inPrice": 0.77,
       "outPrice": 0.77,
@@ -1666,9 +1965,21 @@
       "context": 131072
     },
     {
+      "id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "inPrice": 0.356737455,
+      "outPrice": 0.594562425,
+      "context": 128000
+    },
+    {
       "id": "qwen/qwen3-235b-a22b",
       "inPrice": 0.0875,
       "outPrice": 0.35,
+      "context": 262144
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-instruct-2507",
+      "inPrice": 0.22224,
+      "outPrice": 0.5556,
       "context": 262144
     },
     {
@@ -1690,6 +2001,18 @@
       "context": 1048576
     },
     {
+      "id": "qwen/qwen3-coder-next",
+      "inPrice": 0.142524963,
+      "outPrice": 0.950166412,
+      "context": 262144
+    },
+    {
+      "id": "qwen/qwen3-coder",
+      "inPrice": 0.144456,
+      "outPrice": 0.5556,
+      "context": 262144
+    },
+    {
       "id": "qwen/qwen3-embedding-4b",
       "inPrice": 0.02,
       "outPrice": 0,
@@ -1702,9 +2025,33 @@
       "context": 40960
     },
     {
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "inPrice": 0.108342,
+      "outPrice": 0.866736,
+      "context": 262144
+    },
+    {
+      "id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "inPrice": 0.22224,
+      "outPrice": 0.977856,
+      "context": 262144
+    },
+    {
+      "id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "inPrice": 0.141678,
+      "outPrice": 0.566712,
+      "context": 262144
+    },
+    {
       "id": "qwen/qwen3-vl-plus",
       "inPrice": 0.1,
       "outPrice": 0.8,
+      "context": 262144
+    },
+    {
+      "id": "qwen/qwen3.5-122b-a10b",
+      "inPrice": 0.377808,
+      "outPrice": 3.022464,
       "context": 262144
     },
     {
@@ -1714,9 +2061,15 @@
       "context": 262144
     },
     {
+      "id": "qwen/qwen3.5-35b-a3b",
+      "inPrice": 0.155568,
+      "outPrice": 1.1112,
+      "context": 262144
+    },
+    {
       "id": "qwen/qwen3.5-397b-a17b",
-      "inPrice": 0.086,
-      "outPrice": 0.516,
+      "inPrice": 0.1032,
+      "outPrice": 0.6192,
       "context": 262144
     },
     {
@@ -1733,8 +2086,8 @@
     },
     {
       "id": "qwen/qwen3.5-plus",
-      "inPrice": 0.0575,
-      "outPrice": 0.344,
+      "inPrice": 0.069,
+      "outPrice": 0.4128,
       "context": 1048576
     },
     {
@@ -1745,8 +2098,8 @@
     },
     {
       "id": "qwen/qwen3.6-plus",
-      "inPrice": 0.138,
-      "outPrice": 0.8255,
+      "inPrice": 0.1656,
+      "outPrice": 0.9906,
       "context": 1048576
     },
     {
@@ -1793,8 +2146,8 @@
     },
     {
       "id": "qwen/qwen3.8-max",
-      "inPrice": 0.7143,
-      "outPrice": 2.1429,
+      "inPrice": 0.825,
+      "outPrice": 2.4755,
       "context": 1048576
     },
     {
@@ -2200,6 +2553,12 @@
       "context": 262144
     },
     {
+      "id": "z-ai/glm-4.5-air",
+      "inPrice": 0.122232,
+      "outPrice": 0.672276,
+      "context": 131072
+    },
+    {
       "id": "z-ai/glm-4.5-flash",
       "inPrice": 0,
       "outPrice": 0,
@@ -2210,6 +2569,12 @@
       "inPrice": 0.6,
       "outPrice": 2.2,
       "context": 131072
+    },
+    {
+      "id": "z-ai/glm-4.5v",
+      "inPrice": 0.566712,
+      "outPrice": 1.700136,
+      "context": 65536
     },
     {
       "id": "z-ai/glm-4.6",
@@ -2282,6 +2647,12 @@
       "inPrice": 0.2865,
       "outPrice": 1.29,
       "context": 204800
+    },
+    {
+      "id": "z-ai/glm-5v-turbo",
+      "inPrice": 1.124148814,
+      "outPrice": 3.747164194,
+      "context": 202752
     },
     {
       "id": "google/gemini-flash-latest",
@@ -2357,8 +2728,8 @@
     },
     {
       "id": "qwen/qwen-max-latest",
-      "inPrice": 0.7143,
-      "outPrice": 2.1429,
+      "inPrice": 0.825,
+      "outPrice": 2.4755,
       "context": 1048576
     },
     {
