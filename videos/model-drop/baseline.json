@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-06T15:04:28.505Z",
+  "acceptedAt": "2026-11-07T14:03:25.944Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -389,13 +389,26 @@
     "openai/gpt-latest",
     "openai/gpt-mini-latest",
     "openai/gpt-nano-latest",
+    "openai/gpt-pro-latest",
+    "openai/gpt-codex-latest",
     "qwen/qwen-max-latest",
     "qwen/qwen-plus-latest",
     "qwen/qwen-flash-latest",
     "z-ai/glm-latest",
     "z-ai/glm-flash-latest",
     "moonshotai/kimi-latest",
-    "x-ai/grok-latest"
+    "moonshotai/kimi-pro-latest",
+    "x-ai/grok-latest",
+    "mistralai/mistral-large-latest",
+    "mistralai/mistral-medium-latest",
+    "mistralai/mistral-small-latest",
+    "minimax/minimax-latest",
+    "xiaomi/mimo-pro-latest",
+    "xiaomi/mimo-flash-latest",
+    "cohere/command-a-latest",
+    "nvidia/nemotron-super-latest",
+    "nvidia/nemotron-nano-latest",
+    "tencent/hy-latest"
   ],
   "models": [
     {
@@ -1102,8 +1115,8 @@
     },
     {
       "id": "meituan/longcat-2.5",
-      "inPrice": 0.3,
-      "outPrice": 1.18,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 1048576
     },
     {
@@ -1512,7 +1525,7 @@
       "id": "openai/codex-mini-latest",
       "inPrice": 0,
       "outPrice": 0,
-      "context": null
+      "context": 200000
     },
     {
       "id": "openai/gpt-4.1-mini",
@@ -2146,8 +2159,8 @@
     },
     {
       "id": "qwen/qwen3.8-max",
-      "inPrice": 0.825,
-      "outPrice": 2.4755,
+      "inPrice": 0.1572,
+      "outPrice": 0.4715,
       "context": 1048576
     },
     {
@@ -2727,9 +2740,21 @@
       "context": 409600
     },
     {
+      "id": "openai/gpt-pro-latest",
+      "inPrice": 30,
+      "outPrice": 180,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-codex-latest",
+      "inPrice": 1.75,
+      "outPrice": 14,
+      "context": 400000
+    },
+    {
       "id": "qwen/qwen-max-latest",
-      "inPrice": 0.825,
-      "outPrice": 2.4755,
+      "inPrice": 0.1572,
+      "outPrice": 0.4715,
       "context": 1048576
     },
     {
@@ -2763,10 +2788,76 @@
       "context": 1050000
     },
     {
+      "id": "moonshotai/kimi-pro-latest",
+      "inPrice": 2,
+      "outPrice": 10,
+      "context": 1048576
+    },
+    {
       "id": "x-ai/grok-latest",
       "inPrice": 1.6,
       "outPrice": 4.8,
       "context": 524288
+    },
+    {
+      "id": "mistralai/mistral-large-latest",
+      "inPrice": 0.68,
+      "outPrice": 2.09,
+      "context": 1048576
+    },
+    {
+      "id": "mistralai/mistral-medium-latest",
+      "inPrice": 1.5,
+      "outPrice": 7.5,
+      "context": 262144
+    },
+    {
+      "id": "mistralai/mistral-small-latest",
+      "inPrice": 0.15,
+      "outPrice": 0.6,
+      "context": 262144
+    },
+    {
+      "id": "minimax/minimax-latest",
+      "inPrice": 0.23,
+      "outPrice": 0.96,
+      "context": 1048576
+    },
+    {
+      "id": "xiaomi/mimo-pro-latest",
+      "inPrice": 0.387,
+      "outPrice": 0.783,
+      "context": 1050000
+    },
+    {
+      "id": "xiaomi/mimo-flash-latest",
+      "inPrice": 0.12,
+      "outPrice": 0.25,
+      "context": 1050000
+    },
+    {
+      "id": "cohere/command-a-latest",
+      "inPrice": 0.3,
+      "outPrice": 1.5,
+      "context": 192000
+    },
+    {
+      "id": "nvidia/nemotron-super-latest",
+      "inPrice": 0.085,
+      "outPrice": 0.4,
+      "context": 1048576
+    },
+    {
+      "id": "nvidia/nemotron-nano-latest",
+      "inPrice": 0.05,
+      "outPrice": 0.2,
+      "context": 262144
+    },
+    {
+      "id": "tencent/hy-latest",
+      "inPrice": 0.417,
+      "outPrice": 1.2505,
+      "context": 1048576
     }
   ]
 }

@@ -625,6 +625,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-a76d4afedafff08e0e0c",
         "draft": true
       }
+    },
+    {
+      "id": "030-20261107-models-pricing-97fc5f9300",
+      "hash": "97fc5f9300",
+      "kind": "model-drop",
+      "label": "models+pricing",
+      "title": "13 new -latest aliases on AnyRouter",
+      "seconds": 20,
+      "renderedAt": "2026-11-07T14:04:31.876Z",
+      "commit": "789899e",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-030-20261107-models-pricing-97fc5f9300.mp4",
+          "cover": "renders/model-drop-030-20261107-models-pricing-97fc5f9300.png"
+        }
+      },
+      "source": "renders/model-drop-030-20261107-models-pricing-97fc5f9300-source.tar.gz",
+      "createdAt": "2026-11-07T14:04:31.883Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-c6666949b4252e816a65",
+        "draft": true
+      }
     }
   ]
 }
