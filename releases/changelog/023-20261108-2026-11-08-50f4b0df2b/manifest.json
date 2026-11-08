@@ -1,0 +1,26 @@
+{
+  "id": "023-20261108-2026-11-08-50f4b0df2b",
+  "hash": "50f4b0df2b",
+  "kind": "changelog",
+  "label": "2026-11-08",
+  "title": "Ampersand v0.1",
+  "seconds": 15,
+  "renderedAt": "2026-11-08T14:20:13.450Z",
+  "commit": "601ac5a",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-023-20261108-2026-11-08-50f4b0df2b.mp4",
+      "cover": "renders/changelog-023-20261108-2026-11-08-50f4b0df2b.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-023-20261108-2026-11-08-50f4b0df2b-portrait.mp4",
+      "cover": "renders/changelog-023-20261108-2026-11-08-50f4b0df2b-portrait.png"
+    }
+  },
+  "source": "renders/changelog-023-20261108-2026-11-08-50f4b0df2b-source.tar.gz",
+  "createdAt": "2026-11-08T14:20:13.456Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-320460764d8622a2dd78",
+    "draft": true
+  }
+}

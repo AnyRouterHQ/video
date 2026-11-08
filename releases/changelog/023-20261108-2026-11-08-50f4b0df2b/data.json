@@ -1,0 +1,19 @@
+{
+  "notable": true,
+  "label": "2026-11-08",
+  "parts": [
+    "2026-11-08"
+  ],
+  "date": "2026-11-08",
+  "entries": [
+    {
+      "slug": "2026-11-08",
+      "date": "2026-11-08",
+      "title": "Ampersand v0.1",
+      "summary": "humans&'s collaborator model joins the catalog — trained from GLM 5.3 to track what each person wants, flag conflicts, and share context in group chats, with a 1M-token context — BYOK through Vercel AI Gateway.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-08",
+      "type": "added"
+    }
+  ],
+  "total": 1
+}

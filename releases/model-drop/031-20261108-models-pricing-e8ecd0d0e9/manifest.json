@@ -1,0 +1,22 @@
+{
+  "id": "031-20261108-models-pricing-e8ecd0d0e9",
+  "hash": "e8ecd0d0e9",
+  "kind": "model-drop",
+  "label": "models+pricing",
+  "title": "3 new models: decisions-fast, inkling-2-small, ampersand-v0.1",
+  "seconds": 20,
+  "renderedAt": "2026-11-08T14:21:13.212Z",
+  "commit": "601ac5a",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-031-20261108-models-pricing-e8ecd0d0e9.mp4",
+      "cover": "renders/model-drop-031-20261108-models-pricing-e8ecd0d0e9.png"
+    }
+  },
+  "source": "renders/model-drop-031-20261108-models-pricing-e8ecd0d0e9-source.tar.gz",
+  "createdAt": "2026-11-08T14:21:13.221Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-3011a261b12a5daf8c77",
+    "draft": true
+  }
+}

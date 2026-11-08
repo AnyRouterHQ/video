@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-07T14:03:25.944Z",
+  "acceptedAt": "2026-11-08T14:18:36.945Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -94,6 +94,7 @@
     "google/gemma-4-26b-a4b-it",
     "google/gemma-4-31b",
     "hal-x/thx-01",
+    "humansand/ampersand-v0.1",
     "ibm-granite/granite-4.0-h-micro",
     "ibm-granite/granite-4.2-30b",
     "ibm-granite/granite-4.2-8b",
@@ -242,6 +243,7 @@
     "openrouter/fusion",
     "openrouter/pareto-code",
     "ornith/ornith-1.5-122b",
+    "parallel/decisions-fast",
     "particle-ai/particle-1",
     "perplexity/pplx-decider-flash-v1.2",
     "perplexity/pplx-decider-v1-27b",
@@ -324,6 +326,7 @@
     "tencent/hy4-preview",
     "tencent/hy4",
     "thenlper/gte-base",
+    "thinkingmachines/inkling-2-small",
     "thinkingmachines/inkling-small",
     "thinkingmachines/inkling",
     "typesafe/jev",
@@ -970,6 +973,12 @@
       "context": 1024
     },
     {
+      "id": "humansand/ampersand-v0.1",
+      "inPrice": 1,
+      "outPrice": 5.2,
+      "context": 1000000
+    },
+    {
       "id": "ibm-granite/granite-4.0-h-micro",
       "inPrice": 0.017,
       "outPrice": 0.112,
@@ -1481,8 +1490,8 @@
     },
     {
       "id": "nvidia/nemotron-3.5-content-safety",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 0.05,
+      "outPrice": 0.15,
       "context": 131072
     },
     {
@@ -1856,6 +1865,12 @@
       "inPrice": 0.16,
       "outPrice": 0.64,
       "context": 262144
+    },
+    {
+      "id": "parallel/decisions-fast",
+      "inPrice": 0,
+      "outPrice": 0,
+      "context": 32000
     },
     {
       "id": "particle-ai/particle-1",
@@ -2348,6 +2363,12 @@
       "inPrice": 0.005,
       "outPrice": 0,
       "context": 512
+    },
+    {
+      "id": "thinkingmachines/inkling-2-small",
+      "inPrice": 0.3,
+      "outPrice": 1,
+      "context": 262144
     },
     {
       "id": "thinkingmachines/inkling-small",

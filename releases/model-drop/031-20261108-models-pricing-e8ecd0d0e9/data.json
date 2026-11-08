@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-11-08T14:18:36.944Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 420,
+    "listed": 411,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 80,
+    "providerBackends": 80,
+    "free": 70
+  },
+  "pool": null,
+  "added": [
+    {
+      "id": "parallel/decisions-fast",
+      "name": "Decisions Fast",
+      "provider": "parallel",
+      "logo": null,
+      "context": 32000,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1793923200,
+      "category": "text",
+      "excerpt": "Parallel Decisions Fast is a web-grounded Decisions model: send `state` (text or JSON) plus up to 100 typed `questions` (noul / choice / score) and get structured answers with per-question refusals and request-level citations after live web research — not generated chat text."
+    },
+    {
+      "id": "thinkingmachines/inkling-2-small",
+      "name": "Inkling 2 Small",
+      "provider": "thinkingmachines",
+      "logo": "thinkingmachines.svg",
+      "context": 262144,
+      "inPrice": 0.3,
+      "outPrice": 1,
+      "free": false,
+      "created": 1793836800,
+      "category": "text",
+      "excerpt": "Inkling 2 Small is Thinking Machines Lab's second-generation open-weights foundation model: a 594B-parameter multimodal mixture-of-experts transformer (17B active) with a 1M-token context window, variable reasoning effort, and tool use — aimed at agentic coding, vision, and knowledge work."
+    },
+    {
+      "id": "humansand/ampersand-v0.1",
+      "name": "Ampersand v0.1",
+      "provider": "humansand",
+      "logo": null,
+      "context": 1000000,
+      "inPrice": 1,
+      "outPrice": 5.2,
+      "free": false,
+      "created": 1792454400,
+      "category": "text",
+      "excerpt": "Ampersand v0.1 is humans&'s collaborator model, trained from GLM 5.3 for people to achieve goals together: it tracks what each person wants, flags conflicts, shares context, and asks questions in group chats."
+    }
+  ],
+  "changed": [
+    {
+      "id": "nvidia/nemotron-3.5-content-safety",
+      "from": "0/0@131072",
+      "to": "0.05/0.15@131072",
+      "kind": "price-rise"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "parallel/decisions-fast",
+    "name": "Decisions Fast",
+    "provider": "parallel",
+    "logo": null,
+    "context": 32000,
+    "inPrice": 0,
+    "outPrice": 0,
+    "free": true,
+    "created": 1793923200,
+    "category": "text",
+    "excerpt": "Parallel Decisions Fast is a web-grounded Decisions model: send `state` (text or JSON) plus up to 100 typed `questions` (noul / choice / score) and get structured answers with per-question refusals and request-level citations after live web research — not generated chat text."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+parallel/decisions-fast@0/0@32000",
+    "+thinkingmachines/inkling-2-small@0.3/1@262144",
+    "+humansand/ampersand-v0.1@1/5.2@1000000",
+    "~nvidia/nemotron-3.5-content-safety 0/0@131072->0.05/0.15@131072"
+  ]
+}
