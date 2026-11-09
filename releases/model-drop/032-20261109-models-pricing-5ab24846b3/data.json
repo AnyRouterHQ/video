@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-11-09T17:30:25.095Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 424,
+    "listed": 415,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 81,
+    "providerBackends": 81,
+    "free": 75
+  },
+  "pool": null,
+  "added": [
+    {
+      "id": "stealth/frantic-ferret",
+      "name": "Frantic Ferret",
+      "provider": "stealth",
+      "logo": "stealth.svg",
+      "context": 1048576,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1794096000,
+      "category": "text",
+      "excerpt": "Frantic Ferret is an anonymous stealth preview model surfaced on OpenCode Zen."
+    },
+    {
+      "id": "google/embeddinggemma-2",
+      "name": "EmbeddingGemma 2",
+      "provider": "Google",
+      "logo": "google-color.svg",
+      "context": 8192,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1791244800,
+      "category": "embedding",
+      "excerpt": "EmbeddingGemma 2 is an open multimodal embedding model built by Google DeepMind which maps text (incl."
+    },
+    {
+      "id": "qwen/qwen2.5-coder-0.5b-instruct",
+      "name": "Qwen 2.5 Coder 0.5B",
+      "provider": "Qwen",
+      "logo": "qwen-color.svg",
+      "context": 32768,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1731369600,
+      "category": "text",
+      "excerpt": "Qwen 2.5 Coder 0.5B, run on a user's own paired machine with Ollama and relayed to AnyRouter over an outbound WebSocket (no API key, no server-side compute)."
+    },
+    {
+      "id": "mistral/mistral-7b-instruct-v0.3",
+      "name": "Mistral 7B Instruct v0.3",
+      "provider": "mistral",
+      "logo": "mistral-color.svg",
+      "context": 32768,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1716336000,
+      "category": "text",
+      "excerpt": "Mistral 7B Instruct v0.3, run on a user's own paired machine with Ollama and relayed to AnyRouter over an outbound WebSocket (no API key, no server-side compute)."
+    }
+  ],
+  "changed": [
+    {
+      "id": "qwen/qwen2.5-coder-32b-instruct",
+      "from": "0.66/1@131072",
+      "to": "0/0@131072",
+      "kind": "price-cut"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "stealth/frantic-ferret",
+    "name": "Frantic Ferret",
+    "provider": "stealth",
+    "logo": "stealth.svg",
+    "context": 1048576,
+    "inPrice": 0,
+    "outPrice": 0,
+    "free": true,
+    "created": 1794096000,
+    "category": "text",
+    "excerpt": "Frantic Ferret is an anonymous stealth preview model surfaced on OpenCode Zen."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+stealth/frantic-ferret@0/0@1048576",
+    "+google/embeddinggemma-2@0/0@8192",
+    "+qwen/qwen2.5-coder-0.5b-instruct@0/0@32768",
+    "+mistral/mistral-7b-instruct-v0.3@0/0@32768",
+    "~qwen/qwen2.5-coder-32b-instruct 0.66/1@131072->0/0@131072"
+  ]
+}

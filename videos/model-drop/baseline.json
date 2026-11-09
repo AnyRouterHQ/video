@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-08T14:18:36.945Z",
+  "acceptedAt": "2026-11-09T17:30:25.095Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -77,6 +77,7 @@
     "fireworks/ember-1",
     "fireworks/ultramarine-1-flash",
     "fpt-ai/saola-small-32b",
+    "google/embeddinggemma-2",
     "google/gemini-2.5-flash-lite",
     "google/gemini-2.5-pro",
     "google/gemini-3-flash",
@@ -142,6 +143,7 @@
     "minimax/m3",
     "minimax/minimax-m1",
     "minimax/minimax-m3.1-flash",
+    "mistral/mistral-7b-instruct-v0.3",
     "mistralai/codestral-2508",
     "mistralai/ministral-14b-2512",
     "mistralai/ministral-3b-2512",
@@ -260,6 +262,7 @@
     "qwen/qwen-flash",
     "qwen/qwen-plus",
     "qwen/qwen2.5-72b-instruct",
+    "qwen/qwen2.5-coder-0.5b-instruct",
     "qwen/qwen2.5-coder-32b-instruct",
     "qwen/qwen2.5-vl-72b-instruct",
     "qwen/qwen2.5-vl-7b-instruct",
@@ -314,6 +317,7 @@
     "scira/amos-1-small",
     "sentence-transformers/all-minilm-l6-v2",
     "stealth/crouton-alpha",
+    "stealth/frantic-ferret",
     "stealth/glyph-cluster",
     "stepfun/step-5-preview",
     "stepfun-ai/step-3.5-flash",
@@ -871,6 +875,12 @@
       "context": 32000
     },
     {
+      "id": "google/embeddinggemma-2",
+      "inPrice": 0,
+      "outPrice": 0,
+      "context": 8192
+    },
+    {
       "id": "google/gemini-2.5-flash-lite",
       "inPrice": 0.075,
       "outPrice": 0.3,
@@ -1259,6 +1269,12 @@
       "inPrice": 0,
       "outPrice": 0,
       "context": 1048576
+    },
+    {
+      "id": "mistral/mistral-7b-instruct-v0.3",
+      "inPrice": 0,
+      "outPrice": 0,
+      "context": 32768
     },
     {
       "id": "mistralai/codestral-2508",
@@ -1969,9 +1985,15 @@
       "context": 128000
     },
     {
+      "id": "qwen/qwen2.5-coder-0.5b-instruct",
+      "inPrice": 0,
+      "outPrice": 0,
+      "context": 32768
+    },
+    {
       "id": "qwen/qwen2.5-coder-32b-instruct",
-      "inPrice": 0.66,
-      "outPrice": 1,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 131072
     },
     {
@@ -2288,6 +2310,12 @@
     },
     {
       "id": "stealth/crouton-alpha",
+      "inPrice": 0,
+      "outPrice": 0,
+      "context": 1048576
+    },
+    {
+      "id": "stealth/frantic-ferret",
       "inPrice": 0,
       "outPrice": 0,
       "context": 1048576

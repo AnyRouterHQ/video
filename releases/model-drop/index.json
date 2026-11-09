@@ -669,6 +669,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-3011a261b12a5daf8c77",
         "draft": true
       }
+    },
+    {
+      "id": "032-20261109-models-pricing-5ab24846b3",
+      "hash": "5ab24846b3",
+      "kind": "model-drop",
+      "label": "models+pricing",
+      "title": "4 new models: frantic-ferret, embeddinggemma-2, qwen2.5-coder-0.5b-instruct +1 more",
+      "seconds": 20,
+      "renderedAt": "2026-11-09T17:34:14.026Z",
+      "commit": "b228b79",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-032-20261109-models-pricing-5ab24846b3.mp4",
+          "cover": "renders/model-drop-032-20261109-models-pricing-5ab24846b3.png"
+        }
+      },
+      "source": "renders/model-drop-032-20261109-models-pricing-5ab24846b3-source.tar.gz",
+      "createdAt": "2026-11-09T17:34:14.032Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-1d3bb5b5600b18159ff2",
+        "draft": true
+      }
     }
   ]
 }

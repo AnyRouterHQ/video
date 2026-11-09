@@ -1,0 +1,26 @@
+{
+  "id": "024-20261109-2026-11-09-1979d6678f",
+  "hash": "1979d6678f",
+  "kind": "changelog",
+  "label": "2026-11-09",
+  "title": "2 changelog updates: Ollama models over Relay, EmbeddingGemma 2 added",
+  "seconds": 21,
+  "renderedAt": "2026-11-09T17:32:56.586Z",
+  "commit": "b228b79",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-024-20261109-2026-11-09-1979d6678f.mp4",
+      "cover": "renders/changelog-024-20261109-2026-11-09-1979d6678f.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-024-20261109-2026-11-09-1979d6678f-portrait.mp4",
+      "cover": "renders/changelog-024-20261109-2026-11-09-1979d6678f-portrait.png"
+    }
+  },
+  "source": "renders/changelog-024-20261109-2026-11-09-1979d6678f-source.tar.gz",
+  "createdAt": "2026-11-09T17:32:56.590Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-ceb319d4c376e1900b54",
+    "draft": true
+  }
+}

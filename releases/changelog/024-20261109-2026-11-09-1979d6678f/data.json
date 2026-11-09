@@ -1,0 +1,28 @@
+{
+  "notable": true,
+  "label": "2026-11-09",
+  "parts": [
+    "2026-11-09",
+    "2026-11-09-catalog"
+  ],
+  "date": "2026-11-09",
+  "entries": [
+    {
+      "slug": "2026-11-09",
+      "date": "2026-11-09",
+      "title": "Ollama models over Relay",
+      "summary": "Qwen 2.5 Coder 0.5B and Mistral 7B Instruct v0.3 join the catalog as on-device listings served by your own Ollama over AnyRouter Relay at $0 — and the existing Qwen 2.5 Coder 32B gains the same Ollama hop.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-09",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-09-catalog",
+      "date": "2026-11-09",
+      "title": "EmbeddingGemma 2 added",
+      "summary": "1 model from 1 provider joined the catalog the week of 2026-11-09.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-09-catalog",
+      "type": "added"
+    }
+  ],
+  "total": 2
+}
