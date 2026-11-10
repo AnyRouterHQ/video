@@ -1,0 +1,195 @@
+{
+  "generatedAt": "2026-11-10T15:36:54.872Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 433,
+    "listed": 424,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 84,
+    "providerBackends": 84,
+    "free": 80
+  },
+  "pool": null,
+  "added": [
+    {
+      "id": "anthropic/claude-fable-5-2",
+      "name": "Claude Fable 5.2",
+      "provider": "Anthropic",
+      "logo": "anthropic-color.svg",
+      "context": 1000000,
+      "inPrice": 8,
+      "outPrice": 40,
+      "free": false,
+      "created": 1794182400,
+      "category": "multimodal",
+      "excerpt": "Anthropic's Claude Fable 5.2 is a frontier model for the most demanding technical work, with gains over Fable 5.1 in coding, reasoning and vision."
+    },
+    {
+      "id": "meta/muse-ember",
+      "name": "Muse Ember",
+      "provider": "meta",
+      "logo": "meta-color.svg",
+      "context": 1048576,
+      "inPrice": 0.1,
+      "outPrice": 0.5,
+      "free": false,
+      "created": 1794182400,
+      "category": "multimodal",
+      "excerpt": "Meta's Muse Ember is the smallest and most efficient model in the Muse family, built for complex reasoning execution and everyday agent work: tool calls, coding subtasks, routing, and processing large collections of images, files, audio and video."
+    },
+    {
+      "id": "nace-ai/drex-max-finance",
+      "name": "Drex Max Finance",
+      "provider": "nace-ai",
+      "logo": null,
+      "context": 262144,
+      "inPrice": 0.03,
+      "outPrice": 0,
+      "free": false,
+      "created": 1793491200,
+      "category": "multimodal",
+      "excerpt": "Drex Max Finance is Nace AI's multimodal decision model for finance, with the same System One request shape as Drex Max."
+    },
+    {
+      "id": "nace-ai/drex-max-v1.1",
+      "name": "Drex Max v1.1",
+      "provider": "nace-ai",
+      "logo": null,
+      "context": 262144,
+      "inPrice": 0.03,
+      "outPrice": 0,
+      "free": false,
+      "created": 1793145600,
+      "category": "multimodal",
+      "excerpt": "Drex Max v1.1 is Nace AI's largest multimodal decision model, the successor to Drex Max and Drex v2.0 for image-capable decision tasks."
+    },
+    {
+      "id": "ibm-granite/granite-embedding",
+      "name": "Granite Embedding",
+      "provider": "ibm-granite",
+      "logo": "ibm-granite-color.svg",
+      "context": null,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1721088000,
+      "category": "embedding",
+      "excerpt": "IBM's Granite Embedding is an open text embedding family (30M and 278M cuts) for retrieval, clustering, and semantic search."
+    },
+    {
+      "id": "nomic-ai/nomic-embed-text",
+      "name": "Nomic Embed Text",
+      "provider": "nomic-ai",
+      "logo": null,
+      "context": 8192,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1715299200,
+      "category": "embedding",
+      "excerpt": "Nomic Embed Text is an open text embedding model from Nomic AI, trained for high-quality semantic search and retrieval."
+    },
+    {
+      "id": "snowflakeai/snowflake-arctic-embed",
+      "name": "Snowflake Arctic Embed",
+      "provider": "snowflakeai",
+      "logo": null,
+      "context": null,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1712102400,
+      "category": "embedding",
+      "excerpt": "Snowflake Arctic Embed is Snowflake's open text embedding family, spanning small to large cuts across 100+ languages."
+    },
+    {
+      "id": "mixedbread-ai/mxbai-embed-large",
+      "name": "MX-BAI Embed Large",
+      "provider": "mixedbread-ai",
+      "logo": null,
+      "context": 512,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1708041600,
+      "category": "embedding",
+      "excerpt": "MX-BAI Embed Large is Mixedbread AI's open text embedding model, returning a 1,024-dimension dense vector over a 512-token window."
+    },
+    {
+      "id": "baai/bge-large",
+      "name": "BGE-Large",
+      "provider": "baai",
+      "logo": null,
+      "context": 512,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1695859200,
+      "category": "embedding",
+      "excerpt": "BAAI's BGE-Large is an open multilingual text embedding model returning a 1,024-dimension dense vector over a 512-token window, across 100+ languages."
+    },
+    {
+      "id": "sentence-transformers/all-minilm",
+      "name": "All MiniLM",
+      "provider": "sentence-transformers",
+      "logo": null,
+      "context": 256,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1671494400,
+      "category": "embedding",
+      "excerpt": "All MiniLM is the sentence-transformers MiniLM family (L6-v2 and L12-v1 cuts) for fast, compact text embedding."
+    }
+  ],
+  "changed": [
+    {
+      "id": "cloudflare/clef",
+      "from": "0.24/0@65536",
+      "to": "0.24/0@131072",
+      "kind": "context"
+    },
+    {
+      "id": "thinkingmachines/inkling-2-small",
+      "from": "0.3/1@262144",
+      "to": "0.3/1@1048576",
+      "kind": "context"
+    }
+  ],
+  "removed": [
+    "stealth/crouton-alpha"
+  ],
+  "spotlight": {
+    "id": "anthropic/claude-fable-5-2",
+    "name": "Claude Fable 5.2",
+    "provider": "Anthropic",
+    "logo": "anthropic-color.svg",
+    "context": 1000000,
+    "inPrice": 8,
+    "outPrice": 40,
+    "free": false,
+    "created": 1794182400,
+    "category": "multimodal",
+    "excerpt": "Anthropic's Claude Fable 5.2 is a frontier model for the most demanding technical work, with gains over Fable 5.1 in coding, reasoning and vision."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+anthropic/claude-fable-5-2@8/40@1000000",
+    "+meta/muse-ember@0.1/0.5@1048576",
+    "+nace-ai/drex-max-finance@0.03/0@262144",
+    "+nace-ai/drex-max-v1.1@0.03/0@262144",
+    "+ibm-granite/granite-embedding@0/0@x",
+    "+nomic-ai/nomic-embed-text@0/0@8192",
+    "+snowflakeai/snowflake-arctic-embed@0/0@x",
+    "+mixedbread-ai/mxbai-embed-large@0/0@512",
+    "+baai/bge-large@0/0@512",
+    "+sentence-transformers/all-minilm@0/0@256",
+    "~cloudflare/clef 0.24/0@65536->0.24/0@131072",
+    "~thinkingmachines/inkling-2-small 0.3/1@262144->0.3/1@1048576",
+    "-stealth/crouton-alpha"
+  ]
+}

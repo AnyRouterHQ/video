@@ -1,0 +1,28 @@
+{
+  "notable": true,
+  "label": "2026-11-10",
+  "parts": [
+    "2026-11-10",
+    "2026-11-10-disabled"
+  ],
+  "date": "2026-11-10",
+  "entries": [
+    {
+      "slug": "2026-11-10",
+      "date": "2026-11-10",
+      "title": "Muse Ember, Claude Fable 5.2 and Drex Max",
+      "summary": "Meta's smallest Muse model joins the catalog (and is what stealth/crouton-alpha turned out to be), Anthropic's Claude Fable 5.2 lands at $8 / $40 per 1M tokens, and Nace AI's Drex Max v1.1 and Drex Max Finance cover multimodal decisions.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-10",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-10-disabled",
+      "date": "2026-11-10",
+      "title": "Crouton Alpha disabled",
+      "summary": "Crouton Alpha was an early version of Meta's Muse Ember, its new smallest model designed for scalable agentic execution — built for high-volume agent work such as tool calls, coding subtasks, routing and very long documents. Use meta/muse-ember — requests that still use this id are routed there.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-10-disabled",
+      "type": "disabled"
+    }
+  ],
+  "total": 2
+}

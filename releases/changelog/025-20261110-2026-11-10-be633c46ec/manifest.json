@@ -1,0 +1,26 @@
+{
+  "id": "025-20261110-2026-11-10-be633c46ec",
+  "hash": "be633c46ec",
+  "kind": "changelog",
+  "label": "2026-11-10",
+  "title": "2 changelog updates: Muse Ember, Claude Fable 5.2 and Drex Max, Crouton Alpha disabled",
+  "seconds": 23.5,
+  "renderedAt": "2026-11-10T15:39:29.133Z",
+  "commit": "fcd88fd",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-025-20261110-2026-11-10-be633c46ec.mp4",
+      "cover": "renders/changelog-025-20261110-2026-11-10-be633c46ec.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-025-20261110-2026-11-10-be633c46ec-portrait.mp4",
+      "cover": "renders/changelog-025-20261110-2026-11-10-be633c46ec-portrait.png"
+    }
+  },
+  "source": "renders/changelog-025-20261110-2026-11-10-be633c46ec-source.tar.gz",
+  "createdAt": "2026-11-10T15:39:29.141Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-4ba4635a0af686a4fbdd",
+    "draft": true
+  }
+}

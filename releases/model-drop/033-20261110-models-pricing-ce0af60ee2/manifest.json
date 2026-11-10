@@ -1,0 +1,22 @@
+{
+  "id": "033-20261110-models-pricing-ce0af60ee2",
+  "hash": "ce0af60ee2",
+  "kind": "model-drop",
+  "label": "models+pricing",
+  "title": "10 new models: claude-fable-5-2, muse-ember, drex-max-finance +7 more",
+  "seconds": 20,
+  "renderedAt": "2026-11-10T15:40:38.003Z",
+  "commit": "fcd88fd",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-033-20261110-models-pricing-ce0af60ee2.mp4",
+      "cover": "renders/model-drop-033-20261110-models-pricing-ce0af60ee2.png"
+    }
+  },
+  "source": "renders/model-drop-033-20261110-models-pricing-ce0af60ee2-source.tar.gz",
+  "createdAt": "2026-11-10T15:40:38.012Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-804b52967a1b149388e3",
+    "draft": true
+  }
+}
