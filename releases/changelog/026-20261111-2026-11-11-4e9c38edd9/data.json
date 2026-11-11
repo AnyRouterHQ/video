@@ -1,0 +1,19 @@
+{
+  "notable": true,
+  "label": "2026-11-11",
+  "parts": [
+    "2026-11-11"
+  ],
+  "date": "2026-11-11",
+  "entries": [
+    {
+      "slug": "2026-11-11",
+      "date": "2026-11-11",
+      "title": "ERNIE 5.5 Flash Preview",
+      "summary": "Baidu's ERNIE 5.5 Flash Preview joins the catalog through your own OpenRouter key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-11",
+      "type": "added"
+    }
+  ],
+  "total": 1
+}

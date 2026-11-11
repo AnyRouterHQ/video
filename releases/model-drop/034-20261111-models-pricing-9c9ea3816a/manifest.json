@@ -1,0 +1,22 @@
+{
+  "id": "034-20261111-models-pricing-9c9ea3816a",
+  "hash": "9c9ea3816a",
+  "kind": "model-drop",
+  "label": "models+pricing",
+  "title": "4 new models: ernie-5.5-flash-preview, gemini-4-carbon, midm-k-3.0-pro +1 more",
+  "seconds": 20,
+  "renderedAt": "2026-11-11T15:17:41.351Z",
+  "commit": "3475207",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-034-20261111-models-pricing-9c9ea3816a.mp4",
+      "cover": "renders/model-drop-034-20261111-models-pricing-9c9ea3816a.png"
+    }
+  },
+  "source": "renders/model-drop-034-20261111-models-pricing-9c9ea3816a-source.tar.gz",
+  "createdAt": "2026-11-11T15:17:41.359Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-e9af72d80e9a0a3365d9",
+    "draft": true
+  }
+}

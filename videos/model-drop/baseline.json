@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-10T15:36:54.873Z",
+  "acceptedAt": "2026-11-11T15:14:12.691Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -44,6 +44,7 @@
     "baai/bge-large",
     "baai/bge-m3",
     "baai/bge-multilingual-gemma2",
+    "baidu/ernie-5.5-flash-preview",
     "bytedance-seed/doubao-seed-2-1-pro-260628",
     "bytedance-seed/seed-1.6",
     "bytedance-seed/seed-2-1-turbo",
@@ -91,6 +92,7 @@
     "google/gemini-3.7-flash",
     "google/gemini-3.8-flash",
     "google/gemini-4-argon",
+    "google/gemini-4-carbon",
     "google/gemini-embedding-2",
     "google/gemma-3-4b-it",
     "google/gemma-3n-e2b",
@@ -117,6 +119,7 @@
     "intfloat/e5-base-v2",
     "intfloat/multilingual-e5-large",
     "jaredpalmer/kev-4b",
+    "kt/midm-k-3.0-pro",
     "liquid/d1-ultra",
     "liquid/d1",
     "liquid/lfm-2.5-2.6b",
@@ -176,6 +179,7 @@
     "moonshotai/kimi-k3",
     "morph/morph-v3-fast",
     "morph/morph-v3-large",
+    "motif-technologies/motif-3",
     "nace-ai/drex-max-finance",
     "nace-ai/drex-max-v1.1",
     "nace-ai/drex-v1.5",
@@ -686,6 +690,12 @@
       "context": 8192
     },
     {
+      "id": "baidu/ernie-5.5-flash-preview",
+      "inPrice": 0.28,
+      "outPrice": 1.13,
+      "context": 1024000
+    },
+    {
       "id": "bytedance-seed/doubao-seed-2-1-pro-260628",
       "inPrice": 1,
       "outPrice": 5,
@@ -831,8 +841,8 @@
     },
     {
       "id": "deepseek/deepseek-v4-flash",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 0.042448,
+      "outPrice": 0.084896,
       "context": 1050000
     },
     {
@@ -963,6 +973,12 @@
     },
     {
       "id": "google/gemini-4-argon",
+      "inPrice": 2,
+      "outPrice": 10,
+      "context": 1048576
+    },
+    {
+      "id": "google/gemini-4-carbon",
       "inPrice": 2,
       "outPrice": 10,
       "context": 1048576
@@ -1122,6 +1138,12 @@
       "inPrice": 0.042,
       "outPrice": 0,
       "context": 8192
+    },
+    {
+      "id": "kt/midm-k-3.0-pro",
+      "inPrice": 0.2,
+      "outPrice": 0.8,
+      "context": 261795
     },
     {
       "id": "liquid/d1-ultra",
@@ -1475,6 +1497,12 @@
       "id": "morph/morph-v3-large",
       "inPrice": 0.850068,
       "outPrice": 1.794588,
+      "context": 262144
+    },
+    {
+      "id": "motif-technologies/motif-3",
+      "inPrice": 0.3,
+      "outPrice": 1.2,
       "context": 262144
     },
     {

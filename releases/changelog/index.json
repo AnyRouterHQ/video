@@ -614,6 +614,32 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-4ba4635a0af686a4fbdd",
         "draft": true
       }
+    },
+    {
+      "id": "026-20261111-2026-11-11-4e9c38edd9",
+      "hash": "4e9c38edd9",
+      "kind": "changelog",
+      "label": "2026-11-11",
+      "title": "ERNIE 5.5 Flash Preview",
+      "seconds": 13.5,
+      "renderedAt": "2026-11-11T15:16:17.711Z",
+      "commit": "3475207",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/changelog-026-20261111-2026-11-11-4e9c38edd9.mp4",
+          "cover": "renders/changelog-026-20261111-2026-11-11-4e9c38edd9.png"
+        },
+        "portrait": {
+          "artifact": "renders/changelog-026-20261111-2026-11-11-4e9c38edd9-portrait.mp4",
+          "cover": "renders/changelog-026-20261111-2026-11-11-4e9c38edd9-portrait.png"
+        }
+      },
+      "source": "renders/changelog-026-20261111-2026-11-11-4e9c38edd9-source.tar.gz",
+      "createdAt": "2026-11-11T15:16:17.717Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-41104415a25b8b66f13c",
+        "draft": true
+      }
     }
   ]
 }

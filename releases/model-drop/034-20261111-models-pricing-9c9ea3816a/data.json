@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-11-11T15:14:12.690Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 437,
+    "listed": 428,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 87,
+    "providerBackends": 87,
+    "free": 79
+  },
+  "pool": null,
+  "added": [
+    {
+      "id": "baidu/ernie-5.5-flash-preview",
+      "name": "ERNIE 5.5 Flash Preview",
+      "provider": "baidu",
+      "logo": null,
+      "context": 1024000,
+      "inPrice": 0.28,
+      "outPrice": 1.13,
+      "free": false,
+      "created": 1794268800,
+      "category": "text",
+      "excerpt": "ERNIE 5.5 Flash Preview is Baidu's mixture-of-experts reasoning model with a 1M-token context window."
+    },
+    {
+      "id": "google/gemini-4-carbon",
+      "name": "Gemini 4 Carbon",
+      "provider": "Google",
+      "logo": "google-color.svg",
+      "context": 1048576,
+      "inPrice": 2,
+      "outPrice": 10,
+      "free": false,
+      "created": 1794268800,
+      "category": "text",
+      "excerpt": "Gemini 4 Carbon is Google's strongest model, built for long-horizon agentic work such as multi-step coding and debugging."
+    },
+    {
+      "id": "kt/midm-k-3.0-pro",
+      "name": "Mi:dm K 3.0 Pro",
+      "provider": "kt",
+      "logo": null,
+      "context": 261795,
+      "inPrice": 0.2,
+      "outPrice": 0.8,
+      "free": false,
+      "created": 1793836800,
+      "category": "text",
+      "excerpt": "Mi:dm K 3.0 Pro is KT's Mixture-of-Experts reasoning model, with 120B total and 12B active parameters."
+    },
+    {
+      "id": "motif-technologies/motif-3",
+      "name": "Motif 3",
+      "provider": "motif-technologies",
+      "logo": null,
+      "context": 262144,
+      "inPrice": 0.3,
+      "outPrice": 1.2,
+      "free": false,
+      "created": 1786060800,
+      "category": "text",
+      "excerpt": "Motif 3 is Motif Technologies' open-weight Mixture-of-Experts model, with 314B total and 13.2B active parameters."
+    }
+  ],
+  "changed": [
+    {
+      "id": "deepseek/deepseek-v4-flash",
+      "from": "0/0@1050000",
+      "to": "0.042448/0.084896@1050000",
+      "kind": "price-rise"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "baidu/ernie-5.5-flash-preview",
+    "name": "ERNIE 5.5 Flash Preview",
+    "provider": "baidu",
+    "logo": null,
+    "context": 1024000,
+    "inPrice": 0.28,
+    "outPrice": 1.13,
+    "free": false,
+    "created": 1794268800,
+    "category": "text",
+    "excerpt": "ERNIE 5.5 Flash Preview is Baidu's mixture-of-experts reasoning model with a 1M-token context window."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+baidu/ernie-5.5-flash-preview@0.28/1.13@1024000",
+    "+google/gemini-4-carbon@2/10@1048576",
+    "+kt/midm-k-3.0-pro@0.2/0.8@261795",
+    "+motif-technologies/motif-3@0.3/1.2@262144",
+    "~deepseek/deepseek-v4-flash 0/0@1050000->0.042448/0.084896@1050000"
+  ]
+}
