@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-11-12T15:58:59.770Z",
+  "mode": "diff",
+  "kind": "new-models",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 440,
+    "listed": 431,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 87,
+    "providerBackends": 87,
+    "free": 79
+  },
+  "pool": {
+    "keys": 354,
+    "donors": 211,
+    "requests": 270263
+  },
+  "added": [
+    {
+      "id": "google/gemini-decision-1",
+      "name": "Gemini Decision 1",
+      "provider": "Google",
+      "logo": "google-color.svg",
+      "context": 262144,
+      "inPrice": 0.1,
+      "outPrice": 0,
+      "free": false,
+      "created": 1794355200,
+      "category": "text",
+      "excerpt": "Gemini Decision 1 is Google's decision model for the Gemini Decisions API."
+    },
+    {
+      "id": "subquadratic/subq-snap-1.2",
+      "name": "SubQ Snap 1.2",
+      "provider": "subquadratic",
+      "logo": null,
+      "context": 393216,
+      "inPrice": 0.04,
+      "outPrice": 0,
+      "free": false,
+      "created": 1794355200,
+      "category": "text",
+      "excerpt": "SubQ Snap 1.2 is Subquadratic's long-context decision model for enterprise decisions."
+    },
+    {
+      "id": "nex-agi/nex-n2.6",
+      "name": "Nex-N2.6",
+      "provider": "nex-agi",
+      "logo": "nex-agi.svg",
+      "context": 262144,
+      "inPrice": 0.12,
+      "outPrice": 0.4,
+      "free": false,
+      "created": 1794268800,
+      "category": "multimodal",
+      "excerpt": "Nex-N2.6 is Nex-AGI's open-weight multimodal agentic model, built on a GLM Flash base model with about 321B parameters."
+    }
+  ],
+  "changed": [],
+  "removed": [],
+  "spotlight": {
+    "id": "google/gemini-decision-1",
+    "name": "Gemini Decision 1",
+    "provider": "Google",
+    "logo": "google-color.svg",
+    "context": 262144,
+    "inPrice": 0.1,
+    "outPrice": 0,
+    "free": false,
+    "created": 1794355200,
+    "category": "text",
+    "excerpt": "Gemini Decision 1 is Google's decision model for the Gemini Decisions API."
+  },
+  "notable": true,
+  "label": "new-models",
+  "parts": [
+    "+google/gemini-decision-1@0.1/0@262144",
+    "+subquadratic/subq-snap-1.2@0.04/0@393216",
+    "+nex-agi/nex-n2.6@0.12/0.4@262144"
+  ]
+}

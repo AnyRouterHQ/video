@@ -1,0 +1,26 @@
+{
+  "id": "027-20261112-2026-11-12-aa39562d44",
+  "hash": "aa39562d44",
+  "kind": "changelog",
+  "label": "2026-11-12",
+  "title": "2 changelog updates: Raon-1 nano, SubQ Snap 1.2",
+  "seconds": 22,
+  "renderedAt": "2026-11-12T16:02:05.692Z",
+  "commit": "392fecd",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-027-20261112-2026-11-12-aa39562d44.mp4",
+      "cover": "renders/changelog-027-20261112-2026-11-12-aa39562d44.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-027-20261112-2026-11-12-aa39562d44-portrait.mp4",
+      "cover": "renders/changelog-027-20261112-2026-11-12-aa39562d44-portrait.png"
+    }
+  },
+  "source": "renders/changelog-027-20261112-2026-11-12-aa39562d44-source.tar.gz",
+  "createdAt": "2026-11-12T16:02:05.701Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-f2c0a0e2b70bcfb92fe0",
+    "draft": true
+  }
+}

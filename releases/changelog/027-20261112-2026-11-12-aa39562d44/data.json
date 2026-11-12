@@ -1,0 +1,28 @@
+{
+  "notable": true,
+  "label": "2026-11-12",
+  "parts": [
+    "2026-11-12-krafton-raon-1-nano",
+    "2026-11-12-subq-snap-1-2"
+  ],
+  "date": "2026-11-12",
+  "entries": [
+    {
+      "slug": "2026-11-12-krafton-raon-1-nano",
+      "date": "2026-11-12",
+      "title": "Raon-1 nano",
+      "summary": "KRAFTON AI's Raon-1 nano is in the catalog as coming soon: a 1.5B-effective dense model with a 262K context and Apache-2.0 weights.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-12-krafton-raon-1-nano",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-12-subq-snap-1-2",
+      "date": "2026-11-12",
+      "title": "SubQ Snap 1.2",
+      "summary": "Subquadratic's long-context decision model joins the catalog: 384K context, $0.04 / 1M input, and a tie for first on the Artificial Analysis Decision Index.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-12-subq-snap-1-2",
+      "type": "added"
+    }
+  ],
+  "total": 2
+}

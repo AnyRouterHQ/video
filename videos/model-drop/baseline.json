@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-11T15:14:12.691Z",
+  "acceptedAt": "2026-11-12T15:58:59.771Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -93,6 +93,7 @@
     "google/gemini-3.8-flash",
     "google/gemini-4-argon",
     "google/gemini-4-carbon",
+    "google/gemini-decision-1",
     "google/gemini-embedding-2",
     "google/gemma-3-4b-it",
     "google/gemma-3n-e2b",
@@ -186,6 +187,7 @@
     "nace-ai/drex-v2.0",
     "nex-agi/nex-n2.5-mini",
     "nex-agi/nex-n2.5-pro",
+    "nex-agi/nex-n2.6",
     "nomic-ai/nomic-embed-text",
     "nousresearch/hermes-3-llama-3.1-405b",
     "nvidia/nemotron-3-embed-1b",
@@ -337,6 +339,7 @@
     "stepfun-ai/step-3.7-flash",
     "strandsagents/strands-decider-2b",
     "subquadratic/subq-preview",
+    "subquadratic/subq-snap-1.2",
     "subquadratic/subq-snap-preview",
     "tencent/hy-mt2-1.8b",
     "tencent/hy-mt2-30b-a3b",
@@ -984,6 +987,12 @@
       "context": 1048576
     },
     {
+      "id": "google/gemini-decision-1",
+      "inPrice": 0.1,
+      "outPrice": 0,
+      "context": 262144
+    },
+    {
       "id": "google/gemini-embedding-2",
       "inPrice": 0.2,
       "outPrice": 0,
@@ -1539,6 +1548,12 @@
       "id": "nex-agi/nex-n2.5-pro",
       "inPrice": 0.075,
       "outPrice": 0.25,
+      "context": 262144
+    },
+    {
+      "id": "nex-agi/nex-n2.6",
+      "inPrice": 0.12,
+      "outPrice": 0.4,
       "context": 262144
     },
     {
@@ -2446,6 +2461,12 @@
       "inPrice": 0,
       "outPrice": 0,
       "context": null
+    },
+    {
+      "id": "subquadratic/subq-snap-1.2",
+      "inPrice": 0.04,
+      "outPrice": 0,
+      "context": 393216
     },
     {
       "id": "subquadratic/subq-snap-preview",

@@ -735,6 +735,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-e9af72d80e9a0a3365d9",
         "draft": true
       }
+    },
+    {
+      "id": "035-20261112-new-models-e5667b69ae",
+      "hash": "e5667b69ae",
+      "kind": "model-drop",
+      "label": "new-models",
+      "title": "3 new models: gemini-decision-1, subq-snap-1.2, nex-n2.6",
+      "seconds": 20,
+      "renderedAt": "2026-11-12T16:03:33.006Z",
+      "commit": "392fecd",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-035-20261112-new-models-e5667b69ae.mp4",
+          "cover": "renders/model-drop-035-20261112-new-models-e5667b69ae.png"
+        }
+      },
+      "source": "renders/model-drop-035-20261112-new-models-e5667b69ae-source.tar.gz",
+      "createdAt": "2026-11-12T16:03:33.016Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-8f1d66730470f6bc7247",
+        "draft": true
+      }
     }
   ]
 }
