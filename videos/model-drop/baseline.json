@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-12T15:58:59.771Z",
+  "acceptedAt": "2026-11-13T15:24:44.479Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -93,6 +93,7 @@
     "google/gemini-3.8-flash",
     "google/gemini-4-argon",
     "google/gemini-4-carbon",
+    "google/gemini-4-hydrogen",
     "google/gemini-decision-1",
     "google/gemini-embedding-2",
     "google/gemma-3-4b-it",
@@ -262,8 +263,10 @@
     "parallel/decisions-fast",
     "particle-ai/particle-1",
     "perplexity/pplx-decider-flash-v1.2",
+    "perplexity/pplx-decider-flash-v1.3",
     "perplexity/pplx-decider-v1-27b",
     "perplexity/pplx-decider-v1.1-27b",
+    "perplexity/pplx-decider-v1.3",
     "perplexity/pplx-embed-v1-0.6b",
     "perplexity/pplx-embed-v1-4b",
     "perplexity/sonar-pro",
@@ -984,6 +987,12 @@
       "id": "google/gemini-4-carbon",
       "inPrice": 2,
       "outPrice": 10,
+      "context": 1048576
+    },
+    {
+      "id": "google/gemini-4-hydrogen",
+      "inPrice": 1.5,
+      "outPrice": 7.5,
       "context": 1048576
     },
     {
@@ -2001,6 +2010,12 @@
       "context": null
     },
     {
+      "id": "perplexity/pplx-decider-flash-v1.3",
+      "inPrice": 0.01,
+      "outPrice": 0,
+      "context": 262144
+    },
+    {
       "id": "perplexity/pplx-decider-v1-27b",
       "inPrice": 0.04,
       "outPrice": 0,
@@ -2008,6 +2023,12 @@
     },
     {
       "id": "perplexity/pplx-decider-v1.1-27b",
+      "inPrice": 0.02,
+      "outPrice": 0,
+      "context": 262144
+    },
+    {
+      "id": "perplexity/pplx-decider-v1.3",
       "inPrice": 0.02,
       "outPrice": 0,
       "context": 262144

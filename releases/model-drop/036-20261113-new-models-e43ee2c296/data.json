@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-11-13T15:24:44.479Z",
+  "mode": "diff",
+  "kind": "new-models",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 443,
+    "listed": 434,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 87,
+    "providerBackends": 87,
+    "free": 79
+  },
+  "pool": null,
+  "added": [
+    {
+      "id": "google/gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "provider": "Google",
+      "logo": "google-color.svg",
+      "context": 1048576,
+      "inPrice": 1.5,
+      "outPrice": 7.5,
+      "free": false,
+      "created": 1794441600,
+      "category": "text",
+      "excerpt": "Gemini 4 Hydrogen is the speed and efficiency model of Google's Gemini 4 family, built for everyday coding and agentic workflows."
+    },
+    {
+      "id": "perplexity/pplx-decider-flash-v1.3",
+      "name": "PPLX Decider Flash v1.3 (4B)",
+      "provider": "perplexity",
+      "logo": null,
+      "context": 262144,
+      "inPrice": 0.01,
+      "outPrice": 0,
+      "free": false,
+      "created": 1794182400,
+      "category": "text",
+      "excerpt": "PPLX Decider Flash v1.3 (4B) is the small decision model of Perplexity's v1.3 family, distilled from the 27B."
+    },
+    {
+      "id": "perplexity/pplx-decider-v1.3",
+      "name": "PPLX Decider v1.3 (27B)",
+      "provider": "perplexity",
+      "logo": null,
+      "context": 262144,
+      "inPrice": 0.02,
+      "outPrice": 0,
+      "free": false,
+      "created": 1794182400,
+      "category": "text",
+      "excerpt": "PPLX Decider v1.3 (27B) is Perplexity's current multimodal decision model."
+    }
+  ],
+  "changed": [],
+  "removed": [],
+  "spotlight": {
+    "id": "google/gemini-4-hydrogen",
+    "name": "Gemini 4 Hydrogen",
+    "provider": "Google",
+    "logo": "google-color.svg",
+    "context": 1048576,
+    "inPrice": 1.5,
+    "outPrice": 7.5,
+    "free": false,
+    "created": 1794441600,
+    "category": "text",
+    "excerpt": "Gemini 4 Hydrogen is the speed and efficiency model of Google's Gemini 4 family, built for everyday coding and agentic workflows."
+  },
+  "notable": true,
+  "label": "new-models",
+  "parts": [
+    "+google/gemini-4-hydrogen@1.5/7.5@1048576",
+    "+perplexity/pplx-decider-flash-v1.3@0.01/0@262144",
+    "+perplexity/pplx-decider-v1.3@0.02/0@262144"
+  ]
+}

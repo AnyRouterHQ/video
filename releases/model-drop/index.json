@@ -757,6 +757,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-8f1d66730470f6bc7247",
         "draft": true
       }
+    },
+    {
+      "id": "036-20261113-new-models-e43ee2c296",
+      "hash": "e43ee2c296",
+      "kind": "model-drop",
+      "label": "new-models",
+      "title": "3 new models: gemini-4-hydrogen, pplx-decider-flash-v1.3, pplx-decider-v1.3",
+      "seconds": 20,
+      "renderedAt": "2026-11-13T15:26:13.742Z",
+      "commit": "ed45186",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-036-20261113-new-models-e43ee2c296.mp4",
+          "cover": "renders/model-drop-036-20261113-new-models-e43ee2c296.png"
+        }
+      },
+      "source": "renders/model-drop-036-20261113-new-models-e43ee2c296-source.tar.gz",
+      "createdAt": "2026-11-13T15:26:13.750Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-c877a7a3aa28e375ef98",
+        "draft": true
+      }
     }
   ]
 }
