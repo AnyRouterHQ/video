@@ -1,0 +1,14 @@
+Script started on 2026-11-13 22:55:23+07:00 [COMMAND="anyr claude --model anyrouter/free" <not executed on terminal>]
+
+[1mWelcome to AnyRouter[0m
+[38;2;108;108;108mOne key runs Claude Code, Codex, Grok Build and the rest through the gateway.[0m
+
+
+  [1mOpen this URL to sign in:[0m
+
+    ]8;;https://anyrouter.dev/cli/device?code=22T7-TKMY\[38;2;246;130;31mhttps://anyrouter.dev/cli/device?code=22T7-TKMY[0m]8;;\
+
+  [38;2;108;108;108mApprove in the browser — this terminal continues when you're done. Expires in 10 min.[0m
+
+
+Script done on 2026-11-13 22:55:37+07:00 [COMMAND_EXIT_CODE="0"]

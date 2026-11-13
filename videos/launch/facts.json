@@ -1,0 +1,133 @@
+{
+  "capturedAt": "2026-11-13T15:52:03.265Z",
+  "models": {
+    "api": {
+      "value": 443,
+      "source": "https://anyrouter.dev/api/v1/models (length of data[])"
+    },
+    "homepage": {
+      "value": 402,
+      "source": "https://anyrouter.dev/ (\"Latest of N models\")"
+    },
+    "claim": {
+      "value": 400,
+      "text": "400+",
+      "source": "https://anyrouter.dev/llms.txt (\"Catalog: N+ models\")"
+    },
+    "freeWithGo": {
+      "value": 50,
+      "source": "https://anyrouter.dev/ (\"N free with Go\")"
+    }
+  },
+  "providers": {
+    "value": 18,
+    "text": "18+",
+    "source": "https://anyrouter.dev/llms.txt (\"across N+ providers\")"
+  },
+  "plans": {
+    "goPrice": {
+      "value": 2,
+      "unit": "USD/month",
+      "source": "https://anyrouter.dev/llms.txt"
+    },
+    "goCredit": {
+      "value": 4,
+      "unit": "USD/month",
+      "source": "https://anyrouter.dev/llms.txt"
+    }
+  },
+  "pool": {
+    "activeDonors": {
+      "value": 358,
+      "source": "https://anyrouter.dev/api/v1/pool/stats (active_donors)"
+    },
+    "requestsToday": {
+      "value": 8152,
+      "source": "https://anyrouter.dev/api/v1/pool/stats (requests_today)"
+    },
+    "oneKeyGivesGo": {
+      "text": "donate a provider key to the shared Pool and get Go plus free Pool access",
+      "source": "https://anyrouter.dev/llms.txt"
+    }
+  },
+  "failover": {
+    "text": "a 401, 429, or 5xx from one upstream retries on the next upstream for that model",
+    "source": "https://anyrouter.dev/llms.txt"
+  },
+  "mcp": {
+    "endpoint": {
+      "text": "https://anyrouter.dev/api/v1/mcp",
+      "source": "https://anyrouter.dev/mcp"
+    },
+    "anyrouterTools": {
+      "names": [
+        "list_models",
+        "recommend_model",
+        "list_okf_concepts",
+        "get_okf_concept",
+        "publish_artifact",
+        "list_artifacts",
+        "get_artifact",
+        "delete_artifact",
+        "set_artifact_visibility",
+        "get_system_status"
+      ],
+      "source": "https://anyrouter.dev/mcp (tools/list example)"
+    },
+    "servers": {
+      "list": [
+        {
+          "name": "Vercel",
+          "does": "Run and deploy AI applications with Vercel's MCP server."
+        },
+        {
+          "name": "Cloudflare Docs",
+          "does": "Search the full Cloudflare developer documentation."
+        },
+        {
+          "name": "Firecrawl",
+          "does": "Scrape, crawl, and search the web; turn any site into clean data."
+        },
+        {
+          "name": "Exa",
+          "does": "Search the web and fetch clean page content with Exa."
+        },
+        {
+          "name": "Keenable",
+          "does": "Search the web for current pages and read any URL as clean markdown."
+        },
+        {
+          "name": "GitHub",
+          "does": "Read and manage repositories, issues, and pull requests."
+        },
+        {
+          "name": "Linear",
+          "does": "Create and search issues, projects, and cycles in Linear."
+        },
+        {
+          "name": "Notion",
+          "does": "Search, read, and update pages and databases in Notion."
+        },
+        {
+          "name": "Sentry",
+          "does": "Investigate errors, issues, and releases from Sentry."
+        },
+        {
+          "name": "Context7",
+          "does": "Up-to-date code docs and examples for any library."
+        },
+        {
+          "name": "DeepWiki",
+          "does": "Ask questions and read structured wikis for any GitHub repo."
+        }
+      ],
+      "source": "https://anyrouter.dev/mcp (connector catalog)"
+    }
+  },
+  "cli": {
+    "install": {
+      "text": "curl -fsSL https://anyrouter.dev/cli.sh | bash",
+      "source": "https://anyrouter.dev/cli.sh, AGENTS.md of the anyrouter repo"
+    }
+  }
+}

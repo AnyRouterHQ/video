@@ -1,0 +1,55 @@
+Script started on 2026-11-13 22:55:23+07:00 [COMMAND="anyr claude --help" <not executed on terminal>]
+anyr claude — launch Claude Code through AnyRouter
+
+Usage:
+  anyr claude [options] [claude flags and args] [-- <raw claude args>]
+
+Launches the coding agent through AnyRouter (signs in first if needed).
+
+Options:
+  --yes, --ok           Skip confirmation prompts (login / install)
+  --model auto|<id>     Session model. auto / anyrouter/auto; [1m] and [500k] are min-context floors on auto (not catalog SKUs).
+  --haiku <id>          Claude /model haiku and subagents
+  --sonnet <id>         Claude /model sonnet
+  --opus <id>           Claude /model opus
+  --fable <id>          Claude /model fable (also the auto-fallback target)
+  --preset <slug>       Launch with your saved preset (model @preset/<slug>); fails
+                        if it does not exist. Cannot be combined with --model
+  --hub <slug>          Load a hub: sync ~/.anyrouter/hubs + claude --plugin-dir
+  --profile <name>      Use a named profile
+  --command-path <path> Explicit path to the agent executable
+  --install             Install a missing agent without prompting (implied on a TTY)
+  --config <path>       Override the config file path
+  --dry-run             Print the child command and env (secrets redacted);
+                        with --json, the plan as one JSON object
+  --json                anyr's own output as JSON; never sent to the agent
+                        (for the agent's own --json, put it after `--`)
+  --no-mcp              Don't connect the AnyRouter MCP gateway (or its
+                        artifact tools) this launch
+                        (`anyr mcp auto off` turns it off on this machine)
+  --device              Force the device-code flow (headless / SSH)
+  --device-code         Alias of --device
+  --paste               Force the paste-a-key flow, skipping auto-detection
+
+Portable flags (one name on every agent; anyr passes the agent's own flag):
+  --yolo                Skip permission prompts; passes --dangerously-skip-permissions
+  --effort <level>      Reasoning effort: minimal | low | medium | high | xhigh | max; sets MAX_THINKING_TOKENS
+  --print               Answer the prompt that follows it without the UI, then exit; passes -p
+  --continue            Continue the most recent session; passes --continue
+  --resume [<id>]       Resume a session by id; with no id, the agent's own picker or latest; passes --resume <id>
+  --system <text>       Replace the system prompt; passes --system-prompt <text>
+  --append-system <text> Add text to the default system prompt; passes --append-system-prompt <text>
+  --add-dir <path>      Let the agent use one more directory (repeatable); passes --add-dir <path>
+  --cwd <path>          No effect: Claude Code has no working-directory flag
+  --max-turns <n>       Stop after this many agent turns; passes --max-turns <n> (hidden from --help)
+  --no-tools, --tools-off Start with every built-in tool off; passes --tools=
+  --no-skills, --skills-off Do not load skills; passes --disable-slash-commands
+
+Any other flag goes to the agent unchanged and in order, no `--` needed:
+  anyr claude --model <id> --verbose
+Everything after `--` goes to the agent raw, including flags anyr also owns.
+
+First run with no config auto-detects the best way to sign in — browser first,
+falling back to the device-code flow automatically.
+
+Script done on 2026-11-13 22:55:23+07:00 [COMMAND_EXIT_CODE="0"]

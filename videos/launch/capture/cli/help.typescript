@@ -1,0 +1,23 @@
+Script started on 2026-11-13 22:55:23+07:00 [COMMAND="anyr --help" <not executed on terminal>]
+[38;2;246;130;31manyr[0m – point any coding agent at AnyRouter
+
+Everyday
+  anyr login                     Sign in (browser; --device on a server)
+  anyr chat "<prompt>"           Ask a model; --json for scripts
+  anyr models                    Browse models; `models use <id>` sets the default
+  anyr claude                    Launch Claude Code (also codex, grok, opencode, pi, pool)
+  anyr relay                     Serve this machine's local models
+  anyr artifact publish <file>   Publish a page or folder to a URL
+  anyr usage                     Credits remaining
+
+Examples
+  $ anyr claude --model anyrouter/free[1m]
+  $ git diff | anyr chat "Review this" -
+  $ anyr models --free
+
+More
+  anyr help --all        every command, grouped
+  anyr help agents       for scripts and agents: --json, exit codes
+  anyr <command> --help
+
+Script done on 2026-11-13 22:55:23+07:00 [COMMAND_EXIT_CODE="0"]

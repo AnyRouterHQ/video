@@ -7,7 +7,8 @@ import os from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 
-const SKILLS = path.join(os.homedir(), '.claude/skills');
+// HF_SKILLS: a host whose skills live outside ~/.claude/skills (e.g. a repo's .agents/skills).
+const SKILLS = process.env.HF_SKILLS || path.join(os.homedir(), '.claude/skills');
 const LAUNCH = path.join(SKILLS, 'product-launch-video/scripts');
 const CARVE = path.join(SKILLS, 'hyperframes-audio/scripts/carve.mjs');
 // @hyperframes/core, pinned to the repo's CLI version; the CLI bundles core and can't lend it.

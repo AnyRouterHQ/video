@@ -1,0 +1,185 @@
+{
+  "home-hero": {
+    "url": "https://anyrouter.dev/",
+    "capturedAt": "2026-11-13T15:50:29.234Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/home-hero.png"
+    ]
+  },
+  "home-terminal": {
+    "url": "https://anyrouter.dev/",
+    "capturedAt": "2026-11-13T15:50:34.808Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/home-terminal.png"
+    ]
+  },
+  "home-models-table": {
+    "url": "https://anyrouter.dev/",
+    "capturedAt": "2026-11-13T15:50:39.861Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/home-models-table.png"
+    ]
+  },
+  "home-routing": {
+    "url": "https://anyrouter.dev/",
+    "capturedAt": "2026-11-13T15:54:36.554Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/home-routing.png"
+    ],
+    "tab": "Routing"
+  },
+  "home-routing-pool": {
+    "url": "https://anyrouter.dev/",
+    "capturedAt": "2026-11-13T15:54:53.863Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/home-routing-pool.png"
+    ],
+    "tab": "Pool"
+  },
+  "home-routing-mcp": {
+    "url": "https://anyrouter.dev/",
+    "capturedAt": "2026-11-13T15:55:04.720Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/home-routing-mcp.png"
+    ],
+    "tab": "MCP"
+  },
+  "home-terminal-loop": {
+    "url": "https://anyrouter.dev/",
+    "capturedAt": "2026-11-13T15:51:32.054Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "capture/raw/home-terminal-loop/ (80 frames over 14.0s wall clock)"
+    ]
+  },
+  "models": {
+    "url": "https://anyrouter.dev/models",
+    "capturedAt": "2026-11-13T15:51:41.049Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/models.png"
+    ]
+  },
+  "models-scroll": {
+    "url": "https://anyrouter.dev/models",
+    "capturedAt": "2026-11-13T15:52:26.690Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "capture/raw/models-scroll/ (90 frames, 2400px eased scroll)"
+    ]
+  },
+  "mcp": {
+    "url": "https://anyrouter.dev/mcp",
+    "capturedAt": "2026-11-13T15:52:31.679Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/mcp.png"
+    ]
+  },
+  "mcp-servers": {
+    "url": "https://anyrouter.dev/mcp",
+    "capturedAt": "2026-11-13T15:52:36.136Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/mcp-servers.png"
+    ]
+  },
+  "pool": {
+    "url": "https://anyrouter.dev/pool",
+    "capturedAt": "2026-11-13T15:52:41.934Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/pool.png"
+    ]
+  },
+  "pool-figure": {
+    "url": "https://anyrouter.dev/pool",
+    "capturedAt": "2026-11-13T15:55:16.217Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/pool-figure.png"
+    ]
+  },
+  "pool-table": {
+    "url": "https://anyrouter.dev/pool",
+    "capturedAt": "2026-11-13T15:52:52.927Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/pool-table.png"
+    ]
+  },
+  "free": {
+    "url": "https://anyrouter.dev/free",
+    "capturedAt": "2026-11-13T15:52:57.766Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/free.png"
+    ]
+  },
+  "pricing": {
+    "url": "https://anyrouter.dev/pricing",
+    "capturedAt": "2026-11-13T15:53:02.404Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/pricing.png"
+    ]
+  },
+  "docs-quickstart": {
+    "url": "https://anyrouter.dev/docs/getting-started/quickstart",
+    "capturedAt": "2026-11-13T15:53:07.581Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/docs-quickstart.png"
+    ]
+  },
+  "docs-mcp-gateway": {
+    "url": "https://anyrouter.dev/docs/mcp/gateway",
+    "capturedAt": "2026-11-13T15:53:13.650Z",
+    "viewport": "1920x1080@2x",
+    "files": [
+      "assets/footage/docs-mcp-gateway.png"
+    ]
+  },
+  "cli-help": {
+    "command": "anyr --help",
+    "anyr": "0.1.44-beta.960 (built 2026-11-13 10:04:58)",
+    "capturedAt": "2026-11-13T15:55:00Z",
+    "pty": "script(1), 80x30, empty HOME (signed out), stdin /dev/null",
+    "files": [
+      "capture/cli/help.typescript"
+    ]
+  },
+  "cli-models-free": {
+    "command": "anyr models --free",
+    "anyr": "0.1.44-beta.960 (built 2026-11-13 10:04:58)",
+    "capturedAt": "2026-11-13T15:55:00Z",
+    "pty": "script(1), 80x30, empty HOME (signed out), stdin /dev/null",
+    "files": [
+      "capture/cli/models-free.typescript"
+    ]
+  },
+  "cli-claude-help": {
+    "command": "anyr claude --help",
+    "anyr": "0.1.44-beta.960 (built 2026-11-13 10:04:58)",
+    "capturedAt": "2026-11-13T15:55:00Z",
+    "pty": "script(1), 80x30, empty HOME (signed out), stdin /dev/null",
+    "files": [
+      "capture/cli/claude-help.typescript"
+    ]
+  },
+  "cli-claude-launch": {
+    "command": "anyr claude --model anyrouter/free",
+    "anyr": "0.1.44-beta.960 (built 2026-11-13 10:04:58)",
+    "capturedAt": "2026-11-13T15:55:00Z",
+    "pty": "script(1), 80x30, empty HOME (signed out), stdin /dev/null",
+    "files": [
+      "capture/cli/claude-launch.typescript"
+    ]
+  }
+}
