@@ -43,7 +43,7 @@
         const agentRight = M.agentRight[0];
         const src = wire(L.wires, [[agentRight, M.hub[1]], [M.hub[0] - M.ring, M.hub[1]]], { stroke: T.ink, dash: '8 8' });
         const H = hub(L.top, M.hub, M.ring, null);
-        const label = txt(L.top, [M.hub[0], M.hub[1] + M.ring + 46], 'AnyRouter MCP', { size: 34, anchor: 'middle', color: T.ink });
+        const label = txt(L.top, [M.hub[0], M.hub[1] - M.ring - 16], 'AnyRouter MCP', { size: 34, anchor: 'middle', color: T.ink });
         const agent = chip(L.top, [agentRight - 176, M.hub[1]], '$ anyr claude', { size: 40, stroke: T.ink, fill: T.page, color: T.ink });
         const endpoint = chip(L.top, [505, M.rails[2][0][1]], 'https://anyrouter.dev/api/v1/mcp', { stroke: T.ink, fill: T.page, color: T.ink });
         const ok = txt(L.top, [sv[0].c[0], sv[0].c[1] + 78], 'ok', { size: 34, color: T.ember, anchor: 'middle' });

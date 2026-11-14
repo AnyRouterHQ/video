@@ -10,8 +10,15 @@
     [data-composition-id="r6-cli"] .k-stage { position: absolute; inset: 0; }
     [data-composition-id="r6-cli"] .cam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
     [data-composition-id="r6-cli"] svg.fig { position: absolute; left: 0; top: 0; overflow: visible; }
-    [data-composition-id="r6-cli"] .panel { position: absolute; left: 0; top: 200px; width: 1080px; height: 1020px; overflow: hidden; }
-    [data-composition-id="r6-cli"] .panel > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+    /* the home hero's hero-grain utility (packages/ui globals.css), ember palette, rebuilt as is */
+    [data-composition-id="r6-cli"] .panel { position: absolute; left: 0; top: 200px; width: 1080px; height: 1020px; overflow: hidden;
+      background-color: oklch(0.5 0.155 32);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.1 -.25'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+        radial-gradient(70% 65% at 0% 0%, oklch(0.955 0.018 60) 30%, transparent 72%),
+        radial-gradient(75% 85% at 100% 100%, oklch(0.7 0.16 45) 25%, transparent 75%),
+        linear-gradient(110deg, oklch(0.5 0.155 32) 35%, oklch(0.7 0.16 45) 95%);
+      background-blend-mode: overlay, normal, normal, normal; }
     [data-composition-id="r6-cli"] .notch { position: absolute; width: 14px; height: 14px; background: oklch(0.97 0 0); }
     [data-composition-id="r6-cli"] .win { position: absolute; left: 60px; top: 48px; width: 890px; bottom: 48px; background: #fff; border: 2px solid #E5E5E5; border-radius: 16px; overflow: hidden; }
     [data-composition-id="r6-cli"] .bar { position: absolute; left: 0; right: 0; top: 0; height: 68px; border-bottom: 2px solid #E5E5E5; display: flex; align-items: center; padding-left: 24px; gap: 10px; }
@@ -30,7 +37,7 @@
   <div id="root" data-composition-id="r6-cli" data-width="1080" data-height="1920" data-duration="10.6">
     <div id="r6-cli-bg" class="k-bg clip" data-start="0" data-duration="10.6" data-track-index="0"></div>
     <div id="r6-cli-stage" class="k-stage clip" data-start="0" data-duration="10.6" data-track-index="1">
-      <div class="cam"><svg class="fig" width="1080" height="1920" viewBox="0 0 1080 1920"></svg><div class="panel"><img src="assets/footage/hero-chat.png" alt=""><div class="notch" style="left:0;top:0"></div><div class="notch" style="right:0;top:0"></div><div class="notch" style="left:0;bottom:0"></div><div class="notch" style="right:0;bottom:0"></div>
+      <div class="cam"><svg class="fig" width="1080" height="1920" viewBox="0 0 1080 1920"></svg><div class="panel"><div class="notch" style="left:0;top:0"></div><div class="notch" style="right:0;top:0"></div><div class="notch" style="left:0;bottom:0"></div><div class="notch" style="right:0;bottom:0"></div>
 <div class="win"><div class="bar"><i style="background:#E7000B"></i><i style="background:#F0B100"></i><i style="background:#00A63E"></i><span class="title">~/my-project</span></div><div class="lines"><div class="uline"></div></div></div></div>
 </div>
     </div>
