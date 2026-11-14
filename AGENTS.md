@@ -55,6 +55,7 @@ releases/<kind>/   the ledger, and the facts each film was cut from (committed)
 | `teaser` | the 20s brand film, two themes — its own generator in `videos/teaser/release/` | its own files | on demand |
 | `explainer` | the narrated newcomer explainer, built with the HyperFrames product-launch workflow; tools in `shared/authoring/` | its own files | on demand |
 | `openrouter-unblock` | the narrated OpenRouter rate-limit tutorial, same series look and tools | its own files | on demand |
+| `launch` | the narrated launch film in the landing page's Rail figure language: routing and fallback, the Pool, the MCP gateway, the `anyr` CLI. 4K renders with `hyperframes render --resolution`; the 9:16 reel is its own cut built by `videos/launch/tools/reel.mjs` | its own files; live facts in `videos/launch/facts.json` (`tools/facts.mjs`) | on demand |
 | `use-case` | one short silent film per use case, embedded on its anyrouter.dev/use-cases page. Each use case is its own release | `/use-cases.json` | on demand |
 | `artifacts-launch-day1` | the Artifacts launch-day film (38 s), HyperFrames page from `build.py`; screenshots of public pages with sample data | its own files; `python3 build.py 16x9\|9x16 > index.html`, then render | on demand, not a CLI kind |
 | `relay-intro` | narrated `anyr relay` intro, HyperFrames page from `build.py`; `facts.md` is its claim ledger | its own files; needs `narration.wav` (kept out of git, see its `.gitignore`) and the segment and word timing JSON, which is missing from the source folder | on demand, not a CLI kind |
@@ -99,6 +100,7 @@ view. Today every kind says it:
 | `intro` | `index.html` draws its camera and two SVG layers at 1920×1080 |
 | `teaser` | its generator lays out 1920×1080 only |
 | `explainer`, `openrouter-unblock` | their portrait layouts are in progress; delete the line once `check <kind>` passes without it |
+| `launch` | its 9:16 reel is a separate 71s cut (own takes, the site's tall layouts) built by `tools/reel.mjs` into `.build/launch-reel/`, not a portrait copy of the 16:9 master |
 
 ## Commands
 

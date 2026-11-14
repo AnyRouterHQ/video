@@ -62,6 +62,8 @@ jobs:
             args: ''
           - kind: openrouter-unblock
             args: ''
+          - kind: launch
+            args: ''
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
