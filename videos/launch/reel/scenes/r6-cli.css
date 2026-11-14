@@ -1,0 +1,21 @@
+    /* the home hero's hero-grain utility (packages/ui globals.css), ember palette, rebuilt as is */
+    & .panel { position: absolute; left: 0; top: 200px; width: 1080px; height: 1020px; overflow: hidden;
+      background-color: oklch(0.5 0.155 32);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.1 -.25'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+        radial-gradient(70% 65% at 0% 0%, oklch(0.955 0.018 60) 30%, transparent 72%),
+        radial-gradient(75% 85% at 100% 100%, oklch(0.7 0.16 45) 25%, transparent 75%),
+        linear-gradient(110deg, oklch(0.5 0.155 32) 35%, oklch(0.7 0.16 45) 95%);
+      background-blend-mode: overlay, normal, normal, normal; }
+    & .notch { position: absolute; width: 14px; height: 14px; background: oklch(0.97 0 0); }
+    & .win { position: absolute; left: 60px; top: 48px; width: 890px; bottom: 48px; background: #fff; border: 2px solid #E5E5E5; border-radius: 16px; overflow: hidden; }
+    & .bar { position: absolute; left: 0; right: 0; top: 0; height: 68px; border-bottom: 2px solid #E5E5E5; display: flex; align-items: center; padding-left: 24px; gap: 10px; }
+    & .bar i { width: 18px; height: 18px; border-radius: 50%; display: block; }
+    & .bar .title { margin-left: 16px; font-family: "Geist Mono", monospace; font-size: 34px; color: #636363; }
+    & .lines { position: absolute; left: 22px; top: 92px; right: 22px; }
+    & .ln { height: 50px; font-family: "Geist Mono", monospace; font-size: 34px; line-height: 50px; white-space: pre; color: oklch(0.32 0.09 262); }
+    & .ln .p { color: #636363; }
+    & .ln.out { color: #3F3F46; }
+    & .ln.gap { color: #A1A1AA; }
+    & .caret { display: inline-block; width: 19px; height: 38px; vertical-align: -8px; background: oklch(0.555 0.163 49); }
+    & .uline { position: absolute; height: 3px; background: oklch(0.555 0.163 49); transform-origin: 0 50%; }

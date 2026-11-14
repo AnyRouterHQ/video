@@ -1,0 +1,73 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="compositions/rail.js"></script>
+  <script src="compositions/words-reel.js"></script>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    @font-face { font-family: "Geist Mono"; src: url("assets/fonts/geist-mono.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    [data-composition-id="r7-close"] { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+    [data-composition-id="r7-close"] .k-bg { position: absolute; inset: 0; background: oklch(0.97 0 0); }
+    [data-composition-id="r7-close"] .k-stage { position: absolute; inset: 0; }
+    [data-composition-id="r7-close"] .cam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    [data-composition-id="r7-close"] svg.fig { position: absolute; left: 0; top: 0; overflow: visible; }
+    [data-composition-id="r7-close"] h1 { position: absolute; left: 60px; width: 890px; top: 560px; margin: 0; text-align: center; font-family: "Geist", sans-serif; font-weight: 400; font-size: 104px; line-height: 1.05; letter-spacing: -0.03em; color: #0A0A0A; }
+    [data-composition-id="r7-close"] h1 span { display: inline-block; }
+    [data-composition-id="r7-close"] .ways { position: absolute; left: 60px; width: 890px; top: 860px; display: flex; flex-direction: column; align-items: center; gap: 26px; }
+    [data-composition-id="r7-close"] .way { display: flex; align-items: center; gap: 20px; }
+    [data-composition-id="r7-close"] .lab { font-family: "Geist", sans-serif; font-size: 36px; color: #636363; }
+    [data-composition-id="r7-close"] .chip { font-family: "Geist Mono", monospace; font-size: 34px; line-height: 1.4; color: #0A0A0A; background: #fff; border: 2px solid #0A0A0A; border-radius: 10px; padding: 8px 20px; white-space: pre; }
+
+  </style>
+
+  <div id="root" data-composition-id="r7-close" data-width="1080" data-height="1920" data-duration="8">
+    <div id="r7-close-bg" class="k-bg clip" data-start="0" data-duration="8" data-track-index="0"></div>
+    <div id="r7-close-stage" class="k-stage clip" data-start="0" data-duration="8" data-track-index="1">
+      <div class="cam"><svg class="fig" width="1080" height="1920" viewBox="0 0 1080 1920"></svg><h1><span>Every</span> <span>LLM.</span><br><span>One</span> <span>API.</span></h1>
+<div class="ways">
+  <div class="way r1"><span class="lab">Get API key</span><span class="chip">anyrouter.dev</span></div>
+  <div class="way r2"><span class="chip">curl -fsSL https://anyrouter.dev/cli.sh
+| bash</span></div>
+  <div class="way r3"><span class="lab">Free tier</span><span class="chip">anyrouter.dev/pool</span></div>
+</div>
+</div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const ID = 'r7-close';
+      const root = document.querySelector('[data-composition-id="r7-close"]');
+      const w = (word, nth, edge) => WR(7, word, nth, edge);
+      document.fonts.ready.then(() => {
+        const svg = root.querySelector('svg.fig');
+        const L = { rails: Rail.el(svg, 'g'), wires: Rail.el(svg, 'g'), dots: Rail.el(svg, 'g'), top: Rail.el(svg, 'g') };
+        const tl = gsap.timeline({ paused: true });
+        const cam = Rail.camera(root.querySelector('.cam'), root);
+        cam.set(tl, { s: 1, cx: 540, cy: 960 }, 0);
+        // Stacked end card: the hub, the home H1 on two lines, three ways in. The last 1.5s hold still.
+        const { el, hub, dot } = Rail;
+        const C = [505, 420], RING = 93;
+        const H = hub(L.top, C, RING, null);
+        const dots = el(L.top, 'g');
+        tl.fromTo(H.el, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: 'power3.out' }, 0);
+        const words = [...root.querySelectorAll('h1 span')];
+        [w('one'), w('key'), w('every'), w('model')].forEach((at, i) =>
+          tl.fromTo(words[i], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power3.out' }, at - 0.05));
+        [['.r1', w('pool')], ['.r2', w('start')], ['.r3', w('anyrouter.dev')]].forEach(([s, at]) =>
+          tl.fromTo(root.querySelector(s), { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.35, ease: 'power3.out' }, at));
+        const d = dot(dots, 11);
+        const a = { t: 0 };
+        tl.set(d, { attr: { opacity: 1 } }, 0.4);
+        tl.fromTo(a, { t: 0 }, { t: 1, duration: 2, ease: 'none', immediateRender: false, onUpdate: () => {
+          const th = -Math.PI / 2 + a.t * 2 * Math.PI;
+          d.setAttribute('cx', C[0] + RING * Math.cos(th));
+          d.setAttribute('cy', C[1] + RING * Math.sin(th));
+        } }, 0.4);
+        tl.set(d, { attr: { opacity: 0 } }, 2.4);
+        
+        window.__timelines = window.__timelines || {};
+        window.__timelines[ID] = tl;
+      });
+    })();
+  </script>
+</template>

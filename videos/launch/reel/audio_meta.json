@@ -1,0 +1,993 @@
+{
+  "voices": [
+    {
+      "frame": 1,
+      "path": "assets/voice/01.wav",
+      "duration_s": 4.2,
+      "words": [
+        {
+          "id": "w0",
+          "text": "One",
+          "start": 0.3,
+          "end": 0.474
+        },
+        {
+          "id": "w1",
+          "text": "API",
+          "start": 0.509,
+          "end": 0.846
+        },
+        {
+          "id": "w2",
+          "text": "key.",
+          "start": 0.904,
+          "end": 1.159
+        },
+        {
+          "id": "w3",
+          "text": "Sooner",
+          "start": 1.275,
+          "end": 1.531
+        },
+        {
+          "id": "w4",
+          "text": "or",
+          "start": 1.554,
+          "end": 1.612
+        },
+        {
+          "id": "w5",
+          "text": "later,",
+          "start": 1.647,
+          "end": 1.879
+        },
+        {
+          "id": "w6",
+          "text": "it",
+          "start": 1.902,
+          "end": 1.972
+        },
+        {
+          "id": "w7",
+          "text": "stops.",
+          "start": 2.007,
+          "end": 2.715
+        }
+      ],
+      "paced": {
+        "lead_s": 0.3,
+        "slot_s": 4.2
+      }
+    },
+    {
+      "frame": 2,
+      "path": "assets/voice/02.wav",
+      "duration_s": 13,
+      "words": [
+        {
+          "id": "w0",
+          "text": "AnyRouter",
+          "start": 0.3,
+          "end": 0.857
+        },
+        {
+          "id": "w1",
+          "text": "is",
+          "start": 0.973,
+          "end": 1.113
+        },
+        {
+          "id": "w2",
+          "text": "one",
+          "start": 1.182,
+          "end": 1.333
+        },
+        {
+          "id": "w3",
+          "text": "API",
+          "start": 1.357,
+          "end": 1.786
+        },
+        {
+          "id": "w4",
+          "text": "in",
+          "start": 1.821,
+          "end": 1.879
+        },
+        {
+          "id": "w5",
+          "text": "front",
+          "start": 1.925,
+          "end": 2.088
+        },
+        {
+          "id": "w6",
+          "text": "of",
+          "start": 2.111,
+          "end": 2.169
+        },
+        {
+          "id": "w7",
+          "text": "every",
+          "start": 2.285,
+          "end": 2.552
+        },
+        {
+          "id": "w8",
+          "text": "model.",
+          "start": 2.61,
+          "end": 3.017
+        },
+        {
+          "id": "w9",
+          "text": "It",
+          "start": 3.342,
+          "end": 3.481
+        },
+        {
+          "id": "w10",
+          "text": "picks",
+          "start": 3.528,
+          "end": 3.748
+        },
+        {
+          "id": "w11",
+          "text": "an",
+          "start": 3.783,
+          "end": 3.841
+        },
+        {
+          "id": "w12",
+          "text": "upstream.",
+          "start": 3.887,
+          "end": 4.503
+        },
+        {
+          "id": "w13",
+          "text": "If",
+          "start": 5.199,
+          "end": 5.339
+        },
+        {
+          "id": "w14",
+          "text": "it",
+          "start": 5.385,
+          "end": 5.443
+        },
+        {
+          "id": "w15",
+          "text": "is",
+          "start": 5.49,
+          "end": 5.559
+        },
+        {
+          "id": "w16",
+          "text": "rate",
+          "start": 5.641,
+          "end": 5.838
+        },
+        {
+          "id": "w17",
+          "text": "limited",
+          "start": 5.896,
+          "end": 6.233
+        },
+        {
+          "id": "w18",
+          "text": "or",
+          "start": 6.291,
+          "end": 6.384
+        },
+        {
+          "id": "w19",
+          "text": "down,",
+          "start": 6.453,
+          "end": 6.987
+        },
+        {
+          "id": "w20",
+          "text": "AnyRouter",
+          "start": 7.312,
+          "end": 7.835
+        },
+        {
+          "id": "w21",
+          "text": "tries",
+          "start": 7.881,
+          "end": 8.148
+        },
+        {
+          "id": "w22",
+          "text": "the",
+          "start": 8.195,
+          "end": 8.264
+        },
+        {
+          "id": "w23",
+          "text": "next",
+          "start": 8.299,
+          "end": 8.485
+        },
+        {
+          "id": "w24",
+          "text": "one.",
+          "start": 8.555,
+          "end": 8.822
+        },
+        {
+          "id": "w25",
+          "text": "One",
+          "start": 9.425,
+          "end": 9.611
+        },
+        {
+          "id": "w26",
+          "text": "answer,",
+          "start": 9.646,
+          "end": 10.087
+        },
+        {
+          "id": "w27",
+          "text": "one",
+          "start": 10.261,
+          "end": 10.459
+        },
+        {
+          "id": "w28",
+          "text": "bill.",
+          "start": 10.494,
+          "end": 11.074
+        }
+      ],
+      "paced": {
+        "lead_s": 0.3,
+        "slot_s": 13
+      }
+    },
+    {
+      "frame": 3,
+      "path": "assets/voice/03.wav",
+      "duration_s": 6,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Change",
+          "start": 0.3,
+          "end": 0.648
+        },
+        {
+          "id": "w1",
+          "text": "the",
+          "start": 0.683,
+          "end": 0.753
+        },
+        {
+          "id": "w2",
+          "text": "base",
+          "start": 0.799,
+          "end": 1.008
+        },
+        {
+          "id": "w3",
+          "text": "URL,",
+          "start": 1.055,
+          "end": 1.531
+        },
+        {
+          "id": "w4",
+          "text": "and",
+          "start": 1.554,
+          "end": 1.624
+        },
+        {
+          "id": "w5",
+          "text": "keep",
+          "start": 1.67,
+          "end": 1.821
+        },
+        {
+          "id": "w6",
+          "text": "your",
+          "start": 1.867,
+          "end": 1.96
+        },
+        {
+          "id": "w7",
+          "text": "code.",
+          "start": 2.018,
+          "end": 2.378
+        },
+        {
+          "id": "w8",
+          "text": "One",
+          "start": 2.819,
+          "end": 3.017
+        },
+        {
+          "id": "w9",
+          "text": "key,",
+          "start": 3.075,
+          "end": 3.284
+        },
+        {
+          "id": "w10",
+          "text": "more",
+          "start": 3.319,
+          "end": 3.446
+        },
+        {
+          "id": "w11",
+          "text": "than",
+          "start": 3.481,
+          "end": 3.597
+        },
+        {
+          "id": "w12",
+          "text": "four",
+          "start": 3.655,
+          "end": 3.829
+        },
+        {
+          "id": "w13",
+          "text": "hundred",
+          "start": 3.876,
+          "end": 4.12
+        },
+        {
+          "id": "w14",
+          "text": "models.",
+          "start": 4.166,
+          "end": 4.851
+        }
+      ],
+      "paced": {
+        "lead_s": 0.3,
+        "slot_s": 6
+      }
+    },
+    {
+      "frame": 4,
+      "path": "assets/voice/04.wav",
+      "duration_s": 22.4,
+      "words": [
+        {
+          "id": "w0",
+          "text": "A",
+          "start": 0.3,
+          "end": 0.393
+        },
+        {
+          "id": "w1",
+          "text": "free",
+          "start": 0.509,
+          "end": 0.73
+        },
+        {
+          "id": "w2",
+          "text": "tier",
+          "start": 0.764,
+          "end": 0.973
+        },
+        {
+          "id": "w3",
+          "text": "is",
+          "start": 1.043,
+          "end": 1.124
+        },
+        {
+          "id": "w4",
+          "text": "small.",
+          "start": 1.206,
+          "end": 1.763
+        },
+        {
+          "id": "w5",
+          "text": "One",
+          "start": 2.146,
+          "end": 2.367
+        },
+        {
+          "id": "w6",
+          "text": "key,",
+          "start": 2.425,
+          "end": 2.785
+        },
+        {
+          "id": "w7",
+          "text": "alone,",
+          "start": 2.819,
+          "end": 3.458
+        },
+        {
+          "id": "w8",
+          "text": "hits",
+          "start": 3.632,
+          "end": 3.876
+        },
+        {
+          "id": "w9",
+          "text": "the",
+          "start": 3.934,
+          "end": 4.015
+        },
+        {
+          "id": "w10",
+          "text": "limit",
+          "start": 4.096,
+          "end": 4.352
+        },
+        {
+          "id": "w11",
+          "text": "and",
+          "start": 4.41,
+          "end": 4.514
+        },
+        {
+          "id": "w12",
+          "text": "stops.",
+          "start": 4.584,
+          "end": 5.188
+        },
+        {
+          "id": "w13",
+          "text": "So",
+          "start": 5.432,
+          "end": 5.571
+        },
+        {
+          "id": "w14",
+          "text": "people",
+          "start": 5.641,
+          "end": 5.908
+        },
+        {
+          "id": "w15",
+          "text": "add",
+          "start": 5.942,
+          "end": 6.117
+        },
+        {
+          "id": "w16",
+          "text": "free-tier",
+          "start": 6.186,
+          "end": 6.593
+        },
+        {
+          "id": "w17",
+          "text": "keys",
+          "start": 6.662,
+          "end": 6.918
+        },
+        {
+          "id": "w18",
+          "text": "to",
+          "start": 6.976,
+          "end": 7.045
+        },
+        {
+          "id": "w19",
+          "text": "one",
+          "start": 7.161,
+          "end": 7.347
+        },
+        {
+          "id": "w20",
+          "text": "shared",
+          "start": 7.394,
+          "end": 7.742
+        },
+        {
+          "id": "w21",
+          "text": "Pool.",
+          "start": 7.8,
+          "end": 8.334
+        },
+        {
+          "id": "w22",
+          "text": "AnyRouter",
+          "start": 8.938,
+          "end": 9.472
+        },
+        {
+          "id": "w23",
+          "text": "spreads",
+          "start": 9.53,
+          "end": 9.89
+        },
+        {
+          "id": "w24",
+          "text": "requests",
+          "start": 9.959,
+          "end": 10.366
+        },
+        {
+          "id": "w25",
+          "text": "across",
+          "start": 10.401,
+          "end": 10.737
+        },
+        {
+          "id": "w26",
+          "text": "the",
+          "start": 10.784,
+          "end": 10.853
+        },
+        {
+          "id": "w27",
+          "text": "keys,",
+          "start": 10.9,
+          "end": 11.399
+        },
+        {
+          "id": "w28",
+          "text": "and",
+          "start": 11.573,
+          "end": 11.736
+        },
+        {
+          "id": "w29",
+          "text": "skips",
+          "start": 11.782,
+          "end": 12.084
+        },
+        {
+          "id": "w30",
+          "text": "any",
+          "start": 12.154,
+          "end": 12.351
+        },
+        {
+          "id": "w31",
+          "text": "key",
+          "start": 12.421,
+          "end": 12.595
+        },
+        {
+          "id": "w32",
+          "text": "that",
+          "start": 12.665,
+          "end": 12.804
+        },
+        {
+          "id": "w33",
+          "text": "is",
+          "start": 12.862,
+          "end": 12.943
+        },
+        {
+          "id": "w34",
+          "text": "rate",
+          "start": 13.036,
+          "end": 13.234
+        },
+        {
+          "id": "w35",
+          "text": "limited.",
+          "start": 13.28,
+          "end": 13.768
+        },
+        {
+          "id": "w36",
+          "text": "Add",
+          "start": 14.464,
+          "end": 14.685
+        },
+        {
+          "id": "w37",
+          "text": "one",
+          "start": 14.766,
+          "end": 14.952
+        },
+        {
+          "id": "w38",
+          "text": "valid",
+          "start": 15.01,
+          "end": 15.381
+        },
+        {
+          "id": "w39",
+          "text": "free-tier",
+          "start": 15.439,
+          "end": 15.881
+        },
+        {
+          "id": "w40",
+          "text": "key,",
+          "start": 15.95,
+          "end": 16.333
+        },
+        {
+          "id": "w41",
+          "text": "and",
+          "start": 16.508,
+          "end": 16.647
+        },
+        {
+          "id": "w42",
+          "text": "you",
+          "start": 16.682,
+          "end": 16.751
+        },
+        {
+          "id": "w43",
+          "text": "get",
+          "start": 16.798,
+          "end": 16.902
+        },
+        {
+          "id": "w44",
+          "text": "the",
+          "start": 16.937,
+          "end": 17.007
+        },
+        {
+          "id": "w45-0-0",
+          "text": "Go",
+          "start": 17.053,
+          "end": 17.413
+        },
+        {
+          "id": "w45-0-1",
+          "text": "plan,",
+          "start": 17.413,
+          "end": 17.773
+        },
+        {
+          "id": "w47",
+          "text": "with",
+          "start": 17.889,
+          "end": 18.063
+        },
+        {
+          "id": "w48-0",
+          "text": "$0",
+          "start": 18.11,
+          "end": 18.771
+        },
+        {
+          "id": "w50",
+          "text": "on",
+          "start": 18.83,
+          "end": 18.922
+        },
+        {
+          "id": "w51",
+          "text": "requests",
+          "start": 18.992,
+          "end": 19.387
+        },
+        {
+          "id": "w52",
+          "text": "the",
+          "start": 19.433,
+          "end": 19.503
+        },
+        {
+          "id": "w53",
+          "text": "Pool",
+          "start": 19.538,
+          "end": 19.735
+        },
+        {
+          "id": "w54",
+          "text": "serves.",
+          "start": 19.816,
+          "end": 20.548
+        }
+      ],
+      "paced": {
+        "lead_s": 0.3,
+        "slot_s": 22.4
+      }
+    },
+    {
+      "frame": 5,
+      "path": "assets/voice/05.wav",
+      "duration_s": 6.8,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Tools",
+          "start": 0.3,
+          "end": 0.637
+        },
+        {
+          "id": "w1",
+          "text": "too.",
+          "start": 0.683,
+          "end": 1.031
+        },
+        {
+          "id": "w2",
+          "text": "One",
+          "start": 1.182,
+          "end": 1.391
+        },
+        {
+          "id": "w3",
+          "text": "MCP",
+          "start": 1.426,
+          "end": 1.798
+        },
+        {
+          "id": "w4",
+          "text": "URL",
+          "start": 1.925,
+          "end": 2.309
+        },
+        {
+          "id": "w5",
+          "text": "and",
+          "start": 2.378,
+          "end": 2.494
+        },
+        {
+          "id": "w6",
+          "text": "one",
+          "start": 2.564,
+          "end": 2.726
+        },
+        {
+          "id": "w7",
+          "text": "key,",
+          "start": 2.785,
+          "end": 3.052
+        },
+        {
+          "id": "w8",
+          "text": "for",
+          "start": 3.098,
+          "end": 3.214
+        },
+        {
+          "id": "w9",
+          "text": "every",
+          "start": 3.295,
+          "end": 3.504
+        },
+        {
+          "id": "w10",
+          "text": "server",
+          "start": 3.551,
+          "end": 3.841
+        },
+        {
+          "id": "w11",
+          "text": "you",
+          "start": 3.911,
+          "end": 3.992
+        },
+        {
+          "id": "w12",
+          "text": "connect.",
+          "start": 4.05,
+          "end": 4.712
+        }
+      ],
+      "paced": {
+        "lead_s": 0.3,
+        "slot_s": 6.8
+      }
+    },
+    {
+      "frame": 6,
+      "path": "assets/voice/06.wav",
+      "duration_s": 10.6,
+      "words": [
+        {
+          "id": "w0",
+          "text": "For",
+          "start": 0.3,
+          "end": 0.497
+        },
+        {
+          "id": "w1",
+          "text": "coding,",
+          "start": 0.567,
+          "end": 0.997
+        },
+        {
+          "id": "w2",
+          "text": "install",
+          "start": 1.02,
+          "end": 1.38
+        },
+        {
+          "id": "w3",
+          "text": "the",
+          "start": 1.438,
+          "end": 1.519
+        },
+        {
+          "id": "w4-0",
+          "text": "anyr",
+          "start": 1.612,
+          "end": 2.274
+        },
+        {
+          "id": "w6",
+          "text": "command",
+          "start": 2.355,
+          "end": 2.692
+        },
+        {
+          "id": "w7",
+          "text": "line",
+          "start": 2.75,
+          "end": 2.947
+        },
+        {
+          "id": "w8",
+          "text": "tool",
+          "start": 2.982,
+          "end": 3.261
+        },
+        {
+          "id": "w9",
+          "text": "with",
+          "start": 3.377,
+          "end": 3.586
+        },
+        {
+          "id": "w10",
+          "text": "one",
+          "start": 3.655,
+          "end": 3.853
+        },
+        {
+          "id": "w11",
+          "text": "line.",
+          "start": 3.899,
+          "end": 4.213
+        },
+        {
+          "id": "w12",
+          "text": "Then",
+          "start": 4.456,
+          "end": 4.619
+        },
+        {
+          "id": "w13-0",
+          "text": "anyr",
+          "start": 4.665,
+          "end": 5.141
+        },
+        {
+          "id": "w13-1",
+          "text": "claude",
+          "start": 5.141,
+          "end": 5.617
+        },
+        {
+          "id": "w16",
+          "text": "starts",
+          "start": 5.652,
+          "end": 5.989
+        },
+        {
+          "id": "w17",
+          "text": "Claude",
+          "start": 6.047,
+          "end": 6.372
+        },
+        {
+          "id": "w18",
+          "text": "Code",
+          "start": 6.418,
+          "end": 6.72
+        },
+        {
+          "id": "w19",
+          "text": "through",
+          "start": 6.755,
+          "end": 7.034
+        },
+        {
+          "id": "w20",
+          "text": "AnyRouter.",
+          "start": 7.15,
+          "end": 8.102
+        }
+      ],
+      "paced": {
+        "lead_s": 0.3,
+        "slot_s": 10.6
+      }
+    },
+    {
+      "frame": 7,
+      "path": "assets/voice/07.wav",
+      "duration_s": 8,
+      "words": [
+        {
+          "id": "w0",
+          "text": "One",
+          "start": 0.3,
+          "end": 0.474
+        },
+        {
+          "id": "w1",
+          "text": "key.",
+          "start": 0.532,
+          "end": 0.869
+        },
+        {
+          "id": "w2",
+          "text": "Every",
+          "start": 0.904,
+          "end": 1.136
+        },
+        {
+          "id": "w3",
+          "text": "model.",
+          "start": 1.182,
+          "end": 1.531
+        },
+        {
+          "id": "w4",
+          "text": "A",
+          "start": 1.577,
+          "end": 1.647
+        },
+        {
+          "id": "w5",
+          "text": "shared",
+          "start": 1.716,
+          "end": 1.983
+        },
+        {
+          "id": "w6",
+          "text": "Pool",
+          "start": 2.018,
+          "end": 2.192
+        },
+        {
+          "id": "w7",
+          "text": "for",
+          "start": 2.25,
+          "end": 2.355
+        },
+        {
+          "id": "w8",
+          "text": "free",
+          "start": 2.413,
+          "end": 2.599
+        },
+        {
+          "id": "w9",
+          "text": "models.",
+          "start": 2.645,
+          "end": 3.098
+        },
+        {
+          "id": "w10",
+          "text": "Start",
+          "start": 3.272,
+          "end": 3.528
+        },
+        {
+          "id": "w11",
+          "text": "at",
+          "start": 3.551,
+          "end": 3.62
+        },
+        {
+          "id": "w12-0",
+          "text": "anyrouter.dev.",
+          "start": 3.679,
+          "end": 5.176
+        }
+      ],
+      "paced": {
+        "lead_s": 0.3,
+        "slot_s": 8
+      }
+    }
+  ],
+  "bgm": {
+    "path": "assets/bgm/track.mp3",
+    "source": "host",
+    "volume": 0.12,
+    "duration_s": 68
+  }
+}

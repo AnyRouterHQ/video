@@ -1,0 +1,74 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="compositions/rail.js"></script>
+  <script src="compositions/words-reel.js"></script>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    @font-face { font-family: "Geist Mono"; src: url("assets/fonts/geist-mono.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    [data-composition-id="r5-mcp"] { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+    [data-composition-id="r5-mcp"] .k-bg { position: absolute; inset: 0; background: oklch(0.97 0 0); }
+    [data-composition-id="r5-mcp"] .k-stage { position: absolute; inset: 0; }
+    [data-composition-id="r5-mcp"] .cam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    [data-composition-id="r5-mcp"] svg.fig { position: absolute; left: 0; top: 0; overflow: visible; }
+
+  </style>
+
+  <div id="root" data-composition-id="r5-mcp" data-width="1080" data-height="1920" data-duration="6.8">
+    <div id="r5-mcp-bg" class="k-bg clip" data-start="0" data-duration="6.8" data-track-index="0"></div>
+    <div id="r5-mcp-stage" class="k-stage clip" data-start="0" data-duration="6.8" data-track-index="1">
+      <div class="cam"><svg class="fig" width="1080" height="1920" viewBox="0 0 1080 1920"></svg></div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const ID = 'r5-mcp';
+      const root = document.querySelector('[data-composition-id="r5-mcp"]');
+      const w = (word, nth, edge) => WR(5, word, nth, edge);
+      document.fonts.ready.then(() => {
+        const svg = root.querySelector('svg.fig');
+        const L = { rails: Rail.el(svg, 'g'), wires: Rail.el(svg, 'g'), dots: Rail.el(svg, 'g'), top: Rail.el(svg, 'g') };
+        const tl = gsap.timeline({ paused: true });
+        const cam = Rail.camera(root.querySelector('.cam'), root);
+        cam.set(tl, { s: 1, cx: 540, cy: 960 }, 0);
+        // mcpTall from the landing figure: agent and hub on top, servers on alternating rows off one trunk.
+        const { T, G, el, wire, node, hub, chip, txt, dot, travel, draw } = Rail;
+        const M = G.tall.mcp;
+        for (const [a, b] of M.rails) {
+          el(L.rails, 'line', { x1: a[0], x2: b[0], y1: a[1], y2: b[1], stroke: T.idle, 'stroke-width': 1.5, 'stroke-dasharray': '6 6' });
+          for (const p of [a, b]) el(L.rails, 'rect', { x: p[0] - 7, y: p[1] - 7, width: 14, height: 14, fill: T.plate, stroke: T.muted, 'stroke-width': 1.5 });
+        }
+        const sv = M.servers.map(s => ({ ...s, w: wire(L.wires, s.pts.slice(3)), path: Rail.path(s.pts), n: node(L.top, s.c, s.mark) }));
+        const trunk = wire(L.wires, [M.hub, M.servers[0].pts[1], M.servers[0].pts[2], [M.servers[0].pts[2][0], Math.max(...M.servers.map(s => s.c[1]))]]);
+        const agentRight = M.agentRight[0];
+        const src = wire(L.wires, [[agentRight, M.hub[1]], [M.hub[0] - M.ring, M.hub[1]]], { stroke: T.ink, dash: '8 8' });
+        const H = hub(L.top, M.hub, M.ring, null);
+        const label = txt(L.top, [M.hub[0], M.hub[1] + M.ring + 46], 'AnyRouter MCP', { size: 34, anchor: 'middle', color: T.ink });
+        const agent = chip(L.top, [agentRight - 176, M.hub[1]], '$ anyr claude', { size: 40, stroke: T.ink, fill: T.page, color: T.ink });
+        const endpoint = chip(L.top, [505, M.rails[2][0][1]], 'https://anyrouter.dev/api/v1/mcp', { stroke: T.ink, fill: T.page, color: T.ink });
+        const ok = txt(L.top, [sv[0].c[0], sv[0].c[1] + 78], 'ok', { size: 34, color: T.ember, anchor: 'middle' });
+        
+        tl.fromTo([L.rails, label], { opacity: 0 }, { opacity: 1, duration: 0.4 }, 0.2);
+        draw(tl, trunk, 0.3, 0.35);
+        sv.forEach((s, i) => {
+          draw(tl, s.w, 0.55 + i * 0.04, 0.4);
+          tl.fromTo(s.n.el, { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.8 + i * 0.04);
+        });
+        tl.fromTo([agent.el, src.el], { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.45, ease: 'power3.out' }, 0.6);
+        tl.fromTo(endpoint.el, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power3.out' }, w('url') - 0.1);
+        const k = w('key');
+        travel(tl, dot(L.dots, 11), Rail.path([[agentRight, M.hub[1]], ...sv[0].pts]), k - 0.3, 1.1);
+        tl.set([sv[0].w.el, trunk.el], { attr: { stroke: T.ink, 'stroke-width': 3 } }, k + 0.8);
+        tl.set(sv[0].n.box, { attr: { stroke: T.ink } }, k + 0.8);
+        tl.fromTo(ok, { opacity: 0 }, { opacity: 1, duration: 0.2 }, k + 0.8);
+        const back = Rail.path([...sv[0].pts].reverse().concat([[agentRight, M.hub[1]]]));
+        for (let i = 0; i < 3; i++) travel(tl, dot(L.dots, 11), back, k + 1.0 + i * 0.18, 1.1);
+        const ev = w('every');
+        sv.slice(1).forEach((s, i) => tl.set(s.n.box, { attr: { stroke: T.ink } }, ev + i * 0.08));
+        
+        window.__timelines = window.__timelines || {};
+        window.__timelines[ID] = tl;
+      });
+    })();
+  </script>
+</template>

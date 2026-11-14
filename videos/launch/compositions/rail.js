@@ -244,6 +244,64 @@
     };
   })();
 
+  /*
+   * The reel's tall layouts (routingTall, poolTall, mcpTall in layouts.ts, 360 units wide),
+   * each scaled to fit the 1080x1920 safe area (x 60-950, y 205-1215) and centred on x 505.
+   */
+  const fitTall = (w, h) => {
+    const k = Math.min(890 / w, 1010 / h);
+    const ox = 505 - (w * k) / 2, oy = 205;
+    return { k, Q: (x, y) => [ox + k * x, oy + k * y] };
+  };
+  const tall = (() => {
+    const r = fitTall(360, 456);
+    const rh = r.Q(180, 150);
+    const rMarks = ['mistral', 'google', 'anthropic', 'groq', 'openai', 'deepseek', 'kilocode', 'nvidia', 'cerebras', 'together'];
+    const rSlots = [...[0, 1, 2, 3, 4].map(i => [68 + 56 * i, 308]), ...[0, 1, 2, 3, 4].map(i => [40 + 56 * i, 396])];
+    const routingT = {
+      hub: rh, ring: 42 * r.k, rails: [[r.Q(10, 12), r.Q(10, 444)], [r.Q(350, 12), r.Q(350, 444)]],
+      agent: r.Q(180, 60),
+      ups: rMarks.map((mark, i) => {
+        const [x, y] = rSlots[i];
+        const c = r.Q(x, y);
+        const pts = [rh, r.Q(180, 228), r.Q(x, 256), [c[0], c[1] - 36]];
+        return { mark, c, pts, draw: pts.slice(1), tick: [c[0], c[1] - 58] };
+      }),
+      trunk: [rh, r.Q(180, 228)],
+      facts: r.Q(284, 206), factsLead: [[rh[0] + 42 * r.k, rh[1]], r.Q(284, 206)],
+    };
+    const p = fitTall(360, 496);
+    const ph = p.Q(180, 150);
+    const pKeys = [[84, 296], [276, 296], [84, 368], [276, 368], [84, 440], [276, 440]];
+    const poolT = {
+      hub: ph, ring: 42 * p.k, rails: [[p.Q(10, 12), p.Q(10, 484)], [p.Q(350, 12), p.Q(350, 484)]],
+      caller: p.Q(180, 60),
+      keys: pKeys.map(([x, y], i) => {
+        const c = p.Q(x, y);
+        const edge = [c[0] + (x < 180 ? 30 : -30), c[1]];
+        return { mark: ['openrouter', 'nvidia', 'opencode', 'openrouter', 'openrouter', 'nvidia'][i], c, pts: [ph, p.Q(180, y - 34), edge] };
+      }),
+    };
+    const m = fitTall(360, 500);
+    const mh = m.Q(264, 86);
+    const trunkX = m.Q(180, 0)[0];
+    const mRows = [232, 284, 336, 388, 440];
+    const mSlots = mRows.flatMap((y, i) => (i % 2 === 0 ? [112, 248] : [48, 312]).map(x => [x, y]));
+    const mMarks = ['exa', 'firecrawl', 'keenable', 'github', 'linear', 'notion', 'sentry', 'context7', 'vercel', 'cloudflare'];
+    const mcpT = {
+      hub: mh, ring: 40 * m.k, rails: [[m.Q(10, 12), m.Q(350, 12)], [m.Q(10, 190), m.Q(350, 190)], [m.Q(10, 488), m.Q(350, 488)]],
+      agentRight: m.Q(178, 86),
+      call: m.Q(78, 164),
+      servers: mMarks.map((mark, i) => {
+        const [x, y] = mSlots[i];
+        const c = m.Q(x, y);
+        const edge = [c[0] + (x < 180 ? 36 : -36), c[1]];
+        return { mark, c, pts: [mh, m.Q(264, 164), m.Q(180, 164), [trunkX, c[1]], edge] };
+      }),
+    };
+    return { routing: routingT, pool: poolT, mcp: mcpT };
+  })();
+
   /** S2's resting figure (NVIDIA refused, Kilo Code served): S3 and S4 open on it. */
   function routingRest(L) {
     const R = routing;
@@ -292,5 +350,5 @@
     return { divider, trunk, bus, sv, src, lead, hub: h, agent, call, endpoint, ok };
   }
 
-  window.Rail = { routingRest, mcpRest, place, poseAt, T, P, el, path, wire, ticks, node, hub, txt, chip, rails, dot, travel, draw, camera, morph, G: { RAILS, routing, pool, mcp } };
+  window.Rail = { routingRest, mcpRest, place, poseAt, T, P, el, path, wire, ticks, node, hub, txt, chip, rails, dot, travel, draw, camera, morph, G: { RAILS, routing, pool, mcp, tall } };
 })();

@@ -13,7 +13,9 @@ import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
 const LEAD = 0.3;
-const SLOT = { 1: 4.8, 2: 15.6, 3: 11.0, 4: 22.4, 5: 15.0, 6: 16.8, 7: 8.0 };
+// The master's slots; a cut with its own takes (reel/) brings a slots.json.
+const SLOT = fs.existsSync('slots.json') ? JSON.parse(fs.readFileSync('slots.json', 'utf8'))
+  : { 1: 4.8, 2: 15.6, 3: 11.0, 4: 22.4, 5: 15.0, 6: 16.8, 7: 8.0 };
 
 const meta = JSON.parse(fs.readFileSync('audio_meta.json', 'utf8'));
 for (const v of meta.voices) {

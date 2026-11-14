@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-11-13T15:52:03.265Z",
+  "capturedAt": "2026-11-14T05:15:46.066Z",
   "models": {
     "api": {
       "value": 443,
@@ -38,17 +38,25 @@
   },
   "pool": {
     "activeDonors": {
-      "value": 358,
+      "value": 367,
       "source": "https://anyrouter.dev/api/v1/pool/stats (active_donors)"
     },
     "requestsToday": {
-      "value": 8152,
+      "value": 1426,
       "source": "https://anyrouter.dev/api/v1/pool/stats (requests_today)"
     },
     "oneKeyGivesGo": {
-      "text": "donate a provider key to the shared Pool and get Go plus free Pool access",
-      "source": "https://anyrouter.dev/llms.txt"
+      "text": "Add one valid free-tier key and you get the Go plan, with $0 on requests the Pool serves. Every new key means fewer rate limits for everyone, so we need more contributors.",
+      "source": "https://anyrouter.dev/pool"
+    },
+    "skips": {
+      "text": "AnyRouter balances requests across the keys, rotates them and skips any key that is rate limited, so the Pool keeps going where one account key stops.",
+      "source": "https://anyrouter.dev/pool"
     }
+  },
+  "homeH1": {
+    "text": "Every LLM. One API.",
+    "source": "https://anyrouter.dev/"
   },
   "failover": {
     "text": "a 401, 429, or 5xx from one upstream retries on the next upstream for that model",

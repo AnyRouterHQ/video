@@ -28,6 +28,8 @@ const llms = await get('/llms.txt');
 const home = lines(await get('/'));
 const mcp = lines(await get('/mcp'));
 const poolStats = JSON.parse(await get('/api/v1/pool/stats'));
+const poolPage = lines(await get('/pool'));
+const sentence = (page, start) => need(page.find(l => l.startsWith(start)), `sentence "${start}"`);
 
 const homeLatest = home.join(' ').match(/Latest of (\d+) models/);
 const homeFree = home.join(' ').match(/(\d+) free with Go/);
@@ -61,8 +63,10 @@ const facts = {
   pool: {
     activeDonors: { value: need(poolStats.active_donors, 'pool donors'), source: `${SITE}/api/v1/pool/stats (active_donors)` },
     requestsToday: { value: need(poolStats.requests_today, 'pool requests today'), source: `${SITE}/api/v1/pool/stats (requests_today)` },
-    oneKeyGivesGo: { text: 'donate a provider key to the shared Pool and get Go plus free Pool access', source: `${SITE}/llms.txt` },
+    oneKeyGivesGo: { text: sentence(poolPage, 'Add one valid free-tier key'), source: `${SITE}/pool` },
+    skips: { text: sentence(poolPage, 'AnyRouter balances requests'), source: `${SITE}/pool` },
   },
+  homeH1: { text: need(home.find(l => l === 'Every LLM.') && 'Every LLM. One API.', 'home H1'), source: `${SITE}/` },
   failover: { text: 'a 401, 429, or 5xx from one upstream retries on the next upstream for that model', source: `${SITE}/llms.txt` },
   mcp: {
     endpoint: { text: `${SITE}/api/v1/mcp`, source: `${SITE}/mcp` },

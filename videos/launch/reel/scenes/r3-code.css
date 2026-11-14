@@ -1,0 +1,5 @@
+    & .plate { position: absolute; left: 95px; width: 820px; top: 600px; box-sizing: border-box; padding: 28px 36px 34px; background: #fff; border: 2px solid #E5E5E5; border-radius: 16px; }
+    & .plate .lab { font-family: "Geist", sans-serif; font-size: 36px; color: #636363; }
+    & .plate .url { position: relative; margin-top: 14px; font-family: "Geist Mono", monospace; font-size: 40px; color: #0A0A0A; white-space: nowrap; display: inline-block; }
+    & .plate .ul { position: absolute; left: 0; right: 0; bottom: -8px; height: 3px; background: oklch(0.555 0.163 49); transform-origin: 0 50%; }
+    & .note { position: absolute; left: 95px; width: 820px; top: 830px; font-family: "Geist", sans-serif; font-size: 40px; color: #636363; text-align: center; }

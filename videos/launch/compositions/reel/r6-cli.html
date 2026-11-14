@@ -1,0 +1,106 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="compositions/rail.js"></script>
+  <script src="compositions/words-reel.js"></script>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    @font-face { font-family: "Geist Mono"; src: url("assets/fonts/geist-mono.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    [data-composition-id="r6-cli"] { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+    [data-composition-id="r6-cli"] .k-bg { position: absolute; inset: 0; background: oklch(0.97 0 0); }
+    [data-composition-id="r6-cli"] .k-stage { position: absolute; inset: 0; }
+    [data-composition-id="r6-cli"] .cam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    [data-composition-id="r6-cli"] svg.fig { position: absolute; left: 0; top: 0; overflow: visible; }
+    [data-composition-id="r6-cli"] .panel { position: absolute; left: 0; top: 200px; width: 1080px; height: 1020px; overflow: hidden; }
+    [data-composition-id="r6-cli"] .panel > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+    [data-composition-id="r6-cli"] .notch { position: absolute; width: 14px; height: 14px; background: oklch(0.97 0 0); }
+    [data-composition-id="r6-cli"] .win { position: absolute; left: 60px; top: 48px; width: 890px; bottom: 48px; background: #fff; border: 2px solid #E5E5E5; border-radius: 16px; overflow: hidden; }
+    [data-composition-id="r6-cli"] .bar { position: absolute; left: 0; right: 0; top: 0; height: 68px; border-bottom: 2px solid #E5E5E5; display: flex; align-items: center; padding-left: 24px; gap: 10px; }
+    [data-composition-id="r6-cli"] .bar i { width: 18px; height: 18px; border-radius: 50%; display: block; }
+    [data-composition-id="r6-cli"] .bar .title { margin-left: 16px; font-family: "Geist Mono", monospace; font-size: 34px; color: #636363; }
+    [data-composition-id="r6-cli"] .lines { position: absolute; left: 22px; top: 92px; right: 22px; }
+    [data-composition-id="r6-cli"] .ln { height: 50px; font-family: "Geist Mono", monospace; font-size: 34px; line-height: 50px; white-space: pre; color: oklch(0.32 0.09 262); }
+    [data-composition-id="r6-cli"] .ln .p { color: #636363; }
+    [data-composition-id="r6-cli"] .ln.out { color: #3F3F46; }
+    [data-composition-id="r6-cli"] .ln.gap { color: #A1A1AA; }
+    [data-composition-id="r6-cli"] .caret { display: inline-block; width: 19px; height: 38px; vertical-align: -8px; background: oklch(0.555 0.163 49); }
+    [data-composition-id="r6-cli"] .uline { position: absolute; height: 3px; background: oklch(0.555 0.163 49); transform-origin: 0 50%; }
+
+  </style>
+
+  <div id="root" data-composition-id="r6-cli" data-width="1080" data-height="1920" data-duration="10.6">
+    <div id="r6-cli-bg" class="k-bg clip" data-start="0" data-duration="10.6" data-track-index="0"></div>
+    <div id="r6-cli-stage" class="k-stage clip" data-start="0" data-duration="10.6" data-track-index="1">
+      <div class="cam"><svg class="fig" width="1080" height="1920" viewBox="0 0 1080 1920"></svg><div class="panel"><img src="assets/footage/hero-chat.png" alt=""><div class="notch" style="left:0;top:0"></div><div class="notch" style="right:0;top:0"></div><div class="notch" style="left:0;bottom:0"></div><div class="notch" style="right:0;bottom:0"></div>
+<div class="win"><div class="bar"><i style="background:#E7000B"></i><i style="background:#F0B100"></i><i style="background:#00A63E"></i><span class="title">~/my-project</span></div><div class="lines"><div class="uline"></div></div></div></div>
+</div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const ID = 'r6-cli';
+      const root = document.querySelector('[data-composition-id="r6-cli"]');
+      const w = (word, nth, edge) => WR(6, word, nth, edge);
+      document.fonts.ready.then(() => {
+        const svg = root.querySelector('svg.fig');
+        const L = { rails: Rail.el(svg, 'g'), wires: Rail.el(svg, 'g'), dots: Rail.el(svg, 'g'), top: Rail.el(svg, 'g') };
+        const tl = gsap.timeline({ paused: true });
+        const cam = Rail.camera(root.querySelector('.cam'), root);
+        cam.set(tl, { s: 1, cx: 540, cy: 960 }, 0);
+        // The terminal at 41 columns: long lines wrap as a terminal that wide would wrap them.
+        // Output lines are verbatim from capture/cli/ (install.typescript, claude-dry-run.txt); "…" marks lines left out.
+        const INSTALL_OUT = ['  ✓ Installed   ~/.local/bin/anyr'];
+        const DRY_OUT = ['command: claude', '…', 'ANTHROPIC_BASE_URL=https://anyrouter.dev/api', '…', 'ANTHROPIC_MODEL=anyrouter/free'];
+        const COLS = 41, LH = 50, CH = 20.4;
+        const $ = s => root.querySelector(s);
+        const panel = $('.panel'), box = $('.lines');
+        const chipW = 13 * 24 + 40, chipC = [Rail.G.tall.mcp.agentRight[0] - 176, Rail.G.tall.mcp.hub[1]];
+        const pb = { left: 0, top: 200, width: 1080, height: 1020 };
+        const chipClip = `inset(${chipC[1] - 32 - pb.top}px ${pb.width - (chipC[0] + chipW / 2)}px ${pb.top + pb.height - (chipC[1] + 32)}px ${chipC[0] - chipW / 2}px round 10px)`;
+        tl.set(panel, { clipPath: chipClip, opacity: 0 }, 0);
+        tl.to(panel, { opacity: 1, duration: 0.12 }, 0.1);
+        tl.to(panel, { clipPath: 'inset(0px 0px 0px 0px round 0px)', duration: 0.9, ease: 'power3.inOut' }, 0.1);
+        
+        const wrap = s => { const out = []; for (let i = 0; i < s.length; i += COLS) out.push(s.slice(i, i + COLS)); return out.length ? out : ['']; };
+        let n = 0;
+        const caret = document.createElement('span');
+        caret.className = 'caret';
+        const row = cls => { const d = document.createElement('div'); d.className = `ln ${cls}`; box.appendChild(d); gsap.set(d, { opacity: 0 }); n++; return d; };
+        const type = (cmd, at) => {
+          const parts = wrap(`$ ${cmd}`);
+          let t = at;
+          parts.forEach((part, k) => {
+            const d = row('');
+            const p = document.createElement('span'); p.className = 'p';
+            const body = document.createElement('span');
+            const shown = k === 0 ? part.slice(2) : part;
+            if (k === 0) { p.textContent = '$ '; d.append(p, body); } else d.append(body);
+            tl.set(d, { opacity: 1 }, t);
+            const s = { c: 0 };
+            const dur = shown.length / 22;
+            tl.fromTo(s, { c: 0 }, { c: shown.length, duration: dur, ease: 'none', immediateRender: false,
+              onUpdate: () => { body.textContent = shown.slice(0, Math.round(s.c)); d.appendChild(caret); } }, t);
+            t += dur;
+          });
+          return t;
+        };
+        const print = (lines, at) => lines.forEach((l, k) => wrap(l).forEach(part => {
+          const d = row(l === '…' ? 'gap' : 'out');
+          d.textContent = part;
+          tl.set(d, { opacity: 1 }, at + k * 0.08);
+        }));
+        const iEnd = type('curl -fsSL https://anyrouter.dev/cli.sh | bash', w('install') - 0.1);
+        print(INSTALL_OUT, iEnd + 0.4);
+        const dEnd = type('anyr claude --dry-run --model anyrouter/free', w('then') - 0.2);
+        const baseRow = n + 2;
+        print(DRY_OUT, dEnd + 0.25);
+        const ul = $('.uline');
+        gsap.set(ul, { left: 19 * CH, top: baseRow * LH + 44, width: (COLS - 19) * CH, scaleX: 0 });
+        tl.to(ul, { scaleX: 1, duration: 0.45, ease: 'power3.out' }, w('through'));
+        
+        window.__timelines = window.__timelines || {};
+        window.__timelines[ID] = tl;
+      });
+    })();
+  </script>
+</template>

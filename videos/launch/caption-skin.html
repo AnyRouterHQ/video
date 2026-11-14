@@ -61,10 +61,13 @@
   }
 
   /* portrait rendition: at most two lines inside the 900px safe width */
+  /* portrait (the reel): Reels, Shorts and TikTok draw buttons on the right 12%, so the chip
+     centres on x 505 and stays at most 840px wide, two lines at most */
   @media (orientation: portrait) {
+    .caption-stage { right: 70px; }
     .caption-chip {
-      max-width: 900px;
-      font-size: 56px;
+      max-width: 840px;
+      font-size: 44px;
     }
   }
 </style>
@@ -113,7 +116,8 @@
       var next = GROUPS[g + 1];
       var isLast = g === GROUPS.length - 1;
       var start = Math.max(0, Number(group.start));
-      var end = isLast ? DURATION : Math.min(Number(next.start), Number(group.end) + 0.4);
+      // the last caption clears with the voice, so the end card's final hold is clean (the cover frame)
+      var end = isLast ? Math.min(DURATION, Number(group.end) + 0.6) : Math.min(Number(next.start), Number(group.end) + 0.4);
       if (end <= start) end = start + 0.01;
       var joined = next && Number(next.start) - end < 0.05;
 
