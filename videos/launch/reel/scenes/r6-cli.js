@@ -1,6 +1,6 @@
 // The terminal at 41 columns: long lines wrap as a terminal that wide would wrap them.
 // Output lines are verbatim from capture/cli/ (install.typescript, claude-dry-run.txt); "…" marks lines left out.
-const INSTALL_OUT = ['  ✓ Installed   ~/.local/bin/anyr'];
+const INSTALL_OUT = ['…', '  ✓ Installed   ~/.local/bin/anyr', '…'];
 const DRY_OUT = ['command: claude', '…', 'ANTHROPIC_BASE_URL=https://anyrouter.dev/api', '…', 'ANTHROPIC_MODEL=anyrouter/free'];
 const COLS = 41, LH = 50, CH = 20.4;
 const $ = s => root.querySelector(s);

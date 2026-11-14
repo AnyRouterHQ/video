@@ -28,7 +28,7 @@ const SHOTS = [
   { name: 'home-routing', url: '/', still: 'figure', tab: 'Routing', wait: 9000 },
   { name: 'home-routing-pool', url: '/', still: 'figure', tab: 'Pool', wait: 9000 },
   { name: 'home-routing-mcp', url: '/', still: 'figure', tab: 'MCP', wait: 9000 },
-  { name: 'hero-chat', url: '/', still: '.hero-grain', endpoint: '/v1/chat/completions', dsf: 4, wait: 9000 },
+  { name: 'hero-chat', url: '/', still: '.hero-grain', endpoint: '/v1/chat/completions', dsf: 8, width: 1280, height: 800, wait: 9000 },
   { name: 'hero-messages', url: '/', still: '.hero-grain', endpoint: '/v1/messages', dsf: 4, wait: 9000 },
   { name: 'hero-responses', url: '/', still: '.hero-grain', endpoint: '/v1/responses', dsf: 4, wait: 9000 },
   { name: 'mcp-list', url: '/mcp', still: 'table', dsf: 4 },
@@ -86,8 +86,10 @@ try {
       files.push(`${shot.name}.png`);
       await page.screenshot({ path: path.join(OUT, files[0]) });
     } else if (shot.still) {
-      files.push(`${shot.name}.png`);
-      await (await page.$(shot.still)).screenshot({ path: path.join(OUT, files[0]) });
+      // a dense capture of grain compresses badly as PNG; it ships as a high-quality JPEG
+      const jpg = (shot.dsf ?? 2) >= 8;
+      files.push(`${shot.name}.${jpg ? 'jpg' : 'png'}`);
+      await (await page.$(shot.still)).screenshot({ path: path.join(OUT, files[0]), ...(jpg && { type: 'jpeg', quality: 93 }) });
     } else if (shot.sequence) {
       const el = await page.$(shot.sequence);
       const dir = path.join(RAW, shot.name);

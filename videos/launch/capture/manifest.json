@@ -184,10 +184,10 @@
   },
   "hero-chat": {
     "url": "https://anyrouter.dev/",
-    "capturedAt": "2026-11-14T05:00:30.307Z",
-    "viewport": "1920x1080@4x",
+    "capturedAt": "2026-11-14T05:35:19.742Z",
+    "viewport": "1280x800@8x",
     "files": [
-      "hero-chat.png"
+      "assets/footage/hero-chat.png"
     ],
     "endpoint": "/v1/chat/completions"
   },
@@ -196,7 +196,7 @@
     "capturedAt": "2026-11-14T05:00:42.973Z",
     "viewport": "1920x1080@4x",
     "files": [
-      "hero-messages.png"
+      "assets/footage/hero-messages.png"
     ],
     "endpoint": "/v1/messages"
   },
@@ -205,7 +205,7 @@
     "capturedAt": "2026-11-14T05:00:55.572Z",
     "viewport": "1920x1080@4x",
     "files": [
-      "hero-responses.png"
+      "assets/footage/hero-responses.png"
     ],
     "endpoint": "/v1/responses"
   },
@@ -214,7 +214,7 @@
     "capturedAt": "2026-11-14T05:01:00.235Z",
     "viewport": "1920x1080@4x",
     "files": [
-      "mcp-list.png"
+      "assets/footage/mcp-list.png"
     ]
   },
   "models-list": {
@@ -222,7 +222,7 @@
     "capturedAt": "2026-11-14T05:01:43.113Z",
     "viewport": "1280x2400@3x",
     "files": [
-      "models-list.png"
+      "assets/footage/models-list.png"
     ]
   }
 }

@@ -39,5 +39,6 @@ fs.writeFileSync(index, html);
 // so the reel's captions sit in 1240-1480 (the designer's safe area).
 const capFile = path.join(out, 'compositions/captions.html');
 fs.writeFileSync(capFile, fs.readFileSync(capFile, 'utf8')
-  .replace(/--cap-band-top: \d+px/g, '--cap-band-top: 1240px').replace(/--cap-band-height: \d+px/g, '--cap-band-height: 240px'));
+  .replace(/--cap-band-top: \d+px/g, '--cap-band-top: 1240px').replace(/--cap-band-height: \d+px/g, '--cap-band-height: 240px')
+  .replace('id="captions-root"', 'id="captions-root" data-outside-safe-area'));
 console.log(`reel project: ${path.relative(process.cwd(), out)}`);

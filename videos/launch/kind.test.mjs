@@ -38,9 +38,9 @@ test('no API key is on screen or in a recording', () => {
 });
 
 test('every terminal output line in the CLI scene is a line a command printed', () => {
-  const html = read('compositions/frames/06-cli.html');
   const pool = [...recording('install.typescript'), ...read('capture/cli/claude-dry-run.txt').split('\n'), ...recording('mcp-add-cursor.typescript')];
-  for (const name of ['INSTALL_OUT', 'DRY_OUT', 'CURSOR_OUT']) {
+  const scenes = ['compositions/frames/06-cli.html', 'reel/scenes/r6-cli.js'].map(read);
+  for (const [html, name] of scenes.flatMap(h => ['INSTALL_OUT', 'DRY_OUT', 'CURSOR_OUT'].filter(n => h.includes(`const ${n} =`)).map(n => [h, n]))) {
     const lines = new Function(`return ${new RegExp(`const ${name} = (\\[.*?\\]);`).exec(html)[1]}`)();
     for (const l of lines) {
       if (l === '' || l === '…') continue;

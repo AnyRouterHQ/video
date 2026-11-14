@@ -34,7 +34,7 @@
       <div class="cam">
         <svg class="fig" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
         <div class="panel">
-          <img src="assets/footage/hero-chat.png" alt="">
+          <img src="assets/footage/hero-chat.jpg" alt="">
           <div class="notch" style="left:0;top:0"></div><div class="notch" style="right:0;top:0"></div>
           <div class="notch" style="left:0;bottom:0"></div><div class="notch" style="right:0;bottom:0"></div>
           <div class="win">
@@ -57,7 +57,7 @@
 
       // Every output line below is verbatim from a recording in capture/cli/
       // (install.typescript, claude-dry-run.txt, mcp-add-cursor.typescript). "…" marks lines left out.
-      const INSTALL_OUT = ['  ✓ Installed   ~/.local/bin/anyr', '', '  Next', '    anyr auth login  sign in', '    anyr claude      launch Claude Code through AnyRouter'];
+      const INSTALL_OUT = ['…', '  ✓ Installed   ~/.local/bin/anyr', '…', '  Next', '    anyr auth login  sign in', '    anyr claude      launch Claude Code through AnyRouter'];
       const DRY_OUT = ['command: claude', '…', 'ANTHROPIC_BASE_URL=https://anyrouter.dev/api', '…', 'ANTHROPIC_MODEL=anyrouter/free'];
       const CURSOR_OUT = ['{', '  "mcpServers": {', '    "anyrouter": {', '      "headers": {', '        "Authorization": "Bearer ${env:ANYROUTER_API_KEY}"', '      },', '      "url": "https://anyrouter.dev/api/v1/mcp"', '    }', '  }', '}'];
 
@@ -131,7 +131,9 @@
         const baseLine = 1 + INSTALL_OUT.length + 1 + 1 + 2;   // install, its output, login, the dry-run command, "command:", "…"
         const ul = $('.uline');
         gsap.set(ul, { left: 19 * 21.6, top: baseLine * LH + 46, width: 25 * 21.6, scaleX: 0 });
-        const urlPose = { s: 1.4, cx: 820, cy: 60 + 48 + 74 + 28 + (baseLine + 0.5) * LH };
+        // the rows printed after BASE_URL scroll the view before the push lands
+        const shift = Math.max(0, baseLine + 2 - VIEW + 1);
+        const urlPose = { s: 1.4, cx: 820, cy: 60 + 48 + 74 + 28 + (baseLine - shift + 0.5) * LH };
         const thr = w('through');
         cam.move(tl, full, urlPose, thr - 0.5, 0.8);
         tl.to(ul, { scaleX: 1, duration: 0.45, ease: 'power3.out' }, thr);
