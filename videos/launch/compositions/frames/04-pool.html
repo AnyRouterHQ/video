@@ -103,9 +103,9 @@
         const stops = w('stops');
         travel(tl, dot(L.dots), toStop, stops - 1.0, 1.0, { hide: false });
         tl.fromTo(stopChip.el, { opacity: 0 }, { opacity: 1, duration: 0.01 }, stops);
-        cam.move(tl, full, { s: 1.3, cx: 760, cy: LN.c[1] + 40 }, alone - 0.7, 0.9);
+        cam.move(tl, full, { s: 1.2, cx: 760, cy: LN.c[1] + 164 }, alone - 0.7, 0.9);
         const poolPose = { s: 1.15, cx: 860, cy: 600 };
-        cam.move(tl, { s: 1.3, cx: 760, cy: LN.c[1] + 40 }, poolPose, stops + 0.6, 0.9);
+        cam.move(tl, { s: 1.2, cx: 760, cy: LN.c[1] + 164 }, poolPose, stops + 0.6, 0.9);
 
         // ── "add free-tier keys": the keys light one by one
         const add = w('add');

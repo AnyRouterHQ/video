@@ -10,9 +10,9 @@ const up = R.ups.map(u => ({ ...u, w: wire(L.wires, u.draw), path: Rail.path(u.p
 const agentC = R.agent;
 const src = wire(L.wires, [[agentC[0], agentC[1] + 36], [R.hub[0], R.hub[1] - R.ring]], { stroke: T.ink, dash: '8 8' });
 const factsC = [760, R.facts[1]];
-const lead = wire(L.wires, [[R.hub[0] + R.ring, R.hub[1]], [factsC[0], R.hub[1]], [factsC[0], factsC[1] - 32]]);
 const h = hub(L.top, R.hub, R.ring, null);
-const label = txt(L.top, [R.hub[0], R.hub[1] + R.ring + 48], 'AnyRouter', { size: 34, anchor: 'middle', color: T.ink });
+// the label sits beside the hub, as routingTall's "after" label does: the trunk runs below it
+const label = txt(L.top, [R.hub[0] + R.ring + 18, R.hub[1] + 12], 'AnyRouter', { size: 34, color: T.ink });
 const agent = chip(L.top, agentC, '$ anyr claude', { size: 40, stroke: T.ink, fill: T.page, color: T.ink });
 const facts = chip(L.top, factsC, '400+ models');
 const nv = up[7], ki = up[6];
@@ -31,7 +31,7 @@ up.forEach((u, i) => {
   tl.fromTo(u.n.el, { opacity: 0 }, { opacity: 1, duration: 0.3 }, at + 0.45);
 });
 tl.fromTo([agent.el, src.el], { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.5, ease: 'power3.out' }, a0 + 0.6);
-tl.fromTo([facts.el, lead.el], { opacity: 0 }, { opacity: 1, duration: 0.4 }, w('model'));
+tl.fromTo(facts.el, { opacity: 0 }, { opacity: 1, duration: 0.4 }, w('model'));
 
 const d1 = dot(L.dots, 11);
 const pk = w('picks');
