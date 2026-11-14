@@ -28,6 +28,11 @@ const SHOTS = [
   { name: 'home-routing', url: '/', still: 'figure', tab: 'Routing', wait: 9000 },
   { name: 'home-routing-pool', url: '/', still: 'figure', tab: 'Pool', wait: 9000 },
   { name: 'home-routing-mcp', url: '/', still: 'figure', tab: 'MCP', wait: 9000 },
+  { name: 'hero-chat', url: '/', still: '.hero-grain', endpoint: '/v1/chat/completions', dsf: 4, wait: 9000 },
+  { name: 'hero-messages', url: '/', still: '.hero-grain', endpoint: '/v1/messages', dsf: 4, wait: 9000 },
+  { name: 'hero-responses', url: '/', still: '.hero-grain', endpoint: '/v1/responses', dsf: 4, wait: 9000 },
+  { name: 'mcp-list', url: '/mcp', still: 'table', dsf: 4 },
+  { name: 'models-list', url: '/models', still: 'viewport', dsf: 3, width: 1280, height: 2400 },
   { name: 'home-terminal-loop', url: '/', sequence: '.hero-grain', seconds: 8, fps: 10 },
   { name: 'models', url: '/models', still: 'viewport' },
   { name: 'models-scroll', url: '/models', scroll: { px: 2400, frames: 90 } },
@@ -53,7 +58,7 @@ try {
   for (const shot of SHOTS) {
     if (only && !only.includes(shot.name)) continue;
     const page = await (await browser.createBrowserContext()).newPage();
-    await page.setViewport({ width: 1920, height: 1080, deviceScaleFactor: 2 });
+    await page.setViewport({ width: shot.width ?? 1920, height: shot.height ?? 1080, deviceScaleFactor: shot.dsf ?? 2 });
     await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'light' }, { name: 'prefers-reduced-motion', value: shot.wait ? 'reduce' : 'no-preference' }]);
     await page.goto(SITE + shot.url, { waitUntil: 'networkidle2', timeout: 90000 });
     await page.evaluate(() => document.fonts.ready);
@@ -64,6 +69,14 @@ try {
         b?.scrollIntoView({ block: 'center' });
         b?.click();
       }, shot.tab);
+    }
+    if (shot.endpoint) {
+      await page.click('.hero-grain [role=combobox]');
+      await new Promise(r => setTimeout(r, 400));
+      await page.evaluate(ep => {
+        const o = [...document.querySelectorAll('[role=option], [role=menuitem], li, button')].find(e => e.textContent.trim().endsWith(ep));
+        o?.click();
+      }, shot.endpoint);
     }
     const sel = shot.still && shot.still !== 'viewport' ? shot.still : shot.sequence;
     if (sel) await page.evaluate(s => document.querySelector(s)?.scrollIntoView({ block: 'center' }), sel);
@@ -99,7 +112,7 @@ try {
       }
       files.push(`capture/raw/${shot.name}/ (${shot.scroll.frames} frames, ${shot.scroll.px}px eased scroll)`);
     }
-    manifest[shot.name] = { url: SITE + shot.url, capturedAt: new Date().toISOString(), viewport: '1920x1080@2x', files, ...(shot.tab && { tab: shot.tab }) };
+    manifest[shot.name] = { url: SITE + shot.url, capturedAt: new Date().toISOString(), viewport: `${shot.width ?? 1920}x${shot.height ?? 1080}@${shot.dsf ?? 2}x`, files, ...(shot.tab && { tab: shot.tab }), ...(shot.endpoint && { endpoint: shot.endpoint }) };
     console.log(`${shot.name}  ${files.join(', ')}`);
     await page.browserContext().close();
   }

@@ -1,0 +1,13 @@
+Script started on 2026-11-14 11:57:52+07:00 [COMMAND="anyr mcp add cursor --print" <not executed on terminal>]
+{
+  "mcpServers": {
+    "anyrouter": {
+      "headers": {
+        "Authorization": "Bearer ${env:ANYROUTER_API_KEY}"
+      },
+      "url": "https://anyrouter.dev/api/v1/mcp"
+    }
+  }
+}
+
+Script done on 2026-11-14 11:57:52+07:00 [COMMAND_EXIT_CODE="0"]

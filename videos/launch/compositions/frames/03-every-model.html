@@ -1,0 +1,123 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="compositions/rail.js"></script>
+  <script src="compositions/words.js"></script>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    @font-face { font-family: "Geist Mono"; src: url("assets/fonts/geist-mono.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    [data-composition-id="03-every-model"] { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+    [data-composition-id="03-every-model"] .k-bg { position: absolute; inset: 0; background: oklch(0.97 0 0); }
+    [data-composition-id="03-every-model"] .k-stage { position: absolute; inset: 0; }
+    [data-composition-id="03-every-model"] .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    [data-composition-id="03-every-model"] svg { position: absolute; left: 0; top: 0; overflow: visible; }
+    /* the real home hero panel (ember backdrop + terminal window), captured at 4x */
+    [data-composition-id="03-every-model"] .panel { position: absolute; left: 310px; top: 68px; width: 1300px; height: 804px; }
+    [data-composition-id="03-every-model"] .panel img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+    [data-composition-id="03-every-model"] .uline { position: absolute; height: 3px; background: oklch(0.555 0.163 49); transform-origin: 0 50%; }
+    /* the real /models page in a browser frame */
+    [data-composition-id="03-every-model"] .browser { position: absolute; left: 310px; top: 68px; width: 1300px; height: 804px; box-sizing: border-box; background: #fff; border: 2px solid #E5E5E5; border-radius: 16px; overflow: hidden; }
+    [data-composition-id="03-every-model"] .bar { position: absolute; left: 0; right: 0; top: 0; height: 64px; background: #FAFAFA; border-bottom: 2px solid #E5E5E5; display: flex; align-items: center; justify-content: center; }
+    [data-composition-id="03-every-model"] .dots { position: absolute; left: 24px; top: 26px; display: flex; gap: 10px; }
+    [data-composition-id="03-every-model"] .dots i { width: 12px; height: 12px; border-radius: 50%; background: #D4D4D8; }
+    [data-composition-id="03-every-model"] .url { font-family: "Geist Mono", monospace; font-size: 34px; color: #636363; }
+    [data-composition-id="03-every-model"] .view { position: absolute; left: 0; right: 0; top: 64px; bottom: 0; overflow: hidden; }
+    [data-composition-id="03-every-model"] .view img { position: absolute; left: -20px; top: -90px; width: 1900px; display: block; }
+  </style>
+
+  <div id="root" data-composition-id="03-every-model" data-width="1920" data-height="1080" data-duration="11">
+    <div id="f03-bg" class="k-bg clip" data-start="0" data-duration="11" data-track-index="0"></div>
+    <div id="f03-stage" class="k-stage clip" data-start="0" data-duration="11" data-track-index="1">
+      <div class="cam">
+        <svg class="fig" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
+        <div class="panel">
+          <img class="ep ep-chat" src="assets/footage/hero-chat.png" alt="">
+          <img class="ep ep-messages" src="assets/footage/hero-messages.png" alt="">
+          <img class="ep ep-responses" src="assets/footage/hero-responses.png" alt="">
+          <div class="uline"></div>
+        </div>
+        <div class="browser">
+          <div class="bar"><div class="dots"><i></i><i></i><i></i></div><span class="url">anyrouter.dev/models</span></div>
+          <div class="view"><img src="assets/footage/models-list.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const ID = '03-every-model';
+      const root = document.querySelector('[data-composition-id="03-every-model"]');
+      const { G, el, rails, camera } = window.Rail;
+      const R = G.routing;
+      const w = word => W(3, word);
+      const $ = s => root.querySelector(s);
+
+      document.fonts.ready.then(() => {
+        const svg = $('svg.fig');
+        const L = { rails: el(svg, 'g'), wires: el(svg, 'g'), dots: el(svg, 'g'), top: el(svg, 'g') };
+        rails(L.rails, G.RAILS);
+        const F = Rail.routingRest(L);
+        const figure = [L.rails, L.wires, L.top];
+        const tl = gsap.timeline({ paused: true });
+        const cam = camera($('.cam'), root);
+        const full = { s: 1, cx: 960, cy: 540 };
+        cam.set(tl, full, 0);
+
+        // A chip opens into the real thing: clip the panel down to the chip's box, then open it.
+        const panel = $('.panel'), browser = $('.browser');
+        const clipTo = (box, c, w, h) => {
+          const x = c[0] - w / 2 - box.left, y = c[1] - h / 2 - box.top;
+          return `inset(${y}px ${box.width - x - w}px ${box.height - y - h}px ${x}px round 10px)`;
+        };
+        const pBox = { left: 310, top: 68, width: 1300, height: 804 };
+        const postClip = clipTo(pBox, R.post.c, F.post.w, F.post.h);
+        const modelsClip = clipTo(pBox, R.models.c, F.models.w, F.models.h);
+        const open = 'inset(0px 0px 0px 0px round 0px)';
+
+        tl.set(panel, { clipPath: postClip, opacity: 0 }, 0);
+        tl.set(browser, { clipPath: modelsClip, opacity: 0 }, 0);
+        tl.set($('.uline'), { scaleX: 0 }, 0);
+        const eps = ['chat', 'messages', 'responses'].map(n => $(`.ep-${n}`));
+        const show = (n, at) => eps.forEach((e, i) => tl.set(e, { opacity: i === n ? 1 : 0 }, at));
+        show(0, 0);
+
+        const o0 = 0.2;
+        tl.to(panel, { opacity: 1, duration: 0.15 }, o0);
+        tl.to(panel, { clipPath: open, duration: 1.1, ease: 'power3.inOut' }, o0);
+        tl.to(figure, { opacity: 0, duration: 0.6, ease: 'power1.out' }, o0 + 0.3);
+
+        // The page's own endpoint select: chat/completions (OpenAI), messages (Anthropic), responses.
+        show(1, w('anthropic'));
+        show(2, w('formats') + 0.35);
+        show(0, w('change') - 0.2);
+
+        // "base URL": push in on the first code line and underline the base URL.
+        const url = { s: 1.6, cx: 806, cy: 312 };
+        cam.move(tl, full, url, w('base') - 0.4, 0.8);
+        const ul = $('.uline');
+        gsap.set(ul, { left: 212, top: 245, width: 496 });
+        tl.to(ul, { scaleX: 1, duration: 0.45, ease: 'power3.out' }, w('url'));
+        cam.move(tl, url, full, w('one') - 0.5, 0.7);
+
+        // "One key": the window closes back into its chip, and the figure returns.
+        tl.to(panel, { clipPath: postClip, duration: 0.8, ease: 'power3.inOut' }, w('one') - 0.3);
+        tl.to(panel, { opacity: 0, duration: 0.2 }, w('one') + 0.4);
+        tl.to(figure, { opacity: 1, duration: 0.5, ease: 'power1.out' }, w('one') - 0.1);
+
+        // "more than four hundred models": the models chip opens into the real /models list.
+        const m0 = w('more') - 0.2;
+        tl.to(browser, { opacity: 1, duration: 0.15 }, m0);
+        tl.to(browser, { clipPath: open, duration: 0.9, ease: 'power3.inOut' }, m0);
+        tl.to(figure, { opacity: 0, duration: 0.5 }, m0 + 0.3);
+        tl.fromTo($('.view img'), { y: 0 }, { y: -600, duration: 2.5, ease: 'power1.inOut' }, m0 + 0.8);
+        // and back into its chip, on the figure S4 opens with
+        tl.to(browser, { clipPath: modelsClip, duration: 0.7, ease: 'power3.inOut' }, 10.0);
+        tl.to(browser, { opacity: 0, duration: 0.15 }, 10.65);
+        tl.to(figure, { opacity: 1, duration: 0.5 }, 10.1);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines[ID] = tl;
+      });
+    })();
+  </script>
+</template>

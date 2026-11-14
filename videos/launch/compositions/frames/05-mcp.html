@@ -1,0 +1,126 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="compositions/rail.js"></script>
+  <script src="compositions/words.js"></script>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    @font-face { font-family: "Geist Mono"; src: url("assets/fonts/geist-mono.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    [data-composition-id="05-mcp"] { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+    [data-composition-id="05-mcp"] .k-bg { position: absolute; inset: 0; background: oklch(0.97 0 0); }
+    [data-composition-id="05-mcp"] .k-stage { position: absolute; inset: 0; }
+    [data-composition-id="05-mcp"] .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    [data-composition-id="05-mcp"] svg { position: absolute; left: 0; top: 0; overflow: visible; }
+    [data-composition-id="05-mcp"] .browser { position: absolute; left: 310px; top: 103px; width: 1300px; height: 738px; box-sizing: border-box; background: #fff; border: 2px solid #E5E5E5; border-radius: 16px; overflow: hidden; }
+    [data-composition-id="05-mcp"] .bar { position: absolute; left: 0; right: 0; top: 0; height: 64px; background: #FAFAFA; border-bottom: 2px solid #E5E5E5; display: flex; align-items: center; justify-content: center; }
+    [data-composition-id="05-mcp"] .dots { position: absolute; left: 24px; top: 26px; display: flex; gap: 10px; }
+    [data-composition-id="05-mcp"] .dots i { width: 12px; height: 12px; border-radius: 50%; background: #D4D4D8; }
+    [data-composition-id="05-mcp"] .url { font-family: "Geist Mono", monospace; font-size: 34px; color: #636363; }
+    [data-composition-id="05-mcp"] .view { position: absolute; left: 0; right: 0; top: 64px; bottom: 0; overflow: hidden; }
+    [data-composition-id="05-mcp"] .view img { position: absolute; left: 0; top: 0; width: 1900px; display: block; }
+  </style>
+
+  <div id="root" data-composition-id="05-mcp" data-width="1920" data-height="1080" data-duration="15">
+    <div id="f05-bg" class="k-bg clip" data-start="0" data-duration="15" data-track-index="0"></div>
+    <div id="f05-stage" class="k-stage clip" data-start="0" data-duration="15" data-track-index="1">
+      <div class="cam">
+        <svg class="fig" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
+        <div class="browser">
+          <div class="bar"><div class="dots"><i></i><i></i><i></i></div><span class="url">anyrouter.dev/mcp</span></div>
+          <div class="view"><img src="assets/footage/mcp-list.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const ID = '05-mcp';
+      const root = document.querySelector('[data-composition-id="05-mcp"]');
+      const { T, G, el, wire, ticks, node, hub, chip, txt, rails, dot, travel, draw, camera } = window.Rail;
+      const M = G.mcp;
+      const w = (word, nth) => W(5, word, nth);
+      const $ = s => root.querySelector(s);
+
+      document.fonts.ready.then(() => {
+        const svg = $('svg.fig');
+        const L = { rails: el(svg, 'g'), wires: el(svg, 'g'), dots: el(svg, 'g'), top: el(svg, 'g') };
+        const tl = gsap.timeline({ paused: true });
+        const cam = camera($('.cam'), root);
+        const full = { s: 1, cx: 960, cy: 540 };
+        cam.set(tl, full, 0);
+
+        rails(L.rails, G.RAILS);
+        const divider = el(L.rails, 'line', { x1: M.divider, x2: M.divider, y1: G.RAILS[0], y2: G.RAILS[1], stroke: T.idle, 'stroke-width': 1.5, 'stroke-dasharray': '6 6' });
+        const trunk = wire(L.wires, [M.hub, [M.busX, M.hub[1]]]);
+        const busYs = M.servers.map(s => s.c[1]);
+        const bus = wire(L.wires, [[M.busX, Math.min(...busYs)], [M.busX, Math.max(...busYs)]]);
+        const sv = M.servers.map(s => ({ ...s, w: wire(L.wires, s.pts.slice(2)), path: Rail.path(s.pts), t: ticks(L.wires, s.tick), n: node(L.top, s.c, s.mark) }));
+        const src = wire(L.wires, M.source, { stroke: T.ink, dash: '8 8' });
+        const callLead = wire(L.wires, M.call.leader);
+        const h = hub(L.top, M.hub, M.ring, 'AnyRouter MCP');
+        const agent = chip(L.top, M.agent.c, M.agent.text, { size: M.agent.size, stroke: T.ink, fill: T.page, color: T.ink });
+        const call = chip(L.top, M.call.c, M.call.text);
+        const endpoint = chip(L.top, [M.endpoint.c[0], G.RAILS[1]], M.endpoint.text, { stroke: T.ink, fill: T.page, color: T.ink });
+        const ok = txt(L.top, [sv[0].c[0] + 56, sv[0].c[1] + 12], 'ok', { size: 34, color: T.ember });
+
+        // The hub arrives from S4 already in place; its label and the wires draw on.
+        const a0 = 0.3;
+        tl.fromTo(divider, { opacity: 0 }, { opacity: 1, duration: 0.5 }, a0);
+        draw(tl, trunk, a0, 0.3);
+        draw(tl, bus, a0 + 0.25, 0.5);
+        sv.forEach((s, i) => {
+          const at = a0 + 0.45 + i * 0.04;
+          draw(tl, s.w, at, 0.45);
+          tl.fromTo(s.t, { opacity: 0 }, { opacity: 1, duration: 0.2 }, at + 0.35);
+          tl.fromTo(s.n.el, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'power3.out' }, at + 0.4);
+        });
+        tl.fromTo(h.label, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: 'power3.out' }, w('mcp') - 0.1);
+        tl.fromTo([call.el, callLead.el], { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power3.out' }, w('gives'));
+        tl.fromTo(agent.el, { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.5, ease: 'power3.out' }, w('agent') - 0.1);
+        tl.fromTo(src.el, { opacity: 0 }, { opacity: 1, duration: 0.3 }, w('agent') + 0.1);
+
+        // "one URL": the endpoint sits on the bottom rail; the camera looks at it.
+        const u = w('url');
+        tl.fromTo(endpoint.el, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power3.out' }, u - 0.15);
+        const look = { s: 1.4, cx: 960, cy: G.RAILS[1] - 60 };
+        cam.move(tl, full, look, u - 0.3, 0.8);
+        cam.move(tl, look, full, u + 1.7, 0.8);
+
+        // "one key": a tool call goes agent → hub → Exa, and the answer streams back.
+        const k = w('key');
+        const d = dot(L.dots);
+        const go = Rail.path([M.source[0], ...sv[0].pts]);
+        travel(tl, d, go, k, 1.3);
+        tl.set([sv[0].w.el, trunk.el], { attr: { stroke: T.ink, 'stroke-width': 3 } }, k + 1.3);
+        tl.set([sv[0].t], { attr: { stroke: T.ink } }, k + 1.3);
+        tl.set(sv[0].n.box, { attr: { stroke: T.ink } }, k + 1.3);
+        tl.fromTo(ok, { opacity: 0 }, { opacity: 1, duration: 0.2 }, k + 1.3);
+        const back = Rail.path([...sv[0].pts].reverse().concat([M.source[0]]));
+        for (let i = 0; i < 3; i++) travel(tl, dot(L.dots), back, k + 1.5 + i * 0.18, 1.3);
+
+        // The servers the voice names light up on their word.
+        [['firecrawl', 1], ['keenable', 2], ['github', 3]].forEach(([word, i]) =>
+          tl.set(sv[i].n.box, { attr: { stroke: T.ink } }, w(word)));
+
+        // "and more": the server columns open into the real /mcp connector list.
+        const browser = $('.browser');
+        const bBox = { left: 310, top: 103, width: 1300, height: 738 };
+        const xs = sv.map(s => s.c[0]), ys = sv.map(s => s.c[1]);
+        const x0 = Math.min(...xs) - 40, x1 = Math.max(...xs) + 40, y0 = Math.min(...ys) - 40, y1 = Math.max(...ys) + 40;
+        const cols = `inset(${y0 - bBox.top}px ${bBox.left + bBox.width - x1}px ${bBox.top + bBox.height - y1}px ${x0 - bBox.left}px round 14px)`;
+        tl.set(browser, { clipPath: cols, opacity: 0 }, 0);
+        const m0 = w('more') - 0.35;
+        tl.to(browser, { opacity: 1, duration: 0.2 }, m0);
+        tl.to(browser, { clipPath: 'inset(0px 0px 0px 0px round 16px)', duration: 0.9, ease: 'power3.inOut' }, m0);
+        tl.to([L.wires, L.top, L.rails, L.dots], { opacity: 0, duration: 0.5 }, m0 + 0.3);
+        // and back to the figure S6 opens on
+        tl.to(browser, { clipPath: cols, duration: 0.6, ease: 'power3.inOut' }, 14.2);
+        tl.to(browser, { opacity: 0, duration: 0.15 }, 14.75);
+        tl.to([L.wires, L.top, L.rails], { opacity: 1, duration: 0.4 }, 14.3);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines[ID] = tl;
+      });
+    })();
+  </script>
+</template>

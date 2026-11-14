@@ -17,6 +17,9 @@ export default {
   id: 'launch',
   title: 'AnyRouter launch',
   scheduled: false,
+  // The 9:16 reel is its own 74s cut with its own takes and tall layouts (the designer's plan),
+  // not a portrait copy of this 16:9 master, so the master ships landscape only.
+  renditions: ['landscape'],
 
   collect: ({ dir }) => collectAuthored(dir, INPUTS),
 

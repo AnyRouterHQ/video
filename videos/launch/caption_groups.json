@@ -1,0 +1,1492 @@
+{
+  "total_duration_s": 93.6,
+  "width": 1920,
+  "height": 1080,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 1,
+      "start": 0.3,
+      "end": 1.194,
+      "text": "One API key.",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "One",
+          "start": 0.3,
+          "end": 0.463
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "API",
+          "start": 0.486,
+          "end": 0.822
+        },
+        {
+          "id": "caption-word-0-2",
+          "text": "key.",
+          "start": 0.904,
+          "end": 1.194
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 1,
+      "start": 1.275,
+      "end": 1.96,
+      "text": "One provider.",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "One",
+          "start": 1.275,
+          "end": 1.449
+        },
+        {
+          "id": "caption-word-1-1",
+          "text": "provider.",
+          "start": 1.484,
+          "end": 1.96
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 1,
+      "start": 2.088,
+      "end": 3.597,
+      "text": "Sooner or later, it stops.",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "Sooner",
+          "start": 2.088,
+          "end": 2.367
+        },
+        {
+          "id": "caption-word-2-1",
+          "text": "or",
+          "start": 2.401,
+          "end": 2.448
+        },
+        {
+          "id": "caption-word-2-2",
+          "text": "later,",
+          "start": 2.483,
+          "end": 2.715
+        },
+        {
+          "id": "caption-word-2-3",
+          "text": "it",
+          "start": 2.738,
+          "end": 2.808
+        },
+        {
+          "id": "caption-word-2-4",
+          "text": "stops.",
+          "start": 2.854,
+          "end": 3.597
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 2,
+      "start": 5.1,
+      "end": 7.77,
+      "text": "AnyRouter is one API in front of every model.",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "AnyRouter",
+          "start": 5.1,
+          "end": 5.657
+        },
+        {
+          "id": "caption-word-3-1",
+          "text": "is",
+          "start": 5.727,
+          "end": 5.808
+        },
+        {
+          "id": "caption-word-3-2",
+          "text": "one",
+          "start": 5.889,
+          "end": 6.064
+        },
+        {
+          "id": "caption-word-3-3",
+          "text": "API",
+          "start": 6.087,
+          "end": 6.493
+        },
+        {
+          "id": "caption-word-3-4",
+          "text": "in",
+          "start": 6.54,
+          "end": 6.586
+        },
+        {
+          "id": "caption-word-3-5",
+          "text": "front",
+          "start": 6.633,
+          "end": 6.795
+        },
+        {
+          "id": "caption-word-3-6",
+          "text": "of",
+          "start": 6.818,
+          "end": 6.876
+        },
+        {
+          "id": "caption-word-3-7",
+          "text": "every",
+          "start": 6.992,
+          "end": 7.259
+        },
+        {
+          "id": "caption-word-3-8",
+          "text": "model.",
+          "start": 7.318,
+          "end": 7.77
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 2,
+      "start": 8.153,
+      "end": 9.802,
+      "text": "Your agent sends one request.",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "Your",
+          "start": 8.153,
+          "end": 8.316
+        },
+        {
+          "id": "caption-word-4-1",
+          "text": "agent",
+          "start": 8.362,
+          "end": 8.629
+        },
+        {
+          "id": "caption-word-4-2",
+          "text": "sends",
+          "start": 8.676,
+          "end": 8.896
+        },
+        {
+          "id": "caption-word-4-3",
+          "text": "one",
+          "start": 8.966,
+          "end": 9.117
+        },
+        {
+          "id": "caption-word-4-4",
+          "text": "request.",
+          "start": 9.163,
+          "end": 9.802
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 2,
+      "start": 10.081,
+      "end": 11.578,
+      "text": "AnyRouter picks an upstream.",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "AnyRouter",
+          "start": 10.081,
+          "end": 10.603
+        },
+        {
+          "id": "caption-word-5-1",
+          "text": "picks",
+          "start": 10.661,
+          "end": 10.87
+        },
+        {
+          "id": "caption-word-5-2",
+          "text": "an",
+          "start": 10.905,
+          "end": 10.951
+        },
+        {
+          "id": "caption-word-5-3",
+          "text": "upstream.",
+          "start": 10.998,
+          "end": 11.578
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 2,
+      "start": 11.857,
+      "end": 15.189,
+      "text": "If it is rate limited or down, AnyRouter tries the next one.",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "If",
+          "start": 11.857,
+          "end": 11.985
+        },
+        {
+          "id": "caption-word-6-1",
+          "text": "it",
+          "start": 12.02,
+          "end": 12.078
+        },
+        {
+          "id": "caption-word-6-2",
+          "text": "is",
+          "start": 12.112,
+          "end": 12.194
+        },
+        {
+          "id": "caption-word-6-3",
+          "text": "rate",
+          "start": 12.263,
+          "end": 12.449
+        },
+        {
+          "id": "caption-word-6-4",
+          "text": "limited",
+          "start": 12.496,
+          "end": 12.832
+        },
+        {
+          "id": "caption-word-6-5",
+          "text": "or",
+          "start": 12.879,
+          "end": 12.96
+        },
+        {
+          "id": "caption-word-6-6",
+          "text": "down,",
+          "start": 13.03,
+          "end": 13.482
+        },
+        {
+          "id": "caption-word-6-7",
+          "text": "AnyRouter",
+          "start": 13.61,
+          "end": 14.109
+        },
+        {
+          "id": "caption-word-6-8",
+          "text": "tries",
+          "start": 14.167,
+          "end": 14.469
+        },
+        {
+          "id": "caption-word-6-9",
+          "text": "the",
+          "start": 14.516,
+          "end": 14.585
+        },
+        {
+          "id": "caption-word-6-10",
+          "text": "next",
+          "start": 14.632,
+          "end": 14.841
+        },
+        {
+          "id": "caption-word-6-11",
+          "text": "one.",
+          "start": 14.91,
+          "end": 15.189
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 2,
+      "start": 15.793,
+      "end": 17.499,
+      "text": "One answer, one bill.",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "One",
+          "start": 15.793,
+          "end": 15.979
+        },
+        {
+          "id": "caption-word-7-1",
+          "text": "answer,",
+          "start": 16.013,
+          "end": 16.478
+        },
+        {
+          "id": "caption-word-7-2",
+          "text": "one",
+          "start": 16.652,
+          "end": 16.861
+        },
+        {
+          "id": "caption-word-7-3",
+          "text": "bill.",
+          "start": 16.907,
+          "end": 17.499
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 3,
+      "start": 20.7,
+      "end": 23.347,
+      "text": "It speaks the OpenAI and Anthropic formats.",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "It",
+          "start": 20.7,
+          "end": 20.839
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "speaks",
+          "start": 20.874,
+          "end": 21.141
+        },
+        {
+          "id": "caption-word-8-2",
+          "text": "the",
+          "start": 21.188,
+          "end": 21.269
+        },
+        {
+          "id": "caption-word-8-3",
+          "text": "OpenAI",
+          "start": 21.339,
+          "end": 21.942
+        },
+        {
+          "id": "caption-word-8-4",
+          "text": "and",
+          "start": 22.012,
+          "end": 22.082
+        },
+        {
+          "id": "caption-word-8-5",
+          "text": "Anthropic",
+          "start": 22.128,
+          "end": 22.604
+        },
+        {
+          "id": "caption-word-8-6",
+          "text": "formats.",
+          "start": 22.662,
+          "end": 23.347
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 3,
+      "start": 23.858,
+      "end": 26.11,
+      "text": "Change the base URL, and keep your code.",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "Change",
+          "start": 23.858,
+          "end": 24.16
+        },
+        {
+          "id": "caption-word-9-1",
+          "text": "the",
+          "start": 24.195,
+          "end": 24.264
+        },
+        {
+          "id": "caption-word-9-2",
+          "text": "base",
+          "start": 24.299,
+          "end": 24.496
+        },
+        {
+          "id": "caption-word-9-3",
+          "text": "URL,",
+          "start": 24.543,
+          "end": 25.147
+        },
+        {
+          "id": "caption-word-9-4",
+          "text": "and",
+          "start": 25.17,
+          "end": 25.344
+        },
+        {
+          "id": "caption-word-9-5",
+          "text": "keep",
+          "start": 25.402,
+          "end": 25.565
+        },
+        {
+          "id": "caption-word-9-6",
+          "text": "your",
+          "start": 25.599,
+          "end": 25.704
+        },
+        {
+          "id": "caption-word-9-7",
+          "text": "code.",
+          "start": 25.75,
+          "end": 26.11
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 3,
+      "start": 26.389,
+      "end": 28.92,
+      "text": "One key reaches more than four hundred models.",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "One",
+          "start": 26.389,
+          "end": 26.586
+        },
+        {
+          "id": "caption-word-10-1",
+          "text": "key",
+          "start": 26.633,
+          "end": 26.784
+        },
+        {
+          "id": "caption-word-10-2",
+          "text": "reaches",
+          "start": 26.853,
+          "end": 27.167
+        },
+        {
+          "id": "caption-word-10-3",
+          "text": "more",
+          "start": 27.236,
+          "end": 27.364
+        },
+        {
+          "id": "caption-word-10-4",
+          "text": "than",
+          "start": 27.387,
+          "end": 27.515
+        },
+        {
+          "id": "caption-word-10-5",
+          "text": "four",
+          "start": 27.608,
+          "end": 27.829
+        },
+        {
+          "id": "caption-word-10-6",
+          "text": "hundred",
+          "start": 27.875,
+          "end": 28.142
+        },
+        {
+          "id": "caption-word-10-7",
+          "text": "models.",
+          "start": 28.188,
+          "end": 28.92
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 4,
+      "start": 31.7,
+      "end": 33.163,
+      "text": "A free tier is small.",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "A",
+          "start": 31.7,
+          "end": 31.793
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "free",
+          "start": 31.909,
+          "end": 32.13
+        },
+        {
+          "id": "caption-word-11-2",
+          "text": "tier",
+          "start": 32.164,
+          "end": 32.373
+        },
+        {
+          "id": "caption-word-11-3",
+          "text": "is",
+          "start": 32.443,
+          "end": 32.524
+        },
+        {
+          "id": "caption-word-11-4",
+          "text": "small.",
+          "start": 32.606,
+          "end": 33.163
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 4,
+      "start": 33.546,
+      "end": 36.588,
+      "text": "One key, alone, hits the limit and stops.",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "One",
+          "start": 33.546,
+          "end": 33.767
+        },
+        {
+          "id": "caption-word-12-1",
+          "text": "key,",
+          "start": 33.825,
+          "end": 34.185
+        },
+        {
+          "id": "caption-word-12-2",
+          "text": "alone,",
+          "start": 34.219,
+          "end": 34.858
+        },
+        {
+          "id": "caption-word-12-3",
+          "text": "hits",
+          "start": 35.032,
+          "end": 35.276
+        },
+        {
+          "id": "caption-word-12-4",
+          "text": "the",
+          "start": 35.334,
+          "end": 35.415
+        },
+        {
+          "id": "caption-word-12-5",
+          "text": "limit",
+          "start": 35.496,
+          "end": 35.752
+        },
+        {
+          "id": "caption-word-12-6",
+          "text": "and",
+          "start": 35.81,
+          "end": 35.914
+        },
+        {
+          "id": "caption-word-12-7",
+          "text": "stops.",
+          "start": 35.984,
+          "end": 36.588
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 4,
+      "start": 36.832,
+      "end": 39.734,
+      "text": "So people add free-tier keys to one shared Pool.",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "So",
+          "start": 36.832,
+          "end": 36.971
+        },
+        {
+          "id": "caption-word-13-1",
+          "text": "people",
+          "start": 37.041,
+          "end": 37.308
+        },
+        {
+          "id": "caption-word-13-2",
+          "text": "add",
+          "start": 37.342,
+          "end": 37.517
+        },
+        {
+          "id": "caption-word-13-3",
+          "text": "free-tier",
+          "start": 37.586,
+          "end": 37.993
+        },
+        {
+          "id": "caption-word-13-4",
+          "text": "keys",
+          "start": 38.062,
+          "end": 38.318
+        },
+        {
+          "id": "caption-word-13-5",
+          "text": "to",
+          "start": 38.376,
+          "end": 38.445
+        },
+        {
+          "id": "caption-word-13-6",
+          "text": "one",
+          "start": 38.561,
+          "end": 38.747
+        },
+        {
+          "id": "caption-word-13-7",
+          "text": "shared",
+          "start": 38.794,
+          "end": 39.142
+        },
+        {
+          "id": "caption-word-13-8",
+          "text": "Pool.",
+          "start": 39.2,
+          "end": 39.734
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 4,
+      "start": 40.338,
+      "end": 42.799,
+      "text": "AnyRouter spreads requests across the keys,",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "AnyRouter",
+          "start": 40.338,
+          "end": 40.872
+        },
+        {
+          "id": "caption-word-14-1",
+          "text": "spreads",
+          "start": 40.93,
+          "end": 41.29
+        },
+        {
+          "id": "caption-word-14-2",
+          "text": "requests",
+          "start": 41.359,
+          "end": 41.766
+        },
+        {
+          "id": "caption-word-14-3",
+          "text": "across",
+          "start": 41.801,
+          "end": 42.137
+        },
+        {
+          "id": "caption-word-14-4",
+          "text": "the",
+          "start": 42.184,
+          "end": 42.253
+        },
+        {
+          "id": "caption-word-14-5",
+          "text": "keys,",
+          "start": 42.3,
+          "end": 42.799
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 4,
+      "start": 42.973,
+      "end": 45.168,
+      "text": "and skips any key that is rate limited.",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "and",
+          "start": 42.973,
+          "end": 43.136
+        },
+        {
+          "id": "caption-word-15-1",
+          "text": "skips",
+          "start": 43.182,
+          "end": 43.484
+        },
+        {
+          "id": "caption-word-15-2",
+          "text": "any",
+          "start": 43.554,
+          "end": 43.751
+        },
+        {
+          "id": "caption-word-15-3",
+          "text": "key",
+          "start": 43.821,
+          "end": 43.995
+        },
+        {
+          "id": "caption-word-15-4",
+          "text": "that",
+          "start": 44.065,
+          "end": 44.204
+        },
+        {
+          "id": "caption-word-15-5",
+          "text": "is",
+          "start": 44.262,
+          "end": 44.343
+        },
+        {
+          "id": "caption-word-15-6",
+          "text": "rate",
+          "start": 44.436,
+          "end": 44.634
+        },
+        {
+          "id": "caption-word-15-7",
+          "text": "limited.",
+          "start": 44.68,
+          "end": 45.168
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 4,
+      "start": 45.864,
+      "end": 49.173,
+      "text": "Add one valid free-tier key, and you get the Go plan,",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "Add",
+          "start": 45.864,
+          "end": 46.085
+        },
+        {
+          "id": "caption-word-16-1",
+          "text": "one",
+          "start": 46.166,
+          "end": 46.352
+        },
+        {
+          "id": "caption-word-16-2",
+          "text": "valid",
+          "start": 46.41,
+          "end": 46.781
+        },
+        {
+          "id": "caption-word-16-3",
+          "text": "free-tier",
+          "start": 46.839,
+          "end": 47.281
+        },
+        {
+          "id": "caption-word-16-4",
+          "text": "key,",
+          "start": 47.35,
+          "end": 47.733
+        },
+        {
+          "id": "caption-word-16-5",
+          "text": "and",
+          "start": 47.908,
+          "end": 48.047
+        },
+        {
+          "id": "caption-word-16-6",
+          "text": "you",
+          "start": 48.082,
+          "end": 48.151
+        },
+        {
+          "id": "caption-word-16-7",
+          "text": "get",
+          "start": 48.198,
+          "end": 48.302
+        },
+        {
+          "id": "caption-word-16-8",
+          "text": "the",
+          "start": 48.337,
+          "end": 48.407
+        },
+        {
+          "id": "caption-word-16-9",
+          "text": "Go",
+          "start": 48.453,
+          "end": 48.813
+        },
+        {
+          "id": "caption-word-16-10",
+          "text": "plan,",
+          "start": 48.813,
+          "end": 49.173
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 4,
+      "start": 49.289,
+      "end": 51.948,
+      "text": "with $0 on requests the Pool serves.",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "with",
+          "start": 49.289,
+          "end": 49.463
+        },
+        {
+          "id": "caption-word-17-1",
+          "text": "$0",
+          "start": 49.51,
+          "end": 50.171
+        },
+        {
+          "id": "caption-word-17-2",
+          "text": "on",
+          "start": 50.23,
+          "end": 50.322
+        },
+        {
+          "id": "caption-word-17-3",
+          "text": "requests",
+          "start": 50.392,
+          "end": 50.787
+        },
+        {
+          "id": "caption-word-17-4",
+          "text": "the",
+          "start": 50.833,
+          "end": 50.903
+        },
+        {
+          "id": "caption-word-17-5",
+          "text": "Pool",
+          "start": 50.938,
+          "end": 51.135
+        },
+        {
+          "id": "caption-word-17-6",
+          "text": "serves.",
+          "start": 51.216,
+          "end": 51.948
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 5,
+      "start": 54.1,
+      "end": 55.621,
+      "text": "Tools work the same way.",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "Tools",
+          "start": 54.1,
+          "end": 54.472
+        },
+        {
+          "id": "caption-word-18-1",
+          "text": "work",
+          "start": 54.553,
+          "end": 54.797
+        },
+        {
+          "id": "caption-word-18-2",
+          "text": "the",
+          "start": 54.866,
+          "end": 54.936
+        },
+        {
+          "id": "caption-word-18-3",
+          "text": "same",
+          "start": 54.982,
+          "end": 55.203
+        },
+        {
+          "id": "caption-word-18-4",
+          "text": "way.",
+          "start": 55.249,
+          "end": 55.621
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 5,
+      "start": 55.865,
+      "end": 59.22,
+      "text": "The AnyRouter MCP gateway gives your agent one URL",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "The",
+          "start": 55.865,
+          "end": 55.992
+        },
+        {
+          "id": "caption-word-19-1",
+          "text": "AnyRouter",
+          "start": 56.05,
+          "end": 56.585
+        },
+        {
+          "id": "caption-word-19-2",
+          "text": "MCP",
+          "start": 56.666,
+          "end": 57.153
+        },
+        {
+          "id": "caption-word-19-3",
+          "text": "gateway",
+          "start": 57.328,
+          "end": 57.734
+        },
+        {
+          "id": "caption-word-19-4",
+          "text": "gives",
+          "start": 57.792,
+          "end": 57.978
+        },
+        {
+          "id": "caption-word-19-5",
+          "text": "your",
+          "start": 58.013,
+          "end": 58.129
+        },
+        {
+          "id": "caption-word-19-6",
+          "text": "agent",
+          "start": 58.198,
+          "end": 58.512
+        },
+        {
+          "id": "caption-word-19-7",
+          "text": "one",
+          "start": 58.581,
+          "end": 58.744
+        },
+        {
+          "id": "caption-word-19-8",
+          "text": "URL",
+          "start": 58.802,
+          "end": 59.22
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 5,
+      "start": 59.301,
+      "end": 62.424,
+      "text": "and one key, for every MCP server you connect.",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "and",
+          "start": 59.301,
+          "end": 59.406
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "one",
+          "start": 59.499,
+          "end": 59.673
+        },
+        {
+          "id": "caption-word-20-2",
+          "text": "key,",
+          "start": 59.731,
+          "end": 60.149
+        },
+        {
+          "id": "caption-word-20-3",
+          "text": "for",
+          "start": 60.427,
+          "end": 60.567
+        },
+        {
+          "id": "caption-word-20-4",
+          "text": "every",
+          "start": 60.625,
+          "end": 60.811
+        },
+        {
+          "id": "caption-word-20-5",
+          "text": "MCP",
+          "start": 60.857,
+          "end": 61.263
+        },
+        {
+          "id": "caption-word-20-6",
+          "text": "server",
+          "start": 61.438,
+          "end": 61.774
+        },
+        {
+          "id": "caption-word-20-7",
+          "text": "you",
+          "start": 61.832,
+          "end": 61.902
+        },
+        {
+          "id": "caption-word-20-8",
+          "text": "connect.",
+          "start": 61.96,
+          "end": 62.424
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 5,
+      "start": 62.935,
+      "end": 66.917,
+      "text": "Exa, Firecrawl, Keenable, GitHub, and more.",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "Exa,",
+          "start": 62.935,
+          "end": 63.504
+        },
+        {
+          "id": "caption-word-21-1",
+          "text": "Firecrawl,",
+          "start": 63.829,
+          "end": 64.549
+        },
+        {
+          "id": "caption-word-21-2",
+          "text": "Keenable,",
+          "start": 64.595,
+          "end": 65.246
+        },
+        {
+          "id": "caption-word-21-3",
+          "text": "GitHub,",
+          "start": 65.455,
+          "end": 66.023
+        },
+        {
+          "id": "caption-word-21-4",
+          "text": "and",
+          "start": 66.07,
+          "end": 66.256
+        },
+        {
+          "id": "caption-word-21-5",
+          "text": "more.",
+          "start": 66.325,
+          "end": 66.917
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 6,
+      "start": 69.1,
+      "end": 72.687,
+      "text": "For coding, install the anyr command line tool with one line.",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "For",
+          "start": 69.1,
+          "end": 69.286
+        },
+        {
+          "id": "caption-word-22-1",
+          "text": "coding,",
+          "start": 69.344,
+          "end": 69.692
+        },
+        {
+          "id": "caption-word-22-2",
+          "text": "install",
+          "start": 69.715,
+          "end": 70.029
+        },
+        {
+          "id": "caption-word-22-3",
+          "text": "the",
+          "start": 70.087,
+          "end": 70.168
+        },
+        {
+          "id": "caption-word-22-4",
+          "text": "anyr",
+          "start": 70.261,
+          "end": 70.946
+        },
+        {
+          "id": "caption-word-22-5",
+          "text": "command",
+          "start": 71.016,
+          "end": 71.364
+        },
+        {
+          "id": "caption-word-22-6",
+          "text": "line",
+          "start": 71.422,
+          "end": 71.643
+        },
+        {
+          "id": "caption-word-22-7",
+          "text": "tool",
+          "start": 71.677,
+          "end": 71.898
+        },
+        {
+          "id": "caption-word-22-8",
+          "text": "with",
+          "start": 71.944,
+          "end": 72.084
+        },
+        {
+          "id": "caption-word-22-9",
+          "text": "one",
+          "start": 72.142,
+          "end": 72.293
+        },
+        {
+          "id": "caption-word-22-10",
+          "text": "line.",
+          "start": 72.339,
+          "end": 72.687
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 6,
+      "start": 72.838,
+      "end": 73.732,
+      "text": "Sign in once.",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "Sign",
+          "start": 72.838,
+          "end": 73.105
+        },
+        {
+          "id": "caption-word-23-1",
+          "text": "in",
+          "start": 73.152,
+          "end": 73.222
+        },
+        {
+          "id": "caption-word-23-2",
+          "text": "once.",
+          "start": 73.314,
+          "end": 73.732
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 6,
+      "start": 74.057,
+      "end": 76.972,
+      "text": "Then anyr claude starts Claude Code through AnyRouter.",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "Then",
+          "start": 74.057,
+          "end": 74.232
+        },
+        {
+          "id": "caption-word-24-1",
+          "text": "anyr",
+          "start": 74.278,
+          "end": 74.667
+        },
+        {
+          "id": "caption-word-24-2",
+          "text": "claude",
+          "start": 74.667,
+          "end": 75.056
+        },
+        {
+          "id": "caption-word-24-3",
+          "text": "starts",
+          "start": 75.079,
+          "end": 75.358
+        },
+        {
+          "id": "caption-word-24-4",
+          "text": "Claude",
+          "start": 75.404,
+          "end": 75.694
+        },
+        {
+          "id": "caption-word-24-5",
+          "text": "Code",
+          "start": 75.729,
+          "end": 75.996
+        },
+        {
+          "id": "caption-word-24-6",
+          "text": "through",
+          "start": 76.02,
+          "end": 76.24
+        },
+        {
+          "id": "caption-word-24-7",
+          "text": "AnyRouter.",
+          "start": 76.298,
+          "end": 76.972
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 6,
+      "start": 77.575,
+      "end": 79.7,
+      "text": "Codex and opencode work the same way.",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "Codex",
+          "start": 77.575,
+          "end": 77.993
+        },
+        {
+          "id": "caption-word-25-1",
+          "text": "and",
+          "start": 78.051,
+          "end": 78.121
+        },
+        {
+          "id": "caption-word-25-2",
+          "text": "opencode",
+          "start": 78.167,
+          "end": 78.678
+        },
+        {
+          "id": "caption-word-25-3",
+          "text": "work",
+          "start": 78.701,
+          "end": 78.864
+        },
+        {
+          "id": "caption-word-25-4",
+          "text": "the",
+          "start": 78.922,
+          "end": 78.992
+        },
+        {
+          "id": "caption-word-25-5",
+          "text": "same",
+          "start": 79.038,
+          "end": 79.247
+        },
+        {
+          "id": "caption-word-25-6",
+          "text": "way.",
+          "start": 79.294,
+          "end": 79.7
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 6,
+      "start": 80.025,
+      "end": 84.054,
+      "text": "For Cursor, anyr mcp add cursor connects the gateway.",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "For",
+          "start": 80.025,
+          "end": 80.176
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "Cursor,",
+          "start": 80.234,
+          "end": 80.814
+        },
+        {
+          "id": "caption-word-26-2",
+          "text": "anyr",
+          "start": 81.058,
+          "end": 81.511
+        },
+        {
+          "id": "caption-word-26-3",
+          "text": "mcp",
+          "start": 81.592,
+          "end": 82.034
+        },
+        {
+          "id": "caption-word-26-4",
+          "text": "add",
+          "start": 82.208,
+          "end": 82.393
+        },
+        {
+          "id": "caption-word-26-5",
+          "text": "cursor",
+          "start": 82.451,
+          "end": 82.811
+        },
+        {
+          "id": "caption-word-26-6",
+          "text": "connects",
+          "start": 82.881,
+          "end": 83.183
+        },
+        {
+          "id": "caption-word-26-7",
+          "text": "the",
+          "start": 83.218,
+          "end": 83.287
+        },
+        {
+          "id": "caption-word-26-8",
+          "text": "gateway.",
+          "start": 83.322,
+          "end": 84.054
+        }
+      ]
+    },
+    {
+      "id": "caption-group-27",
+      "frame": 7,
+      "start": 85.9,
+      "end": 86.469,
+      "text": "One key.",
+      "words": [
+        {
+          "id": "caption-word-27-0",
+          "text": "One",
+          "start": 85.9,
+          "end": 86.074
+        },
+        {
+          "id": "caption-word-27-1",
+          "text": "key.",
+          "start": 86.132,
+          "end": 86.469
+        }
+      ]
+    },
+    {
+      "id": "caption-group-28",
+      "frame": 7,
+      "start": 86.504,
+      "end": 87.131,
+      "text": "Every model.",
+      "words": [
+        {
+          "id": "caption-word-28-0",
+          "text": "Every",
+          "start": 86.504,
+          "end": 86.736
+        },
+        {
+          "id": "caption-word-28-1",
+          "text": "model.",
+          "start": 86.782,
+          "end": 87.131
+        }
+      ]
+    },
+    {
+      "id": "caption-group-29",
+      "frame": 7,
+      "start": 87.177,
+      "end": 88.698,
+      "text": "A shared Pool for free models.",
+      "words": [
+        {
+          "id": "caption-word-29-0",
+          "text": "A",
+          "start": 87.177,
+          "end": 87.247
+        },
+        {
+          "id": "caption-word-29-1",
+          "text": "shared",
+          "start": 87.316,
+          "end": 87.583
+        },
+        {
+          "id": "caption-word-29-2",
+          "text": "Pool",
+          "start": 87.618,
+          "end": 87.792
+        },
+        {
+          "id": "caption-word-29-3",
+          "text": "for",
+          "start": 87.85,
+          "end": 87.955
+        },
+        {
+          "id": "caption-word-29-4",
+          "text": "free",
+          "start": 88.013,
+          "end": 88.199
+        },
+        {
+          "id": "caption-word-29-5",
+          "text": "models.",
+          "start": 88.245,
+          "end": 88.698
+        }
+      ]
+    },
+    {
+      "id": "caption-group-30",
+      "frame": 7,
+      "start": 88.872,
+      "end": 90.776,
+      "text": "Start at anyrouter.dev.",
+      "words": [
+        {
+          "id": "caption-word-30-0",
+          "text": "Start",
+          "start": 88.872,
+          "end": 89.128
+        },
+        {
+          "id": "caption-word-30-1",
+          "text": "at",
+          "start": 89.151,
+          "end": 89.22
+        },
+        {
+          "id": "caption-word-30-2",
+          "text": "anyrouter.dev.",
+          "start": 89.279,
+          "end": 90.776
+        }
+      ]
+    }
+  ]
+}

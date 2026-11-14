@@ -1,0 +1,65 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="compositions/rail.js"></script>
+  <script src="compositions/words.js"></script>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    @font-face { font-family: "Geist Mono"; src: url("assets/fonts/geist-mono.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    [data-composition-id="01-one-key"] { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+    [data-composition-id="01-one-key"] .k-bg { position: absolute; inset: 0; background: oklch(0.97 0 0); }
+    [data-composition-id="01-one-key"] .k-stage { position: absolute; inset: 0; }
+    [data-composition-id="01-one-key"] .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    [data-composition-id="01-one-key"] svg { position: absolute; left: 0; top: 0; overflow: visible; }
+  </style>
+
+  <div id="root" data-composition-id="01-one-key" data-width="1920" data-height="1080" data-duration="4.8">
+    <div id="f01-bg" class="k-bg clip" data-start="0" data-duration="4.8" data-track-index="0"></div>
+    <div id="f01-stage" class="k-stage clip" data-start="0" data-duration="4.8" data-track-index="1">
+      <div class="cam"><svg class="fig" width="1920" height="1080" viewBox="0 0 1920 1080"></svg></div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const ID = '01-one-key';
+      const root = document.querySelector('[data-composition-id="01-one-key"]');
+      const { T, G, el, wire, node, chip, txt, dot, travel, camera } = window.Rail;
+      const L1 = G.pool.lone;
+      const w = word => W(1, word);
+
+      document.fonts.ready.then(() => {
+        const svg = root.querySelector('svg.fig');
+        const wires = el(svg, 'g'), dots = el(svg, 'g'), top = el(svg, 'g');
+        const tl = gsap.timeline({ paused: true });
+        const cam = camera(root.querySelector('.cam'), root);
+        cam.set(tl, { s: 1.5, cx: 760, cy: L1.c[1] }, 0);
+
+        // /pool's first row, exactly: one key, one wire with single ticks, a red stop, the chip.
+        txt(top, [G.pool.labels.alone[0], G.pool.labels.alone[1]], 'One key, alone', { size: 36, family: T.sans });
+        const line = wire(wires, L1.pts, { stroke: T.ink });
+        for (const x of L1.ticks) el(wires, 'line', { x1: x, x2: x, y1: L1.c[1] - 10, y2: L1.c[1] + 10, stroke: T.ink, 'stroke-width': 2 });
+        el(wires, 'line', { x1: L1.stopX, x2: L1.stopX, y1: L1.c[1] - 32, y2: L1.c[1] + 32, stroke: T.red, 'stroke-width': 2, 'stroke-dasharray': '6 6' });
+        el(wires, 'line', { x1: L1.rest[0], x2: L1.rest[1], y1: L1.c[1], y2: L1.c[1], stroke: T.idle, 'stroke-width': 2, 'stroke-dasharray': '3 10' });
+        node(top, L1.c, 'openrouter', { size: 60, r: 0, stroke: T.ink, mono: false });
+        const stop = chip(top, [L1.chipX, L1.c[1]], '429 rate limited', { stroke: T.red, fill: T.page, color: T.red, anchor: 'start' });
+
+        // Requests leave the key; the first three get through, the fourth meets the limit on "stops".
+        const through = Rail.path([L1.pts[0], [L1.rest[1], L1.c[1]]]);
+        const toStop = Rail.path([L1.pts[0], [L1.stopX - 10, L1.c[1]]]);
+        const halt = w('stops');
+        const speed = toStop.len / 1.1;
+        [0.3, 0.8, 1.3].forEach(at => {
+          const d = dot(dots);
+          travel(tl, d, through, at, through.len / speed, { hide: false });
+          tl.to(d, { attr: { opacity: 0 }, duration: 0.3, ease: 'power1.in' }, at + toStop.len / speed);
+        });
+        travel(tl, dot(dots), toStop, halt - 1.1, 1.1, { hide: false });
+        tl.fromTo(stop.box, { attr: { 'stroke-width': 2 } }, { attr: { 'stroke-width': 4 }, duration: 0.1, ease: 'power3.out' }, halt);
+        tl.to(stop.box, { attr: { 'stroke-width': 2 }, duration: 0.3, ease: 'power3.out' }, halt + 0.1);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines[ID] = tl;
+      });
+    })();
+  </script>
+</template>

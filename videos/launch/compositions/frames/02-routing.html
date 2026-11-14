@@ -1,0 +1,114 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="compositions/rail.js"></script>
+  <script src="compositions/words.js"></script>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    @font-face { font-family: "Geist Mono"; src: url("assets/fonts/geist-mono.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    [data-composition-id="02-routing"] { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+    [data-composition-id="02-routing"] .k-bg { position: absolute; inset: 0; background: oklch(0.97 0 0); }
+    [data-composition-id="02-routing"] .k-stage { position: absolute; inset: 0; }
+    [data-composition-id="02-routing"] .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    [data-composition-id="02-routing"] svg { position: absolute; left: 0; top: 0; overflow: visible; }
+  </style>
+
+  <div id="root" data-composition-id="02-routing" data-width="1920" data-height="1080" data-duration="15.6">
+    <div id="f02-bg" class="k-bg clip" data-start="0" data-duration="15.6" data-track-index="0"></div>
+    <div id="f02-stage" class="k-stage clip" data-start="0" data-duration="15.6" data-track-index="1">
+      <div class="cam"><svg class="fig" width="1920" height="1080" viewBox="0 0 1920 1080"></svg></div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const ID = '02-routing';
+      const root = document.querySelector('[data-composition-id="02-routing"]');
+      const { T, G, el, wire, ticks, node, hub, chip, txt, rails, dot, travel, draw, camera } = window.Rail;
+      const R = G.routing;
+      const w = word => W(2, word);
+
+      document.fonts.ready.then(() => {
+        const svg = root.querySelector('svg.fig');
+        const L = { rails: el(svg, 'g'), wires: el(svg, 'g'), dots: el(svg, 'g'), top: el(svg, 'g') };
+        const tl = gsap.timeline({ paused: true });
+        const cam = camera(root.querySelector('.cam'), root);
+
+        const railG = rails(L.rails, G.RAILS);
+        const trunk = wire(L.wires, R.trunk);
+        const up = R.ups.map(u => ({ ...u, w: wire(L.wires, u.draw), path: Rail.path(u.pts), t: ticks(L.wires, u.tick), n: node(L.top, u.c, u.mark) }));
+        const src = wire(L.wires, R.source, { stroke: T.ink, dash: '8 8' });
+        const srcTicks = ticks(L.wires, [(R.source[0][0] + R.source[1][0]) / 2, R.hub[1]], { stroke: T.ink });
+        const postLead = wire(L.wires, R.post.leader);
+        const modelsLead = wire(L.wires, R.models.leader);
+        const h = hub(L.top, R.hub, R.ring);
+        const agent = chip(L.top, R.agent.c, R.agent.text, { size: R.agent.size, stroke: T.ink, fill: T.page, color: T.ink });
+        const post = chip(L.top, R.post.c, R.post.text);
+        const models = chip(L.top, R.models.c, '400+ models');
+        const nv = up[7], ki = up[6];
+        const code429 = txt(L.top, [nv.c[0] + 56, nv.c[1] + 12], '429', { size: 34, color: T.red });
+        const code200 = txt(L.top, [ki.c[0] + 56, ki.c[1] + 12], '200', { size: 34, color: T.ember });
+        const readL = txt(L.top, [198, R.readout.y], R.readout.left, { size: 32 });
+        const readR = txt(L.top, [1722, R.readout.y], R.readout.right, { size: 32, anchor: 'end' });
+
+        // The opening pose matches S1's last frame: the NVIDIA node sits where the red stop was.
+        const open = { s: 2.2, cx: nv.c[0] - (1188 - 960) / 2.2, cy: nv.c[1] };
+        const full = { s: 1, cx: 960, cy: 540 };
+        const close = { s: 1.35, cx: 1420, cy: 610 };
+        cam.set(tl, open, 0);
+        const a0 = w('anyrouter');
+        cam.move(tl, open, full, a0, 1.4);
+
+        tl.fromTo(railG, { opacity: 0 }, { opacity: 1, duration: 0.6, ease: 'power3.out' }, a0 + 0.4);
+        tl.fromTo(h.el, { opacity: 0, scale: 0.9, transformOrigin: '50% 50%' }, { opacity: 1, scale: 1, duration: 0.6, ease: 'power3.out' }, a0 + 0.1);
+        draw(tl, trunk, a0 + 0.2, 0.3);
+        up.forEach((u, i) => {
+          const at = a0 + 0.3 + i * 0.05;
+          draw(tl, u.w, at, 0.6);
+          tl.fromTo(u.t, { opacity: 0 }, { opacity: 1, duration: 0.2 }, at + 0.45);
+          // NVIDIA's box is on screen from frame 0: it is where S1's red stop was.
+          if (u !== nv) tl.fromTo(u.n.el, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: 'power3.out' }, at + 0.5);
+        });
+
+        tl.fromTo([models.el, modelsLead.el], { opacity: 0 }, { opacity: 1, duration: 0.4, ease: 'power3.out' }, w('model'));
+        tl.fromTo(agent.el, { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.5, ease: 'power3.out' }, w('agent') - 0.1);
+        tl.fromTo([src.el, srcTicks], { opacity: 0 }, { opacity: 1, duration: 0.3 }, w('agent') + 0.1);
+
+        const d1 = dot(L.dots);
+        const s0 = w('sends');
+        travel(tl, d1, src, s0, 0.7);
+        tl.fromTo([post.el, postLead.el], { opacity: 0, y: -12 }, { opacity: 1, y: 0, duration: 0.45, ease: 'power3.out' }, s0 + 0.5);
+
+        travel(tl, d1, nv.path, w('picks'), 0.8);
+
+        // The refusal is instant: one frame, no fade.
+        const lim = w('limited');
+        tl.set(nv.w.el, { attr: { stroke: T.red, 'stroke-dasharray': '8 8', 'stroke-dashoffset': 0 } }, lim);
+        tl.set(nv.t, { attr: { stroke: T.red } }, lim);
+        tl.set(nv.n.box, { attr: { stroke: T.red, 'stroke-dasharray': '8 8' } }, lim);
+        tl.set(nv.n.img, { attr: { href: 'assets/marks/nvidia.svg', style: '' } }, lim);
+        tl.fromTo(code429, { opacity: 0 }, { opacity: 1, duration: 0.01 }, lim);
+        cam.move(tl, full, close, w('rate') - 0.35, 0.9);
+
+        const d2 = dot(L.dots);
+        const tr = w('tries');
+        travel(tl, d2, ki.path, tr, 0.7);
+        tl.set([ki.w.el, trunk.el], { attr: { stroke: T.ink, 'stroke-width': 3 } }, tr + 0.7);
+        tl.set(ki.t, { attr: { stroke: T.ink } }, tr + 0.7);
+        tl.set(ki.n.box, { attr: { stroke: T.ink } }, tr + 0.7);
+        tl.fromTo(code200, { opacity: 0 }, { opacity: 1, duration: 0.2 }, tr + 0.7);
+
+        // A streamed answer: three dots return from Kilo Code through the hub to the agent.
+        const back = Rail.path([...ki.pts].reverse().concat([R.source[0]]));
+        back.el = null;
+        const ans = w('answer') - 0.25;
+        for (let i = 0; i < 3; i++) travel(tl, dot(L.dots), back, ans + i * 0.18, 1.4);
+        cam.move(tl, close, full, ans - 0.1, 0.9);
+
+        tl.fromTo([readL, readR], { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power3.out' }, w('bill'));
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines[ID] = tl;
+      });
+    })();
+  </script>
+</template>

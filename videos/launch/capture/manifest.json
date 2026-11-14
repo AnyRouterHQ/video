@@ -181,5 +181,48 @@
     "files": [
       "capture/cli/claude-launch.typescript"
     ]
+  },
+  "hero-chat": {
+    "url": "https://anyrouter.dev/",
+    "capturedAt": "2026-11-14T05:00:30.307Z",
+    "viewport": "1920x1080@4x",
+    "files": [
+      "hero-chat.png"
+    ],
+    "endpoint": "/v1/chat/completions"
+  },
+  "hero-messages": {
+    "url": "https://anyrouter.dev/",
+    "capturedAt": "2026-11-14T05:00:42.973Z",
+    "viewport": "1920x1080@4x",
+    "files": [
+      "hero-messages.png"
+    ],
+    "endpoint": "/v1/messages"
+  },
+  "hero-responses": {
+    "url": "https://anyrouter.dev/",
+    "capturedAt": "2026-11-14T05:00:55.572Z",
+    "viewport": "1920x1080@4x",
+    "files": [
+      "hero-responses.png"
+    ],
+    "endpoint": "/v1/responses"
+  },
+  "mcp-list": {
+    "url": "https://anyrouter.dev/mcp",
+    "capturedAt": "2026-11-14T05:01:00.235Z",
+    "viewport": "1920x1080@4x",
+    "files": [
+      "mcp-list.png"
+    ]
+  },
+  "models-list": {
+    "url": "https://anyrouter.dev/models",
+    "capturedAt": "2026-11-14T05:01:43.113Z",
+    "viewport": "1280x2400@3x",
+    "files": [
+      "models-list.png"
+    ]
   }
 }

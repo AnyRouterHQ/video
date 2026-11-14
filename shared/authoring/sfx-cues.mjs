@@ -14,7 +14,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 
-const LIBRARY = path.join(os.homedir(), '.claude/skills/media-use/audio/assets/sfx');
+const LIBRARY = path.join(process.env.HF_SKILLS || path.join(os.homedir(), '.claude/skills'), 'media-use/audio/assets/sfx');
 const DEFAULT_VOLUME = 0.3;
 
 const bare = s => s.toLowerCase().replace(/[^\w$.]+/g, '').replace(/\.$/, '');

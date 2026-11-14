@@ -1,0 +1,157 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="compositions/rail.js"></script>
+  <script src="compositions/words.js"></script>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    @font-face { font-family: "Geist Mono"; src: url("assets/fonts/geist-mono.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    [data-composition-id="06-cli"] { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+    [data-composition-id="06-cli"] .k-bg { position: absolute; inset: 0; background: oklch(0.97 0 0); }
+    [data-composition-id="06-cli"] .k-stage { position: absolute; inset: 0; }
+    [data-composition-id="06-cli"] .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    [data-composition-id="06-cli"] svg { position: absolute; left: 0; top: 0; overflow: visible; }
+    /* the ember grain is the home hero's own backdrop, from the 4x capture */
+    [data-composition-id="06-cli"] .panel { position: absolute; left: 240px; top: 60px; width: 1440px; height: 800px; overflow: hidden; }
+    [data-composition-id="06-cli"] .panel > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+    [data-composition-id="06-cli"] .notch { position: absolute; width: 14px; height: 14px; background: oklch(0.97 0 0); }
+    [data-composition-id="06-cli"] .win { position: absolute; left: 48px; top: 48px; right: 48px; bottom: 48px; background: #fff; border: 2px solid #E5E5E5; border-radius: 16px; overflow: hidden; }
+    [data-composition-id="06-cli"] .bar { position: absolute; left: 0; right: 0; top: 0; height: 72px; border-bottom: 2px solid #E5E5E5; display: flex; align-items: center; padding-left: 28px; gap: 12px; }
+    [data-composition-id="06-cli"] .bar i { width: 20px; height: 20px; border-radius: 50%; display: block; }
+    [data-composition-id="06-cli"] .bar .title { margin-left: 20px; font-family: "Geist Mono", monospace; font-size: 34px; color: #636363; }
+    [data-composition-id="06-cli"] .body { position: absolute; left: 0; right: 0; top: 74px; bottom: 0; overflow: hidden; }
+    [data-composition-id="06-cli"] .lines { position: absolute; left: 44px; top: 28px; right: 44px; }
+    [data-composition-id="06-cli"] .ln { height: 52px; font-family: "Geist Mono", monospace; font-size: 36px; line-height: 52px; white-space: pre; color: oklch(0.32 0.09 262); }
+    [data-composition-id="06-cli"] .ln .p { color: #636363; }
+    [data-composition-id="06-cli"] .ln.out { color: #3F3F46; }
+    [data-composition-id="06-cli"] .ln.gap { color: #A1A1AA; }
+    [data-composition-id="06-cli"] .caret { display: inline-block; width: 20px; height: 40px; vertical-align: -8px; background: oklch(0.555 0.163 49); }
+    [data-composition-id="06-cli"] .uline { position: absolute; height: 3px; background: oklch(0.555 0.163 49); transform-origin: 0 50%; }
+  </style>
+
+  <div id="root" data-composition-id="06-cli" data-width="1920" data-height="1080" data-duration="16.8">
+    <div id="f06-bg" class="k-bg clip" data-start="0" data-duration="16.8" data-track-index="0"></div>
+    <div id="f06-stage" class="k-stage clip" data-start="0" data-duration="16.8" data-track-index="1">
+      <div class="cam">
+        <svg class="fig" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
+        <div class="panel">
+          <img src="assets/footage/hero-chat.png" alt="">
+          <div class="notch" style="left:0;top:0"></div><div class="notch" style="right:0;top:0"></div>
+          <div class="notch" style="left:0;bottom:0"></div><div class="notch" style="right:0;bottom:0"></div>
+          <div class="win">
+            <div class="bar"><i style="background:#E7000B"></i><i style="background:#F0B100"></i><i style="background:#00A63E"></i><span class="title">~/my-project</span></div>
+            <div class="body"><div class="lines"><div class="uline"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const ID = '06-cli';
+      const root = document.querySelector('[data-composition-id="06-cli"]');
+      const { G, el, rails, camera } = window.Rail;
+      const M = G.mcp;
+      const w = (word, nth) => W(6, word, nth);
+      const $ = s => root.querySelector(s);
+
+      // Every output line below is verbatim from a recording in capture/cli/
+      // (install.typescript, claude-dry-run.txt, mcp-add-cursor.typescript). "…" marks lines left out.
+      const INSTALL_OUT = ['  ✓ Installed   ~/.local/bin/anyr', '', '  Next', '    anyr auth login  sign in', '    anyr claude      launch Claude Code through AnyRouter'];
+      const DRY_OUT = ['command: claude', '…', 'ANTHROPIC_BASE_URL=https://anyrouter.dev/api', '…', 'ANTHROPIC_MODEL=anyrouter/free'];
+      const CURSOR_OUT = ['{', '  "mcpServers": {', '    "anyrouter": {', '      "headers": {', '        "Authorization": "Bearer ${env:ANYROUTER_API_KEY}"', '      },', '      "url": "https://anyrouter.dev/api/v1/mcp"', '    }', '  }', '}'];
+
+      document.fonts.ready.then(() => {
+        const svg = $('svg.fig');
+        const L = { rails: el(svg, 'g'), wires: el(svg, 'g'), dots: el(svg, 'g'), top: el(svg, 'g') };
+        rails(L.rails, G.RAILS);
+        const F = Rail.mcpRest(L);
+        const tl = gsap.timeline({ paused: true });
+        const cam = camera($('.cam'), root);
+        const full = { s: 1, cx: 960, cy: 540 };
+        cam.set(tl, full, 0);
+
+        // The agent chip opens into the terminal.
+        const panel = $('.panel');
+        const pb = { left: 240, top: 60, width: 1440, height: 800 };
+        const c = M.agent.c, cw = F.agent.w, ch = F.agent.h;
+        const chipClip = `inset(${c[1] - ch / 2 - pb.top}px ${pb.left + pb.width - (c[0] + cw / 2)}px ${pb.top + pb.height - (c[1] + ch / 2)}px ${c[0] - cw / 2 - pb.left}px round 10px)`;
+        tl.set(panel, { clipPath: chipClip, opacity: 0 }, 0);
+        tl.to(panel, { opacity: 1, duration: 0.15 }, 0.2);
+        tl.to(panel, { clipPath: 'inset(0px 0px 0px 0px round 0px)', duration: 1.0, ease: 'power3.inOut' }, 0.2);
+        tl.to([L.rails, L.wires, L.top], { opacity: 0, duration: 0.5 }, 0.5);
+
+        // ── a tiny terminal: typed commands at 22 characters a second, output line by line, scrolling
+        const box = $('.lines');
+        const VIEW = 11, LH = 52;
+        let n = 0;
+        const caret = document.createElement('span');
+        caret.className = 'caret';
+        const line = (cls = '') => {
+          const d = document.createElement('div');
+          d.className = `ln ${cls}`;
+          box.appendChild(d);
+          gsap.set(d, { opacity: 0 });
+          return { d, i: n++ };
+        };
+        const scrollTo = (i, at) => { if (i >= VIEW) tl.to(box, { y: -(i - VIEW + 1) * LH, duration: 0.25, ease: 'power2.out' }, at); };
+        const type = (cmd, at) => {
+          const { d, i } = line();
+          const p = document.createElement('span'); p.className = 'p'; p.textContent = '$ ';
+          const t = document.createElement('span');
+          d.append(p, t);
+          scrollTo(i, at);
+          tl.set(d, { opacity: 1 }, at);
+          const s = { k: 0 };
+          const dur = cmd.length / 22;
+          tl.fromTo(s, { k: 0 }, { k: cmd.length, duration: dur, ease: 'none', immediateRender: false,
+            onUpdate: () => { t.textContent = cmd.slice(0, Math.round(s.k)); d.appendChild(caret); } }, at);
+          tl.set(caret, { opacity: 1 }, at);
+          return { d, end: at + dur };
+        };
+        const print = (lines, at, gap = 0.06) => lines.forEach((txt, k) => {
+          const { d, i } = line(txt === '…' ? 'gap' : 'out');
+          d.textContent = txt;
+          scrollTo(i, at + k * gap);
+          tl.set(d, { opacity: 1 }, at + k * gap);
+        });
+
+        const i0 = w('install') - 0.1;
+        const install = type('curl -fsSL https://anyrouter.dev/cli.sh | bash', i0);
+        print(INSTALL_OUT, install.end + 0.5, 0.08);
+        type('anyr login', w('sign') - 0.1);
+        const dry = type('anyr claude --dry-run --model anyrouter/free', w('then') - 0.2);
+        print(DRY_OUT, dry.end + 0.25, 0.08);
+        type('anyr codex', w('codex') - 0.1);
+        type('anyr opencode', w('opencode') - 0.1);
+        const cur = type('anyr mcp add cursor --print', w('cursor') - 0.3);
+        print(CURSOR_OUT, cur.end + 0.25, 0.05);
+
+        // "through AnyRouter": push in on the base URL line and underline it.
+        const baseLine = 1 + INSTALL_OUT.length + 1 + 1 + 2;   // install, its output, login, the dry-run command, "command:", "…"
+        const ul = $('.uline');
+        gsap.set(ul, { left: 19 * 21.6, top: baseLine * LH + 46, width: 25 * 21.6, scaleX: 0 });
+        const urlPose = { s: 1.4, cx: 820, cy: 60 + 48 + 74 + 28 + (baseLine + 0.5) * LH };
+        const thr = w('through');
+        cam.move(tl, full, urlPose, thr - 0.5, 0.8);
+        tl.to(ul, { scaleX: 1, duration: 0.45, ease: 'power3.out' }, thr);
+        cam.move(tl, urlPose, full, w('codex') - 0.6, 0.7);
+        tl.to(ul, { opacity: 0, duration: 0.3 }, w('codex') - 0.3);
+
+        // ── Hand-off to S7: the terminal closes into its chip, the figure retracts into the hub,
+        // and the hub moves to the end card's spot.
+        const e0 = 15.5;
+        tl.to(panel, { clipPath: chipClip, duration: 0.6, ease: 'power3.inOut' }, e0);
+        tl.to(panel, { opacity: 0, duration: 0.15 }, e0 + 0.5);
+        tl.set([L.rails, L.wires, L.top], { opacity: 1 }, e0);
+        const rest = [...L.wires.children, ...L.top.children, ...L.rails.children].filter(x => x !== F.hub.el);
+        tl.fromTo(rest, { opacity: 1 }, { opacity: 0, duration: 0.4, immediateRender: false }, e0 + 0.5);
+        tl.set(F.hub.label, { opacity: 0 }, e0 + 0.5);
+        Rail.place(tl, F.hub.el, { x: 0, y: 0, s: 1 }, Rail.poseAt(M.hub, [960, 300], 93 / M.ring), e0 + 0.55, 0.7);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines[ID] = tl;
+      });
+    })();
+  </script>
+</template>

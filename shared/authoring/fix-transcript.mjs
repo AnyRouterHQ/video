@@ -8,11 +8,15 @@ import fs from 'node:fs';
 
 const RULES = [
   [['any', 'router.dev'], ['anyrouter.dev']],
+  [['any', 'router', 'dot', 'dev'], ['anyrouter.dev']],
+  [['zero', 'dollars'], ['$0']],
   [['any', 'router'], ['AnyRouter']],
   [['any', 'rlogin'], ['anyr', 'login']],
   [['any', 'r', 'claude'], ['anyr', 'claude']],
   [['any', 'r', 'cloud'], ['anyr', 'claude']],
   [['any', 'r', 'clod'], ['anyr', 'claude']],
+  [['any', 'r', 'mcp'], ['anyr', 'mcp']],
+  [['any', 'r'], ['anyr']],
   [['clod'], ['Claude']],
   [['go', 'plan'], ['Go', 'plan']],
   [['open', 'router', 'slash', 'free'], ['openrouter/free']],

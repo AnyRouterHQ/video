@@ -1,0 +1,5 @@
+# anyr claude --dry-run --model anyrouter/free  (0.1.44-beta.960 (built 2026-11-13 10:04:58)), 2026-11-14, signed in
+# excerpt: only these lines are kept; key lines and account-specific lines are dropped
+command: claude
+ANTHROPIC_BASE_URL=https://anyrouter.dev/api
+ANTHROPIC_MODEL=anyrouter/free

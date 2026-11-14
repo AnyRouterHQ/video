@@ -1,0 +1,155 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="compositions/rail.js"></script>
+  <script src="compositions/words.js"></script>
+  <style>
+    @font-face { font-family: "Geist"; src: url("assets/fonts/geist.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    @font-face { font-family: "Geist Mono"; src: url("assets/fonts/geist-mono.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+    [data-composition-id="04-pool"] { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+    [data-composition-id="04-pool"] .k-bg { position: absolute; inset: 0; background: oklch(0.97 0 0); }
+    [data-composition-id="04-pool"] .k-stage { position: absolute; inset: 0; }
+    [data-composition-id="04-pool"] .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    [data-composition-id="04-pool"] svg { position: absolute; left: 0; top: 0; overflow: visible; }
+  </style>
+
+  <div id="root" data-composition-id="04-pool" data-width="1920" data-height="1080" data-duration="22.4">
+    <div id="f04-bg" class="k-bg clip" data-start="0" data-duration="22.4" data-track-index="0"></div>
+    <div id="f04-stage" class="k-stage clip" data-start="0" data-duration="22.4" data-track-index="1">
+      <div class="cam"><svg class="fig" width="1920" height="1080" viewBox="0 0 1920 1080"></svg></div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const ID = '04-pool';
+      const root = document.querySelector('[data-composition-id="04-pool"]');
+      const { T, G, el, wire, chip, txt, rails, dot, travel, camera, morph } = window.Rail;
+      const R = G.routing, PL = G.pool;
+      const w = (word, nth) => W(4, word, nth);
+
+      document.fonts.ready.then(() => {
+        const svg = root.querySelector('svg.fig');
+        const L = { rails: el(svg, 'g'), wires: el(svg, 'g'), dots: el(svg, 'g'), top: el(svg, 'g') };
+        const tl = gsap.timeline({ paused: true });
+        const cam = camera(root.querySelector('.cam'), root);
+        const full = { s: 1, cx: 960, cy: 540 };
+        cam.set(tl, full, 0);
+
+        // ── The opening is S2's resting figure (S3 ends on it): NVIDIA refused, Kilo Code served.
+        rails(L.rails, G.RAILS);
+        const F = Rail.routingRest(L);
+        const { up, hub: h } = F;
+        const extras = [F.src.el, ...F.leads.map(l => l.el), h.label, F.trunk.el, F.agent.el, F.post.el, F.models.el, F.code429, F.code200];
+
+        // ── The fan folds into the Pool's merge. Five boxes move; the rest leave first.
+        // routing index → pool role: 2 → the lone key; 4, 7, 6, 9 → keys 0..3.
+        const MOVE = [[2, 'lone'], [4, 0], [7, 1], [6, 2], [9, 3]];
+        const moving = new Set(MOVE.map(([i]) => i));
+        const t0 = 0.15, tm = 0.55, dm = 1.3;
+        tl.to(extras, { opacity: 0, duration: 0.4, ease: 'power1.out' }, t0);
+        up.forEach((u, i) => {
+          if (!moving.has(i)) tl.to([u.w.el, u.t, u.n.el], { opacity: 0, duration: 0.4, ease: 'power1.out' }, t0);
+          else tl.to(u.t, { opacity: 0, duration: 0.3 }, t0);
+        });
+        const keys = [];
+        let lone = null;
+        MOVE.forEach(([i, role]) => {
+          const u = up[i];
+          const target = role === 'lone' ? PL.lone : PL.keys[role];
+          const mark = role === 'lone' ? 'openrouter' : target.mark;
+          const to = target.c;
+          const colour = Rail.el(u.n.el.firstChild, 'image', { href: `assets/marks/${mark}.svg`, x: -18, y: -18, width: 36, height: 36, opacity: 0 });
+          tl.set([u.w.el, u.n.box], { attr: { stroke: T.idle, 'stroke-dasharray': 'none', 'stroke-width': 2 } }, tm);
+          tl.to(u.n.el, { x: to[0] - u.c[0], y: to[1] - u.c[1], duration: dm, ease: 'power3.inOut' }, tm);
+          tl.to(u.n.box, { attr: { rx: 0, x: -30, y: -30, width: 60, height: 60 }, duration: dm, ease: 'power3.inOut' }, tm);
+          tl.to(u.n.img, { attr: { opacity: 0 }, duration: 0.5 }, tm + 0.4);
+          tl.to(colour, { attr: { opacity: 1 }, duration: 0.5 }, tm + 0.4);
+          const end = role === 'lone' ? [[PL.lone.stopX, to[1]], [(PL.lone.stopX + to[0] + 30) / 2, to[1]], [to[0] + 30, to[1]]]
+            : [[target.pts[1][0], to[1]], [(target.pts[1][0] + to[0] + 30) / 2, to[1]], [to[0] + 30, to[1]]];
+          morph(tl, u.w, u.draw, end, tm, dm);
+          const k = { u, box: u.n.box, wire: u.w, target, role };
+          if (role === 'lone') lone = k; else keys[role] = k;
+        });
+        // the hub shrinks and slides to the merge point; wires now arrive at it
+        const hubPool = Rail.poseAt(R.hub, PL.hub, PL.ring / R.ring);
+        Rail.place(tl, h.el, { x: 0, y: 0, s: 1 }, hubPool, tm, dm);
+
+        // ── Pool furniture, drawn once the boxes land
+        const land = tm + dm;
+        const bus = wire(L.wires, PL.bus);
+        const out = wire(L.wires, PL.out, { stroke: T.ink });
+        const outTicks = el(L.wires, 'g', { stroke: T.ink, 'stroke-width': 2 });
+        for (const x of PL.outTicks) el(outTicks, 'line', { x1: x, x2: x, y1: PL.out[0][1] - 10, y2: PL.out[0][1] + 10 });
+        const labelAlone = txt(L.top, PL.labels.alone, 'One key, alone', { size: 36, family: T.sans });
+        const labelPool = txt(L.top, PL.labels.pool, 'The Pool', { size: 36, family: T.sans });
+        tl.fromTo([bus.el, out.el, outTicks, labelAlone, labelPool], { opacity: 0 }, { opacity: 1, duration: 0.5, ease: 'power3.out' }, land - 0.2);
+
+        // ── "One key, alone": S1 replayed on row 1
+        const LN = PL.lone;
+        const loneTicks = el(L.wires, 'g', { stroke: T.ink, 'stroke-width': 2 });
+        for (const x of LN.ticks) el(loneTicks, 'line', { x1: x, x2: x, y1: LN.c[1] - 10, y2: LN.c[1] + 10 });
+        const stopLine = el(L.wires, 'line', { x1: LN.stopX, x2: LN.stopX, y1: LN.c[1] - 32, y2: LN.c[1] + 32, stroke: T.red, 'stroke-width': 2, 'stroke-dasharray': '6 6' });
+        const rest = el(L.wires, 'line', { x1: LN.rest[0], x2: LN.rest[1], y1: LN.c[1], y2: LN.c[1], stroke: T.idle, 'stroke-width': 2, 'stroke-dasharray': '3 10' });
+        const stopChip = chip(L.top, [LN.chipX, LN.c[1]], '429 rate limited', { stroke: T.red, fill: T.page, color: T.red, anchor: 'start' });
+        const alone = w('alone');
+        tl.set([lone.wire.el, lone.box], { attr: { stroke: T.ink } }, alone - 0.6);
+        tl.fromTo([loneTicks, stopLine, rest], { opacity: 0 }, { opacity: 1, duration: 0.4 }, alone - 0.6);
+        const toStop = Rail.path([LN.pts[0], [LN.stopX - 10, LN.c[1]]]);
+        [alone - 0.5, alone + 0.1, alone + 0.7].forEach(at => {
+          const d = dot(L.dots);
+          travel(tl, d, toStop, at, 1.0, { hide: false });
+          tl.to(d, { attr: { opacity: 0 }, duration: 0.25 }, at + 1.0);
+        });
+        const stops = w('stops');
+        travel(tl, dot(L.dots), toStop, stops - 1.0, 1.0, { hide: false });
+        tl.fromTo(stopChip.el, { opacity: 0 }, { opacity: 1, duration: 0.01 }, stops);
+        cam.move(tl, full, { s: 1.3, cx: 760, cy: LN.c[1] + 40 }, alone - 0.7, 0.9);
+        const poolPose = { s: 1.15, cx: 860, cy: 600 };
+        cam.move(tl, { s: 1.3, cx: 760, cy: LN.c[1] + 40 }, poolPose, stops + 0.6, 0.9);
+
+        // ── "add free-tier keys": the keys light one by one
+        const add = w('add');
+        keys.forEach((k, i) => tl.set([k.box, k.wire.el], { attr: { stroke: T.ink } }, add + i * 0.3));
+        tl.set(bus.el, { attr: { stroke: T.ink } }, add + 0.9);
+
+        // ── "spreads requests": dots from the keys, through the hub, out along the output wire
+        const route = k => Rail.path([k.target.pts[0], [PL.bus[0][0], k.target.c[1]], [PL.bus[0][0], PL.out[0][1]], PL.out[1]]);
+        const skipAt = w('skips');
+        const order = [0, 1, 2, 3, 0, 1, 3, 0, 1, 3, 0, 1, 3, 0, 1, 3, 0, 1, 3];
+        let at = w('spreads') - 0.2;
+        for (const i of order) {
+          if (at > 20.2) break;
+          if (i === 2 && at > skipAt - 1.4) continue;
+          travel(tl, dot(L.dots), route(keys[i]), at, 1.6);
+          at += 0.62;
+        }
+
+        // ── "skips any key": key 3 is dashed, faded, and its wire becomes a stub
+        const sk = keys[PL.skipped];
+        const stub = el(L.wires, 'line', { x1: sk.target.pts[0][0], x2: sk.target.pts[0][0] + 40, y1: sk.target.c[1], y2: sk.target.c[1], stroke: T.idle, 'stroke-width': 2, 'stroke-dasharray': '3 6', opacity: 0 });
+        const skChip = chip(L.top, [sk.target.pts[0][0] + 60, sk.target.c[1]], 'limited, skipped', { dash: '6 6', anchor: 'start' });
+        tl.set(sk.box, { attr: { stroke: T.idle, 'stroke-dasharray': '6 6' } }, skipAt);
+        tl.set(sk.wire.el, { opacity: 0 }, skipAt);
+        tl.set(stub, { attr: { opacity: 1 } }, skipAt);
+        tl.to(sk.u.n.el, { opacity: 0.6, duration: 0.3 }, skipAt);
+        tl.fromTo(skChip.el, { opacity: 0, x: -12 }, { opacity: 1, x: 0, duration: 0.4, ease: 'power3.out' }, skipAt + 0.1);
+
+        // ── "Go plan": a chip on a leader above the output wire
+        const go = w('go');
+        const goLead = wire(L.wires, [[PL.go.c[0], PL.go.c[1] + 32], [PL.go.c[0], PL.out[0][1]]]);
+        const goChip = chip(L.top, PL.go.c, PL.go.text, { color: T.ink });
+        tl.fromTo([goChip.el, goLead.el], { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.45, ease: 'power3.out' }, go);
+        cam.move(tl, poolPose, full, go - 0.4, 0.9);
+
+        // ── Hand-off to S5: everything retracts into the hub, which grows and slides to the MCP spot.
+        const out0 = 21.2;
+        const all = [...L.wires.children, ...L.dots.children, ...L.top.children].filter(n => n !== h.el);
+        tl.to(all, { opacity: 0, duration: 0.5, ease: 'power1.in' }, out0);
+        Rail.place(tl, h.el, hubPool, Rail.poseAt(R.hub, G.mcp.hub, G.mcp.ring / R.ring), out0 + 0.2, 0.9);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines[ID] = tl;
+      });
+    })();
+  </script>
+</template>
