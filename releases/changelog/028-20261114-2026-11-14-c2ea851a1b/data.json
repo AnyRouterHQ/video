@@ -1,0 +1,19 @@
+{
+  "notable": true,
+  "label": "2026-11-14",
+  "parts": [
+    "2026-11-14-disabled"
+  ],
+  "date": "2026-11-14",
+  "entries": [
+    {
+      "slug": "2026-11-14-disabled",
+      "date": "2026-11-14",
+      "title": "LFM 2.5 Embedding 350M disabled",
+      "summary": "Kilo's live model list no longer carries this embedding model (it lists liquid/lfm-3-1.7b and liquid/lfm-2.5-24b-a2b), and POST /embeddings on the Kilo gateway answers 404. Its only route was that one free hop, so every request failed with upstream_exhausted (#8180). Re-enable when a host lists it again.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-14-disabled",
+      "type": "disabled"
+    }
+  ],
+  "total": 1
+}

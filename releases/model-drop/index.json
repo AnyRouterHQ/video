@@ -779,6 +779,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-c877a7a3aa28e375ef98",
         "draft": true
       }
+    },
+    {
+      "id": "037-20261114-models-pricing-ddcb62ddb5",
+      "hash": "ddcb62ddb5",
+      "kind": "model-drop",
+      "label": "models+pricing",
+      "title": "qwen/qwen4-max is live on AnyRouter",
+      "seconds": 20,
+      "renderedAt": "2026-11-14T14:13:01.368Z",
+      "commit": "66e26ae",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-037-20261114-models-pricing-ddcb62ddb5.mp4",
+          "cover": "renders/model-drop-037-20261114-models-pricing-ddcb62ddb5.png"
+        }
+      },
+      "source": "renders/model-drop-037-20261114-models-pricing-ddcb62ddb5-source.tar.gz",
+      "createdAt": "2026-11-14T14:13:01.376Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-8de671b9070ce06fcde4",
+        "draft": true
+      }
     }
   ]
 }

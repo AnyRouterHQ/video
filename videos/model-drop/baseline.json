@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-13T15:24:44.479Z",
+  "acceptedAt": "2026-11-14T14:09:51.392Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -126,7 +126,6 @@
     "liquid/d1",
     "liquid/lfm-2.5-2.6b",
     "liquid/lfm-2.5-24b-a2b",
-    "liquid/lfm-2.5-embedding-350m",
     "meituan/longcat-2.0",
     "meituan/longcat-2.5",
     "meta/llama-3.1-70b-instruct",
@@ -316,6 +315,7 @@
     "qwen/qwen3.8-max-prime",
     "qwen/qwen3.8-max",
     "qwen/qwen3.8-omni-flash",
+    "qwen/qwen4-max",
     "recursive/flint-v1.0",
     "reflection/beam-1.0",
     "respan/span-01-lite",
@@ -1188,12 +1188,6 @@
       "context": 131072
     },
     {
-      "id": "liquid/lfm-2.5-embedding-350m",
-      "inPrice": 0,
-      "outPrice": 0,
-      "context": 512
-    },
-    {
       "id": "meituan/longcat-2.0",
       "inPrice": 0.3,
       "outPrice": 1.2,
@@ -1807,8 +1801,8 @@
     },
     {
       "id": "openai/gpt-5.6-luna",
-      "inPrice": 0.02,
-      "outPrice": 0.12,
+      "inPrice": 0.04,
+      "outPrice": 0.24,
       "context": 1050000
     },
     {
@@ -1867,8 +1861,8 @@
     },
     {
       "id": "openai/gpt-6-luna",
-      "inPrice": 0.01,
-      "outPrice": 0.05,
+      "inPrice": 0.02,
+      "outPrice": 0.1,
       "context": 1050000
     },
     {
@@ -1891,8 +1885,8 @@
     },
     {
       "id": "openai/gpt-6.1-sol",
-      "inPrice": 0.2,
-      "outPrice": 1,
+      "inPrice": 0.4,
+      "outPrice": 2,
       "context": 1050000
     },
     {
@@ -1903,8 +1897,8 @@
     },
     {
       "id": "openai/gpt-6.1-terra",
-      "inPrice": 0.1,
-      "outPrice": 0.5,
+      "inPrice": 0.2,
+      "outPrice": 1,
       "context": 1050000
     },
     {
@@ -2325,6 +2319,12 @@
       "id": "qwen/qwen3.8-omni-flash",
       "inPrice": 0.0565,
       "outPrice": 0.191,
+      "context": 1000000
+    },
+    {
+      "id": "qwen/qwen4-max",
+      "inPrice": 2,
+      "outPrice": 6,
       "context": 1000000
     },
     {

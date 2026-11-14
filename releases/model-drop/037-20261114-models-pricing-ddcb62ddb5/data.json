@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-11-14T14:09:51.392Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 443,
+    "listed": 434,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 87,
+    "providerBackends": 87,
+    "free": 74
+  },
+  "pool": null,
+  "added": [
+    {
+      "id": "qwen/qwen4-max",
+      "name": "Qwen4 Max",
+      "provider": "Qwen",
+      "logo": "qwen-color.svg",
+      "context": 1000000,
+      "inPrice": 2,
+      "outPrice": 6,
+      "free": false,
+      "created": 1794355200,
+      "category": "multimodal",
+      "excerpt": "Qwen4 Max is the preview of Alibaba's Qwen4 family, announced on 2026-11-11, with stronger coding and agent skills."
+    }
+  ],
+  "changed": [
+    {
+      "id": "openai/gpt-5.6-luna",
+      "from": "0.02/0.12@1050000",
+      "to": "0.04/0.24@1050000",
+      "kind": "price-rise"
+    },
+    {
+      "id": "openai/gpt-6-luna",
+      "from": "0.01/0.05@1050000",
+      "to": "0.02/0.1@1050000",
+      "kind": "price-rise"
+    },
+    {
+      "id": "openai/gpt-6.1-sol",
+      "from": "0.2/1@1050000",
+      "to": "0.4/2@1050000",
+      "kind": "price-rise"
+    },
+    {
+      "id": "openai/gpt-6.1-terra",
+      "from": "0.1/0.5@1050000",
+      "to": "0.2/1@1050000",
+      "kind": "price-rise"
+    }
+  ],
+  "removed": [
+    "liquid/lfm-2.5-embedding-350m"
+  ],
+  "spotlight": {
+    "id": "qwen/qwen4-max",
+    "name": "Qwen4 Max",
+    "provider": "Qwen",
+    "logo": "qwen-color.svg",
+    "context": 1000000,
+    "inPrice": 2,
+    "outPrice": 6,
+    "free": false,
+    "created": 1794355200,
+    "category": "multimodal",
+    "excerpt": "Qwen4 Max is the preview of Alibaba's Qwen4 family, announced on 2026-11-11, with stronger coding and agent skills."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+qwen/qwen4-max@2/6@1000000",
+    "~openai/gpt-5.6-luna 0.02/0.12@1050000->0.04/0.24@1050000",
+    "~openai/gpt-6-luna 0.01/0.05@1050000->0.02/0.1@1050000",
+    "~openai/gpt-6.1-sol 0.2/1@1050000->0.4/2@1050000",
+    "~openai/gpt-6.1-terra 0.1/0.5@1050000->0.2/1@1050000",
+    "-liquid/lfm-2.5-embedding-350m"
+  ]
+}

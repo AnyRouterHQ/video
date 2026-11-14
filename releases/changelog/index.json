@@ -666,6 +666,32 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-f2c0a0e2b70bcfb92fe0",
         "draft": true
       }
+    },
+    {
+      "id": "028-20261114-2026-11-14-c2ea851a1b",
+      "hash": "c2ea851a1b",
+      "kind": "changelog",
+      "label": "2026-11-14",
+      "title": "LFM 2.5 Embedding 350M disabled",
+      "seconds": 15,
+      "renderedAt": "2026-11-14T14:11:51.606Z",
+      "commit": "66e26ae",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/changelog-028-20261114-2026-11-14-c2ea851a1b.mp4",
+          "cover": "renders/changelog-028-20261114-2026-11-14-c2ea851a1b.png"
+        },
+        "portrait": {
+          "artifact": "renders/changelog-028-20261114-2026-11-14-c2ea851a1b-portrait.mp4",
+          "cover": "renders/changelog-028-20261114-2026-11-14-c2ea851a1b-portrait.png"
+        }
+      },
+      "source": "renders/changelog-028-20261114-2026-11-14-c2ea851a1b-source.tar.gz",
+      "createdAt": "2026-11-14T14:11:51.612Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-616e74cbc3f3d44845a4",
+        "draft": true
+      }
     }
   ]
 }
