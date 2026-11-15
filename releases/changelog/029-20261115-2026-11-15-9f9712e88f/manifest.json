@@ -1,0 +1,26 @@
+{
+  "id": "029-20261115-2026-11-15-9f9712e88f",
+  "hash": "9f9712e88f",
+  "kind": "changelog",
+  "label": "2026-11-15",
+  "title": "4 changelog updates: ERNIE Light DT 1.0, LFM3 1.7B +2 more",
+  "seconds": 26,
+  "renderedAt": "2026-11-15T14:48:48.757Z",
+  "commit": "2126073",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-029-20261115-2026-11-15-9f9712e88f.mp4",
+      "cover": "renders/changelog-029-20261115-2026-11-15-9f9712e88f.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-029-20261115-2026-11-15-9f9712e88f-portrait.mp4",
+      "cover": "renders/changelog-029-20261115-2026-11-15-9f9712e88f-portrait.png"
+    }
+  },
+  "source": "renders/changelog-029-20261115-2026-11-15-9f9712e88f-source.tar.gz",
+  "createdAt": "2026-11-15T14:48:48.764Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-6c74a7df30ce781d415c",
+    "draft": true
+  }
+}

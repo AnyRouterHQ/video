@@ -1,0 +1,22 @@
+{
+  "id": "038-20261115-models-pricing-7280197868",
+  "hash": "7280197868",
+  "kind": "model-drop",
+  "label": "models+pricing",
+  "title": "4 new models: ernie-light-dt-1.0, ripple-65b-preview, lfm-3-1.7b +1 more",
+  "seconds": 20,
+  "renderedAt": "2026-11-15T14:50:04.314Z",
+  "commit": "2126073",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-038-20261115-models-pricing-7280197868.mp4",
+      "cover": "renders/model-drop-038-20261115-models-pricing-7280197868.png"
+    }
+  },
+  "source": "renders/model-drop-038-20261115-models-pricing-7280197868-source.tar.gz",
+  "createdAt": "2026-11-15T14:50:04.321Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-00e75bc872caa94e6aad",
+    "draft": true
+  }
+}

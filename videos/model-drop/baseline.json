@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-14T14:09:51.392Z",
+  "acceptedAt": "2026-11-15T14:45:42.035Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -45,6 +45,7 @@
     "baai/bge-m3",
     "baai/bge-multilingual-gemma2",
     "baidu/ernie-5.5-flash-preview",
+    "baidu/ernie-light-dt-1.0",
     "bytedance-seed/doubao-seed-2-1-pro-260628",
     "bytedance-seed/seed-1.6",
     "bytedance-seed/seed-2-1-turbo",
@@ -126,6 +127,8 @@
     "liquid/d1",
     "liquid/lfm-2.5-2.6b",
     "liquid/lfm-2.5-24b-a2b",
+    "liquid/lfm-3-1.7b",
+    "liquid/lfm3-vl-2b",
     "meituan/longcat-2.0",
     "meituan/longcat-2.5",
     "meta/llama-3.1-70b-instruct",
@@ -320,6 +323,7 @@
     "reflection/beam-1.0",
     "respan/span-01-lite",
     "respan/span-01",
+    "ricursive/ripple-65b-preview",
     "sakana/fugu-max",
     "sakana/fugu-ultra-v2",
     "sakana/fugu-ultra",
@@ -702,9 +706,15 @@
       "context": 1024000
     },
     {
+      "id": "baidu/ernie-light-dt-1.0",
+      "inPrice": 1.13,
+      "outPrice": 3.94,
+      "context": 1024000
+    },
+    {
       "id": "bytedance-seed/doubao-seed-2-1-pro-260628",
-      "inPrice": 1,
-      "outPrice": 5,
+      "inPrice": 0.9,
+      "outPrice": 4.5,
       "context": 262144
     },
     {
@@ -835,8 +845,8 @@
     },
     {
       "id": "deepseek/deepseek-v3.2-exp",
-      "inPrice": 0.27,
-      "outPrice": 0.41,
+      "inPrice": 0.26,
+      "outPrice": 0.38,
       "context": 163840
     },
     {
@@ -1186,6 +1196,18 @@
       "inPrice": 0.05,
       "outPrice": 0.7,
       "context": 131072
+    },
+    {
+      "id": "liquid/lfm-3-1.7b",
+      "inPrice": 0.08,
+      "outPrice": 0.2,
+      "context": 262144
+    },
+    {
+      "id": "liquid/lfm3-vl-2b",
+      "inPrice": 0.1,
+      "outPrice": 0.5,
+      "context": 128000
     },
     {
       "id": "meituan/longcat-2.0",
@@ -1587,7 +1609,7 @@
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
       "inPrice": 0,
       "outPrice": 0,
-      "context": 256000
+      "context": 262144
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b",
@@ -2215,8 +2237,8 @@
     },
     {
       "id": "qwen/qwen3.5-122b-a10b",
-      "inPrice": 0.377808,
-      "outPrice": 3.022464,
+      "inPrice": 0.3,
+      "outPrice": 2.4,
       "context": 262144
     },
     {
@@ -2227,14 +2249,14 @@
     },
     {
       "id": "qwen/qwen3.5-35b-a3b",
-      "inPrice": 0.155568,
-      "outPrice": 1.1112,
+      "inPrice": 0.225,
+      "outPrice": 1.8,
       "context": 262144
     },
     {
       "id": "qwen/qwen3.5-397b-a17b",
-      "inPrice": 0.1032,
-      "outPrice": 0.6192,
+      "inPrice": 0.45,
+      "outPrice": 3,
       "context": 262144
     },
     {
@@ -2251,8 +2273,8 @@
     },
     {
       "id": "qwen/qwen3.5-plus",
-      "inPrice": 0.069,
-      "outPrice": 0.4128,
+      "inPrice": 0.4,
+      "outPrice": 2.4,
       "context": 1048576
     },
     {
@@ -2263,8 +2285,8 @@
     },
     {
       "id": "qwen/qwen3.6-plus",
-      "inPrice": 0.1656,
-      "outPrice": 0.9906,
+      "inPrice": 0.325,
+      "outPrice": 1.95,
       "context": 1048576
     },
     {
@@ -2295,7 +2317,7 @@
       "id": "qwen/qwen3.8-27b",
       "inPrice": 0.045,
       "outPrice": 0.32,
-      "context": 1048575
+      "context": 1048576
     },
     {
       "id": "qwen/qwen3.8-flash",
@@ -2311,8 +2333,8 @@
     },
     {
       "id": "qwen/qwen3.8-max",
-      "inPrice": 0.1572,
-      "outPrice": 0.4715,
+      "inPrice": 0.825,
+      "outPrice": 2.4755,
       "context": 1048576
     },
     {
@@ -2350,6 +2372,12 @@
       "inPrice": 0.02,
       "outPrice": 0,
       "context": null
+    },
+    {
+      "id": "ricursive/ripple-65b-preview",
+      "inPrice": 0.1,
+      "outPrice": 0.3,
+      "context": 1048576
     },
     {
       "id": "sakana/fugu-max",
@@ -2703,7 +2731,7 @@
       "id": "x-ai/grok-build-0.1",
       "inPrice": 0.8,
       "outPrice": 1.6,
-      "context": 256000
+      "context": 262144
     },
     {
       "id": "xiaomi/mimo-v2-flash",
@@ -2725,7 +2753,7 @@
     },
     {
       "id": "xiaomi/mimo-v2.6-flash",
-      "inPrice": 0.12,
+      "inPrice": 0.1,
       "outPrice": 0.25,
       "context": 1050000
     },
@@ -2845,8 +2873,8 @@
     },
     {
       "id": "z-ai/glm-5v-turbo",
-      "inPrice": 1.124148814,
-      "outPrice": 3.747164194,
+      "inPrice": 1.2,
+      "outPrice": 4,
       "context": 202752
     },
     {
@@ -2935,8 +2963,8 @@
     },
     {
       "id": "qwen/qwen-max-latest",
-      "inPrice": 0.1572,
-      "outPrice": 0.4715,
+      "inPrice": 0.825,
+      "outPrice": 2.4755,
       "context": 1048576
     },
     {
@@ -3013,7 +3041,7 @@
     },
     {
       "id": "xiaomi/mimo-flash-latest",
-      "inPrice": 0.12,
+      "inPrice": 0.1,
       "outPrice": 0.25,
       "context": 1050000
     },

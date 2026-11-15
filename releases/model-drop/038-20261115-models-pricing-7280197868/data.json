@@ -1,0 +1,203 @@
+{
+  "generatedAt": "2026-11-15T14:45:42.035Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 447,
+    "listed": 438,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 88,
+    "providerBackends": 88,
+    "free": 74
+  },
+  "pool": {
+    "keys": 370,
+    "donors": 223,
+    "requests": 291489
+  },
+  "added": [
+    {
+      "id": "baidu/ernie-light-dt-1.0",
+      "name": "ERNIE Light DT 1.0",
+      "provider": "baidu",
+      "logo": null,
+      "context": 1024000,
+      "inPrice": 1.13,
+      "outPrice": 3.94,
+      "free": false,
+      "created": 1794268800,
+      "category": "text",
+      "excerpt": "ERNIE Light DT 1.0 is Baidu's lightweight long-context text model with sparse attention and a switchable thinking mode."
+    },
+    {
+      "id": "ricursive/ripple-65b-preview",
+      "name": "Ripple 65B Preview",
+      "provider": "ricursive",
+      "logo": null,
+      "context": 1048576,
+      "inPrice": 0.1,
+      "outPrice": 0.3,
+      "free": false,
+      "created": 1793750400,
+      "category": "text",
+      "excerpt": "Ripple 65B Preview is Ricursive Intelligence's first open-weight model, a 65B-parameter dense transformer with native tool calling and reasoning."
+    },
+    {
+      "id": "liquid/lfm-3-1.7b",
+      "name": "LFM3 1.7B",
+      "provider": "liquid",
+      "logo": "liquid.svg",
+      "context": 262144,
+      "inPrice": 0.08,
+      "outPrice": 0.2,
+      "free": false,
+      "created": 1793059200,
+      "category": "text",
+      "excerpt": "LFM3 1.7B is Liquid AI's 1.73B-parameter text model for local agents, tool calling and structured outputs."
+    },
+    {
+      "id": "liquid/lfm3-vl-2b",
+      "name": "LFM3-VL 2B",
+      "provider": "liquid",
+      "logo": "liquid.svg",
+      "context": 128000,
+      "inPrice": 0.1,
+      "outPrice": 0.5,
+      "free": false,
+      "created": 1793059200,
+      "category": "multimodal",
+      "excerpt": "LFM3-VL 2B is Liquid AI's 1.92B-parameter vision-language model for on-device visual understanding."
+    }
+  ],
+  "changed": [
+    {
+      "id": "bytedance-seed/doubao-seed-2-1-pro-260628",
+      "from": "1/5@262144",
+      "to": "0.9/4.5@262144",
+      "kind": "price-cut"
+    },
+    {
+      "id": "deepseek/deepseek-v3.2-exp",
+      "from": "0.27/0.41@163840",
+      "to": "0.26/0.38@163840",
+      "kind": "price-cut"
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "from": "0/0@256000",
+      "to": "0/0@262144",
+      "kind": "context"
+    },
+    {
+      "id": "qwen/qwen3.5-122b-a10b",
+      "from": "0.377808/3.022464@262144",
+      "to": "0.3/2.4@262144",
+      "kind": "price-cut"
+    },
+    {
+      "id": "qwen/qwen3.5-35b-a3b",
+      "from": "0.155568/1.1112@262144",
+      "to": "0.225/1.8@262144",
+      "kind": "price-rise"
+    },
+    {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "from": "0.1032/0.6192@262144",
+      "to": "0.45/3@262144",
+      "kind": "price-rise"
+    },
+    {
+      "id": "qwen/qwen3.5-plus",
+      "from": "0.069/0.4128@1048576",
+      "to": "0.4/2.4@1048576",
+      "kind": "price-rise"
+    },
+    {
+      "id": "qwen/qwen3.6-plus",
+      "from": "0.1656/0.9906@1048576",
+      "to": "0.325/1.95@1048576",
+      "kind": "price-rise"
+    },
+    {
+      "id": "qwen/qwen3.8-27b",
+      "from": "0.045/0.32@1048575",
+      "to": "0.045/0.32@1048576",
+      "kind": "context"
+    },
+    {
+      "id": "qwen/qwen3.8-max",
+      "from": "0.1572/0.4715@1048576",
+      "to": "0.825/2.4755@1048576",
+      "kind": "price-rise"
+    },
+    {
+      "id": "x-ai/grok-build-0.1",
+      "from": "0.8/1.6@256000",
+      "to": "0.8/1.6@262144",
+      "kind": "context"
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-flash",
+      "from": "0.12/0.25@1050000",
+      "to": "0.1/0.25@1050000",
+      "kind": "price-cut"
+    },
+    {
+      "id": "z-ai/glm-5v-turbo",
+      "from": "1.124148814/3.747164194@202752",
+      "to": "1.2/4@202752",
+      "kind": "price-rise"
+    },
+    {
+      "id": "qwen/qwen-max-latest",
+      "from": "0.1572/0.4715@1048576",
+      "to": "0.825/2.4755@1048576",
+      "kind": "price-rise"
+    },
+    {
+      "id": "xiaomi/mimo-flash-latest",
+      "from": "0.12/0.25@1050000",
+      "to": "0.1/0.25@1050000",
+      "kind": "price-cut"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "baidu/ernie-light-dt-1.0",
+    "name": "ERNIE Light DT 1.0",
+    "provider": "baidu",
+    "logo": null,
+    "context": 1024000,
+    "inPrice": 1.13,
+    "outPrice": 3.94,
+    "free": false,
+    "created": 1794268800,
+    "category": "text",
+    "excerpt": "ERNIE Light DT 1.0 is Baidu's lightweight long-context text model with sparse attention and a switchable thinking mode."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+baidu/ernie-light-dt-1.0@1.13/3.94@1024000",
+    "+ricursive/ripple-65b-preview@0.1/0.3@1048576",
+    "+liquid/lfm-3-1.7b@0.08/0.2@262144",
+    "+liquid/lfm3-vl-2b@0.1/0.5@128000",
+    "~bytedance-seed/doubao-seed-2-1-pro-260628 1/5@262144->0.9/4.5@262144",
+    "~deepseek/deepseek-v3.2-exp 0.27/0.41@163840->0.26/0.38@163840",
+    "~nvidia/nemotron-3-nano-omni-30b-a3b-reasoning 0/0@256000->0/0@262144",
+    "~qwen/qwen3.5-122b-a10b 0.377808/3.022464@262144->0.3/2.4@262144",
+    "~qwen/qwen3.5-35b-a3b 0.155568/1.1112@262144->0.225/1.8@262144",
+    "~qwen/qwen3.5-397b-a17b 0.1032/0.6192@262144->0.45/3@262144",
+    "~qwen/qwen3.5-plus 0.069/0.4128@1048576->0.4/2.4@1048576",
+    "~qwen/qwen3.6-plus 0.1656/0.9906@1048576->0.325/1.95@1048576",
+    "~qwen/qwen3.8-27b 0.045/0.32@1048575->0.045/0.32@1048576",
+    "~qwen/qwen3.8-max 0.1572/0.4715@1048576->0.825/2.4755@1048576",
+    "~x-ai/grok-build-0.1 0.8/1.6@256000->0.8/1.6@262144",
+    "~xiaomi/mimo-v2.6-flash 0.12/0.25@1050000->0.1/0.25@1050000",
+    "~z-ai/glm-5v-turbo 1.124148814/3.747164194@202752->1.2/4@202752",
+    "~qwen/qwen-max-latest 0.1572/0.4715@1048576->0.825/2.4755@1048576",
+    "~xiaomi/mimo-flash-latest 0.12/0.25@1050000->0.1/0.25@1050000"
+  ]
+}

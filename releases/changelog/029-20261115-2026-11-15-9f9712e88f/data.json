@@ -1,0 +1,46 @@
+{
+  "notable": true,
+  "label": "2026-11-15",
+  "parts": [
+    "2026-11-15-ernie-light-dt-1-0",
+    "2026-11-15-lfm-3-1-7b",
+    "2026-11-15-lfm3-vl-2b",
+    "2026-11-15-ripple-65b-preview"
+  ],
+  "date": "2026-11-15",
+  "entries": [
+    {
+      "slug": "2026-11-15-ernie-light-dt-1-0",
+      "date": "2026-11-15",
+      "title": "ERNIE Light DT 1.0",
+      "summary": "Baidu's lightweight 1M-context ERNIE Light DT 1.0 joins the catalog through your own provider key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-15-ernie-light-dt-1-0",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-15-lfm-3-1-7b",
+      "date": "2026-11-15",
+      "title": "LFM3 1.7B",
+      "summary": "Liquid AI's 1.7B open-weight agent model with a 256K context joins the catalog through your own provider key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-15-lfm-3-1-7b",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-15-lfm3-vl-2b",
+      "date": "2026-11-15",
+      "title": "LFM3-VL 2B",
+      "summary": "Liquid AI's 1.9B vision-language model with video input joins the catalog through your own Infron key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-15-lfm3-vl-2b",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-15-ripple-65b-preview",
+      "date": "2026-11-15",
+      "title": "Ripple 65B Preview",
+      "summary": "Ricursive Intelligence's open-weight 65B coding model joins the catalog through your own provider key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-15-ripple-65b-preview",
+      "type": "added"
+    }
+  ],
+  "total": 4
+}
