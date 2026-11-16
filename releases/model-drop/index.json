@@ -823,6 +823,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-00e75bc872caa94e6aad",
         "draft": true
       }
+    },
+    {
+      "id": "039-20261116-models-pricing-d2dde85629",
+      "hash": "d2dde85629",
+      "kind": "model-drop",
+      "label": "models+pricing",
+      "title": "tencent/hy4-flash is live on AnyRouter",
+      "seconds": 20,
+      "renderedAt": "2026-11-16T17:05:48.371Z",
+      "commit": "29eb119",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-039-20261116-models-pricing-d2dde85629.mp4",
+          "cover": "renders/model-drop-039-20261116-models-pricing-d2dde85629.png"
+        }
+      },
+      "source": "renders/model-drop-039-20261116-models-pricing-d2dde85629-source.tar.gz",
+      "createdAt": "2026-11-16T17:05:48.378Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-e30566a29e7f48c94899",
+        "draft": true
+      }
     }
   ]
 }

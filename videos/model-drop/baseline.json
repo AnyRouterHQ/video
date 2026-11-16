@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-15T14:45:42.035Z",
+  "acceptedAt": "2026-11-16T17:02:58.074Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -350,6 +350,7 @@
     "subquadratic/subq-snap-preview",
     "tencent/hy-mt2-1.8b",
     "tencent/hy-mt2-30b-a3b",
+    "tencent/hy4-flash",
     "tencent/hy4-preview",
     "tencent/hy4",
     "thenlper/gte-base",
@@ -1037,8 +1038,8 @@
     },
     {
       "id": "google/gemma-4-31b",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 0.011,
+      "outPrice": 0.035,
       "context": 262144
     },
     {
@@ -1187,8 +1188,8 @@
     },
     {
       "id": "liquid/lfm-2.5-2.6b",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 0.3703,
+      "outPrice": 0.529,
       "context": 128000
     },
     {
@@ -2345,8 +2346,8 @@
     },
     {
       "id": "qwen/qwen4-max",
-      "inPrice": 2,
-      "outPrice": 6,
+      "inPrice": 1.5,
+      "outPrice": 4.5,
       "context": 1000000
     },
     {
@@ -2536,6 +2537,12 @@
       "context": 8192
     },
     {
+      "id": "tencent/hy4-flash",
+      "inPrice": 0.081,
+      "outPrice": 0.324,
+      "context": 1048576
+    },
+    {
       "id": "tencent/hy4-preview",
       "inPrice": 0.417,
       "outPrice": 1.25,
@@ -2561,14 +2568,14 @@
     },
     {
       "id": "thinkingmachines/inkling-small",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 0.45,
+      "outPrice": 1.2,
       "context": 1048576
     },
     {
       "id": "thinkingmachines/inkling",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 0.95,
+      "outPrice": 4.05,
       "context": 1048576
     },
     {
@@ -2771,8 +2778,8 @@
     },
     {
       "id": "xingchen-agi/xing4.0-29b-a4b",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 0.22,
+      "outPrice": 0.9,
       "context": 262144
     },
     {
@@ -2897,8 +2904,8 @@
     },
     {
       "id": "google/gemma-latest",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 0.011,
+      "outPrice": 0.035,
       "context": 262144
     },
     {

@@ -1,0 +1,19 @@
+{
+  "notable": true,
+  "label": "2026-11-16",
+  "parts": [
+    "2026-11-16-hy4-flash"
+  ],
+  "date": "2026-11-16",
+  "entries": [
+    {
+      "slug": "2026-11-16-hy4-flash",
+      "date": "2026-11-16",
+      "title": "Hy4 flash",
+      "summary": "Tencent's everyday productivity model joins the catalog through your own AIHubMix key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-16-hy4-flash",
+      "type": "added"
+    }
+  ],
+  "total": 1
+}

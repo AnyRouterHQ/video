@@ -1,0 +1,26 @@
+{
+  "id": "030-20261116-2026-11-16-d5ab07f369",
+  "hash": "d5ab07f369",
+  "kind": "changelog",
+  "label": "2026-11-16",
+  "title": "Hy4 flash",
+  "seconds": 13,
+  "renderedAt": "2026-11-16T17:04:40.720Z",
+  "commit": "29eb119",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-030-20261116-2026-11-16-d5ab07f369.mp4",
+      "cover": "renders/changelog-030-20261116-2026-11-16-d5ab07f369.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-030-20261116-2026-11-16-d5ab07f369-portrait.mp4",
+      "cover": "renders/changelog-030-20261116-2026-11-16-d5ab07f369-portrait.png"
+    }
+  },
+  "source": "renders/changelog-030-20261116-2026-11-16-d5ab07f369-source.tar.gz",
+  "createdAt": "2026-11-16T17:04:40.726Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-554ca056d12091192b83",
+    "draft": true
+  }
+}

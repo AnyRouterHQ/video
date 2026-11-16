@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-11-16T17:02:58.074Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 448,
+    "listed": 439,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 88,
+    "providerBackends": 88,
+    "free": 68
+  },
+  "pool": {
+    "keys": 383,
+    "donors": 230,
+    "requests": 301316
+  },
+  "added": [
+    {
+      "id": "tencent/hy4-flash",
+      "name": "Hy4 flash",
+      "provider": "tencent",
+      "logo": "tencent-color.svg",
+      "context": 1048576,
+      "inPrice": 0.081,
+      "outPrice": 0.324,
+      "free": false,
+      "created": 1794787200,
+      "category": "text",
+      "excerpt": "Hy4 flash is Tencent's model for everyday productivity, document understanding and agent workflows."
+    }
+  ],
+  "changed": [
+    {
+      "id": "google/gemma-4-31b",
+      "from": "0/0@262144",
+      "to": "0.011/0.035@262144",
+      "kind": "price-rise"
+    },
+    {
+      "id": "liquid/lfm-2.5-2.6b",
+      "from": "0/0@128000",
+      "to": "0.3703/0.529@128000",
+      "kind": "price-rise"
+    },
+    {
+      "id": "qwen/qwen4-max",
+      "from": "2/6@1000000",
+      "to": "1.5/4.5@1000000",
+      "kind": "price-cut"
+    },
+    {
+      "id": "thinkingmachines/inkling-small",
+      "from": "0/0@1048576",
+      "to": "0.45/1.2@1048576",
+      "kind": "price-rise"
+    },
+    {
+      "id": "thinkingmachines/inkling",
+      "from": "0/0@1048576",
+      "to": "0.95/4.05@1048576",
+      "kind": "price-rise"
+    },
+    {
+      "id": "xingchen-agi/xing4.0-29b-a4b",
+      "from": "0/0@262144",
+      "to": "0.22/0.9@262144",
+      "kind": "price-rise"
+    },
+    {
+      "id": "google/gemma-latest",
+      "from": "0/0@262144",
+      "to": "0.011/0.035@262144",
+      "kind": "price-rise"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "tencent/hy4-flash",
+    "name": "Hy4 flash",
+    "provider": "tencent",
+    "logo": "tencent-color.svg",
+    "context": 1048576,
+    "inPrice": 0.081,
+    "outPrice": 0.324,
+    "free": false,
+    "created": 1794787200,
+    "category": "text",
+    "excerpt": "Hy4 flash is Tencent's model for everyday productivity, document understanding and agent workflows."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+tencent/hy4-flash@0.081/0.324@1048576",
+    "~google/gemma-4-31b 0/0@262144->0.011/0.035@262144",
+    "~liquid/lfm-2.5-2.6b 0/0@128000->0.3703/0.529@128000",
+    "~qwen/qwen4-max 2/6@1000000->1.5/4.5@1000000",
+    "~thinkingmachines/inkling-small 0/0@1048576->0.45/1.2@1048576",
+    "~thinkingmachines/inkling 0/0@1048576->0.95/4.05@1048576",
+    "~xingchen-agi/xing4.0-29b-a4b 0/0@262144->0.22/0.9@262144",
+    "~google/gemma-latest 0/0@262144->0.011/0.035@262144"
+  ]
+}
