@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-11-17T16:53:46.993Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 451,
+    "listed": 442,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 88,
+    "providerBackends": 88,
+    "free": 69
+  },
+  "pool": {
+    "keys": 388,
+    "donors": 233,
+    "requests": 304168
+  },
+  "added": [
+    {
+      "id": "intern/sage-s2.1-flash",
+      "name": "Sage S2.1 Flash",
+      "provider": "intern",
+      "logo": "intern.svg",
+      "context": 524288,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1794787200,
+      "category": "multimodal",
+      "excerpt": "Sage S2.1 Flash is a scientific multimodal model from Shanghai Artificial Intelligence Laboratory for iterative research."
+    },
+    {
+      "id": "liquid/d1.2-ultra",
+      "name": "Liquid d1.2 Ultra",
+      "provider": "liquid",
+      "logo": "liquid.svg",
+      "context": 65536,
+      "inPrice": 0.042,
+      "outPrice": 0,
+      "free": false,
+      "created": 1794787200,
+      "category": "text",
+      "excerpt": "Liquid d1.2 Ultra is Liquid AI's most capable hosted decision model."
+    },
+    {
+      "id": "liquid/d1.2",
+      "name": "Liquid d1.2",
+      "provider": "liquid",
+      "logo": "liquid.svg",
+      "context": 65536,
+      "inPrice": 0.02,
+      "outPrice": 0,
+      "free": false,
+      "created": 1794787200,
+      "category": "text",
+      "excerpt": "Liquid d1.2 is Liquid AI's faster hosted decision model."
+    }
+  ],
+  "changed": [
+    {
+      "id": "tencent/hy4-flash",
+      "from": "0.081/0.324@1048576",
+      "to": "0.035/0.1405@1048576",
+      "kind": "price-cut"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "intern/sage-s2.1-flash",
+    "name": "Sage S2.1 Flash",
+    "provider": "intern",
+    "logo": "intern.svg",
+    "context": 524288,
+    "inPrice": 0,
+    "outPrice": 0,
+    "free": true,
+    "created": 1794787200,
+    "category": "multimodal",
+    "excerpt": "Sage S2.1 Flash is a scientific multimodal model from Shanghai Artificial Intelligence Laboratory for iterative research."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+intern/sage-s2.1-flash@0/0@524288",
+    "+liquid/d1.2-ultra@0.042/0@65536",
+    "+liquid/d1.2@0.02/0@65536",
+    "~tencent/hy4-flash 0.081/0.324@1048576->0.035/0.1405@1048576"
+  ]
+}

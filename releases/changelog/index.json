@@ -744,6 +744,32 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-554ca056d12091192b83",
         "draft": true
       }
+    },
+    {
+      "id": "031-20261117-2026-11-17-bb1416b7bf",
+      "hash": "bb1416b7bf",
+      "kind": "changelog",
+      "label": "2026-11-17",
+      "title": "2 changelog updates: Liquid d1.2 and d1.2 Ultra, Sage S2.1 Flash",
+      "seconds": 21,
+      "renderedAt": "2026-11-17T16:56:45.383Z",
+      "commit": "6cf0b51",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/changelog-031-20261117-2026-11-17-bb1416b7bf.mp4",
+          "cover": "renders/changelog-031-20261117-2026-11-17-bb1416b7bf.png"
+        },
+        "portrait": {
+          "artifact": "renders/changelog-031-20261117-2026-11-17-bb1416b7bf-portrait.mp4",
+          "cover": "renders/changelog-031-20261117-2026-11-17-bb1416b7bf-portrait.png"
+        }
+      },
+      "source": "renders/changelog-031-20261117-2026-11-17-bb1416b7bf-source.tar.gz",
+      "createdAt": "2026-11-17T16:56:45.391Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-b0392613816319b08689",
+        "draft": true
+      }
     }
   ]
 }

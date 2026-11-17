@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-16T17:02:58.074Z",
+  "acceptedAt": "2026-11-17T16:53:46.994Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -119,11 +119,14 @@
     "inference-net/schematron-v2-small",
     "inference-net/schematron-v2-turbo",
     "intern/intern-s2-free",
+    "intern/sage-s2.1-flash",
     "intfloat/e5-base-v2",
     "intfloat/multilingual-e5-large",
     "jaredpalmer/kev-4b",
     "kt/midm-k-3.0-pro",
     "liquid/d1-ultra",
+    "liquid/d1.2-ultra",
+    "liquid/d1.2",
     "liquid/d1",
     "liquid/lfm-2.5-2.6b",
     "liquid/lfm-2.5-24b-a2b",
@@ -1151,6 +1154,12 @@
       "context": 262144
     },
     {
+      "id": "intern/sage-s2.1-flash",
+      "inPrice": 0,
+      "outPrice": 0,
+      "context": 524288
+    },
+    {
       "id": "intfloat/e5-base-v2",
       "inPrice": 0.005,
       "outPrice": 0,
@@ -1179,6 +1188,18 @@
       "inPrice": 0.042,
       "outPrice": 0,
       "context": 32768
+    },
+    {
+      "id": "liquid/d1.2-ultra",
+      "inPrice": 0.042,
+      "outPrice": 0,
+      "context": 65536
+    },
+    {
+      "id": "liquid/d1.2",
+      "inPrice": 0.02,
+      "outPrice": 0,
+      "context": 65536
     },
     {
       "id": "liquid/d1",
@@ -2538,8 +2559,8 @@
     },
     {
       "id": "tencent/hy4-flash",
-      "inPrice": 0.081,
-      "outPrice": 0.324,
+      "inPrice": 0.035,
+      "outPrice": 0.1405,
       "context": 1048576
     },
     {

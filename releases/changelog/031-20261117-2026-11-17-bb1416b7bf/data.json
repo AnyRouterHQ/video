@@ -1,0 +1,28 @@
+{
+  "notable": true,
+  "label": "2026-11-17",
+  "parts": [
+    "2026-11-17-d1-2",
+    "2026-11-17-sage-s2-1-flash"
+  ],
+  "date": "2026-11-17",
+  "entries": [
+    {
+      "slug": "2026-11-17-d1-2",
+      "date": "2026-11-17",
+      "title": "Liquid d1.2 and d1.2 Ultra",
+      "summary": "Liquid AI's omnimodal decision models join the catalog through your own Liquid key: d1.2 for everyday decisions, d1.2 Ultra for harder ones.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-17-d1-2",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-17-sage-s2-1-flash",
+      "date": "2026-11-17",
+      "title": "Sage S2.1 Flash",
+      "summary": "Shanghai AI Laboratory's scientific multimodal model joins the catalog through your own Intern TokenPlan key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-17-sage-s2-1-flash",
+      "type": "added"
+    }
+  ],
+  "total": 2
+}

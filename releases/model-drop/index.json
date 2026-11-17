@@ -845,6 +845,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-e30566a29e7f48c94899",
         "draft": true
       }
+    },
+    {
+      "id": "040-20261117-models-pricing-f981a94e90",
+      "hash": "f981a94e90",
+      "kind": "model-drop",
+      "label": "models+pricing",
+      "title": "3 new models: sage-s2.1-flash, d1.2-ultra, d1.2",
+      "seconds": 20,
+      "renderedAt": "2026-11-17T16:58:11.185Z",
+      "commit": "6cf0b51",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-040-20261117-models-pricing-f981a94e90.mp4",
+          "cover": "renders/model-drop-040-20261117-models-pricing-f981a94e90.png"
+        }
+      },
+      "source": "renders/model-drop-040-20261117-models-pricing-f981a94e90-source.tar.gz",
+      "createdAt": "2026-11-17T16:58:11.192Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-c5c411cebfa2af23be00",
+        "draft": true
+      }
     }
   ]
 }
