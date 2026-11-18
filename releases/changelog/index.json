@@ -770,6 +770,32 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-b0392613816319b08689",
         "draft": true
       }
+    },
+    {
+      "id": "032-20261118-2026-11-18-a9bdadde25",
+      "hash": "a9bdadde25",
+      "kind": "changelog",
+      "label": "2026-11-18",
+      "title": "7 changelog updates: GPT-6.2 Astra, GPT-6.2 Astra Pro +5 more",
+      "seconds": 25,
+      "renderedAt": "2026-11-18T16:31:29.907Z",
+      "commit": "91a4ad6",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/changelog-032-20261118-2026-11-18-a9bdadde25.mp4",
+          "cover": "renders/changelog-032-20261118-2026-11-18-a9bdadde25.png"
+        },
+        "portrait": {
+          "artifact": "renders/changelog-032-20261118-2026-11-18-a9bdadde25-portrait.mp4",
+          "cover": "renders/changelog-032-20261118-2026-11-18-a9bdadde25-portrait.png"
+        }
+      },
+      "source": "renders/changelog-032-20261118-2026-11-18-a9bdadde25-source.tar.gz",
+      "createdAt": "2026-11-18T16:31:29.913Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-d39531e451e6e25ab05c",
+        "draft": true
+      }
     }
   ]
 }

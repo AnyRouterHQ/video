@@ -1,0 +1,73 @@
+{
+  "notable": true,
+  "label": "2026-11-18",
+  "parts": [
+    "2026-11-18",
+    "2026-11-18-astra-pro",
+    "2026-11-18-decision-1-1",
+    "2026-11-18-gpt-6-2-routes",
+    "2026-11-18-savant",
+    "2026-11-18-sol",
+    "2026-11-18-sol-pro"
+  ],
+  "date": "2026-11-18",
+  "entries": [
+    {
+      "slug": "2026-11-18",
+      "date": "2026-11-18",
+      "title": "GPT-6.2 Astra",
+      "summary": "OpenAI's frontier model for complex professional work joins the catalog with your own OpenAI key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-18",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-18-astra-pro",
+      "date": "2026-11-18",
+      "title": "GPT-6.2 Astra Pro",
+      "summary": "GPT-6.2 Astra with reasoning in pro mode is available through a BYOK route.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-18-astra-pro",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-18-decision-1-1",
+      "date": "2026-11-18",
+      "title": "Microsoft-Decision-1.1",
+      "summary": "Microsoft's faster, calibrated decision model is available through your own Foundry or Vercel key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-18-decision-1-1",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-18-gpt-6-2-routes",
+      "date": "2026-11-18",
+      "title": "GPT-6.2 Astra and GPT-6.2 Sol get another route",
+      "summary": "Both GPT-6.2 models are now served at 20% of the OpenAI API list price, on the AnyRouter platform key or with your own provider key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-18-gpt-6-2-routes",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-18-savant",
+      "date": "2026-11-18",
+      "title": "SubQ Savant 1.4",
+      "summary": "Subquadratic's 4M-token reasoning model joins the catalog with platform and BYOK routes.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-18-savant",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-18-sol",
+      "date": "2026-11-18",
+      "title": "GPT-6.2 Sol",
+      "summary": "OpenAI's efficient model for everyday work and agentic workflows joins the catalog.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-18-sol",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-18-sol-pro",
+      "date": "2026-11-18",
+      "title": "GPT-6.2 Sol Pro",
+      "summary": "GPT-6.2 Sol with reasoning in pro mode is available through a BYOK route.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-18-sol-pro",
+      "type": "added"
+    }
+  ],
+  "total": 7
+}

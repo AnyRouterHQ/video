@@ -867,6 +867,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-c5c411cebfa2af23be00",
         "draft": true
       }
+    },
+    {
+      "id": "041-20261118-models-pricing-59a576d068",
+      "hash": "59a576d068",
+      "kind": "model-drop",
+      "label": "models+pricing",
+      "title": "48 new models: microsoft-decision-1.1, gpt-6.2-astra-pro, gpt-6.2-astra +45 more",
+      "seconds": 20,
+      "renderedAt": "2026-11-18T16:32:54.679Z",
+      "commit": "91a4ad6",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-041-20261118-models-pricing-59a576d068.mp4",
+          "cover": "renders/model-drop-041-20261118-models-pricing-59a576d068.png"
+        }
+      },
+      "source": "renders/model-drop-041-20261118-models-pricing-59a576d068-source.tar.gz",
+      "createdAt": "2026-11-18T16:32:54.686Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-e56e7939668ffc59fac1",
+        "draft": true
+      }
     }
   ]
 }
