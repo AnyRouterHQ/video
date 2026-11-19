@@ -796,6 +796,32 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-d39531e451e6e25ab05c",
         "draft": true
       }
+    },
+    {
+      "id": "033-20261119-2026-11-19-10301400f7",
+      "hash": "10301400f7",
+      "kind": "changelog",
+      "label": "2026-11-19",
+      "title": "Gemini 4 Neon",
+      "seconds": 15,
+      "renderedAt": "2026-11-19T16:36:29.901Z",
+      "commit": "bafc464",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/changelog-033-20261119-2026-11-19-10301400f7.mp4",
+          "cover": "renders/changelog-033-20261119-2026-11-19-10301400f7.png"
+        },
+        "portrait": {
+          "artifact": "renders/changelog-033-20261119-2026-11-19-10301400f7-portrait.mp4",
+          "cover": "renders/changelog-033-20261119-2026-11-19-10301400f7-portrait.png"
+        }
+      },
+      "source": "renders/changelog-033-20261119-2026-11-19-10301400f7-source.tar.gz",
+      "createdAt": "2026-11-19T16:36:29.907Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-f976831d02cc0d54a8ee",
+        "draft": true
+      }
     }
   ]
 }

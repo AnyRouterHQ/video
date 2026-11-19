@@ -889,6 +889,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-e56e7939668ffc59fac1",
         "draft": true
       }
+    },
+    {
+      "id": "042-20261119-new-model-459c3f191c",
+      "hash": "459c3f191c",
+      "kind": "model-drop",
+      "label": "new-model",
+      "title": "google/gemini-4-neon is live on AnyRouter",
+      "seconds": 20,
+      "renderedAt": "2026-11-19T16:37:28.037Z",
+      "commit": "bafc464",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-042-20261119-new-model-459c3f191c.mp4",
+          "cover": "renders/model-drop-042-20261119-new-model-459c3f191c.png"
+        }
+      },
+      "source": "renders/model-drop-042-20261119-new-model-459c3f191c-source.tar.gz",
+      "createdAt": "2026-11-19T16:37:28.044Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-623a34d1b8e089d3b020",
+        "draft": true
+      }
     }
   ]
 }

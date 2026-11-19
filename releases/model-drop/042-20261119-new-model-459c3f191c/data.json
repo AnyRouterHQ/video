@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-11-19T16:34:52.434Z",
+  "mode": "diff",
+  "kind": "new-model",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 500,
+    "listed": 491,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 99,
+    "providerBackends": 99,
+    "free": 70
+  },
+  "pool": {
+    "keys": 395,
+    "donors": 238,
+    "requests": 311481
+  },
+  "added": [
+    {
+      "id": "google/gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "provider": "Google",
+      "logo": "google-color.svg",
+      "context": 1048576,
+      "inPrice": 3,
+      "outPrice": 15,
+      "free": false,
+      "created": 1794960000,
+      "category": "text",
+      "excerpt": "Gemini 4 Neon is Google's fast frontier model between Carbon and Hydrogen for software engineering, knowledge work and science."
+    }
+  ],
+  "changed": [],
+  "removed": [],
+  "spotlight": {
+    "id": "google/gemini-4-neon",
+    "name": "Gemini 4 Neon",
+    "provider": "Google",
+    "logo": "google-color.svg",
+    "context": 1048576,
+    "inPrice": 3,
+    "outPrice": 15,
+    "free": false,
+    "created": 1794960000,
+    "category": "text",
+    "excerpt": "Gemini 4 Neon is Google's fast frontier model between Carbon and Hydrogen for software engineering, knowledge work and science."
+  },
+  "notable": true,
+  "label": "new-model",
+  "parts": [
+    "+google/gemini-4-neon@3/15@1048576"
+  ]
+}

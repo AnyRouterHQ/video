@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-18T16:27:55.481Z",
+  "acceptedAt": "2026-11-19T16:34:52.434Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -104,6 +104,7 @@
     "google/gemini-4-argon",
     "google/gemini-4-carbon",
     "google/gemini-4-hydrogen",
+    "google/gemini-4-neon",
     "google/gemini-decision-1",
     "google/gemini-embedding-2",
     "google/gemma-2-27b-it",
@@ -1109,6 +1110,12 @@
       "id": "google/gemini-4-hydrogen",
       "inPrice": 1.5,
       "outPrice": 7.5,
+      "context": 1048576
+    },
+    {
+      "id": "google/gemini-4-neon",
+      "inPrice": 3,
+      "outPrice": 15,
       "context": 1048576
     },
     {

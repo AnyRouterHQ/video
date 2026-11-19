@@ -1,0 +1,19 @@
+{
+  "notable": true,
+  "label": "2026-11-19",
+  "parts": [
+    "2026-11-19-gemini-4-neon"
+  ],
+  "date": "2026-11-19",
+  "entries": [
+    {
+      "slug": "2026-11-19-gemini-4-neon",
+      "date": "2026-11-19",
+      "title": "Gemini 4 Neon",
+      "summary": "Google's fast frontier Gemini 4 model joins AnyRouter with 1M context and BYOK routes through Google, OpenRouter, Vercel, Respan and Infron.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-19-gemini-4-neon",
+      "type": "added"
+    }
+  ],
+  "total": 1
+}
