@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>paths</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:'Geist';src:url('assets/fonts/geist.woff2') format('woff2-variations');font-weight:100 900;font-display:block}
+@font-face{font-family:'GeistMono';src:url('assets/fonts/geist-mono.woff2') format('woff2-variations');font-weight:100 900;font-display:block}
+:root{--fg:#F3F5F1;--muted:#A3ADA3;--moss:#9BDB8F;--amber:#F2A54A;--card:#0F1310;--line:rgba(243,245,241,.14)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Geist',system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1920px;height:1080px;overflow:hidden}
+.mono{font-family:'GeistMono',ui-monospace,monospace}
+.abs{position:absolute}
+.ch{position:absolute;top:0;display:block;text-align:center}
+.logo{position:absolute;left:460px;top:40px;width:1000px;height:1000px}
+
+#stage2{position:absolute;inset:0;transform-origin:50% 50%}
+#kick{left:0;width:1920px;top:250px;text-align:center;font-size:44px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+#bar{left:180px;top:390px;width:1560px;height:200px;border-radius:100px;background:var(--card);border:2px solid var(--line);transform-origin:50% 50%}
+#lock{left:244px;top:458px;width:64px;height:64px}
+#url{left:438.4px;top:418px;height:145.6px;font-size:104px;line-height:1.4;font-weight:600}
+#host{position:absolute;left:0;top:0;width:499.2px;height:100%}
+.path{position:absolute;left:499.2px;top:0;width:624px;height:100%;color:var(--moss)}
+.label{position:absolute;left:0;width:1920px;top:660px;text-align:center;font-size:72px;font-weight:600;letter-spacing:-.02em}
+.redir{position:absolute;left:0;width:1920px;top:770px;text-align:center;font-size:44px;color:var(--muted)}
+</style></head>
+<body>
+<div id="root" data-composition-id="paths" data-width="1920" data-height="1080" data-duration="7" data-fps="30">
+<div id="stage2" data-layout-allow-overflow>
+<div class="abs" id="kick">Short links</div>
+<div class="abs" id="bar"></div>
+<svg class="abs" id="lock" viewBox="0 0 24 24" fill="none" stroke="#A3ADA3" stroke-width="2" stroke-linecap="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+<div class="abs mono" id="url" data-layout-allow-overflow><div id="host"><span class="ch" style="left:0px;width:62.4px">a</span><span class="ch" style="left:62.4px;width:62.4px">n</span><span class="ch" style="left:124.8px;width:62.4px">y</span><span class="ch" style="left:187.2px;width:62.4px">r</span><span class="ch" style="left:249.6px;width:62.4px">.</span><span class="ch" style="left:312px;width:62.4px">d</span><span class="ch" style="left:374.4px;width:62.4px">e</span><span class="ch" style="left:436.8px;width:62.4px">v</span></div><div class="path mono" id="p0"><span class="ch" style="left:0px;width:62.4px">/</span><span class="ch" style="left:62.4px;width:62.4px">c</span><span class="ch" style="left:124.8px;width:62.4px">l</span><span class="ch" style="left:187.2px;width:62.4px">i</span></div><div class="path mono" id="p1"><span class="ch" style="left:0px;width:62.4px">/</span><span class="ch" style="left:62.4px;width:62.4px">m</span><span class="ch" style="left:124.8px;width:62.4px">o</span><span class="ch" style="left:187.2px;width:62.4px">d</span><span class="ch" style="left:249.6px;width:62.4px">e</span><span class="ch" style="left:312px;width:62.4px">l</span><span class="ch" style="left:374.4px;width:62.4px">s</span></div><div class="path mono" id="p2"><span class="ch" style="left:0px;width:62.4px">/</span><span class="ch" style="left:62.4px;width:62.4px">d</span><span class="ch" style="left:124.8px;width:62.4px">a</span><span class="ch" style="left:187.2px;width:62.4px">s</span><span class="ch" style="left:249.6px;width:62.4px">h</span><span class="ch" style="left:312px;width:62.4px">b</span><span class="ch" style="left:374.4px;width:62.4px">o</span><span class="ch" style="left:436.8px;width:62.4px">a</span><span class="ch" style="left:499.2px;width:62.4px">r</span><span class="ch" style="left:561.6px;width:62.4px">d</span></div><div class="path mono" id="p3"><span class="ch" style="left:0px;width:62.4px">/</span><span class="ch" style="left:62.4px;width:62.4px">d</span><span class="ch" style="left:124.8px;width:62.4px">o</span><span class="ch" style="left:187.2px;width:62.4px">c</span><span class="ch" style="left:249.6px;width:62.4px">s</span></div><div class="path mono" id="p4"><span class="ch" style="left:0px;width:62.4px">/</span><span class="ch" style="left:62.4px;width:62.4px">c</span><span class="ch" style="left:124.8px;width:62.4px">h</span><span class="ch" style="left:187.2px;width:62.4px">a</span><span class="ch" style="left:249.6px;width:62.4px">t</span></div><div class="path mono" id="p5"><span class="ch" style="left:0px;width:62.4px">/</span><span class="ch" style="left:62.4px;width:62.4px">p</span><span class="ch" style="left:124.8px;width:62.4px">r</span><span class="ch" style="left:187.2px;width:62.4px">i</span><span class="ch" style="left:249.6px;width:62.4px">c</span><span class="ch" style="left:312px;width:62.4px">i</span><span class="ch" style="left:374.4px;width:62.4px">n</span><span class="ch" style="left:436.8px;width:62.4px">g</span></div><div class="path mono" id="p6"><span class="ch" style="left:0px;width:62.4px">/</span><span class="ch" style="left:62.4px;width:62.4px">a</span><span class="ch" style="left:124.8px;width:62.4px">r</span><span class="ch" style="left:187.2px;width:62.4px">t</span><span class="ch" style="left:249.6px;width:62.4px">i</span><span class="ch" style="left:312px;width:62.4px">f</span><span class="ch" style="left:374.4px;width:62.4px">a</span><span class="ch" style="left:436.8px;width:62.4px">c</span><span class="ch" style="left:499.2px;width:62.4px">t</span><span class="ch" style="left:561.6px;width:62.4px">s</span></div><div class="path mono" id="p7"><span class="ch" style="left:0px;width:62.4px">/</span><span class="ch" style="left:62.4px;width:62.4px">c</span><span class="ch" style="left:124.8px;width:62.4px">h</span><span class="ch" style="left:187.2px;width:62.4px">a</span><span class="ch" style="left:249.6px;width:62.4px">n</span><span class="ch" style="left:312px;width:62.4px">g</span><span class="ch" style="left:374.4px;width:62.4px">e</span><span class="ch" style="left:436.8px;width:62.4px">l</span><span class="ch" style="left:499.2px;width:62.4px">o</span><span class="ch" style="left:561.6px;width:62.4px">g</span></div></div>
+<div class="label" id="l0">The anyr CLI</div><div class="label" id="l1">Every model</div><div class="label" id="l2">Your dashboard</div><div class="label" id="l3">The docs</div><div class="label" id="l4">Chat with any model</div><div class="label" id="l5">Pricing</div><div class="label" id="l6">Artifacts</div><div class="label" id="l7">What's new</div>
+<div class="redir mono" id="r0">→ anyrouter.dev/cli</div><div class="redir mono" id="r1">→ anyrouter.dev/models</div><div class="redir mono" id="r2">→ anyrouter.dev/dashboard</div><div class="redir mono" id="r3">→ anyrouter.dev/docs</div><div class="redir mono" id="r4">→ anyrouter.dev/chat</div><div class="redir mono" id="r5">→ anyrouter.dev/pricing</div><div class="redir mono" id="r6">→ anyrouter.dev/artifacts</div><div class="redir mono" id="r7">→ anyrouter.dev/changelog</div>
+</div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.from("#kick",{y:30,opacity:0,duration:0.5,ease:"expo.out"},0.05);
+tl.from("#bar",{scaleX:0.6,opacity:0,duration:0.55,ease:"expo.out"},0);
+tl.from("#host .ch",{y:80,opacity:0,duration:0.45,ease:"expo.out",stagger:0.025},0.1);
+tl.set(".path,.label,.redir",{opacity:0});
+tl.set("#p0,#l0,#r0",{opacity:1},0.500);
+tl.from("#p0 .ch",{y:110,opacity:0,duration:0.38,ease:"expo.out",stagger:0.018},0.500);
+tl.from("#l0",{y:36,opacity:0,duration:0.4,ease:"expo.out"},0.550);
+tl.from("#r0",{y:24,opacity:0,duration:0.4,ease:"expo.out"},0.600);
+tl.to("#p0 .ch",{y:-90,opacity:0,duration:0.22,ease:"power2.in",stagger:0.012},1.050);
+tl.to("#l0,#r0",{y:-30,opacity:0,duration:0.2,ease:"power2.in"},1.050);
+tl.set("#p1,#l1,#r1",{opacity:1},1.250);
+tl.from("#p1 .ch",{y:110,opacity:0,duration:0.38,ease:"expo.out",stagger:0.018},1.250);
+tl.from("#l1",{y:36,opacity:0,duration:0.4,ease:"expo.out"},1.300);
+tl.from("#r1",{y:24,opacity:0,duration:0.4,ease:"expo.out"},1.350);
+tl.to("#p1 .ch",{y:-90,opacity:0,duration:0.22,ease:"power2.in",stagger:0.012},1.800);
+tl.to("#l1,#r1",{y:-30,opacity:0,duration:0.2,ease:"power2.in"},1.800);
+tl.set("#p2,#l2,#r2",{opacity:1},2.000);
+tl.from("#p2 .ch",{y:110,opacity:0,duration:0.38,ease:"expo.out",stagger:0.018},2.000);
+tl.from("#l2",{y:36,opacity:0,duration:0.4,ease:"expo.out"},2.050);
+tl.from("#r2",{y:24,opacity:0,duration:0.4,ease:"expo.out"},2.100);
+tl.to("#p2 .ch",{y:-90,opacity:0,duration:0.22,ease:"power2.in",stagger:0.012},2.550);
+tl.to("#l2,#r2",{y:-30,opacity:0,duration:0.2,ease:"power2.in"},2.550);
+tl.set("#p3,#l3,#r3",{opacity:1},2.750);
+tl.from("#p3 .ch",{y:110,opacity:0,duration:0.38,ease:"expo.out",stagger:0.018},2.750);
+tl.from("#l3",{y:36,opacity:0,duration:0.4,ease:"expo.out"},2.800);
+tl.from("#r3",{y:24,opacity:0,duration:0.4,ease:"expo.out"},2.850);
+tl.to("#p3 .ch",{y:-90,opacity:0,duration:0.22,ease:"power2.in",stagger:0.012},3.300);
+tl.to("#l3,#r3",{y:-30,opacity:0,duration:0.2,ease:"power2.in"},3.300);
+tl.set("#p4,#l4,#r4",{opacity:1},3.500);
+tl.from("#p4 .ch",{y:110,opacity:0,duration:0.38,ease:"expo.out",stagger:0.018},3.500);
+tl.from("#l4",{y:36,opacity:0,duration:0.4,ease:"expo.out"},3.550);
+tl.from("#r4",{y:24,opacity:0,duration:0.4,ease:"expo.out"},3.600);
+tl.to("#p4 .ch",{y:-90,opacity:0,duration:0.22,ease:"power2.in",stagger:0.012},4.050);
+tl.to("#l4,#r4",{y:-30,opacity:0,duration:0.2,ease:"power2.in"},4.050);
+tl.set("#p5,#l5,#r5",{opacity:1},4.250);
+tl.from("#p5 .ch",{y:110,opacity:0,duration:0.38,ease:"expo.out",stagger:0.018},4.250);
+tl.from("#l5",{y:36,opacity:0,duration:0.4,ease:"expo.out"},4.300);
+tl.from("#r5",{y:24,opacity:0,duration:0.4,ease:"expo.out"},4.350);
+tl.to("#p5 .ch",{y:-90,opacity:0,duration:0.22,ease:"power2.in",stagger:0.012},4.800);
+tl.to("#l5,#r5",{y:-30,opacity:0,duration:0.2,ease:"power2.in"},4.800);
+tl.set("#p6,#l6,#r6",{opacity:1},5.000);
+tl.from("#p6 .ch",{y:110,opacity:0,duration:0.38,ease:"expo.out",stagger:0.018},5.000);
+tl.from("#l6",{y:36,opacity:0,duration:0.4,ease:"expo.out"},5.050);
+tl.from("#r6",{y:24,opacity:0,duration:0.4,ease:"expo.out"},5.100);
+tl.to("#p6 .ch",{y:-90,opacity:0,duration:0.22,ease:"power2.in",stagger:0.012},5.550);
+tl.to("#l6,#r6",{y:-30,opacity:0,duration:0.2,ease:"power2.in"},5.550);
+tl.set("#p7,#l7,#r7",{opacity:1},5.750);
+tl.from("#p7 .ch",{y:110,opacity:0,duration:0.38,ease:"expo.out",stagger:0.018},5.750);
+tl.from("#l7",{y:36,opacity:0,duration:0.4,ease:"expo.out"},5.800);
+tl.from("#r7",{y:24,opacity:0,duration:0.4,ease:"expo.out"},5.850);
+tl.to("#stage2",{scale:1.04,duration:7,ease:"sine.inOut"},0);
+tl.to("#stage2",{opacity:0,y:-40,duration:0.35,ease:"power2.in"},6.6);
+window.__timelines["paths"] = tl;
+</script>
+</body></html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>anyr.dev — short links</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:'Geist';src:url('assets/fonts/geist.woff2') format('woff2-variations');font-weight:100 900;font-display:block}
+@font-face{font-family:'GeistMono';src:url('assets/fonts/geist-mono.woff2') format('woff2-variations');font-weight:100 900;font-display:block}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#070907}
+#root{position:relative;width:1920px;height:1080px;overflow:hidden;background:#070907}
+#wash{position:absolute;left:-480px;top:-540px;width:2880px;height:2160px;background:radial-gradient(closest-side at 50% 50%,rgba(56,110,62,.55),rgba(20,40,24,.25) 55%,rgba(7,9,7,0) 100%);transform-origin:50% 50%}
+#grain{position:absolute;inset:0;width:1920px;height:1080px;opacity:.10;mix-blend-mode:screen}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)}
+</style></head>
+<body>
+<div id="root" data-composition-id="main" data-width="1920" data-height="1080" data-duration="18" data-fps="30">
+  <div id="wash" data-layout-allow-overflow></div>
+  <svg id="grain" viewBox="0 0 1920 1080"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.4 -0.3"/></filter><rect width="1920" height="1080" filter="url(#n)"/></svg>
+  <div id="vig"></div>
+  <div id="clip-cut" class="clip" data-composition-id="cut" data-composition-src="compositions/cut.html" data-start="0" data-duration="6" data-track-kind="graphics" data-track-index="1"></div>
+  <div id="clip-paths" class="clip" data-composition-id="paths" data-composition-src="compositions/paths.html" data-start="6" data-duration="7" data-track-kind="graphics" data-track-index="1"></div>
+  <div id="clip-back" class="clip" data-composition-id="back" data-composition-src="compositions/back.html" data-start="13" data-duration="5" data-track-kind="graphics" data-track-index="1"></div>
+  <audio id="music" data-start="0" data-duration="18" data-track-index="9" src="assets/audio/score.wav" data-volume="1"></audio>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#wash",{scale:0.8,x:-120,y:60},{scale:1.15,x:140,y:-40,duration:18,ease:"sine.inOut"},0);
+window.__timelines["main"] = tl;
+</script>
+</body></html>

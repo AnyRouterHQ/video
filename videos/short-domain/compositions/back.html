@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>back</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:'Geist';src:url('assets/fonts/geist.woff2') format('woff2-variations');font-weight:100 900;font-display:block}
+@font-face{font-family:'GeistMono';src:url('assets/fonts/geist-mono.woff2') format('woff2-variations');font-weight:100 900;font-display:block}
+:root{--fg:#F3F5F1;--muted:#A3ADA3;--moss:#9BDB8F;--amber:#F2A54A;--card:#0F1310;--line:rgba(243,245,241,.14)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Geist',system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1920px;height:1080px;overflow:hidden}
+.mono{font-family:'GeistMono',ui-monospace,monospace}
+.abs{position:absolute}
+.ch{position:absolute;top:0;display:block;text-align:center}
+.logo{position:absolute;left:460px;top:40px;width:1000px;height:1000px}
+#dom{position:absolute;left:258px;top:560px;width:1404px;height:225px;font-size:180px;line-height:1.25;font-weight:600;letter-spacing:0}
+.dev{color:var(--muted)}
+#caret{position:absolute;left:-6px;top:32.4px;width:12px;height:171px;background:var(--moss);border-radius:3px}
+#glow3{left:260px;top:-160px;width:1400px;height:1400px;border-radius:50%;background:radial-gradient(closest-side,rgba(155,219,143,.22),rgba(155,219,143,0));opacity:0;transform-origin:50% 50%}
+</style></head>
+<body>
+<div id="root" data-composition-id="back" data-width="1920" data-height="1080" data-duration="5" data-fps="30">
+<div class="abs" id="glow3" data-layout-allow-overflow></div>
+<img class="logo" id="logo" src="assets/logo.svg" alt="AnyRouter" />
+<div id="dom" class="mono" data-layout-allow-overflow><span class="ch " id="c0" style="left:0px;width:108px">a</span><span class="ch " id="c1" style="left:108px;width:108px">n</span><span class="ch " id="c2" style="left:216px;width:108px">y</span><span class="ch " id="c3" style="left:324px;width:108px">r</span><span class="ch " id="c4" style="left:432px;width:108px">o</span><span class="ch " id="c5" style="left:540px;width:108px">u</span><span class="ch " id="c6" style="left:648px;width:108px">t</span><span class="ch " id="c7" style="left:756px;width:108px">e</span><span class="ch " id="c8" style="left:864px;width:108px">r</span><span class="ch dev" id="c9" style="left:972px;width:108px">.</span><span class="ch dev" id="c10" style="left:1080px;width:108px">d</span><span class="ch dev" id="c11" style="left:1188px;width:108px">e</span><span class="ch dev" id="c12" style="left:1296px;width:108px">v</span><span id="caret" data-layout-allow-occlusion></span></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+gsap.set("#logo",{transformOrigin:"50% 50%",scale:0.22,y:-320,opacity:0});
+gsap.set("#c0",{x:270});
+gsap.set("#c1",{x:270});
+gsap.set("#c2",{x:270});
+gsap.set("#c3",{x:270});
+gsap.set("#c4",{x:270,opacity:0});
+gsap.set("#c5",{x:270,opacity:0});
+gsap.set("#c6",{x:270,opacity:0});
+gsap.set("#c7",{x:270,opacity:0});
+gsap.set("#c8",{x:270,opacity:0});
+gsap.set("#c9",{x:-270});
+gsap.set("#c10",{x:-270});
+gsap.set("#c11",{x:-270});
+gsap.set("#c12",{x:-270});
+tl.from("#c0,#c1,#c2,#c3,#c9,#c10,#c11,#c12",{y:120,opacity:0,duration:0.45,ease:"expo.out",stagger:0.03},0.05);
+gsap.set("#caret",{x:702});
+tl.from("#caret",{opacity:0,duration:0.1},0.35);
+tl.to("#c0,#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9,#c10,#c11,#c12",{x:(i)=>[216,216,216,216,216,216,216,216,216,-216,-216,-216,-216][i],duration:0.14,ease:"power3.out"},0.500);
+tl.fromTo("#c4",{opacity:0,scale:0.4,y:30},{opacity:1,scale:1,y:0,duration:0.18,ease:"back.out(2)"},0.500);
+tl.to("#caret",{x:756,duration:0.14,ease:"power3.out"},0.500);
+tl.to("#c0,#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9,#c10,#c11,#c12",{x:(i)=>[162,162,162,162,162,162,162,162,162,-162,-162,-162,-162][i],duration:0.14,ease:"power3.out"},0.750);
+tl.fromTo("#c5",{opacity:0,scale:0.4,y:30},{opacity:1,scale:1,y:0,duration:0.18,ease:"back.out(2)"},0.750);
+tl.to("#caret",{x:810,duration:0.14,ease:"power3.out"},0.750);
+tl.to("#c0,#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9,#c10,#c11,#c12",{x:(i)=>[108,108,108,108,108,108,108,108,108,-108,-108,-108,-108][i],duration:0.14,ease:"power3.out"},1.000);
+tl.fromTo("#c6",{opacity:0,scale:0.4,y:30},{opacity:1,scale:1,y:0,duration:0.18,ease:"back.out(2)"},1.000);
+tl.to("#caret",{x:864,duration:0.14,ease:"power3.out"},1.000);
+tl.to("#c0,#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9,#c10,#c11,#c12",{x:(i)=>[54,54,54,54,54,54,54,54,54,-54,-54,-54,-54][i],duration:0.14,ease:"power3.out"},1.250);
+tl.fromTo("#c7",{opacity:0,scale:0.4,y:30},{opacity:1,scale:1,y:0,duration:0.18,ease:"back.out(2)"},1.250);
+tl.to("#caret",{x:918,duration:0.14,ease:"power3.out"},1.250);
+tl.to("#c0,#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9,#c10,#c11,#c12",{x:(i)=>[0,0,0,0,0,0,0,0,0,0,0,0,0][i],duration:0.14,ease:"power3.out"},1.500);
+tl.fromTo("#c8",{opacity:0,scale:0.4,y:30},{opacity:1,scale:1,y:0,duration:0.18,ease:"back.out(2)"},1.500);
+tl.to("#caret",{x:972,duration:0.14,ease:"power3.out"},1.500);
+tl.to("#c9,#c10,#c11,#c12",{color:"#A3ADA3",duration:0.2},1.5);
+tl.to("#caret",{opacity:0,duration:0.01,repeat:3,yoyo:true,repeatDelay:0.22},1.6);
+tl.set("#caret",{opacity:0},2.2);
+// the logo returns, then the camera pushes into it: the intro, in reverse
+tl.to("#logo",{opacity:1,duration:0.4,ease:"power2.out"},1.9);
+tl.from("#logo",{scale:0.12,duration:0.5,ease:"back.out(1.6)"},1.9);
+tl.to("#dom",{y:260,opacity:0,duration:0.7,ease:"expo.in"},2.4);
+tl.to("#logo",{scale:0.9,y:0,duration:1.1,ease:"expo.inOut"},2.4);
+tl.to("#glow3",{opacity:1,scale:1.2,duration:1.1,ease:"expo.inOut"},2.4);
+tl.to("#logo",{scale:0.97,duration:1.5,ease:"sine.out"},3.5);
+window.__timelines["back"] = tl;
+</script>
+</body></html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>cut</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:'Geist';src:url('assets/fonts/geist.woff2') format('woff2-variations');font-weight:100 900;font-display:block}
+@font-face{font-family:'GeistMono';src:url('assets/fonts/geist-mono.woff2') format('woff2-variations');font-weight:100 900;font-display:block}
+:root{--fg:#F3F5F1;--muted:#A3ADA3;--moss:#9BDB8F;--amber:#F2A54A;--card:#0F1310;--line:rgba(243,245,241,.14)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Geist',system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1920px;height:1080px;overflow:hidden}
+.mono{font-family:'GeistMono',ui-monospace,monospace}
+.abs{position:absolute}
+.ch{position:absolute;top:0;display:block;text-align:center}
+.logo{position:absolute;left:460px;top:40px;width:1000px;height:1000px}
+#dom{position:absolute;left:258px;top:560px;width:1404px;height:225px;font-size:180px;line-height:1.25;font-weight:600;letter-spacing:0}
+.dev{color:var(--muted)}
+#sub{left:0;width:1920px;top:850px;text-align:center;font-size:56px;font-weight:500;color:var(--muted);letter-spacing:-.01em}
+#sub b{color:var(--fg);font-weight:600}
+#halo{left:560px;top:420px;width:800px;height:440px;border-radius:50%;background:radial-gradient(closest-side,rgba(155,219,143,.30),rgba(155,219,143,0));opacity:0}
+</style></head>
+<body>
+<div id="root" data-composition-id="cut" data-width="1920" data-height="1080" data-duration="6" data-fps="30">
+<div class="abs" id="halo"></div>
+<img class="logo" id="logo" src="assets/logo.svg" alt="AnyRouter" />
+<div id="dom" class="mono" data-layout-allow-overflow><span class="ch " id="c0" style="left:0px;width:108px">a</span><span class="ch " id="c1" style="left:108px;width:108px">n</span><span class="ch " id="c2" style="left:216px;width:108px">y</span><span class="ch " id="c3" style="left:324px;width:108px">r</span><span class="ch " id="c4" style="left:432px;width:108px">o</span><span class="ch " id="c5" style="left:540px;width:108px">u</span><span class="ch " id="c6" style="left:648px;width:108px">t</span><span class="ch " id="c7" style="left:756px;width:108px">e</span><span class="ch " id="c8" style="left:864px;width:108px">r</span><span class="ch dev" id="c9" style="left:972px;width:108px">.</span><span class="ch dev" id="c10" style="left:1080px;width:108px">d</span><span class="ch dev" id="c11" style="left:1188px;width:108px">e</span><span class="ch dev" id="c12" style="left:1296px;width:108px">v</span></div>
+<div class="abs" id="sub">Same AnyRouter. <b>Five fewer letters.</b></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.set("#logo",{transformOrigin:"50% 50%",scale:0.9});
+tl.to("#logo",{scale:0.22,y:-300,duration:1.4,ease:"expo.inOut"},0.15);
+tl.from("#dom .ch",{y:140,opacity:0,duration:0.6,ease:"expo.out",stagger:0.035},0.95);
+// mark the five letters that go
+tl.to("#c4,#c5,#c6,#c7,#c8",{color:"#F2A54A",duration:0.2,ease:"none"},1.85);
+// backspace them, right to left, on the quarter-beat grid
+tl.to("#c8",{y:120,rotation:14,opacity:0,duration:0.32,ease:"power3.in"},2.25);
+tl.to("#c7",{y:150,rotation:-18,opacity:0,duration:0.32,ease:"power3.in"},2.5);
+tl.to("#c6",{y:120,rotation:10,opacity:0,duration:0.32,ease:"power3.in"},2.75);
+tl.to("#c5",{y:150,rotation:-12,opacity:0,duration:0.32,ease:"power3.in"},3);
+tl.to("#c4",{y:120,rotation:16,opacity:0,duration:0.32,ease:"power3.in"},3.25);
+// close the gap and re-centre: anyr -> +270, .dev -> -270
+tl.to("#c0,#c1,#c2,#c3",{x:270,duration:0.5,ease:"expo.inOut"},3.5);
+tl.to("#c9,#c10,#c11,#c12",{x:-270,duration:0.5,ease:"expo.inOut"},3.5);
+// land
+tl.to("#c9,#c10,#c11,#c12",{color:"#9BDB8F",duration:0.15,ease:"none"},4.0);
+tl.fromTo("#dom",{scale:1},{scale:1.08,duration:0.12,ease:"power2.out",yoyo:true,repeat:1},4.0);
+tl.to("#halo",{opacity:1,duration:0.25,ease:"power2.out"},4.0);
+tl.to("#halo",{opacity:0.55,duration:1.2,ease:"sine.inOut"},4.3);
+tl.from("#sub",{y:40,opacity:0,duration:0.6,ease:"expo.out"},4.45);
+tl.to("#logo",{y:-320,duration:1.3,ease:"sine.inOut"},4.3);
+// leave
+tl.to("#dom,#sub,#halo",{opacity:0,y:-40,duration:0.35,ease:"power2.in"},5.6);
+tl.to("#logo",{opacity:0,y:-360,duration:0.35,ease:"power2.in"},5.6);
+window.__timelines["cut"] = tl;
+</script>
+</body></html>
