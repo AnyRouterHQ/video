@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-11-20T16:10:05.020Z",
+  "mode": "diff",
+  "kind": "price-cut",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 500,
+    "listed": 491,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 99,
+    "providerBackends": 99,
+    "free": 70
+  },
+  "pool": {
+    "keys": 396,
+    "donors": 240,
+    "requests": 313138
+  },
+  "added": [],
+  "changed": [
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "from": "0.04/0.144@1050000",
+      "to": "0.015/0.06@1050000",
+      "kind": "price-cut"
+    },
+    {
+      "id": "openai/gpt-6.2-astra",
+      "from": "0.4/2@1050000",
+      "to": "1.6/8@1050000",
+      "kind": "price-rise"
+    },
+    {
+      "id": "openai/gpt-6.2-sol",
+      "from": "0.1/0.5@1050000",
+      "to": "0.4/2@1050000",
+      "kind": "price-rise"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "deepseek/deepseek-v4.1-flash",
+    "name": "DeepSeek V4.1 Flash",
+    "provider": "DeepSeek",
+    "logo": "deepseek-color.svg",
+    "context": 1050000,
+    "inPrice": 0.015,
+    "outPrice": 0.06,
+    "free": false,
+    "created": 1788998400,
+    "category": "text",
+    "excerpt": "DeepSeek V4.1 Flash is the open-weight, cost-efficient sparse mixture-of-experts tier of the V4.1 family."
+  },
+  "notable": true,
+  "label": "price-cut",
+  "parts": [
+    "~deepseek/deepseek-v4.1-flash 0.04/0.144@1050000->0.015/0.06@1050000",
+    "~openai/gpt-6.2-astra 0.4/2@1050000->1.6/8@1050000",
+    "~openai/gpt-6.2-sol 0.1/0.5@1050000->0.4/2@1050000"
+  ]
+}
