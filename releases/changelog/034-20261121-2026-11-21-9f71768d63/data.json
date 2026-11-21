@@ -1,0 +1,37 @@
+{
+  "notable": true,
+  "label": "2026-11-21",
+  "parts": [
+    "2026-11-21-bison-1",
+    "2026-11-21-groundhog-1",
+    "2026-11-21-inkling-2-mini"
+  ],
+  "date": "2026-11-21",
+  "entries": [
+    {
+      "slug": "2026-11-21-bison-1",
+      "date": "2026-11-21",
+      "title": "Bison 1",
+      "summary": "Base Labs' top-ranked decision model joins the catalog with 128K context, text and image input, and a BYOK System One route through Baseten.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-21-bison-1",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-21-groundhog-1",
+      "date": "2026-11-21",
+      "title": "Groundhog 1",
+      "summary": "Base Labs' low-cost, long-context decision model joins the catalog with 128K context and a BYOK System One route through Baseten.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-21-groundhog-1",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-21-inkling-2-mini",
+      "date": "2026-11-21",
+      "title": "Inkling 2 Mini",
+      "summary": "Thinking Machines' small open-weights multimodal model joins the catalog. A 26.4B looped MoE with 1M context, BYOK through Tinker and OpenRouter.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-21-inkling-2-mini",
+      "type": "added"
+    }
+  ],
+  "total": 3
+}

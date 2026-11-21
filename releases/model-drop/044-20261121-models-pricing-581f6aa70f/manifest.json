@@ -1,0 +1,22 @@
+{
+  "id": "044-20261121-models-pricing-581f6aa70f",
+  "hash": "581f6aa70f",
+  "kind": "model-drop",
+  "label": "models+pricing",
+  "title": "3 new models: bison-1, groundhog-1, inkling-2-mini",
+  "seconds": 20,
+  "renderedAt": "2026-11-21T15:27:14.932Z",
+  "commit": "7c0df78",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-044-20261121-models-pricing-581f6aa70f.mp4",
+      "cover": "renders/model-drop-044-20261121-models-pricing-581f6aa70f.png"
+    }
+  },
+  "source": "renders/model-drop-044-20261121-models-pricing-581f6aa70f-source.tar.gz",
+  "createdAt": "2026-11-21T15:27:14.940Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-ed461991899a3c6f4704",
+    "draft": true
+  }
+}

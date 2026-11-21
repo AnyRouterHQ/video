@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-11-21T15:23:03.059Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 503,
+    "listed": 494,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 100,
+    "providerBackends": 100,
+    "free": 74
+  },
+  "pool": {
+    "keys": 402,
+    "donors": 244,
+    "requests": 317077
+  },
+  "added": [
+    {
+      "id": "baselabs/bison-1",
+      "name": "Bison 1",
+      "provider": "baselabs",
+      "logo": null,
+      "context": 131072,
+      "inPrice": 0.1,
+      "outPrice": 0,
+      "free": false,
+      "created": 1795132800,
+      "category": "text",
+      "excerpt": "Bison 1 is an open-weight Base Labs decision model post-trained from Gemma 4 31B."
+    },
+    {
+      "id": "baselabs/groundhog-1",
+      "name": "Groundhog 1",
+      "provider": "baselabs",
+      "logo": null,
+      "context": 131072,
+      "inPrice": 0.035,
+      "outPrice": 0,
+      "free": false,
+      "created": 1795132800,
+      "category": "text",
+      "excerpt": "Groundhog 1 is an open-weight Base Labs decision model post-trained from Gemma 4 26B-A4B."
+    },
+    {
+      "id": "thinkingmachines/inkling-2-mini",
+      "name": "Inkling 2 Mini",
+      "provider": "thinkingmachines",
+      "logo": "thinkingmachines.svg",
+      "context": 1048576,
+      "inPrice": 0.1,
+      "outPrice": 0.4,
+      "free": false,
+      "created": 1795132800,
+      "category": "multimodal",
+      "excerpt": "Inkling 2 Mini is Thinking Machines Lab's open-weights multimodal model."
+    }
+  ],
+  "changed": [
+    {
+      "id": "qwen/qwen4-max",
+      "from": "1.5/4.5@1000000",
+      "to": "0/0@1000000",
+      "kind": "price-cut"
+    },
+    {
+      "id": "stepfun-ai/step-3.7-flash",
+      "from": "0.2/1.15@262144",
+      "to": "0/0@262144",
+      "kind": "price-cut"
+    },
+    {
+      "id": "tencent/hy4-flash",
+      "from": "0.035/0.1405@1048576",
+      "to": "0/0@1048576",
+      "kind": "price-cut"
+    },
+    {
+      "id": "upstage/solar-mini4",
+      "from": "0.05/0.2@524288",
+      "to": "0/0@524288",
+      "kind": "price-cut"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "baselabs/bison-1",
+    "name": "Bison 1",
+    "provider": "baselabs",
+    "logo": null,
+    "context": 131072,
+    "inPrice": 0.1,
+    "outPrice": 0,
+    "free": false,
+    "created": 1795132800,
+    "category": "text",
+    "excerpt": "Bison 1 is an open-weight Base Labs decision model post-trained from Gemma 4 31B."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+baselabs/bison-1@0.1/0@131072",
+    "+baselabs/groundhog-1@0.035/0@131072",
+    "+thinkingmachines/inkling-2-mini@0.1/0.4@1048576",
+    "~qwen/qwen4-max 1.5/4.5@1000000->0/0@1000000",
+    "~stepfun-ai/step-3.7-flash 0.2/1.15@262144->0/0@262144",
+    "~tencent/hy4-flash 0.035/0.1405@1048576->0/0@1048576",
+    "~upstage/solar-mini4 0.05/0.2@524288->0/0@524288"
+  ]
+}

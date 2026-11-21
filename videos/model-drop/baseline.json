@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-20T16:10:05.020Z",
+  "acceptedAt": "2026-11-21T15:23:03.060Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -49,6 +49,8 @@
     "baai/bge-multilingual-gemma2",
     "baidu/ernie-5.5-flash-preview",
     "baidu/ernie-light-dt-1.0",
+    "baselabs/bison-1",
+    "baselabs/groundhog-1",
     "bytedance/ui-tars-1.5-7b",
     "bytedance-seed/doubao-seed-2-1-pro-260628",
     "bytedance-seed/seed-1.6",
@@ -403,6 +405,7 @@
     "thedrummer/skyfall-36b-v2",
     "thedrummer/unslopnemo-12b",
     "thenlper/gte-base",
+    "thinkingmachines/inkling-2-mini",
     "thinkingmachines/inkling-2-small",
     "thinkingmachines/inkling-small",
     "thinkingmachines/inkling",
@@ -781,6 +784,18 @@
       "inPrice": 1.13,
       "outPrice": 3.94,
       "context": 1024000
+    },
+    {
+      "id": "baselabs/bison-1",
+      "inPrice": 0.1,
+      "outPrice": 0,
+      "context": 131072
+    },
+    {
+      "id": "baselabs/groundhog-1",
+      "inPrice": 0.035,
+      "outPrice": 0,
+      "context": 131072
     },
     {
       "id": "bytedance/ui-tars-1.5-7b",
@@ -2626,8 +2641,8 @@
     },
     {
       "id": "qwen/qwen4-max",
-      "inPrice": 1.5,
-      "outPrice": 4.5,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 1000000
     },
     {
@@ -2806,8 +2821,8 @@
     },
     {
       "id": "stepfun-ai/step-3.7-flash",
-      "inPrice": 0.2,
-      "outPrice": 1.15,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 262144
     },
     {
@@ -2866,8 +2881,8 @@
     },
     {
       "id": "tencent/hy4-flash",
-      "inPrice": 0.035,
-      "outPrice": 0.1405,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 1048576
     },
     {
@@ -2905,6 +2920,12 @@
       "inPrice": 0.005,
       "outPrice": 0,
       "context": 512
+    },
+    {
+      "id": "thinkingmachines/inkling-2-mini",
+      "inPrice": 0.1,
+      "outPrice": 0.4,
+      "context": 1048576
     },
     {
       "id": "thinkingmachines/inkling-2-small",
@@ -2962,8 +2983,8 @@
     },
     {
       "id": "upstage/solar-mini4",
-      "inPrice": 0.05,
-      "outPrice": 0.2,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 524288
     },
     {

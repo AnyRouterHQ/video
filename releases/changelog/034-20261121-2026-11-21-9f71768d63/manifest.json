@@ -1,0 +1,26 @@
+{
+  "id": "034-20261121-2026-11-21-9f71768d63",
+  "hash": "9f71768d63",
+  "kind": "changelog",
+  "label": "2026-11-21",
+  "title": "3 changelog updates: Bison 1, Groundhog 1 +1 more",
+  "seconds": 26,
+  "renderedAt": "2026-11-21T15:26:03.850Z",
+  "commit": "7c0df78",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-034-20261121-2026-11-21-9f71768d63.mp4",
+      "cover": "renders/changelog-034-20261121-2026-11-21-9f71768d63.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-034-20261121-2026-11-21-9f71768d63-portrait.mp4",
+      "cover": "renders/changelog-034-20261121-2026-11-21-9f71768d63-portrait.png"
+    }
+  },
+  "source": "renders/changelog-034-20261121-2026-11-21-9f71768d63-source.tar.gz",
+  "createdAt": "2026-11-21T15:26:03.858Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-5562f68b375dfc0cc328",
+    "draft": true
+  }
+}
