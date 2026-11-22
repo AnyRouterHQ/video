@@ -1,0 +1,22 @@
+{
+  "id": "045-20261122-models-pricing-b2b5df1ca6",
+  "hash": "b2b5df1ca6",
+  "kind": "model-drop",
+  "label": "models+pricing",
+  "title": "2 new models: interfaze-1.1-lite, interfaze-1",
+  "seconds": 20,
+  "renderedAt": "2026-11-22T15:21:04.208Z",
+  "commit": "7b8f1e4",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-045-20261122-models-pricing-b2b5df1ca6.mp4",
+      "cover": "renders/model-drop-045-20261122-models-pricing-b2b5df1ca6.png"
+    }
+  },
+  "source": "renders/model-drop-045-20261122-models-pricing-b2b5df1ca6-source.tar.gz",
+  "createdAt": "2026-11-22T15:21:04.214Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-2f71623edffae22d7907",
+    "draft": true
+  }
+}

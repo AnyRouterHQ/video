@@ -1,0 +1,26 @@
+{
+  "id": "035-20261122-2026-11-18-43db3cb95c",
+  "hash": "43db3cb95c",
+  "kind": "changelog",
+  "label": "2026-11-18",
+  "title": "GPT-6.2 Astra",
+  "seconds": 13.5,
+  "renderedAt": "2026-11-22T15:20:00.160Z",
+  "commit": "7b8f1e4",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-035-20261122-2026-11-18-43db3cb95c.mp4",
+      "cover": "renders/changelog-035-20261122-2026-11-18-43db3cb95c.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-035-20261122-2026-11-18-43db3cb95c-portrait.mp4",
+      "cover": "renders/changelog-035-20261122-2026-11-18-43db3cb95c-portrait.png"
+    }
+  },
+  "source": "renders/changelog-035-20261122-2026-11-18-43db3cb95c-source.tar.gz",
+  "createdAt": "2026-11-22T15:20:00.164Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-895403e3f59bd0f0e134",
+    "draft": true
+  }
+}

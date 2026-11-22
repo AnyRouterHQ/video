@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-11-22T15:18:19.241Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 505,
+    "listed": 496,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 101,
+    "providerBackends": 101,
+    "free": 74
+  },
+  "pool": {
+    "keys": 410,
+    "donors": 250,
+    "requests": 324188
+  },
+  "added": [
+    {
+      "id": "interfaze/interfaze-1.1-lite",
+      "name": "Interfaze 1.1 Lite",
+      "provider": "interfaze",
+      "logo": null,
+      "context": 131072,
+      "inPrice": 0.85,
+      "outPrice": 1.5,
+      "free": false,
+      "created": 1791849600,
+      "category": "multimodal",
+      "excerpt": "Interfaze 1.1 Lite is the smaller open-weight Interfaze model."
+    },
+    {
+      "id": "interfaze/interfaze-1",
+      "name": "Interfaze 1",
+      "provider": "interfaze",
+      "logo": null,
+      "context": 1000000,
+      "inPrice": 1.5,
+      "outPrice": 3.5,
+      "free": false,
+      "created": 1756339200,
+      "category": "multimodal",
+      "excerpt": "Interfaze 1 is the flagship Interfaze model for deterministic tasks such as OCR, extraction, and long documents."
+    }
+  ],
+  "changed": [
+    {
+      "id": "moonshotai/kimi-k2",
+      "from": "0.57/2.3@131072",
+      "to": "0.57/2.3@256000",
+      "kind": "context"
+    },
+    {
+      "id": "perplexity/sonar-reasoning-pro",
+      "from": "2/8@128000",
+      "to": "2/8@131072",
+      "kind": "context"
+    },
+    {
+      "id": "qwen/qwen3.5-flash",
+      "from": "0.1/0.4@1000000",
+      "to": "0.1/0.4@1024000",
+      "kind": "context"
+    },
+    {
+      "id": "z-ai/glm-5.3-prime",
+      "from": "1.4/4.4@1000000",
+      "to": "1.4/4.4@1048576",
+      "kind": "context"
+    }
+  ],
+  "removed": [],
+  "spotlight": {
+    "id": "interfaze/interfaze-1.1-lite",
+    "name": "Interfaze 1.1 Lite",
+    "provider": "interfaze",
+    "logo": null,
+    "context": 131072,
+    "inPrice": 0.85,
+    "outPrice": 1.5,
+    "free": false,
+    "created": 1791849600,
+    "category": "multimodal",
+    "excerpt": "Interfaze 1.1 Lite is the smaller open-weight Interfaze model."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+interfaze/interfaze-1.1-lite@0.85/1.5@131072",
+    "+interfaze/interfaze-1@1.5/3.5@1000000",
+    "~moonshotai/kimi-k2 0.57/2.3@131072->0.57/2.3@256000",
+    "~perplexity/sonar-reasoning-pro 2/8@128000->2/8@131072",
+    "~qwen/qwen3.5-flash 0.1/0.4@1000000->0.1/0.4@1024000",
+    "~z-ai/glm-5.3-prime 1.4/4.4@1000000->1.4/4.4@1048576"
+  ]
+}

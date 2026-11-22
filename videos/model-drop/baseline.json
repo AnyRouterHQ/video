@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-21T15:23:03.060Z",
+  "acceptedAt": "2026-11-22T15:18:19.242Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -133,6 +133,8 @@
     "inclusionai/ling-3.2-flash",
     "inference-net/schematron-v2-small",
     "inference-net/schematron-v2-turbo",
+    "interfaze/interfaze-1.1-lite",
+    "interfaze/interfaze-1",
     "intern/intern-s2-free",
     "intern/sage-s2.1-flash",
     "intfloat/e5-base-v2",
@@ -1290,6 +1292,18 @@
       "context": 128000
     },
     {
+      "id": "interfaze/interfaze-1.1-lite",
+      "inPrice": 0.85,
+      "outPrice": 1.5,
+      "context": 131072
+    },
+    {
+      "id": "interfaze/interfaze-1",
+      "inPrice": 1.5,
+      "outPrice": 3.5,
+      "context": 1000000
+    },
+    {
       "id": "intern/intern-s2-free",
       "inPrice": 0,
       "outPrice": 0,
@@ -1701,7 +1715,7 @@
       "id": "moonshotai/kimi-k2",
       "inPrice": 0.57,
       "outPrice": 2.3,
-      "context": 131072
+      "context": 256000
     },
     {
       "id": "moonshotai/kimi-k3.1-pro-highspeed",
@@ -2355,7 +2369,7 @@
       "id": "perplexity/sonar-reasoning-pro",
       "inPrice": 2,
       "outPrice": 8,
-      "context": 128000
+      "context": 131072
     },
     {
       "id": "perplexity/sonar",
@@ -2565,7 +2579,7 @@
       "id": "qwen/qwen3.5-flash",
       "inPrice": 0.1,
       "outPrice": 0.4,
-      "context": 1000000
+      "context": 1024000
     },
     {
       "id": "qwen/qwen3.5-plus",
@@ -3249,7 +3263,7 @@
       "id": "z-ai/glm-5.3-prime",
       "inPrice": 1.4,
       "outPrice": 4.4,
-      "context": 1000000
+      "context": 1048576
     },
     {
       "id": "z-ai/glm-5.3",

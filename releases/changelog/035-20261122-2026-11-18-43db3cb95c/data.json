@@ -1,0 +1,19 @@
+{
+  "notable": true,
+  "label": "2026-11-18",
+  "parts": [
+    "2026-11-18"
+  ],
+  "date": "2026-11-18",
+  "entries": [
+    {
+      "slug": "2026-11-18",
+      "date": "2026-11-18",
+      "title": "GPT-6.2 Astra",
+      "summary": "OpenAI's frontier model for complex professional work joins the catalog with your own OpenAI key.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-18",
+      "type": "added"
+    }
+  ],
+  "total": 1
+}
