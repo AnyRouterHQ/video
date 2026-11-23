@@ -874,6 +874,32 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-895403e3f59bd0f0e134",
         "draft": true
       }
+    },
+    {
+      "id": "036-20261123-2026-11-23-1d23fddf4d",
+      "hash": "1d23fddf4d",
+      "kind": "changelog",
+      "label": "2026-11-23",
+      "title": "Nemotron 3 Embed 1B disabled",
+      "seconds": 13.5,
+      "renderedAt": "2026-11-23T19:17:10.950Z",
+      "commit": "bdf28e1",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/changelog-036-20261123-2026-11-23-1d23fddf4d.mp4",
+          "cover": "renders/changelog-036-20261123-2026-11-23-1d23fddf4d.png"
+        },
+        "portrait": {
+          "artifact": "renders/changelog-036-20261123-2026-11-23-1d23fddf4d-portrait.mp4",
+          "cover": "renders/changelog-036-20261123-2026-11-23-1d23fddf4d-portrait.png"
+        }
+      },
+      "source": "renders/changelog-036-20261123-2026-11-23-1d23fddf4d-source.tar.gz",
+      "createdAt": "2026-11-23T19:17:10.957Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-49385d864183627a0816",
+        "draft": true
+      }
     }
   ]
 }

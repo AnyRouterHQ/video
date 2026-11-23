@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-11-23T19:15:02.052Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 506,
+    "listed": 497,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 102,
+    "providerBackends": 102,
+    "free": 76
+  },
+  "pool": {
+    "keys": 416,
+    "donors": 256,
+    "requests": 333485
+  },
+  "added": [
+    {
+      "id": "z-ai/glm-5.4",
+      "name": "GLM-5.4",
+      "provider": "Zhipu AI",
+      "logo": "z-ai.svg",
+      "context": 1048576,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1795392000,
+      "category": "text",
+      "excerpt": "GLM-5.4 is Z.ai's first flagship Loop Transformer: a shared block of layers runs for multiple iterations, giving reasoning depth comparable to 2T–3T parameter models without adding parameters."
+    },
+    {
+      "id": "sarvam/sarvam-105b",
+      "name": "Sarvam 105B",
+      "provider": "sarvam",
+      "logo": null,
+      "context": 131072,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1795305600,
+      "category": "text",
+      "excerpt": "Sarvam's flagship 105B-parameter sparse Mixture-of-Experts model with 10.3B active parameters, built for reasoning, tool use and the ten most-spoken Indian languages."
+    }
+  ],
+  "changed": [
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "from": "2/10@1048576",
+      "to": "2/10@1113088",
+      "kind": "context"
+    },
+    {
+      "id": "z-ai/glm-latest",
+      "from": "0.06/0.22@1310720",
+      "to": "0/0@1048576",
+      "kind": "price-cut"
+    },
+    {
+      "id": "moonshotai/kimi-pro-latest",
+      "from": "2/10@1048576",
+      "to": "2/10@1113088",
+      "kind": "context"
+    }
+  ],
+  "removed": [
+    "nvidia/nemotron-3-embed-1b"
+  ],
+  "spotlight": {
+    "id": "z-ai/glm-5.4",
+    "name": "GLM-5.4",
+    "provider": "Zhipu AI",
+    "logo": "z-ai.svg",
+    "context": 1048576,
+    "inPrice": 0,
+    "outPrice": 0,
+    "free": true,
+    "created": 1795392000,
+    "category": "text",
+    "excerpt": "GLM-5.4 is Z.ai's first flagship Loop Transformer: a shared block of layers runs for multiple iterations, giving reasoning depth comparable to 2T–3T parameter models without adding parameters."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+z-ai/glm-5.4@0/0@1048576",
+    "+sarvam/sarvam-105b@0/0@131072",
+    "~moonshotai/kimi-k3.1-pro 2/10@1048576->2/10@1113088",
+    "~z-ai/glm-latest 0.06/0.22@1310720->0/0@1048576",
+    "~moonshotai/kimi-pro-latest 2/10@1048576->2/10@1113088",
+    "-nvidia/nemotron-3-embed-1b"
+  ]
+}

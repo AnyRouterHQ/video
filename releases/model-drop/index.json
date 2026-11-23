@@ -977,6 +977,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-2f71623edffae22d7907",
         "draft": true
       }
+    },
+    {
+      "id": "046-20261123-models-pricing-88df312930",
+      "hash": "88df312930",
+      "kind": "model-drop",
+      "label": "models+pricing",
+      "title": "2 new models: glm-5.4, sarvam-105b",
+      "seconds": 20,
+      "renderedAt": "2026-11-23T19:18:33.499Z",
+      "commit": "bdf28e1",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-046-20261123-models-pricing-88df312930.mp4",
+          "cover": "renders/model-drop-046-20261123-models-pricing-88df312930.png"
+        }
+      },
+      "source": "renders/model-drop-046-20261123-models-pricing-88df312930-source.tar.gz",
+      "createdAt": "2026-11-23T19:18:33.508Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-6c23d83f06fe9a8d5770",
+        "draft": true
+      }
     }
   ]
 }
