@@ -1,0 +1,22 @@
+{
+  "id": "047-20261124-price-rise-7b8a8258d6",
+  "hash": "7b8a8258d6",
+  "kind": "model-drop",
+  "label": "price-rise",
+  "title": "Pricing update: gpt-5.6-luna",
+  "seconds": 20,
+  "renderedAt": "2026-11-24T18:55:22.916Z",
+  "commit": "209242c",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-047-20261124-price-rise-7b8a8258d6.mp4",
+      "cover": "renders/model-drop-047-20261124-price-rise-7b8a8258d6.png"
+    }
+  },
+  "source": "renders/model-drop-047-20261124-price-rise-7b8a8258d6-source.tar.gz",
+  "createdAt": "2026-11-24T18:55:22.920Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-a298830ea4e8fb45e5bb",
+    "draft": true
+  }
+}

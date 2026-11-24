@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-23T19:15:02.052Z",
+  "acceptedAt": "2026-11-24T18:54:17.350Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -2068,8 +2068,8 @@
     },
     {
       "id": "openai/gpt-5.6-luna",
-      "inPrice": 0.04,
-      "outPrice": 0.24,
+      "inPrice": 0.1,
+      "outPrice": 0.6,
       "context": 1050000
     },
     {
@@ -2128,8 +2128,8 @@
     },
     {
       "id": "openai/gpt-6-luna",
-      "inPrice": 0.02,
-      "outPrice": 0.1,
+      "inPrice": 0.05,
+      "outPrice": 0.25,
       "context": 1050000
     },
     {
