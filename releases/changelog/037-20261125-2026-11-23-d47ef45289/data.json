@@ -1,0 +1,28 @@
+{
+  "notable": true,
+  "label": "2026-11-23",
+  "parts": [
+    "2026-11-23-catalog",
+    "2026-11-23-disabled"
+  ],
+  "date": "2026-11-23",
+  "entries": [
+    {
+      "slug": "2026-11-23-catalog",
+      "date": "2026-11-23",
+      "title": "GPT-6 Astra Healthcare, GPT-6.2 Astra Healthcare, Solar Mini 4.5 (Preview) and 1 more added",
+      "summary": "4 models from 2 providers joined the catalog the week of 2026-11-23.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-23-catalog",
+      "type": "added"
+    },
+    {
+      "slug": "2026-11-23-disabled",
+      "date": "2026-11-23",
+      "title": "Nemotron 3 Embed 1B disabled",
+      "summary": "NVIDIA and Kilo both returned HTTP 410 end of life on 2026-11-23. The successor is nvidia/nemotron-3.5-embed-1b.",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-23-disabled",
+      "type": "disabled"
+    }
+  ],
+  "total": 2
+}

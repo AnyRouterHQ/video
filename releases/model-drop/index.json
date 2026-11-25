@@ -1021,6 +1021,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-a298830ea4e8fb45e5bb",
         "draft": true
       }
+    },
+    {
+      "id": "048-20261125-new-models-ea440b5a2d",
+      "hash": "ea440b5a2d",
+      "kind": "model-drop",
+      "label": "new-models",
+      "title": "4 new models: solar-mini-4-5, solar-pro-4-contributor, gpt-6.2-astra-healthcare +1 more",
+      "seconds": 20,
+      "renderedAt": "2026-11-25T18:02:51.535Z",
+      "commit": "969aca6",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-048-20261125-new-models-ea440b5a2d.mp4",
+          "cover": "renders/model-drop-048-20261125-new-models-ea440b5a2d.png"
+        }
+      },
+      "source": "renders/model-drop-048-20261125-new-models-ea440b5a2d-source.tar.gz",
+      "createdAt": "2026-11-25T18:02:51.545Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-c436515aa05820fd9545",
+        "draft": true
+      }
     }
   ]
 }

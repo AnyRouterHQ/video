@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-11-25T17:58:19.095Z",
+  "mode": "diff",
+  "kind": "new-models",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 510,
+    "listed": 501,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 102,
+    "providerBackends": 102,
+    "free": 80
+  },
+  "pool": {
+    "keys": 421,
+    "donors": 261,
+    "requests": 340416
+  },
+  "added": [
+    {
+      "id": "upstage/solar-mini-4-5",
+      "name": "Solar Mini 4.5 (Preview)",
+      "provider": "upstage",
+      "logo": "upstage.svg",
+      "context": 524288,
+      "inPrice": 0.01,
+      "outPrice": 0.04,
+      "free": false,
+      "created": 1795392000,
+      "category": "text",
+      "excerpt": "Solar Mini 4.5 Preview is the early-access release of Upstage's compact agentic model, a mixture-of-experts with 35B total and 3B active parameters and a 524,288-token context window."
+    },
+    {
+      "id": "upstage/solar-pro-4-contributor",
+      "name": "Solar Pro 4 Contributor",
+      "provider": "upstage",
+      "logo": "upstage.svg",
+      "context": 524288,
+      "inPrice": 0.09,
+      "outPrice": 0.36,
+      "free": false,
+      "created": 1795392000,
+      "category": "text",
+      "excerpt": "Solar Pro 4 Contributor is the same Solar Pro 4 model at 70% off Upstage's list price."
+    },
+    {
+      "id": "openai/gpt-6.2-astra-healthcare",
+      "name": "GPT-6.2 Astra Healthcare",
+      "provider": "OpenAI",
+      "logo": "openai-color.svg",
+      "context": 1050000,
+      "inPrice": 8,
+      "outPrice": 40,
+      "free": false,
+      "created": 1794960000,
+      "category": "text",
+      "excerpt": "GPT-6.2 Astra Healthcare is OpenAI's reasoning and chat model optimized for medical and healthcare applications."
+    },
+    {
+      "id": "openai/gpt-6-astra-healthcare",
+      "name": "GPT-6 Astra Healthcare",
+      "provider": "OpenAI",
+      "logo": "openai-color.svg",
+      "context": 1050000,
+      "inPrice": 8,
+      "outPrice": 40,
+      "free": false,
+      "created": 1788393600,
+      "category": "text",
+      "excerpt": "GPT-6 Astra Healthcare is OpenAI's reasoning and chat model optimized for medical and healthcare applications."
+    }
+  ],
+  "changed": [],
+  "removed": [],
+  "spotlight": {
+    "id": "upstage/solar-mini-4-5",
+    "name": "Solar Mini 4.5 (Preview)",
+    "provider": "upstage",
+    "logo": "upstage.svg",
+    "context": 524288,
+    "inPrice": 0.01,
+    "outPrice": 0.04,
+    "free": false,
+    "created": 1795392000,
+    "category": "text",
+    "excerpt": "Solar Mini 4.5 Preview is the early-access release of Upstage's compact agentic model, a mixture-of-experts with 35B total and 3B active parameters and a 524,288-token context window."
+  },
+  "notable": true,
+  "label": "new-models",
+  "parts": [
+    "+upstage/solar-mini-4-5@0.01/0.04@524288",
+    "+upstage/solar-pro-4-contributor@0.09/0.36@524288",
+    "+openai/gpt-6.2-astra-healthcare@8/40@1050000",
+    "+openai/gpt-6-astra-healthcare@8/40@1050000"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-24T18:54:17.350Z",
+  "acceptedAt": "2026-11-25T17:58:19.096Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -267,6 +267,7 @@
     "openai/gpt-5.6-terra-pro",
     "openai/gpt-5.6-terra",
     "openai/gpt-5",
+    "openai/gpt-6-astra-healthcare",
     "openai/gpt-6-astra-pro",
     "openai/gpt-6-astra",
     "openai/gpt-6-cyber",
@@ -279,6 +280,7 @@
     "openai/gpt-6.1-sol",
     "openai/gpt-6.1-terra-pro",
     "openai/gpt-6.1-terra",
+    "openai/gpt-6.2-astra-healthcare",
     "openai/gpt-6.2-astra-pro",
     "openai/gpt-6.2-astra",
     "openai/gpt-6.2-sol-pro",
@@ -417,7 +419,9 @@
     "undi95/remm-slerp-l2-13b",
     "upstage/solar-decide-flash",
     "upstage/solar-decide",
+    "upstage/solar-mini-4-5",
     "upstage/solar-mini4",
+    "upstage/solar-pro-4-contributor",
     "upstage/solar-pro4",
     "venice/google-gemma-4-26b-a4b-it",
     "venice/hermes-3-llama-3.1-405b",
@@ -2097,6 +2101,12 @@
       "context": 1000000
     },
     {
+      "id": "openai/gpt-6-astra-healthcare",
+      "inPrice": 8,
+      "outPrice": 40,
+      "context": 1050000
+    },
+    {
       "id": "openai/gpt-6-astra-pro",
       "inPrice": 10,
       "outPrice": 50,
@@ -2166,6 +2176,12 @@
       "id": "openai/gpt-6.1-terra",
       "inPrice": 0.2,
       "outPrice": 1,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6.2-astra-healthcare",
+      "inPrice": 8,
+      "outPrice": 40,
       "context": 1050000
     },
     {
@@ -2997,9 +3013,21 @@
       "context": 524288
     },
     {
+      "id": "upstage/solar-mini-4-5",
+      "inPrice": 0.01,
+      "outPrice": 0.04,
+      "context": 524288
+    },
+    {
       "id": "upstage/solar-mini4",
       "inPrice": 0,
       "outPrice": 0,
+      "context": 524288
+    },
+    {
+      "id": "upstage/solar-pro-4-contributor",
+      "inPrice": 0.09,
+      "outPrice": 0.36,
       "context": 524288
     },
     {

@@ -900,6 +900,32 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-49385d864183627a0816",
         "draft": true
       }
+    },
+    {
+      "id": "037-20261125-2026-11-23-d47ef45289",
+      "hash": "d47ef45289",
+      "kind": "changelog",
+      "label": "2026-11-23",
+      "title": "2 changelog updates: GPT-6 Astra Healthcare, GPT-6.2 Astra Healthcare, Solar Mini 4.5 (Preview) and 1 more added, Nemotron 3 Embed 1B disabled",
+      "seconds": 21.5,
+      "renderedAt": "2026-11-25T18:01:23.009Z",
+      "commit": "969aca6",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/changelog-037-20261125-2026-11-23-d47ef45289.mp4",
+          "cover": "renders/changelog-037-20261125-2026-11-23-d47ef45289.png"
+        },
+        "portrait": {
+          "artifact": "renders/changelog-037-20261125-2026-11-23-d47ef45289-portrait.mp4",
+          "cover": "renders/changelog-037-20261125-2026-11-23-d47ef45289-portrait.png"
+        }
+      },
+      "source": "renders/changelog-037-20261125-2026-11-23-d47ef45289-source.tar.gz",
+      "createdAt": "2026-11-25T18:01:23.017Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-634b9d91a34e848a9488",
+        "draft": true
+      }
     }
   ]
 }
