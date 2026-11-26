@@ -1,0 +1,26 @@
+{
+  "id": "038-20261126-2026-11-25-90053e4f7f",
+  "hash": "90053e4f7f",
+  "kind": "changelog",
+  "label": "2026-11-25",
+  "title": "Drex Max v1.1 disabled",
+  "seconds": 12.5,
+  "renderedAt": "2026-11-26T17:45:34.582Z",
+  "commit": "b2f5c84",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/changelog-038-20261126-2026-11-25-90053e4f7f.mp4",
+      "cover": "renders/changelog-038-20261126-2026-11-25-90053e4f7f.png"
+    },
+    "portrait": {
+      "artifact": "renders/changelog-038-20261126-2026-11-25-90053e4f7f-portrait.mp4",
+      "cover": "renders/changelog-038-20261126-2026-11-25-90053e4f7f-portrait.png"
+    }
+  },
+  "source": "renders/changelog-038-20261126-2026-11-25-90053e4f7f-source.tar.gz",
+  "createdAt": "2026-11-26T17:45:34.587Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-3b0ccb80941c2c24f77e",
+    "draft": true
+  }
+}

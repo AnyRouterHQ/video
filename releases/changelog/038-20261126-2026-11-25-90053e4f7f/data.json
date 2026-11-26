@@ -1,0 +1,19 @@
+{
+  "notable": true,
+  "label": "2026-11-25",
+  "parts": [
+    "2026-11-25-disabled"
+  ],
+  "date": "2026-11-25",
+  "entries": [
+    {
+      "slug": "2026-11-25-disabled",
+      "date": "2026-11-25",
+      "title": "Drex Max v1.1 disabled",
+      "summary": "Retired in favor of Drex Max v1.2 (nace-ai/drex-max-v1.2). Drex Max v1.2 serves all requests for this model; historical usage retains the v1.1 name and price. Fallback: nace-ai/drex-max → nace-ai/drex-max-v1.2",
+      "link": "https://anyrouter.dev/blog/releases/2026-11-25-disabled",
+      "type": "disabled"
+    }
+  ],
+  "total": 1
+}

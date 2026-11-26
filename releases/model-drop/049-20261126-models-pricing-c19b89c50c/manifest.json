@@ -1,0 +1,22 @@
+{
+  "id": "049-20261126-models-pricing-c19b89c50c",
+  "hash": "c19b89c50c",
+  "kind": "model-drop",
+  "label": "models+pricing",
+  "title": "nace-ai/drex-max-v1.2 is live on AnyRouter",
+  "seconds": 20,
+  "renderedAt": "2026-11-26T17:46:44.780Z",
+  "commit": "b2f5c84",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-049-20261126-models-pricing-c19b89c50c.mp4",
+      "cover": "renders/model-drop-049-20261126-models-pricing-c19b89c50c.png"
+    }
+  },
+  "source": "renders/model-drop-049-20261126-models-pricing-c19b89c50c-source.tar.gz",
+  "createdAt": "2026-11-26T17:46:44.787Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-070c5af45da9014b5121",
+    "draft": true
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-25T17:58:19.096Z",
+  "acceptedAt": "2026-11-26T17:43:47.725Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -211,7 +211,7 @@
     "morph/morph-v3-large",
     "motif-technologies/motif-3",
     "nace-ai/drex-max-finance",
-    "nace-ai/drex-max-v1.1",
+    "nace-ai/drex-max-v1.2",
     "nace-ai/drex-v1.5",
     "nace-ai/drex-v2.0",
     "nex-agi/nex-n2.5-mini",
@@ -1004,8 +1004,8 @@
     },
     {
       "id": "deepseek/deepseek-v4.1-flash",
-      "inPrice": 0.015,
-      "outPrice": 0.06,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 1050000
     },
     {
@@ -1730,8 +1730,8 @@
     },
     {
       "id": "moonshotai/kimi-k3.1-pro",
-      "inPrice": 2,
-      "outPrice": 10,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 1113088
     },
     {
@@ -1765,7 +1765,7 @@
       "context": 262144
     },
     {
-      "id": "nace-ai/drex-max-v1.1",
+      "id": "nace-ai/drex-max-v1.2",
       "inPrice": 0.03,
       "outPrice": 0,
       "context": 262144
@@ -2666,8 +2666,8 @@
     },
     {
       "id": "qwen/qwen4-max",
-      "inPrice": 0,
-      "outPrice": 0,
+      "inPrice": 1.5,
+      "outPrice": 4.5,
       "context": 1000000
     },
     {
@@ -3272,8 +3272,8 @@
     },
     {
       "id": "z-ai/glm-5.3-flash",
-      "inPrice": 0.09,
-      "outPrice": 0.3,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 1050000
     },
     {
@@ -3296,8 +3296,8 @@
     },
     {
       "id": "z-ai/glm-5.3",
-      "inPrice": 0.06,
-      "outPrice": 0.22,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 1310720
     },
     {
@@ -3428,8 +3428,8 @@
     },
     {
       "id": "z-ai/glm-flash-latest",
-      "inPrice": 0.09,
-      "outPrice": 0.3,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 1050000
     },
     {
@@ -3440,8 +3440,8 @@
     },
     {
       "id": "moonshotai/kimi-pro-latest",
-      "inPrice": 2,
-      "outPrice": 10,
+      "inPrice": 0,
+      "outPrice": 0,
       "context": 1113088
     },
     {

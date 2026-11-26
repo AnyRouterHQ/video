@@ -1,0 +1,108 @@
+{
+  "generatedAt": "2026-11-26T17:43:47.724Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 510,
+    "listed": 501,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 102,
+    "providerBackends": 102,
+    "free": 85
+  },
+  "pool": {
+    "keys": 426,
+    "donors": 262,
+    "requests": 347576
+  },
+  "added": [
+    {
+      "id": "nace-ai/drex-max-v1.2",
+      "name": "Drex Max v1.2",
+      "provider": "nace-ai",
+      "logo": null,
+      "context": 262144,
+      "inPrice": 0.03,
+      "outPrice": 0,
+      "free": false,
+      "created": 1795564800,
+      "category": "multimodal",
+      "excerpt": "Drex Max v1.2 is Nace AI's most powerful multimodal decision model, the successor to Drex Max v1.1."
+    }
+  ],
+  "changed": [
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "from": "0.015/0.06@1050000",
+      "to": "0/0@1050000",
+      "kind": "price-cut"
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "from": "2/10@1113088",
+      "to": "0/0@1113088",
+      "kind": "price-cut"
+    },
+    {
+      "id": "qwen/qwen4-max",
+      "from": "0/0@1000000",
+      "to": "1.5/4.5@1000000",
+      "kind": "price-rise"
+    },
+    {
+      "id": "z-ai/glm-5.3-flash",
+      "from": "0.09/0.3@1050000",
+      "to": "0/0@1050000",
+      "kind": "price-cut"
+    },
+    {
+      "id": "z-ai/glm-5.3",
+      "from": "0.06/0.22@1310720",
+      "to": "0/0@1310720",
+      "kind": "price-cut"
+    },
+    {
+      "id": "z-ai/glm-flash-latest",
+      "from": "0.09/0.3@1050000",
+      "to": "0/0@1050000",
+      "kind": "price-cut"
+    },
+    {
+      "id": "moonshotai/kimi-pro-latest",
+      "from": "2/10@1113088",
+      "to": "0/0@1113088",
+      "kind": "price-cut"
+    }
+  ],
+  "removed": [
+    "nace-ai/drex-max-v1.1"
+  ],
+  "spotlight": {
+    "id": "nace-ai/drex-max-v1.2",
+    "name": "Drex Max v1.2",
+    "provider": "nace-ai",
+    "logo": null,
+    "context": 262144,
+    "inPrice": 0.03,
+    "outPrice": 0,
+    "free": false,
+    "created": 1795564800,
+    "category": "multimodal",
+    "excerpt": "Drex Max v1.2 is Nace AI's most powerful multimodal decision model, the successor to Drex Max v1.1."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+nace-ai/drex-max-v1.2@0.03/0@262144",
+    "~deepseek/deepseek-v4.1-flash 0.015/0.06@1050000->0/0@1050000",
+    "~moonshotai/kimi-k3.1-pro 2/10@1113088->0/0@1113088",
+    "~qwen/qwen4-max 0/0@1000000->1.5/4.5@1000000",
+    "~z-ai/glm-5.3-flash 0.09/0.3@1050000->0/0@1050000",
+    "~z-ai/glm-5.3 0.06/0.22@1310720->0/0@1310720",
+    "~z-ai/glm-flash-latest 0.09/0.3@1050000->0/0@1050000",
+    "~moonshotai/kimi-pro-latest 2/10@1113088->0/0@1113088",
+    "-nace-ai/drex-max-v1.1"
+  ]
+}
