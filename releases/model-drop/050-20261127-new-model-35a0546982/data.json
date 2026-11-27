@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-11-27T17:28:20.233Z",
+  "mode": "diff",
+  "kind": "new-model",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 511,
+    "listed": 502,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 102,
+    "providerBackends": 102,
+    "free": 86
+  },
+  "pool": {
+    "keys": 431,
+    "donors": 266,
+    "requests": 352138
+  },
+  "added": [
+    {
+      "id": "antdigital/lingdt-decision-fast-1.0",
+      "name": "LingDT Decision Fast 1.0",
+      "provider": "antdigital",
+      "logo": null,
+      "context": 32768,
+      "inPrice": 0,
+      "outPrice": 0,
+      "free": true,
+      "created": 1795651200,
+      "category": "text",
+      "excerpt": "LingDT Decision Fast 1.0 is Ant Digital's non-autoregressive decision and extraction model built on Ling-3.0-Tiny."
+    }
+  ],
+  "changed": [],
+  "removed": [],
+  "spotlight": {
+    "id": "antdigital/lingdt-decision-fast-1.0",
+    "name": "LingDT Decision Fast 1.0",
+    "provider": "antdigital",
+    "logo": null,
+    "context": 32768,
+    "inPrice": 0,
+    "outPrice": 0,
+    "free": true,
+    "created": 1795651200,
+    "category": "text",
+    "excerpt": "LingDT Decision Fast 1.0 is Ant Digital's non-autoregressive decision and extraction model built on Ling-3.0-Tiny."
+  },
+  "notable": true,
+  "label": "new-model",
+  "parts": [
+    "+antdigital/lingdt-decision-fast-1.0@0/0@32768"
+  ]
+}

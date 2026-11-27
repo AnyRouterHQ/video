@@ -1065,6 +1065,28 @@
         "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-070c5af45da9014b5121",
         "draft": true
       }
+    },
+    {
+      "id": "050-20261127-new-model-35a0546982",
+      "hash": "35a0546982",
+      "kind": "model-drop",
+      "label": "new-model",
+      "title": "antdigital/lingdt-decision-fast-1.0 is now free on AnyRouter",
+      "seconds": 20,
+      "renderedAt": "2026-11-27T17:29:41.348Z",
+      "commit": "9c5825f",
+      "renditions": {
+        "landscape": {
+          "artifact": "renders/model-drop-050-20261127-new-model-35a0546982.mp4",
+          "cover": "renders/model-drop-050-20261127-new-model-35a0546982.png"
+        }
+      },
+      "source": "renders/model-drop-050-20261127-new-model-35a0546982-source.tar.gz",
+      "createdAt": "2026-11-27T17:29:41.355Z",
+      "published": {
+        "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-47640397a3f8cdcca29a",
+        "draft": true
+      }
     }
   ]
 }

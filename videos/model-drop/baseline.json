@@ -1,5 +1,5 @@
 {
-  "acceptedAt": "2026-11-26T17:43:47.725Z",
+  "acceptedAt": "2026-11-27T17:28:20.234Z",
   "ids": [
     "agents-a1/agents-a1-free",
     "agnes-ai/agnes-2.5-flash",
@@ -19,6 +19,7 @@
     "amazon/nova-premier-v1",
     "amazon/nova-pro-v1",
     "antdigital/lingdt-3.0-flash",
+    "antdigital/lingdt-decision-fast-1.0",
     "anthracite-org/magnum-v4-72b",
     "anthropic/claude-fable-5-1",
     "anthropic/claude-fable-5-2",
@@ -611,6 +612,12 @@
       "inPrice": 0.021,
       "outPrice": 0.063,
       "context": 256000
+    },
+    {
+      "id": "antdigital/lingdt-decision-fast-1.0",
+      "inPrice": 0,
+      "outPrice": 0,
+      "context": 32768
     },
     {
       "id": "anthracite-org/magnum-v4-72b",
