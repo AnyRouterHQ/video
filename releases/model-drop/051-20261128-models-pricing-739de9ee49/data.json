@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-11-28T16:11:43.047Z",
+  "mode": "diff",
+  "kind": "models+pricing",
+  "source": "https://anyrouter.dev/api/v1/models?all=1",
+  "totals": {
+    "catalog": 511,
+    "listed": 502,
+    "firstParty": 9,
+    "providers": 17,
+    "modelIdOrgs": 102,
+    "providerBackends": 102,
+    "free": 86
+  },
+  "pool": {
+    "keys": 439,
+    "donors": 270,
+    "requests": 358781
+  },
+  "added": [
+    {
+      "id": "mistralai/pixtral-large",
+      "name": "Pixtral Large",
+      "provider": "Mistral AI",
+      "logo": "mistral-color.svg",
+      "context": 128000,
+      "inPrice": 2,
+      "outPrice": 6,
+      "free": false,
+      "created": 1731888000,
+      "category": "multimodal",
+      "excerpt": "Pixtral Large is Mistral AI's open-weight multimodal model with 124B parameters."
+    }
+  ],
+  "changed": [
+    {
+      "id": "openai/gpt-6-astra",
+      "from": "2/10@1050000",
+      "to": "5/25@1050000",
+      "kind": "price-rise"
+    },
+    {
+      "id": "openai/gpt-6.1-sol",
+      "from": "0.4/2@1050000",
+      "to": "1/5@1050000",
+      "kind": "price-rise"
+    },
+    {
+      "id": "openai/gpt-6.1-terra",
+      "from": "0.2/1@1050000",
+      "to": "0.5/2.5@1050000",
+      "kind": "price-rise"
+    },
+    {
+      "id": "openai/gpt-6.2-astra",
+      "from": "1.6/8@1050000",
+      "to": "4/20@1050000",
+      "kind": "price-rise"
+    },
+    {
+      "id": "openai/gpt-6.2-sol",
+      "from": "0.4/2@1050000",
+      "to": "1/5@1050000",
+      "kind": "price-rise"
+    }
+  ],
+  "removed": [
+    "liquid/d1.2-ultra"
+  ],
+  "spotlight": {
+    "id": "mistralai/pixtral-large",
+    "name": "Pixtral Large",
+    "provider": "Mistral AI",
+    "logo": "mistral-color.svg",
+    "context": 128000,
+    "inPrice": 2,
+    "outPrice": 6,
+    "free": false,
+    "created": 1731888000,
+    "category": "multimodal",
+    "excerpt": "Pixtral Large is Mistral AI's open-weight multimodal model with 124B parameters."
+  },
+  "notable": true,
+  "label": "models+pricing",
+  "parts": [
+    "+mistralai/pixtral-large@2/6@128000",
+    "~openai/gpt-6-astra 2/10@1050000->5/25@1050000",
+    "~openai/gpt-6.1-sol 0.4/2@1050000->1/5@1050000",
+    "~openai/gpt-6.1-terra 0.2/1@1050000->0.5/2.5@1050000",
+    "~openai/gpt-6.2-astra 1.6/8@1050000->4/20@1050000",
+    "~openai/gpt-6.2-sol 0.4/2@1050000->1/5@1050000",
+    "-liquid/d1.2-ultra"
+  ]
+}

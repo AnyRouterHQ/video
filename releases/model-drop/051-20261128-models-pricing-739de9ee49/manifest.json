@@ -1,0 +1,22 @@
+{
+  "id": "051-20261128-models-pricing-739de9ee49",
+  "hash": "739de9ee49",
+  "kind": "model-drop",
+  "label": "models+pricing",
+  "title": "mistralai/pixtral-large is live on AnyRouter",
+  "seconds": 20,
+  "renderedAt": "2026-11-28T16:12:54.908Z",
+  "commit": "d54844b",
+  "renditions": {
+    "landscape": {
+      "artifact": "renders/model-drop-051-20261128-models-pricing-739de9ee49.mp4",
+      "cover": "renders/model-drop-051-20261128-models-pricing-739de9ee49.png"
+    }
+  },
+  "source": "renders/model-drop-051-20261128-models-pricing-739de9ee49-source.tar.gz",
+  "createdAt": "2026-11-28T16:12:54.915Z",
+  "published": {
+    "github": "https://github.com/AnyRouterHQ/video/releases/tag/untagged-8017fbf7b0e54e055ef9",
+    "draft": true
+  }
+}
